@@ -8,7 +8,7 @@ seq_det dut(.clk(clk),
         .out(out));
 
 always begin
-    clk =0;
+    clk =1;
     forever #5 clk = ~clk;
 end
 

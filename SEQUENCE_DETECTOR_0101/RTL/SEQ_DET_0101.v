@@ -76,18 +76,4 @@ begin
     endcase
 end
 
-/*always@(*) begin
-    case(present_state)
-        a : out =1'b0;
-        b : out =1'b0;
-        c : out =1'b0;
-        d :
-            if(x ==0) 
-                out = 1'b0;
-            
-            else 
-                out = 1'b1;
-            
-    endcase
-end*/
 endmodule
