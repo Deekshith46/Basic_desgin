@@ -5,6 +5,11 @@ module booth_wallace_cla_tb;
     reg signed [15:0] multiplicand, multiplier;
     wire signed [31:0] product;
 
+    initial begin
+    $shm_open("wave.shm");
+    $shm_probe("ACTMF");
+    end
+
     booth_wallace_cla uut (
         .multiplicand(multiplicand),
         .multiplier(multiplier),
