@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 27, 2019 at 05:06:22 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 30, 2019 at 04:37:49 IST
 irun
 	-access +rwc
 	counter.v
@@ -487,4 +487,4 @@ coverage setup:
 coverage files:
   model(design data) :  ./cov_work/scope/icc_2173232f_14f8db68.ucm (reused)
   data               :  ./cov_work/scope/test_sv24/icc_2173232f_14f8db68.ucd
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 27, 2019 at 05:06:22 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 30, 2019 at 04:37:49 IST  (total: 00:00:00)
