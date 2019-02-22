@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Feb 22, 2019 at 08:50:39 IST
+TOOL:	irun(64)	15.20-s051: Started on Feb 22, 2019 at 09:42:35 IST
 irun
 	-access +rwc
 	rem_3.v
@@ -28,9 +28,9 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './rem_3.v' is newer than expected.
-	expected: Fri Feb 22 08:49:37 2019
-	actual:   Fri Feb 22 08:50:37 2019
+Recompiling... reason: file './rem3_tb.v' is newer than expected.
+	expected: Fri Feb 22 09:22:56 2019
+	actual:   Fri Feb 22 09:42:33 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -78,8 +78,8 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Pe
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-		worklib.rem:v <0x388cdf73>
-			streams:   3, words:  1831
+		worklib.rem:v <0x5a2d7ebd>
+			streams:   3, words:  1927
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -100,7 +100,7 @@ ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permis
 Loading snapshot worklib.tb:v .................... Done
 ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-Simulation complete via $finish(1) at time 60 NS + 0
-./rem3_tb.v:29 $finish;
+Simulation complete via $finish(1) at time 80 NS + 0
+./rem3_tb.v:31 #20 $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Feb 22, 2019 at 08:50:39 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 22, 2019 at 09:42:36 IST  (total: 00:00:01)

@@ -67,8 +67,14 @@ set id [waveform add -signals  {
 set id [waveform add -signals  {
 	wave::tb.out
 	} ]
+set id [waveform add -signals  {
+	{wave::tb.dut1.present_state[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb.dut1.next_state[1:0]}
+	} ]
 
-waveform xview limits 0 60ns
+waveform xview limits 0 80ns
 
 #
 # Waveform Window Links

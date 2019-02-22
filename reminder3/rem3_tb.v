@@ -20,30 +20,15 @@ initial  begin
 end
 
 initial begin
-    rst=1;x=0;#10
-rst=1;x=1;#10
-//rst=0;x=0;#10
-rst=0;x=1;#10
-rst=0;x=1;#10
-rst=0;x=0;#20
-$finish;
+    rst = 0;
+    x =0;
+#10 rst = 1;
+#10 x =1;
+#10 x =0;
+#10 x =0;
+#10 x =1;
+#10 x =1;
+#20 $finish();
 end
 
-/*initial begin
-#5;
-rst = 1'b1;
-#5;
-rst = 1'b0;
-end
-
-initial begin
-#5;
-x=1;
-#5;
-x=1;
-#5;
-x=1;
-#100;
-$finish();
-end*/
 endmodule
