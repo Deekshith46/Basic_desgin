@@ -1,0 +1,16 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-PARTIALDESIGN
+-cdslib
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-hdlvar
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+worklib.decoder:v
+-logfile
+ncverilog.log
+-cflag
+-I/tools/cadence/INCISIVE152/tools/include
+-cflag
+-I/tools/cadence/INCISIVE152/tools/inca/include

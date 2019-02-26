@@ -1,0 +1,166 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 23, 2019 at 07:56:25 IST
+irun
+	-access +rwc
+	alu.v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+ncvlog: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+ncvlog: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+file: alu.v
+	module worklib.ctrl_alu:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+irun: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+ncelab: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+ncelab: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ctrl_alu
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+ncvlog_cg: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+ncvlog_cg: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+		worklib.ctrl_alu:v <0x76ad9a00>
+			streams:   1, words:  7122
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		          Instances  Unique
+		Modules:          1       1
+		Registers:       10      10
+		Scalar wires:     1       -
+		Vectored wires:   2       -
+		Always blocks:    1       1
+	Writing initial simulation snapshot: worklib.ctrl_alu:v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE inv /home/vv2trainee17/Desktop/Suhas/PD/inv
+|
+ncsim: *W,DLCPTH (/home/vv2trainee17/cds.lib,9): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inv' (cds.lib command ignored).
+DEFINE inverter /home/vv2trainee17/Desktop/Suhas/PD/inverter
+|
+ncsim: *W,DLCPTH (/home/vv2trainee17/cds.lib,10): cds.lib Invalid path '/home/vv2trainee17/Desktop/Suhas/PD/inverter' (cds.lib command ignored).
+Loading snapshot worklib.ctrl_alu:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 23, 2019 at 07:56:26 IST  (total: 00:00:01)

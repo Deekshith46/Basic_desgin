@@ -1,0 +1,100 @@
+s1(16Feb2019:06:13:16):  irun -access +rwc bit_slicing.v 
+s2(16Feb2019:06:17:06):  irun -access +rwc bit_slicing.v 
+s3(16Feb2019:06:22:45):  irun -access +rwc bit_slicing.v 
+s4(16Feb2019:06:25:30):  irun -access +rwc bit_slicing.v 
+s5(16Feb2019:07:25:01):  irun -access +rwc bit_slice_tb.v 
+s6(16Feb2019:07:34:59):  irun -access +rwc bit_slice_tb.v 
+s7(16Feb2019:07:36:10):  irun -access +rwc bit_slice_tb.v 
+s8(16Feb2019:07:41:05):  irun -access +rwc bit_slice_tb.v 
+s9(16Feb2019:07:44:13):  irun -access +rwc bit_slice_tb.v 
+s10(25Feb2019:05:59:22):  irun -access +rwc bit_slicing.v 
+s11(25Feb2019:06:02:26):  irun -access +rwc bit_slicing.v 
+s12(25Feb2019:06:03:08):  irun -access +rwc bit_slicing.v 
+s13(25Feb2019:06:06:21):  irun -access +rwc bit_slicing.v 
+s14(25Feb2019:06:14:42):  irun -access +rwc bit_slicing.v 
+s15(25Feb2019:07:39:40):  irun -access +rwc bit_slicing.v 
+s16(25Feb2019:07:40:32):  irun -access +rwc bit_slicing.v 
+s17(25Feb2019:07:42:14):  irun -access +rwc bit_slicing.v 
+s18(25Feb2019:07:56:02):  irun -access +rwc bit_slicing.v 
+s19(25Feb2019:07:56:57):  irun -access +rwc bit_slicing.v 
+s20(25Feb2019:08:01:12):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s21(25Feb2019:08:11:17):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s22(25Feb2019:08:16:09):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s23(25Feb2019:08:19:09):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s24(25Feb2019:08:24:38):  irun -access +rwc bit_slicing.v 
+s25(25Feb2019:08:26:46):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s26(25Feb2019:08:27:23):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s27(25Feb2019:08:35:50):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s28(25Feb2019:08:36:46):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s29(25Feb2019:08:44:05):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s30(25Feb2019:08:47:02):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s31(25Feb2019:08:49:30):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s32(25Feb2019:08:54:37):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s33(25Feb2019:10:01:10):  irun -access +rwc bit_slicing.v 
+s34(25Feb2019:10:03:42):  irun -access +rwc bit_slicing.v 
+s35(25Feb2019:10:04:57):  irun -access +rwc bit_slicing.v 
+s36(25Feb2019:10:08:10):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s37(25Feb2019:10:11:05):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s38(25Feb2019:12:23:03):  irun -access +rwc bit_slicing.v 
+s39(25Feb2019:12:24:09):  irun -access +rwc bit_slicing.v 
+s40(25Feb2019:12:25:30):  irun -access +rwc bit_slicing.v 
+s41(25Feb2019:12:26:41):  irun -access +rwc bit_slicing.v 
+s42(25Feb2019:12:27:02):  irun -access +rwc bit_slicing.v 
+s43(25Feb2019:12:27:18):  irun -access +rwc bit_slicing.v 
+s44(25Feb2019:12:31:14):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s45(25Feb2019:12:49:54):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s46(25Feb2019:12:53:46):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s47(25Feb2019:12:57:40):  irun -access +rwc bit_slicing.v decoder_tb.v 
+s48(25Feb2019:13:24:53):  irun -access +rwc decoder.v 
+s49(25Feb2019:13:25:12):  irun -access +rwc decoder.v decoder_tb.v 
+s50(25Feb2019:13:34:41):  irun -access +rwc decoder.v decoder_tb.v 
+s51(25Feb2019:13:36:29):  irun -access +rwc decoder.v decoder_tb.v 
+s52(25Feb2019:13:38:58):  irun -access +rwc decoder.v decoder_tb.v 
+s53(25Feb2019:13:42:46):  irun -access +rwc decoder.v decoder_tb.v 
+s54(25Feb2019:13:48:51):  irun -access +rwc decoder.v decoder_tb.v 
+s55(25Feb2019:13:57:07):  irun -access +rwc decoder.v decoder_tb.v 
+s56(25Feb2019:13:58:01):  irun -access +rwc decoder.v decoder_tb.v 
+s57(25Feb2019:14:00:22):  irun -access +rwc decoder.v decoder_tb.v 
+s58(25Feb2019:13:57:22):  irun -access +rwc decoder.v decoder_tb.v 
+s59(25Feb2019:13:59:04):  irun -access +rwc decoder.v decoder_tb.v 
+s60(25Feb2019:14:07:27):  irun -access +rwc decoder.v decoder_tb.v 
+s61(25Feb2019:14:07:51):  irun -access +rwc decoder.v decoder_tb.v 
+s62(25Feb2019:14:09:03):  irun -access +rwc decoder.v decoder_tb.v 
+s63(25Feb2019:14:15:45):  irun -access +rwc decoder.v decoder_tb.v 
+s64(25Feb2019:14:20:41):  irun -access +rwc decoder.v decoder_tb.v 
+s65(25Feb2019:14:21:56):  irun -access +rwc decoder.v decoder_tb.v 
+s66(25Feb2019:14:40:28):  irun -access +rwc decoder.v decoder_tb.v 
+s67(25Feb2019:23:16:44):  ncverilog decoder.v -hal 
+s68(25Feb2019:23:25:58):  irun -access +rwc decoder.v 
+s69(25Feb2019:23:26:31):  irun -access +rwc decoder.v 
+s70(25Feb2019:23:27:47):  irun -access +rwc decoder.v 
+s71(25Feb2019:23:28:08):  irun -access +rwc decoder.v 
+s72(25Feb2019:23:28:41):  irun -access +rwc decoder.v 
+s73(25Feb2019:23:29:20):  irun -access +rwc decoder.v 
+s74(25Feb2019:23:29:25):  ncverilog decoder.v -hal 
+s75(25Feb2019:23:48:28):  irun -access +rwc decoder.v 
+s76(25Feb2019:23:49:22):  irun -access +rwc decoder.v 
+s77(25Feb2019:23:59:47):  irun -access +rwc decoder.v 
+s78(26Feb2019:00:00:01):  ncverilog decoder.v -hal 
+s79(26Feb2019:00:07:25):  irun -access +rwc decoder.v 
+s80(26Feb2019:00:08:27):  irun -access +rwc decoder.v 
+s81(26Feb2019:03:20:02):  irun -access +rwc decoder.v 
+s82(26Feb2019:03:20:18):  irun -access +rwc decoder.v 
+s83(26Feb2019:03:22:05):  irun -access +rwc decoder.v 
+s84(26Feb2019:03:51:21):  irun -access +rwc decoder.v 
+s85(26Feb2019:03:52:15):  irun -access +rwc decoder.v 
+s86(26Feb2019:03:52:44):  irun -access +rwc decoder.v 
+s87(26Feb2019:04:01:13):  irun -access +rwc decoder.v 
+s88(26Feb2019:05:46:32):  irun -access +rwc decoder.v 
+s89(26Feb2019:05:46:55):  irun -access +rwc decoder.v 
+s90(26Feb2019:05:47:33):  irun -access +rwc decoder.v 
+s91(26Feb2019:05:58:02):  irun -access +rwc decoder.v 
+s92(26Feb2019:05:59:29):  irun -access +rwc decoder.v 
+s93(26Feb2019:05:59:59):  irun -access +rwc decoder.v 
+s94(26Feb2019:06:15:49):  irun -access +rwc decoder.v 
+s95(26Feb2019:06:15:57):  irun -access +rwc decoder.v decoder_tb.v 
+s96(26Feb2019:06:19:25):  irun -access +rwc decoder.v decoder_tb.v 
+s97(26Feb2019:06:20:43):  irun -access +rwc decoder.v decoder_tb.v 
+s98(26Feb2019:06:21:31):  irun -access +rwc decoder.v decoder_tb.v 
+s99(26Feb2019:06:23:56):  irun -access +rwc decoder.v decoder_tb.v 
+s100(26Feb2019:06:27:51):  irun -access +rwc decoder.v decoder_tb.v 

@@ -1,0 +1,486 @@
+ncverilog(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s051: Started on Feb 26, 2019 at 00:00:01 IST
+ncverilog
+	decoder.v
+	-hal
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		          Instances  Unique
+		Modules:          1       1
+		Registers:       10      10
+		Vectored wires:   1       -
+		Always blocks:    1       1
+	Writing initial simulation snapshot: worklib.decoder:v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncverilog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+hal: Options:   -cdslib ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib -logfile ncverilog.log -f /home/vv2trainee2/Desktop/adder/dpa/rtl/decoder/single_cycle/INCA_libs/irun.lnx8664.15.20.nc/hal.args .
+hal: Snapshot:  worklib.decoder:v.
+hal: Workspace: /home/vv2trainee2/Desktop/adder/dpa/rtl/decoder/single_cycle.
+hal: Date: Tue Feb 26 00:00:02 IST 2019.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+halcheck: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+halcheck: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+
+visadev: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+
+(   input  wire   [INST_W-1  :0]   instruction,                                                                     
+|
+halcheck: *W,MAXLEN (./decoder.v,14|0): The HDL source line is 116 characters, which exceeds the recommended length of 80 characters.
+    output reg    [BC_W  -1  :0]   bc_o      ,                                                                          
+|
+halcheck: *W,MAXLEN (./decoder.v,15|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+    output reg                     ct_o       ,                                                                         
+|
+halcheck: *W,MAXLEN (./decoder.v,16|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+    output reg    [OPC_W -1  :0]   opcode_o   ,                                                                         
+|
+halcheck: *W,MAXLEN (./decoder.v,17|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+    output reg    [RD_W  -1  :0]   rd_addr    ,                                                                         
+|
+halcheck: *W,MAXLEN (./decoder.v,18|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+    output reg    [RS_W  -1  :0]   rs1_addr   ,                                                                        
+|
+halcheck: *W,MAXLEN (./decoder.v,19|0): The HDL source line is 119 characters, which exceeds the recommended length of 80 characters.
+    output reg    [RS_W  -1  :0]   rs2_addr   ,                                                                        
+|
+halcheck: *W,MAXLEN (./decoder.v,20|0): The HDL source line is 119 characters, which exceeds the recommended length of 80 characters.
+    output reg    [IMM_W -1  :0]   immediate  ,                                                                         
+|
+halcheck: *W,MAXLEN (./decoder.v,21|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+    output reg    [JIMM_W-1  :0]   jump_imm   ,                                                                         
+|
+halcheck: *W,MAXLEN (./decoder.v,22|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+)                                                                                                       ;                                                                      
+|
+halcheck: *W,MAXLEN (./decoder.v,24|0): The HDL source line is 175 characters, which exceeds the recommended length of 80 characters.
+reg [RSV_W-1:0] resever                                                                                 ;
+|
+halcheck: *W,MAXLEN (./decoder.v,26|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+        bc_o         =  {BC_W{1'b0}}                                                                           ;
+|
+halcheck: *W,MAXLEN (./decoder.v,31|0): The HDL source line is 112 characters, which exceeds the recommended length of 80 characters.
+        ct_o         =  1'b0                                                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,32|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+        opcode_o     =  {OPC_W{1'b0}}                                                                        ;
+|
+halcheck: *W,MAXLEN (./decoder.v,33|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+        resever      =  {RSV_W{1'b0}}                                                                  ;
+|
+halcheck: *W,MAXLEN (./decoder.v,34|0): The HDL source line is 104 characters, which exceeds the recommended length of 80 characters.
+        immediate    =  {IMM_W{1'b0}}                                                           ;
+|
+halcheck: *W,MAXLEN (./decoder.v,35|0): The HDL source line is 97 characters, which exceeds the recommended length of 80 characters.
+        rs1_addr     =  {RS_W {1'b0}}                                                                        ;
+|
+halcheck: *W,MAXLEN (./decoder.v,36|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+        rs2_addr     =  {RS_W {1'b0}}                                                                        ;
+|
+halcheck: *W,MAXLEN (./decoder.v,37|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+        rd_addr      =  {RD_W {1'b0}}                                                                        ;
+|
+halcheck: *W,MAXLEN (./decoder.v,38|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+        jump_imm     =  {JIMM_W {1'b0}}                                                      ;
+|
+halcheck: *W,MAXLEN (./decoder.v,39|0): The HDL source line is 94 characters, which exceeds the recommended length of 80 characters.
+        system_op    =  {SYS_W {1'b0}}                                                    ;
+|
+halcheck: *W,MAXLEN (./decoder.v,40|0): The HDL source line is 91 characters, which exceeds the recommended length of 80 characters.
+//////////////////////////////////////////////////////////R_TYPE/////////////////////////////////////////////////////////////////
+|
+halcheck: *W,MAXLEN (./decoder.v,42|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+            3'b000 : begin  bc_o        = instruction[31:30]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,45|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+            3'b000 : begin  bc_o        = instruction[31:30]                                            ;
+|
+halcheck: *W,SEPLIN (./decoder.v,45|0): Use a separate line for each HDL statement.
+                            ct_o        = instruction[29]                                               ;
+|
+halcheck: *W,MAXLEN (./decoder.v,46|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            resever     = instruction[8:0]                                              ;                            
+|
+halcheck: *W,MAXLEN (./decoder.v,47|0): The HDL source line is 133 characters, which exceeds the recommended length of 80 characters.
+                            rs1_addr    = instruction[18:14]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,48|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            rs2_addr    = instruction[13:9]                                             ;
+|
+halcheck: *W,MAXLEN (./decoder.v,49|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            rd_addr     = instruction[23:19]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,50|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            opcode_o    = instruction[28:24]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,51|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                      end                                                                                 
+|
+halcheck: *W,MAXLEN (./decoder.v,52|0): The HDL source line is 106 characters, which exceeds the recommended length of 80 characters.
+//////////////////////////////////////////////////////////////I_TYPE///////////////////////////////////////////////////////////////
+|
+halcheck: *W,MAXLEN (./decoder.v,54|0): The HDL source line is 131 characters, which exceeds the recommended length of 80 characters.
+                             bc_o       = instruction[31:30]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,56|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             ct_o       = instruction[29]                                               ;
+|
+halcheck: *W,MAXLEN (./decoder.v,57|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             immediate  = instruction[13:0]                                             ;                      
+|
+halcheck: *W,MAXLEN (./decoder.v,58|0): The HDL source line is 127 characters, which exceeds the recommended length of 80 characters.
+                             rs1_addr   = instruction[18:14]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,59|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             rd_addr    = instruction[23:19]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,60|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             opcode_o   = instruction[28:24]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,61|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+/////////////////////////////////////////////////////LOAD_TYPE///////////////////////////////////////////////////////////////////
+|
+halcheck: *W,MAXLEN (./decoder.v,64|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+                              bc_o      = instruction[31:30]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,66|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                              ct_o      = instruction[29]                                               ;
+|
+halcheck: *W,MAXLEN (./decoder.v,67|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                              immediate = instruction[13:0]                                             ;
+|
+halcheck: *W,MAXLEN (./decoder.v,68|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                              rs1_addr  = instruction[18:14]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,69|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                              rd_addr   = instruction[23:19]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,70|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                              opcode_o  = instruction[28:24]                                            ;                                                
+|
+halcheck: *W,MAXLEN (./decoder.v,71|0): The HDL source line is 153 characters, which exceeds the recommended length of 80 characters.
+////////////////////////////////////////////////STORE_TYPE///////////////////////////////////////////////////////////////////////
+|
+halcheck: *W,MAXLEN (./decoder.v,74|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+                             bc_o       = instruction[31:30]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,76|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             ct_o       = instruction[29]                                               ;
+|
+halcheck: *W,MAXLEN (./decoder.v,77|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             immediate  = instruction[13:0]                                             ;
+|
+halcheck: *W,MAXLEN (./decoder.v,78|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             rs1_addr   = instruction[18:14]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,79|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             rs2_addr   = instruction[23:19]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,80|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                             opcode_o   = instruction[28:24]                                            ;  
+|
+halcheck: *W,MAXLEN (./decoder.v,81|0): The HDL source line is 107 characters, which exceeds the recommended length of 80 characters.
+////////////////////////////////////////////BRANCH_TYPE//////////////////////////////////////////////////////////////////////////
+|
+halcheck: *W,MAXLEN (./decoder.v,83|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+                            bc_o        = instruction[31:30]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,85|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            ct_o        = instruction[29]                                               ;
+|
+halcheck: *W,MAXLEN (./decoder.v,86|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            immediate   = instruction[13:0]                                             ;
+|
+halcheck: *W,MAXLEN (./decoder.v,87|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            rs1_addr    = instruction[18:14]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,88|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            rs2_addr    = instruction[23:19]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,89|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            opcode_o    = instruction[28:24]                                            ;  
+|
+halcheck: *W,MAXLEN (./decoder.v,90|0): The HDL source line is 107 characters, which exceeds the recommended length of 80 characters.
+///////////////////////////////////////////JUMP_TYPE/////////////////////////////////////////////////////////////////////////////
+|
+halcheck: *W,MAXLEN (./decoder.v,92|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+                            bc_o        = instruction[31:30]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,94|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            ct_o        = instruction[29]                                               ;
+|
+halcheck: *W,MAXLEN (./decoder.v,95|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            jump_imm    = instruction[18:0]                                             ;                          
+|
+halcheck: *W,MAXLEN (./decoder.v,96|0): The HDL source line is 131 characters, which exceeds the recommended length of 80 characters.
+                            rd_addr     = instruction[23:19]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,97|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                            opcode_o    = instruction[28:24]                                            ;  
+|
+halcheck: *W,MAXLEN (./decoder.v,98|0): The HDL source line is 107 characters, which exceeds the recommended length of 80 characters.
+////////////////////////////////////////SYSTEM_OPERATION/////////////////////////////////////////////////////////////////////////
+|
+halcheck: *W,MAXLEN (./decoder.v,100|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+                           bc_o         = instruction[31:30]                                            ;
+|
+halcheck: *W,MAXLEN (./decoder.v,102|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                           ct_o         = instruction[29]                                               ;
+|
+halcheck: *W,MAXLEN (./decoder.v,103|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+                           system_op    = instruction[18:0]                                             ;                         
+|
+halcheck: *W,MAXLEN (./decoder.v,104|0): The HDL source line is 130 characters, which exceeds the recommended length of 80 characters.
+                           opcode_o     = instruction[28:24]                                            ;    
+|
+halcheck: *W,MAXLEN (./decoder.v,105|0): The HDL source line is 109 characters, which exceeds the recommended length of 80 characters.
+module decoder 
+|
+halcheck: *N,PRTCNT (./decoder.v,1|0): Module/Entity 'decoder' contains '10' ports.
+halcheck: (./decoder.v,1): Number of Input ports: 1.
+halcheck: (./decoder.v,1): Number of Output ports: 9.
+     parameter INST_W = 32,
+|
+halcheck: *W,PRMVAL (./decoder.v,3|0): Bit width not specified for parameter 'INST_W'.
+     parameter INST_W = 32,
+|
+halcheck: *W,PRMBSE (./decoder.v,3|0): Base not specified for parameter 'INST_W'.
+     parameter BC_W = 2,
+|
+halcheck: *W,PRMVAL (./decoder.v,4|0): Bit width not specified for parameter 'BC_W'.
+     parameter OPC_W=5,
+|
+halcheck: *W,PRMVAL (./decoder.v,5|0): Bit width not specified for parameter 'OPC_W'.
+     parameter RD_W=5,
+|
+halcheck: *W,PRMVAL (./decoder.v,6|0): Bit width not specified for parameter 'RD_W'.
+     parameter RS_W=5,
+|
+halcheck: *W,PRMVAL (./decoder.v,7|0): Bit width not specified for parameter 'RS_W'.
+     parameter IMM_W=14,
+|
+halcheck: *W,PRMVAL (./decoder.v,8|0): Bit width not specified for parameter 'IMM_W'.
+     parameter IMM_W=14,
+|
+halcheck: *W,PRMBSE (./decoder.v,8|0): Base not specified for parameter 'IMM_W'.
+     parameter JIMM_W=18,
+|
+halcheck: *W,PRMVAL (./decoder.v,9|0): Bit width not specified for parameter 'JIMM_W'.
+     parameter JIMM_W=18,
+|
+halcheck: *W,PRMBSE (./decoder.v,9|0): Base not specified for parameter 'JIMM_W'.
+     parameter SYS_W=24,
+|
+halcheck: *W,PRMVAL (./decoder.v,10|0): Bit width not specified for parameter 'SYS_W'.
+     parameter SYS_W=24,
+|
+halcheck: *W,PRMBSE (./decoder.v,10|0): Base not specified for parameter 'SYS_W'.
+     parameter RSV_W=9
+|
+halcheck: *W,PRMVAL (./decoder.v,11|0): Bit width not specified for parameter 'RSV_W'.
+    begin
+|
+halcheck: *W,NOBLKN (./decoder.v,29|0): Each block should be labeled with a meaningful name.
+                            jump_imm    = instruction[18:0]                                             ;                          
+|
+halcheck: *W,UEASTR (./decoder.v,96|0): Unequal length operands in assignment in module/design-unit decoder. Length of RHS is greater than LHS.
+halcheck: (./decoder.v,96): LHS 'jump_imm' (unsigned) - 18 bit(s), RHS 'instruction[18:0]' (unsigned) - 19 bit(s). 1 most significant bit(s) will be lost.
+                           system_op    = instruction[18:0]                                             ;                         
+|
+halcheck: *W,UEASPD (./decoder.v,104|0): Unequal length operands in assignment in module/design-unit decoder. Length of RHS is less than LHS.
+halcheck: (./decoder.v,104): LHS 'system_op' (unsigned) - 24 bit(s), RHS 'instruction[18:0]' (unsigned) - 19 bit(s). RHS will be padded by 5 bit(s).
+reg [RSV_W-1:0] resever                                                                                 ;
+|
+halcheck: *W,URDREG (./decoder.v,26|0): Local register variable 'resever' is not read, but is assigned at least once in module 'decoder'.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 89.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+
+visadev: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+
+        bc_o         =  {BC_W{1'b0}}                                                                           ;
+|
+halstruct: *W,TPOUNR (./decoder.v,31|0): Output 'bc_o' of top-level module is not a register.
+        ct_o         =  1'b0                                                                            ;
+|
+halstruct: *W,TPOUNR (./decoder.v,32|0): Output 'ct_o' of top-level module is not a register.
+        opcode_o     =  {OPC_W{1'b0}}                                                                        ;
+|
+halstruct: *W,TPOUNR (./decoder.v,33|0): Output 'opcode_o' of top-level module is not a register.
+        rd_addr      =  {RD_W {1'b0}}                                                                        ;
+|
+halstruct: *W,TPOUNR (./decoder.v,38|0): Output 'rd_addr' of top-level module is not a register.
+        rs1_addr     =  {RS_W {1'b0}}                                                                        ;
+|
+halstruct: *W,TPOUNR (./decoder.v,36|0): Output 'rs1_addr' of top-level module is not a register.
+        rs2_addr     =  {RS_W {1'b0}}                                                                        ;
+|
+halstruct: *W,TPOUNR (./decoder.v,37|0): Output 'rs2_addr' of top-level module is not a register.
+        immediate    =  {IMM_W{1'b0}}                                                           ;
+|
+halstruct: *W,TPOUNR (./decoder.v,35|0): Output 'immediate' of top-level module is not a register.
+        jump_imm     =  {JIMM_W {1'b0}}                                                      ;
+|
+halstruct: *W,TPOUNR (./decoder.v,39|0): Output 'jump_imm' of top-level module is not a register.
+        system_op    =  {SYS_W {1'b0}}                                                    ;
+|
+halstruct: *W,TPOUNR (./decoder.v,40|0): Output 'system_op[18:0]' of top-level module is not a register.
+                           system_op    = instruction[18:0]                                             ;                         
+|
+halstruct: *W,TIELOG (./decoder.v,104|0): The output/inout 'system_op[23:19]' is assigned a constant logic value.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[31:30]' and top-level output 'decoder.bc_o'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[29]' and top-level output 'decoder.ct_o'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[28:24]' and top-level output 'decoder.opcode_o'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[23:19]' and top-level output 'decoder.rd_addr'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[18:14]' and top-level output 'decoder.rs1_addr'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[13:9]' and top-level output 'decoder.rs2_addr'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[23:19]' and top-level output 'decoder.rs2_addr'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[13:0]' and top-level output 'decoder.immediate'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[17:0]' and top-level output 'decoder.jump_imm'.
+module decoder 
+|
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[18:0]' and top-level output 'decoder.system_op[18:0]'.
+        resever      =  {RSV_W{1'b0}}                                                                  ;
+|
+halstruct: *N,INFNOT (./decoder.v,34|0): Ignoring wire 'resever' with no fanout to module/design-unit outputs or child instances.
+module decoder 
+|
+halstruct: *N,NUMDFF (./decoder.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 20.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Warnings : (141)
+  DLCPTH (34)     IOCOMB (10)     MAXLEN (69)     NOBLKN (1)     
+  PRMBSE (4)      PRMVAL (9)      SEPLIN (1)      TIELOG (1)     
+  TPOUNR (9)      UEASPD (1)      UEASTR (1)      URDREG (1)     
+
+ Notes    : (3)
+  INFNOT (1)      NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib -hdlvar ./INCA_libs/irun.lnx8664.15.20.nc/hdl.var -sortby severity -sortby category -sortby tag ncverilog.log
+
+TOOL:	ncverilog	15.20-s051: Exiting on Feb 26, 2019 at 00:00:03 IST  (total: 00:00:02)

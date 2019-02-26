@@ -1,0 +1,425 @@
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+hal: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+hal: Options:   -cdslib ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib -logfile ncverilog.log -f /home/vv2trainee2/Desktop/adder/dpa/rtl/decoder/single_cycle/INCA_libs/irun.lnx8664.15.20.nc/hal.args .
+hal: Snapshot:  worklib.decoder:v.
+hal: Workspace: /home/vv2trainee2/Desktop/adder/dpa/rtl/decoder/single_cycle.
+hal: Date: Tue Feb 26 00:00:02 IST 2019.
+hal: Running on elaborated SNAPSHOT.....
+hal: *M,_SCOPE: __dummy_top
+halcheck: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+halcheck: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+halcheck: *M,_SCOPE: decoder
+halcheck: *W,MAXLEN (./decoder.v,14|0): The HDL source line is 116 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,15|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,16|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,17|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,18|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,19|0): The HDL source line is 119 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,20|0): The HDL source line is 119 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,21|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,22|0): The HDL source line is 120 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,24|0): The HDL source line is 175 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,26|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,31|0): The HDL source line is 112 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,32|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,33|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,34|0): The HDL source line is 104 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,35|0): The HDL source line is 97 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,36|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,37|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,38|0): The HDL source line is 110 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,39|0): The HDL source line is 94 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,40|0): The HDL source line is 91 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,42|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,45|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,SEPLIN (./decoder.v,45|0): Use a separate line for each HDL statement.
+halcheck: *W,MAXLEN (./decoder.v,46|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,47|0): The HDL source line is 133 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,48|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,49|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,50|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,51|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,52|0): The HDL source line is 106 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,54|0): The HDL source line is 131 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,56|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,57|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,58|0): The HDL source line is 127 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,59|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,60|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,61|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,64|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,66|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,67|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,68|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,69|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,70|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,71|0): The HDL source line is 153 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,74|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,76|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,77|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,78|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,79|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,80|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,81|0): The HDL source line is 107 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,83|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,85|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,86|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,87|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,88|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,89|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,90|0): The HDL source line is 107 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,92|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,94|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,95|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,96|0): The HDL source line is 131 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,97|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,98|0): The HDL source line is 107 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,100|0): The HDL source line is 129 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,102|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,103|0): The HDL source line is 105 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,104|0): The HDL source line is 130 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./decoder.v,105|0): The HDL source line is 109 characters, which exceeds the recommended length of 80 characters.
+halcheck: *N,PRTCNT (./decoder.v,1|0): Module/Entity 'decoder' contains '10' ports.
+halcheck: (./decoder.v,1): Number of Input ports: 1.
+halcheck: (./decoder.v,1): Number of Output ports: 9.
+halcheck: *W,PRMVAL (./decoder.v,3|0): Bit width not specified for parameter 'INST_W'.
+halcheck: *W,PRMBSE (./decoder.v,3|0): Base not specified for parameter 'INST_W'.
+halcheck: *W,PRMVAL (./decoder.v,4|0): Bit width not specified for parameter 'BC_W'.
+halcheck: *W,PRMVAL (./decoder.v,5|0): Bit width not specified for parameter 'OPC_W'.
+halcheck: *W,PRMVAL (./decoder.v,6|0): Bit width not specified for parameter 'RD_W'.
+halcheck: *W,PRMVAL (./decoder.v,7|0): Bit width not specified for parameter 'RS_W'.
+halcheck: *W,PRMVAL (./decoder.v,8|0): Bit width not specified for parameter 'IMM_W'.
+halcheck: *W,PRMBSE (./decoder.v,8|0): Base not specified for parameter 'IMM_W'.
+halcheck: *W,PRMVAL (./decoder.v,9|0): Bit width not specified for parameter 'JIMM_W'.
+halcheck: *W,PRMBSE (./decoder.v,9|0): Base not specified for parameter 'JIMM_W'.
+halcheck: *W,PRMVAL (./decoder.v,10|0): Bit width not specified for parameter 'SYS_W'.
+halcheck: *W,PRMBSE (./decoder.v,10|0): Base not specified for parameter 'SYS_W'.
+halcheck: *W,PRMVAL (./decoder.v,11|0): Bit width not specified for parameter 'RSV_W'.
+halcheck: *W,NOBLKN (./decoder.v,29|0): Each block should be labeled with a meaningful name.
+halcheck: *W,UEASTR (./decoder.v,96|0): Unequal length operands in assignment in module/design-unit decoder. Length of RHS is greater than LHS.
+halcheck: (./decoder.v,96): LHS 'jump_imm' (unsigned) - 18 bit(s), RHS 'instruction[18:0]' (unsigned) - 19 bit(s). 1 most significant bit(s) will be lost.
+halcheck: *W,UEASPD (./decoder.v,104|0): Unequal length operands in assignment in module/design-unit decoder. Length of RHS is less than LHS.
+halcheck: (./decoder.v,104): LHS 'system_op' (unsigned) - 24 bit(s), RHS 'instruction[18:0]' (unsigned) - 19 bit(s). RHS will be padded by 5 bit(s).
+halcheck: *W,URDREG (./decoder.v,26|0): Local register variable 'resever' is not read, but is assigned at least once in module 'decoder'.
+@:resever 
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 89.
+hal: *M,_SCOPE: __dummy_top
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: *M,_SCOPE: decoder
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+hal: *M,_SCOPE: __dummy_top
+halstruct: *M,_SCOPE: decoder
+halstruct: *W,TPOUNR (./decoder.v,31|0): Output 'bc_o' of top-level module is not a register.
+@:bc_o 
+@:bc_o 
+halstruct: *W,TPOUNR (./decoder.v,32|0): Output 'ct_o' of top-level module is not a register.
+@:ct_o 
+@:ct_o 
+halstruct: *W,TPOUNR (./decoder.v,33|0): Output 'opcode_o' of top-level module is not a register.
+@:opcode_o 
+@:opcode_o 
+halstruct: *W,TPOUNR (./decoder.v,38|0): Output 'rd_addr' of top-level module is not a register.
+@:rd_addr 
+@:rd_addr 
+halstruct: *W,TPOUNR (./decoder.v,36|0): Output 'rs1_addr' of top-level module is not a register.
+@:rs1_addr 
+@:rs1_addr 
+halstruct: *W,TPOUNR (./decoder.v,37|0): Output 'rs2_addr' of top-level module is not a register.
+@:rs2_addr 
+@:rs2_addr 
+halstruct: *W,TPOUNR (./decoder.v,35|0): Output 'immediate' of top-level module is not a register.
+@:immediate 
+@:immediate 
+halstruct: *W,TPOUNR (./decoder.v,39|0): Output 'jump_imm' of top-level module is not a register.
+@:jump_imm 
+@:jump_imm 
+halstruct: *W,TPOUNR (./decoder.v,40|0): Output 'system_op[18:0]' of top-level module is not a register.
+@:system_op[18:0] 
+@:system_op[18:0] 
+halstruct: *W,TIELOG (./decoder.v,104|0): The output/inout 'system_op[23:19]' is assigned a constant logic value.
+@:system_op[23:19] 
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[31:30]' and top-level output 'decoder.bc_o'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[29]' and top-level output 'decoder.ct_o'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[28:24]' and top-level output 'decoder.opcode_o'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[23:19]' and top-level output 'decoder.rd_addr'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[18:14]' and top-level output 'decoder.rs1_addr'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[13:9]' and top-level output 'decoder.rs2_addr'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[23:19]' and top-level output 'decoder.rs2_addr'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[13:0]' and top-level output 'decoder.immediate'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[17:0]' and top-level output 'decoder.jump_imm'.
+halstruct: *W,IOCOMB (./decoder.v,1|0): Combinational path detected between top-level input 'decoder.instruction[18:0]' and top-level output 'decoder.system_op[18:0]'.
+halstruct: *N,INFNOT (./decoder.v,34|0): Ignoring wire 'resever' with no fanout to module/design-unit outputs or child instances.
+@:resever 
+halstruct: *N,NUMDFF (./decoder.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 20.
+~:DSCNCK
+^:DSCNCK
+~:SLENEX
+^:SLENEX
+~:DSCNEN
+^:DSCNEN
+~:PCNOTC
+^:PCNOTC
+~:INPASN
+~:UNCONN
+~:UNDRIV
+~:USEPRT
+~:UASPRT
+~:URDPRT
+~:GATCLK
+~:RENAME
+~:RWRACE
+~:WWRACE
+~:LPISCS
+~:LPSRCS
+~:CMBPAU
+^:CMBPAU
+~:ASNCFL
+^:ASNCFL
+~:CONTLN
+^:CONTLN
+~:LATINF
+^:LATINF
+~:MULMCK
+^:MULMCK
+~:FFCKNP
+^:FFCKNP
+~:GTDCLK
+^:GTDCLK
+~:CLKLAT
+^:CLKLAT
+~:CLKNPI
+^:CLKNPI
+~:GTCLKN
+^:GTCLKN
+~:MRSTDT
+^:MRSTDT
+~:FDTHRU
+^:FDTHRU
+~:DFDRVS
+^:DFDRVS
+~:NEFLOP
+^:NEFLOP
+~:ACNCPI
+^:ACNCPI
+~:LENCPI
+^:LENCPI
+~:CLKDAT
+^:CLKDAT
+~:CLKLDT
+^:CLKLDT
+~:CLKINF
+^:CLKINF
+~:CDFDAT
+^:CDFDAT
+~:CDLDAT
+^:CDLDAT
+~:CAAFSR
+^:CAAFSR
+~:CACSRF
+^:CACSRF
+~:CAALSR
+^:CAALSR
+~:CACSRL
+^:CACSRL
+~:CLKDMN
+^:CLKDMN
+~:INSYNC
+^:INSYNC
+~:CBPAHI
+^:CBPAHI
+~:LFLTSE
+^:LFLTSE
+~:LFFTNE
+^:LFFTNE
+~:INFNOT
+^:INFNOT
+~:DALIAS
+^:DALIAS
+~:JKFFDT
+^:JKFFDT
+~:LATRAN
+^:LATRAN
+~:UNCONI
+^:UNCONI
+~:UNCONO
+^:UNCONO
+~:DIFCLK
+^:DIFCLK
+~:DIFRST
+^:DIFRST
+~:MLTDRV
+^:MLTDRV
+~:SUTHRU
+^:SUTHRU
+~:SEICLK
+^:SEICLK
+~:SMTCLK
+^:SMTCLK
+~:ASRTCK
+^:ASRTCK
+~:ASRTCL
+^:ASRTCL
+~:ASRTSC
+^:ASRTSC
+~:SCICLK
+^:SCICLK
+~:MULTCK
+^:MULTCK
+~:NOTCLK
+^:NOTCLK
+~:TCDFDT
+^:TCDFDT
+~:TCDLDT
+^:TCDLDT
+~:TCKDAT
+^:TCKDAT
+~:TCKLDT
+^:TCKLDT
+~:TXCNOP
+^:TXCNOP
+~:MEMNOP
+^:MEMNOP
+~:TENNOC
+^:TENNOC
+~:TENNOD
+^:TENNOD
+~:GLTASR
+^:GLTASR
+~:RSTEDG
+^:RSTEDG
+~:NOTSCN
+^:NOTSCN
+~:MCKNDB
+^:MCKNDB
+~:WENNDB
+^:WENNDB
+~:SCNLEN
+^:SCNLEN
+~:TMSCFF
+^:TMSCFF
+~:OUTMNR
+^:OUTMNR
+~:INPMNR
+^:INPMNR
+~:SRENSL
+^:SRENSL
+~:LDFFPI
+^:LDFFPI
+~:RSTDAT
+^:RSTDAT
+~:RSTGNH
+^:RSTGNH
+~:CLKGNH
+^:CLKGNH
+~:MXTSBC
+^:MXTSBC
+~:TSBNTH
+^:TSBNTH
+~:MXFNOT
+^:MXFNOT
+~:ATLGLC
+^:ATLGLC
+~:SLNOTP
+^:SLNOTP
+~:TPOUNR
+^:TPOUNR
+~:SELCLK
+^:SELCLK
+~:EDGMIX
+^:EDGMIX
+~:LGRSTL
+^:LGRSTL
+~:FRSTDL
+^:FRSTDL
+~:FRSTDF
+^:FRSTDF
+~:RSTDPT
+^:RSTDPT
+~:CLKDPT
+^:CLKDPT
+~:CLKUCL
+^:CLKUCL
+~:RSTUCL
+^:RSTUCL
+~:ENGTNR
+^:ENGTNR
+~:RSTDMN
+^:RSTDMN
+~:CLKNTP
+^:CLKNTP
+~:ADRSND
+^:ADRSND
+~:CGCENC
+^:CGCENC
+~:SEDFRS
+^:SEDFRS
+~:MULTCC
+^:MULTCC
+~:SMCKRS
+^:SMCKRS
+~:MEMNCB
+^:MEMNCB
+~:MTOMPH
+^:MTOMPH
+~:UVRFCN
+^:UVRFCN
+~:CONVRF
+^:CONVRF
+~:RSTENA
+^:RSTENA
+~:MOTINP
+^:MOTINP
+~:OPDNMT
+^:OPDNMT
+~:FENCNT
+^:FENCNT
+~:TPIUNR
+^:TPIUNR
+~:IPRTNR
+^:IPRTNR
+~:SYNPRT
+^:SYNPRT
+~:CONCLK
+^:CONCLK
+~:DATUNB
+^:DATUNB
+~:RSTINF
+^:RSTINF
+~:CKSMFC
+^:CKSMFC
+~:CDRNCF
+^:CDRNCF
+~:SAMESR
+^:SAMESR
+~:CGECCP
+^:CGECCP
+~:RSTNFR
+^:RSTNFR
+~:DTUNCP
+^:DTUNCP
+~:INSTCL
+^:INSTCL
+~:INSTCN
+^:INSTCN
+~:RSTCCK
+^:RSTCCK
+~:CGCPCK
+^:CGCPCK
+~:RSTCLK
+^:RSTCLK
+hal: *M,_SCOPE: __dummy_top
