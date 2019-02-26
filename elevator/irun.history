@@ -24,3 +24,4 @@ s23(23Feb2019:03:26:06):  irun -access +rwc elevator.v elevator_tb.v
 s24(23Feb2019:03:37:11):  irun -access +rwc elevator.v elevator_tb.v 
 s25(23Feb2019:03:38:50):  irun -access +rwc elevator.v elevator_tb.v 
 s26(23Feb2019:04:08:39):  irun -access +rwc elevator.v elevator_tb.v 
+s27(23Feb2019:06:46:15):  irun -access +rwc elevator.v elevator_tb.v 

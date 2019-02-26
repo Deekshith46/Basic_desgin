@@ -3,16 +3,16 @@
 //Date :- 23-01-2025
 
 module elevator(clk,rst,floor_req , current_floor, direction , door_open)   ; // port delcaration
-input clk,rst                                                               ; // input clock and reset
+input      clk,rst                                                          ; // input clock and reset
 input[2:0] floor_req                                                        ; // floor_request (001 = floor0, 010 = floor1 , 100 = floo2)
 input[1:0] current_floor                                                    ; // current_floor (00=0th,01=1st,10=2nd)
 output reg direction                                                        ; // directio 1 up and 0 down
 output reg door_open                                                        ; // door open 1 is open and 0 close
 
-parameter idle = 2'b00                                                      ; // 4state idle
-parameter move_up = 2'b01                                                   ; // move up
-parameter move_down = 2'b10                                                 ; // move down
-parameter open_door = 2'b11                                                 ; // open door
+parameter idle       = 2'b00                                                ; // 4state idle
+parameter move_up    = 2'b01                                                ; // move up
+parameter move_down  = 2'b10                                                ; // move down
+parameter open_door  = 2'b11                                                ; // open door
 
 reg[1:0] present_state , next_state                                         ; //register to move  
 
@@ -56,7 +56,8 @@ always@* begin
         move_up : begin
             direction = 1'b1                                                ; // when the lift is reaches to the 2nd and 1st floor
                                                                               // if the both the condition satisfied it will open
-            if((floor_req[2] && current_floor==2) || (floor_req[1] && current_floor==1)) begin
+            if((floor_req[2] && current_floor==2) || (floor_req[1] && current_floor==1))
+            begin
                 next_state = open_door                                      ;
             end
             else begin
