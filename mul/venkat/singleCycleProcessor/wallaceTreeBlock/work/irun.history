@@ -1,0 +1,1 @@
+s1(21Feb2023:00:41:17):  irun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 

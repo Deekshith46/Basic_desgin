@@ -1,0 +1,9 @@
+s1(14Feb2023:05:33:52):  xrun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s2(14Feb2023:05:34:22):  irun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s3(14Feb2023:05:38:38):  xrun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s4(14Feb2023:05:44:29):  xrun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s5(16Feb2023:01:30:11):  xrun --access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s6(16Feb2023:01:30:59):  xrun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s7(16Feb2023:01:31:22):  irun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s8(19Feb2023:07:11:59):  irun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 
+s9(19Feb2023:07:12:31):  xrun -access +rwc ../rtl/test00.v ../verification/test00_tb.v 

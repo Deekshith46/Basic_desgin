@@ -1,0 +1,49 @@
+$date
+    Feb 18, 2019  05:53:22
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s051
+$end
+$timescale
+    1 ns
+$end
+
+$scope module tb_booth_pp_radix4_4bit $end
+$var reg       4 !    A [3:0] $end
+$var reg       4 "    B [3:0] $end
+$var reg       3 #    y [2:0] $end
+$var wire      6 $    pp [5:0] $end
+$var integer  32 %    i  $end
+
+$scope module dut $end
+$var wire      4 &    A [3:0] $end
+$var wire      4 '    B [3:0] $end
+$var wire      3 (    y [2:0] $end
+$var reg       6 )    pp [5:0] $end
+$var reg       6 *    core [5:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1101 !
+b10 "
+b100 #
+b110 $
+b0 %
+b1101 &
+b10 '
+b100 (
+b110 )
+b110 *
+$end
+#10
+b10 %
+b1 #
+b1 (
+b111101 *
+b111101 )
+b111101 $
+#20
+b100 %

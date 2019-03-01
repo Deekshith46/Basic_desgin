@@ -1,0 +1,6 @@
+General information about this run 
+-- piranha worklib.pp_tree16x64:v
+-- TOOL:	cfe64	15.20.051-s(15.20.s051)
+-- cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+-- Options : +TOOLNAME halsynth -HAL ALL -BB_SIG_SIZE 16384 +DISABLE -MULTI_DRIVEN_REG TRI -NOLOG +PRIM_TRI +FSM_RULE_CHECKS -SYNTHESIS ALL -IGNORE_COMB_INIT -VITAL_BLACKBOX +MDARRAY_ON -DEFINES /tools/cadence/INCISIVE152/tools/hal/files/hal.def -DUMP +RULES_LIST +HAL_SIDEFILE ncverilog.log -PRAGMA ALL -cdslib ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib -hdlvar ./INCA_libs/irun.lnx8664.15.20.nc/hdl.var worklib.pp_tree16x64:v
+-- SMV File is :/home/sgeuser114/Desktop/venkat/singleCycleProcessor/wallaceTreeBlock/rtl/INCA_libs/worklib/pp_tree16x64/v/pp_tree16x64.smv

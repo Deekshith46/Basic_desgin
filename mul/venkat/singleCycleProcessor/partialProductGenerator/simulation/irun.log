@@ -1,0 +1,49 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 27, 2023 at 05:35:43 IST
+irun
+	-access +rwc
+	../rtl/ppGen_00.v
+	../verification/ppGen_00_tb.v
+file: ../verification/ppGen_00_tb.v
+	module worklib.tb_ppGenTB:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_ppGenTB
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.partial_product:v <0x4d551481>
+			streams:   4, words:  1011
+		worklib.tb_ppGenTB:v <0x5f89dcc1>
+			streams:   8, words: 11794
+			assign c0 = (i==0) ? 0 : x[i-1] ;
+			                         |
+ncelab: *W,BNDWRN (../rtl/ppGen_00.v,12|28): Bit-select or part-select index out of declared bounds.
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		               Instances  Unique
+		Modules:               2       2
+		Registers:             5       5
+		Scalar wires:        198       -
+		Vectored wires:        1       -
+		Initial blocks:        2       2
+		Cont. assignments:   128       6
+		Pseudo assignments:    4       4
+	Writing initial simulation snapshot: worklib.tb_ppGenTB:v
+Loading snapshot worklib.tb_ppGenTB:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Time = 0  sign = 0 one = 0 two = 0  pp = 00000000  carry = 0
+Time = 10  sign = 0 one = 0 two = 1  pp = 0000221e  carry = 0
+Time = 20  sign = 0 one = 1 two = 0  pp = 0000110f  carry = 0
+Time = 30  sign = 0 one = 1 two = 1  pp = 0000331f  carry = 0
+Time = 40  sign = 1 one = 0 two = 0  pp = ffffffff  carry = 0
+Time = 50  sign = 1 one = 0 two = 1  pp = ffffdde1  carry = 0
+Time = 60  sign = 1 one = 1 two = 0  pp = ffffeef0  carry = 0
+Time = 70  sign = 1 one = 1 two = 1  pp = ffffcce0  carry = 0
+Simulation complete via $finish(1) at time 80 NS + 0
+../verification/ppGen_00_tb.v:29         $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 27, 2023 at 05:35:43 IST  (total: 00:00:00)

@@ -1,0 +1,12 @@
+# Cadence Genus(TM) Synthesis Solution, Version 17.22-s017_1, built Apr  1 2018
+
+# Date: Wed Feb 20 04:03:32 2019
+# Host: compute-srv2.eda.atme.in (x86_64 w/Linux 3.10.0-1160.49.1.el7.x86_64) (8cores*64cpus*4physical cpus*Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz 20480KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+source ../tcl/test00.tcl
+source ../tcl/test00.tcl
+ls
+source ../tcl/test00.tcl
+ls -l ../lib/fast.lib
+exit

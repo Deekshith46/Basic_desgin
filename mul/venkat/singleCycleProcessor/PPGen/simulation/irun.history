@@ -1,0 +1,4 @@
+s1(27Feb2023:16:32:22):  irun -access +rwc ../rtl/multi_f.v ../verification/multi_f_tb.v 
+s2(27Feb2023:16:56:56):  irun -access +rwc ../rtl/multi_f.v ../verification/multi_f_tb.v 
+s3(27Feb2023:19:45:32):  irun -access +rwc ../rtl/multi_f.v ../verification/multi_f_tb.v 
+s4(27Feb2023:19:48:56):  irun -access +rwc ../rtl/multi_f.v ../verification/multi_f_tb.v 

@@ -1,0 +1,2456 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.22-s017_1, built Sun Apr 01 2018
+Options: 
+Date:    Tue Feb 21 23:08:42 2023
+Host:    compute-srv5.atme.in (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (12cores*96cpus*4physical cpus*Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz 30720KB) (792277964KB)
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (13 seconds elapsed).
+
+WARNING: This version of the tool is 1787 days old.
+@genus:root: 1> source ../tcl/wallace.tcl
+Sourcing '../tcl/wallace.tcl' (Tue Feb 21 23:10:07 IST 2023)...
+#@ Begin verbose source tcl/wallace.tcl
+@file(wallace.tcl) 3: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 v3 @ 2.10GHz
+cpu MHz		: 1410.000
+cpu MHz		: 1200.000
+cpu MHz		: 2040.000
+cpu MHz		: 1200.000
+cpu MHz		: 1620.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1410.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 2097.615
+cpu MHz		: 2100.000
+cpu MHz		: 1200.000
+cpu MHz		: 1305.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1830.000
+cpu MHz		: 1200.000
+cpu MHz		: 1830.000
+cpu MHz		: 1200.000
+cpu MHz		: 1470.000
+cpu MHz		: 2100.000
+cpu MHz		: 1995.000
+cpu MHz		: 1680.000
+cpu MHz		: 1365.000
+cpu MHz		: 2100.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1470.000
+cpu MHz		: 1995.000
+cpu MHz		: 1200.000
+cpu MHz		: 1680.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1200.000
+cpu MHz		: 1470.000
+cpu MHz		: 1575.000
+cpu MHz		: 1890.000
+cpu MHz		: 2100.000
+cpu MHz		: 1200.000
+cpu MHz		: 1305.000
+cpu MHz		: 1995.000
+cpu MHz		: 1200.000
+cpu MHz		: 2100.000
+cpu MHz		: 2100.000
+cpu MHz		: 1995.000
+cpu MHz		: 1995.000
+cpu MHz		: 1470.000
+cpu MHz		: 2100.000
+cpu MHz		: 1680.000
+cpu MHz		: 1200.000
+cpu MHz		: 1515.000
+cpu MHz		: 2100.000
+cpu MHz		: 1515.000
+cpu MHz		: 1995.000
+cpu MHz		: 1785.000
+cpu MHz		: 1995.000
+cpu MHz		: 1680.000
+cpu MHz		: 1680.000
+cpu MHz		: 1890.000
+cpu MHz		: 1785.000
+cpu MHz		: 1785.000
+cpu MHz		: 2100.000
+cpu MHz		: 2100.000
+cpu MHz		: 1575.000
+cpu MHz		: 1515.000
+cpu MHz		: 2100.000
+cpu MHz		: 1200.000
+cpu MHz		: 1785.000
+cpu MHz		: 1365.000
+cpu MHz		: 1995.000
+cpu MHz		: 1680.000
+cpu MHz		: 1995.000
+@file(wallace.tcl) 8: puts "Hostname : [info hostname]"
+Hostname : compute-srv5.atme.in
+@file(wallace.tcl) 15: set DESIGN pp_tree16x64
+@file(wallace.tcl) 16: set GEN_EFF medium
+@file(wallace.tcl) 17: set MAP_OPT_EFF high
+@file(wallace.tcl) 18: set DATE [clock format [clock seconds] -format "%b%d-%T"] 
+@file(wallace.tcl) 19: set _OUTPUTS_PATH outputs_${DATE}
+@file(wallace.tcl) 20: set _REPORTS_PATH reports_${DATE}
+@file(wallace.tcl) 21: set _LOG_PATH logs_${DATE}
+@file(wallace.tcl) 23: set_db / .init_lib_search_path {../lib} 
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib
+@file(wallace.tcl) 25: set_db / .init_hdl_search_path {../rtl} 
+  Setting attribute of root '/': 'init_hdl_search_path' = ../rtl
+@file(wallace.tcl) 34: set_db / .information_level 7 
+  Setting attribute of root '/': 'information_level' = 7
+@file(wallace.tcl) 41: read_libs {fast.lib slow.lib}
+
+Threads Configured:6
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/sgeuser114/Desktop/venkat/singleCycleProcessor/wallaceTreeBlock/work/../lib/fast.lib, Line 67517)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/sgeuser114/Desktop/venkat/singleCycleProcessor/wallaceTreeBlock/work/../lib/slow.lib, Line 67517)
+
+  Message Summary for Library both libraries:
+  *******************************************
+  Could not find an attribute in the library. [LBR-436]: 1148
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  *******************************************
+ 
+Warning : Libraries have inconsistent nominal operating conditions. [LBR-38]
+        : The libraries are 'fast_vdd1v0' and 'slow_vdd1v0'.
+        : This is a common source of delay calculation confusion and is strongly discouraged.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ACHCONX2 and slow_vdd1v0/ACHCONX2).  Deleting (slow_vdd1v0/ACHCONX2).
+        : Library cell names must be unique.  Any duplicates will be deleted.  Only the first (as determined by the order of libraries) will be retained.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX1 and slow_vdd1v0/ADDFHX1).  Deleting (slow_vdd1v0/ADDFHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX2 and slow_vdd1v0/ADDFHX2).  Deleting (slow_vdd1v0/ADDFHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX4 and slow_vdd1v0/ADDFHX4).  Deleting (slow_vdd1v0/ADDFHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHXL and slow_vdd1v0/ADDFHXL).  Deleting (slow_vdd1v0/ADDFHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX1 and slow_vdd1v0/ADDFX1).  Deleting (slow_vdd1v0/ADDFX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX2 and slow_vdd1v0/ADDFX2).  Deleting (slow_vdd1v0/ADDFX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX4 and slow_vdd1v0/ADDFX4).  Deleting (slow_vdd1v0/ADDFX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFXL and slow_vdd1v0/ADDFXL).  Deleting (slow_vdd1v0/ADDFXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX1 and slow_vdd1v0/ADDHX1).  Deleting (slow_vdd1v0/ADDHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX2 and slow_vdd1v0/ADDHX2).  Deleting (slow_vdd1v0/ADDHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX4 and slow_vdd1v0/ADDHX4).  Deleting (slow_vdd1v0/ADDHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHXL and slow_vdd1v0/ADDHXL).  Deleting (slow_vdd1v0/ADDHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X1 and slow_vdd1v0/AND2X1).  Deleting (slow_vdd1v0/AND2X1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X2 and slow_vdd1v0/AND2X2).  Deleting (slow_vdd1v0/AND2X2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X4 and slow_vdd1v0/AND2X4).  Deleting (slow_vdd1v0/AND2X4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X6 and slow_vdd1v0/AND2X6).  Deleting (slow_vdd1v0/AND2X6).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X8 and slow_vdd1v0/AND2X8).  Deleting (slow_vdd1v0/AND2X8).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2XL and slow_vdd1v0/AND2XL).  Deleting (slow_vdd1v0/AND2XL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND3X1 and slow_vdd1v0/AND3X1).  Deleting (slow_vdd1v0/AND3X1).
+@file(wallace.tcl) 51: set_db / .lp_insert_clock_gating true 
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(wallace.tcl) 58: read_hdl {test00.v}
+            Reading Verilog file '../rtl/test00.v'
+@file(wallace.tcl) 59: elaborate $DESIGN
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX2'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX4'.
+  Libraries have 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'pp_tree16x64' from file '../rtl/test00.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'compressor42_vec' from file '../rtl/test00.v'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 27.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 28.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 29.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'cin_i' [64] doesn't match the width of right hand side [1] in assignment in file '../rtl/test00.v' on line 31.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 32.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 33.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 40.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry[...]' [1] doesn't match the width of right hand side [64] in assignment in file '../rtl/test00.v' on line 41.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sum' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 45.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'carry' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/test00.v' on line 46.
+Warning : Signal or variable has multiple drivers and no loads. This may cause verification mismatches between the original and synthesized designs. [CDFG-217]
+        : 'cout' in module 'compressor42_vec' in file '../rtl/test00.v' on line 31.
+        : Verify that the drivers of this signal are correct.
+Warning : Signal or variable has multiple drivers, including a constant driver. [CDFG2G-623]
+        : 'carry' in module 'compressor42_vec' in file '../rtl/test00.v' on line 10, column 29.
+        : Some tools may not accept this HDL.
+Warning : Signal or variable has multiple drivers, including a constant driver. [CDFG2G-623]
+        : 'sum' in module 'compressor42_vec' in file '../rtl/test00.v' on line 9, column 27.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'c_end' of instance 'S1_0' of module 'compressor42_vec' inside module 'pp_tree16x64' in file '../rtl/test00.v' on line 78.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'c_end' of instance 'S1_1' of module 'compressor42_vec' inside module 'pp_tree16x64' in file '../rtl/test00.v' on line 83.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'c_end' of instance 'S1_2' of module 'compressor42_vec' inside module 'pp_tree16x64' in file '../rtl/test00.v' on line 88.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'c_end' of instance 'S1_3' of module 'compressor42_vec' inside module 'pp_tree16x64' in file '../rtl/test00.v' on line 93.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'c_end' of instance 'S2_L' of module 'compressor42_vec' inside module 'pp_tree16x64' in file '../rtl/test00.v' on line 104.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'c_end' of instance 'S2_R' of module 'compressor42_vec' inside module 'pp_tree16x64' in file '../rtl/test00.v' on line 111.
+Info    : Unused instance port. [ELABUTL-132]
+        : Unused Port 'c_end' of instance 'S3_FINAL' of module 'compressor42_vec' inside module 'pp_tree16x64' in file '../rtl/test00.v' on line 119.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'c_end' in module 'compressor42_vec' in file '../rtl/test00.v' on line 12, column 1.
+        : Use the 'hdl_unconnected_value' attribute to control treatment of undriven output port.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[0]' in module 'compressor42_vec'.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[1]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[2]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[3]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[4]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[5]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[6]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[7]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[8]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[9]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[10]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[11]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[12]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[13]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[14]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[15]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[16]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[17]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[18]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[19]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[20]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[21]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[22]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[23]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[24]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[25]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[26]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[27]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[28]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[29]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[30]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[31]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[32]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[33]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[34]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[35]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[36]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[37]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[38]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[39]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[40]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[41]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[42]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[43]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[44]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[45]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[46]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[47]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[48]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[49]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[50]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[51]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[52]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[53]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[54]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[55]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[56]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[57]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[58]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[59]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[60]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[61]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[62]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'carry[63]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[0]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[1]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[2]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[3]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[4]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[5]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[6]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[7]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[8]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[9]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[10]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[11]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[12]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[13]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[14]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[15]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[16]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[17]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[18]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[19]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[20]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[21]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[22]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[23]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[24]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[25]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[26]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[27]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[28]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[29]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[30]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[31]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[32]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[33]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[34]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[35]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[36]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[37]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[38]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[39]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[40]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[41]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[42]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[43]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[44]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[45]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[46]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[47]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[48]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[49]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[50]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[51]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[52]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[53]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[54]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[55]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[56]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[57]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[58]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[59]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[60]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[61]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[62]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'sum[63]' in module 'compressor42_vec'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'cin_chain' in module 'compressor42_vec'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'pp_tree16x64'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+        Applying wireload models.
+        Computing net loads.
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:            19             89                                      elaborate
+@file(wallace.tcl) 60: puts "Runtime & Memory after 'read_hdl'"
+Runtime & Memory after 'read_hdl'
+@file(wallace.tcl) 61: time_info Elaboration
+stamp 'Elaboration' being created for table 'default'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:08(00:00:00) |  00:00:00(00:00:00) |   0.0(  0.0) |   23:08:51 (Feb21) |  155.0 MB | init
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:19(00:01:20) |  00:00:11(00:01:20) | 100.0(100.0) |   23:10:11 (Feb21) |  187.0 MB | Elaboration
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: default, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+@file(wallace.tcl) 65: check_design -unresolved
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'pp_tree16x64'
+
+No empty modules in design 'pp_tree16x64'
+
+  Done Checking the design.
+@file(wallace.tcl) 71: read_sdc {counter.sdc}
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '5' of the SDC file 'counter.sdc'  cannot find any ports named 'clk'
+        : Use the 'vcd' and 'vls' commands to browse the virtual directories to find the object because the specified name and/or location does not exist.
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin|hpin' named '' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '5' of the SDC file 'counter.sdc': create_clock -name clk -period 1.3 -waveform {0 0.65} [get_ports clk ].
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Info    : An external clock is being defined. [TIM-167]
+        : The clock is named 'VCLK'.
+        : An external clock does not directly drive any points within the design, but is only used as a reference for external delays.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '8' of the SDC file 'counter.sdc'  cannot find any ports named 'clk'
+Error   : Option missing for SDC command. [SDC-203] [set_clock_uncertainty]
+        : The 'set_clock_uncertainty' command on line '8' of the SDC file 'counter.sdc' requires '-from', '-to', '-rise_from', '-fall_from', '-rise_to', '-fall_to', or list of objects option.
+        : This SDC command requires the indicated options.  Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '8' of the SDC file 'counter.sdc': set_clock_uncertainty -setup  0.47 [get_ports clk ].
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2047_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2048_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2049_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2050_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2051_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2052_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2053_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2054_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2055_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2056_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2057_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2058_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2059_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2060_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2061_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2062_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2063_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2064_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2065_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2066_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2067_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2068_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2069_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2070_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2071_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2072_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2073_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2074_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2075_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2076_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2077_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2078_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2079_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2080_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2081_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2082_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2083_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2084_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2085_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2086_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2087_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2088_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2089_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2090_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2091_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2092_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2093_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2094_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2095_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2096_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2097_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2098_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2099_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2100_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2101_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2102_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2103_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2104_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2105_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2106_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2107_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2108_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2109_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2110_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2111_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2112_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2113_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2114_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2115_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2116_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2117_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2118_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2119_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2120_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2121_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2122_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2123_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2124_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2125_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2126_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2127_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2128_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2129_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2130_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2131_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2132_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2133_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2134_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2135_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2136_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2137_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2138_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2139_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2140_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2141_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2142_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2143_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2144_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2145_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2146_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2147_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2148_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2149_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2150_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2151_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2152_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2153_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2154_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2155_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2156_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2157_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2158_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2159_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2160_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2161_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2162_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2163_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2164_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2165_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2166_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2167_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2168_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2169_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2170_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2171_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2172_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:pp_tree16x64/counter.sdc_line_13_2173_1'.
+            Reading file '/home/sgeuser114/Desktop/venkat/singleCycleProcessor/wallaceTreeBlock/work/counter.sdc'
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      2 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      2 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      1 , failed      1 (runtime  0.00)
+ "current_design"           - successful      2 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      0 , failed      2 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      0 , failed      1 (runtime  0.00)
+ "set_input_delay"          - successful      2 , failed      0 (runtime  0.00)
+ "set_max_fanout"           - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+ "set_units"                - successful      2 , failed      0 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 4
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0
+@file(wallace.tcl) 72: puts "The number of exceptions is [llength [vfind "design:$DESIGN" -exception *]]"
+The number of exceptions is 1
+@file(wallace.tcl) 77: if {![file exists ${_LOG_PATH}]} {
+  file mkdir ${_LOG_PATH}
+  puts "Creating directory ${_LOG_PATH}"
+}
+Creating directory logs_Feb21-23:10:07
+@file(wallace.tcl) 82: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+Creating directory outputs_Feb21-23:10:07
+@file(wallace.tcl) 87: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+Creating directory reports_Feb21-23:10:07
+@file(wallace.tcl) 91: check_timing_intent
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 17.22-s017_1
+  Generated on:           Feb 21 2023  11:10:11 pm
+  Module:                 pp_tree16x64
+  Technology libraries:   fast_vdd1v0 1.0
+                          slow_vdd1v0 1.0
+  Operating conditions:   PVT_1P1V_0C (balanced_tree)
+  Wireload mode:          enclosed
+  Area mode:              timing library
+============================================================
+
+-------------------------------------------------------------------------------
+Nets with multiple drivers
+
+The following nets have multiple drivers and at least one of the drivers is     
+non-tristate:                                                                   
+
+hnet:pp_tree16x64/CARRY[0]
+hnet:pp_tree16x64/CARRY[10]
+hnet:pp_tree16x64/CARRY[11]
+  ... 900 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Timing exceptions with no effect
+
+The following timing exceptions are not currently affecting timing in the       
+design.  Either no paths in the design satisfy the exception's path             
+specification, or all paths that satisfy the path specification also satisfy an 
+exception with a higher priority.  You can improve runtime and memory usage by  
+removing these exceptions if they are not truly needed.  To see if there is a   
+path in the design that satisfies the path specification for an exception, or   
+to see what other exception is overriding an exception because of priority, use 
+the command:                                                                    
+  report timing -paths [eval [::legacy::get_attribute paths <exception>]]
+
+exception:pp_tree16x64/VCLK
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Inputs without external driver/transition
+
+The following primary inputs have no external driver or input transition set.   
+As a result the transition on the ports will be assumed as zero. The            
+'external_driver' attribute is used to add and external driver or the           
+'fixed_slew' attribute to add an external transition.                           
+
+port:pp_tree16x64/P0[0]
+port:pp_tree16x64/P0[10]
+port:pp_tree16x64/P0[11]
+  ... 1021 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Outputs without external load
+
+The following primary outputs have no external load set. As a result the load   
+on the ports will be assumed as zero. The 'external_pin_cap' attribute is used  
+to add and external pin cap.                                                    
+
+port:pp_tree16x64/CARRY[0]
+port:pp_tree16x64/CARRY[10]
+port:pp_tree16x64/CARRY[11]
+  ... 125 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+
+Lint summary
+ Generated clocks without clock waveform                          0
+ Generated clocks with incompatible options                       0
+ Generated clocks with multi-master clock                         0
+ Paths constrained with different clocks                          0
+ Loop-breaking cells for combinational feedback                   0
+ Nets with multiple drivers                                     903
+ Timing exceptions with no effect                                 1
+ Suspicious multi_cycle exceptions                                0
+ Pins/ports with conflicting case constants                       0
+ Inputs without clocked external delays                           0
+ Outputs without clocked external delays                          0
+ Inputs without external driver/transition                     1024
+ Outputs without external load                                  128
+ Exceptions with invalid timing start-/endpoints                  0
+
+                                                  Total:       2056
+
+@file(wallace.tcl) 101: if {[llength [all_registers]] > 0} { 
+  define_cost_group -name I2C -design $DESIGN
+  define_cost_group -name C2O -design $DESIGN
+  define_cost_group -name C2C -design $DESIGN
+  path_group -from [all_registers] -to [all_registers] -group C2C -name C2C
+  path_group -from [all_registers] -to [all_outputs] -group C2O -name C2O
+  path_group -from [all_inputs]  -to [all_registers] -group I2C -name I2C
+}
+@file(wallace.tcl) 110: define_cost_group -name I2O -design $DESIGN
+@file(wallace.tcl) 111: path_group -from [all_inputs]  -to [all_outputs] -group I2O -name I2O
+@file(wallace.tcl) 112: foreach cg [vfind / -cost_group *] {
+  report_timing -group [list $cg] >> $_REPORTS_PATH/${DESIGN}_pretim.rpt
+}
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'pp_tree16x64'.
+        : Use 'report timing -lint' for more information.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'pp_tree16x64'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'pp_tree16x64'.
+@file(wallace.tcl) 129: set_db / .syn_generic_effort $GEN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(wallace.tcl) 130: syn_generic
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'pp_tree16x64' to generic gates using 'medium' effort.
+  Setting attribute of design 'pp_tree16x64': 'is_excp_dupcln' = false
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:01:21) |  00:00:00(00:00:00) |   0.0(  0.0) |   23:10:12 (Feb21) |  273.0 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+        Applying wireload models.
+        Computing net loads.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : No pre-processing optimizations applied to datapath logic in 'pp_tree16x64'.
+Info    : Skipping datapath optimization. [DPOPT-5]
+        : There is no datapath logic in 'pp_tree16x64'.
+      Removing temporary intermediate hierarchies under pp_tree16x64
+Mapper: Libraries have:
+	domain _default_: 324 combo usable cells and 128 sequential usable cells
+      Mapping 'pp_tree16x64'...
+        Preparing the circuit
+          Pruning unused logic
+Multi-threaded constant propagation [1|0] ...
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        0		  0%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            0		  0%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         0		  0%
+Total flip-flops                        0		100%
+Total CG Modules                        0
+    Automatically cost grouped 0 clock gate paths.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'S3_FINAL' in module 'pp_tree16x64' would be automatically ungrouped.
+        : Hierarchical instances can be automatically ungrouped to allow for better area or timing optimization. You can control auto ungrouping using the root-level attribute 'auto_ungroup'. You can skip individual instances or modules using the attribute 'ungroup_ok'.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'S2_R' in module 'pp_tree16x64' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'S2_L' in module 'pp_tree16x64' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'S1_3' in module 'pp_tree16x64' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'S1_2' in module 'pp_tree16x64' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'S1_1' in module 'pp_tree16x64' would be automatically ungrouped.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'S1_0' in module 'pp_tree16x64' would be automatically ungrouped.
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) pp_tree16x64...
+          Done structuring (delay-based) pp_tree16x64
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 96 CPUs usable)
+          Structuring (delay-based) cb_part...
+            Starting partial collapsing  cb_part
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) cb_part
+        Mapping component cb_part...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_137x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_137x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_139x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_139x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_132x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_132x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_145x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_145x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_135x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_135x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_136x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_136x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_149x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_149x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_138x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_138x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_153x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_153x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_140x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_140x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_143x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_143x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_134x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_134x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_159x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_159x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_144x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_144x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_165x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_165x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_146x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_146x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_147x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_147x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_148x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_148x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_173x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_173x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_150x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_150x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_151x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_151x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_152x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_152x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_181x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_181x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_154x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_154x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_155x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_155x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_156x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_156x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_142x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_142x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_158x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_158x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_189x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_189x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_160x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_160x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_161x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_161x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_162x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_162x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_163x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_163x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_164x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_164x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_157x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_157x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_166x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_166x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_167x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_167x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_168x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_168x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_169x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_169x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_170x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_170x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_171x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_171x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_172x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_172x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_141x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_141x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_174x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_174x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_175x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_175x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_176x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_176x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_177x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_177x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_178x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_178x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_179x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_179x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_180x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_180x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_133x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_133x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_182x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_182x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_183x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_183x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_184x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_184x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_185x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_185x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_186x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_186x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_187x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_187x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_188x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_188x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_190x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_190x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_191x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_191x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_192x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_192x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_193x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_193x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) logic partition in pp_tree16x64...
+            Starting partial collapsing (xors only) mux_ctl_194x
+            Finished partial collapsing.
+            Starting partial collapsing  mux_ctl_194x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in pp_tree16x64
+        Mapping logic partition in pp_tree16x64...
+          Structuring (delay-based) cb_part_1...
+            Starting partial collapsing (xors only) cb_part_1
+            Finished partial collapsing.
+            Starting partial collapsing  cb_part_1
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) cb_part_1
+        Mapping component cb_part_1...

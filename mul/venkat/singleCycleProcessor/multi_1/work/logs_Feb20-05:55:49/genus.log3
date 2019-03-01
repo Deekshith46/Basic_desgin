@@ -1,0 +1,2938 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.22-s017_1, built Sun Apr 01 2018
+Options: 
+Date:    Wed Feb 20 05:55:21 2019
+Host:    compute-srv2.eda.atme.in (x86_64 w/Linux 3.10.0-1160.49.1.el7.x86_64) (8cores*64cpus*4physical cpus*Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz 20480KB) (528140808KB)
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (12 seconds elapsed).
+
+WARNING: This version of the tool is 325 days old.
+@genus:root: 1> source ../tcl/test00.tcl
+Sourcing '../tcl/test00.tcl' (Wed Feb 20 05:55:49 IST 2019)...
+#@ Begin verbose source tcl/test00.tcl
+@file(test00.tcl) 3: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+cpu MHz		: 1380.487
+cpu MHz		: 3099.133
+cpu MHz		: 2137.060
+cpu MHz		: 2899.896
+cpu MHz		: 1478.045
+cpu MHz		: 3041.619
+cpu MHz		: 2164.581
+cpu MHz		: 2899.896
+cpu MHz		: 1361.700
+cpu MHz		: 3042.938
+cpu MHz		: 2009.838
+cpu MHz		: 2900.390
+cpu MHz		: 1383.288
+cpu MHz		: 3212.677
+cpu MHz		: 2069.824
+cpu MHz		: 2899.731
+cpu MHz		: 1487.768
+cpu MHz		: 3019.702
+cpu MHz		: 2055.322
+cpu MHz		: 2899.731
+cpu MHz		: 1327.258
+cpu MHz		: 2973.559
+cpu MHz		: 2154.858
+cpu MHz		: 2899.896
+cpu MHz		: 1397.790
+cpu MHz		: 3061.889
+cpu MHz		: 2122.558
+cpu MHz		: 2900.225
+cpu MHz		: 1374.719
+cpu MHz		: 3062.219
+cpu MHz		: 2202.154
+cpu MHz		: 2899.896
+cpu MHz		: 1336.816
+cpu MHz		: 2912.091
+cpu MHz		: 2899.566
+cpu MHz		: 2900.061
+cpu MHz		: 1247.827
+cpu MHz		: 3232.287
+cpu MHz		: 2117.285
+cpu MHz		: 2901.379
+cpu MHz		: 1252.111
+cpu MHz		: 2936.810
+cpu MHz		: 1786.376
+cpu MHz		: 2903.356
+cpu MHz		: 1330.554
+cpu MHz		: 3118.084
+cpu MHz		: 1707.769
+cpu MHz		: 2899.896
+cpu MHz		: 1263.977
+cpu MHz		: 2950.488
+cpu MHz		: 1791.485
+cpu MHz		: 2899.896
+cpu MHz		: 1259.692
+cpu MHz		: 2878.143
+cpu MHz		: 1748.474
+cpu MHz		: 2912.750
+cpu MHz		: 1349.176
+cpu MHz		: 2953.948
+cpu MHz		: 1720.623
+cpu MHz		: 2900.720
+cpu MHz		: 1353.131
+cpu MHz		: 2902.697
+cpu MHz		: 1727.380
+cpu MHz		: 2953.454
+@file(test00.tcl) 8: puts "Hostname : [info hostname]"
+Hostname : compute-srv2.eda.atme.in
+@file(test00.tcl) 15: set DESIGN booth_radix4_multiplier_32
+@file(test00.tcl) 16: set GEN_EFF medium
+@file(test00.tcl) 17: set MAP_OPT_EFF high
+@file(test00.tcl) 18: set DATE [clock format [clock seconds] -format "%b%d-%T"] 
+@file(test00.tcl) 19: set _OUTPUTS_PATH outputs_${DATE}
+@file(test00.tcl) 20: set _REPORTS_PATH reports_${DATE}
+@file(test00.tcl) 21: set _LOG_PATH logs_${DATE}
+@file(test00.tcl) 23: set_db / .init_lib_search_path {../lib} 
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib
+@file(test00.tcl) 25: set_db / .init_hdl_search_path {../rtl} 
+  Setting attribute of root '/': 'init_hdl_search_path' = ../rtl
+@file(test00.tcl) 34: set_db / .information_level 7 
+  Setting attribute of root '/': 'information_level' = 7
+@file(test00.tcl) 41: read_libs {fast.lib slow.lib}
+
+Threads Configured:6
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/vv2trainee19/Desktop/Ananya/multi_1/work/../lib/fast.lib, Line 67517)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/vv2trainee19/Desktop/Ananya/multi_1/work/../lib/slow.lib, Line 67517)
+
+  Message Summary for Library both libraries:
+  *******************************************
+  Could not find an attribute in the library. [LBR-436]: 1148
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  *******************************************
+ 
+Warning : Libraries have inconsistent nominal operating conditions. [LBR-38]
+        : The libraries are 'fast_vdd1v0' and 'slow_vdd1v0'.
+        : This is a common source of delay calculation confusion and is strongly discouraged.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ACHCONX2 and slow_vdd1v0/ACHCONX2).  Deleting (slow_vdd1v0/ACHCONX2).
+        : Library cell names must be unique.  Any duplicates will be deleted.  Only the first (as determined by the order of libraries) will be retained.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX1 and slow_vdd1v0/ADDFHX1).  Deleting (slow_vdd1v0/ADDFHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX2 and slow_vdd1v0/ADDFHX2).  Deleting (slow_vdd1v0/ADDFHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX4 and slow_vdd1v0/ADDFHX4).  Deleting (slow_vdd1v0/ADDFHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHXL and slow_vdd1v0/ADDFHXL).  Deleting (slow_vdd1v0/ADDFHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX1 and slow_vdd1v0/ADDFX1).  Deleting (slow_vdd1v0/ADDFX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX2 and slow_vdd1v0/ADDFX2).  Deleting (slow_vdd1v0/ADDFX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX4 and slow_vdd1v0/ADDFX4).  Deleting (slow_vdd1v0/ADDFX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFXL and slow_vdd1v0/ADDFXL).  Deleting (slow_vdd1v0/ADDFXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX1 and slow_vdd1v0/ADDHX1).  Deleting (slow_vdd1v0/ADDHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX2 and slow_vdd1v0/ADDHX2).  Deleting (slow_vdd1v0/ADDHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX4 and slow_vdd1v0/ADDHX4).  Deleting (slow_vdd1v0/ADDHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHXL and slow_vdd1v0/ADDHXL).  Deleting (slow_vdd1v0/ADDHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X1 and slow_vdd1v0/AND2X1).  Deleting (slow_vdd1v0/AND2X1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X2 and slow_vdd1v0/AND2X2).  Deleting (slow_vdd1v0/AND2X2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X4 and slow_vdd1v0/AND2X4).  Deleting (slow_vdd1v0/AND2X4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X6 and slow_vdd1v0/AND2X6).  Deleting (slow_vdd1v0/AND2X6).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X8 and slow_vdd1v0/AND2X8).  Deleting (slow_vdd1v0/AND2X8).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2XL and slow_vdd1v0/AND2XL).  Deleting (slow_vdd1v0/AND2XL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND3X1 and slow_vdd1v0/AND3X1).  Deleting (slow_vdd1v0/AND3X1).
+@file(test00.tcl) 51: set_db / .lp_insert_clock_gating true 
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(test00.tcl) 58: read_hdl multi_13.v
+            Reading Verilog file '../rtl/multi_13.v'
+@file(test00.tcl) 59: elaborate $DESIGN
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX2'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX4'.
+  Libraries have 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'booth_radix4_multiplier_32' from file '../rtl/multi_13.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'partial_products' in module 'booth_radix4_multiplier_32' in file '../rtl/multi_13.v' on line 6.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'result' [64] doesn't match the width of right hand side [32] in assignment in file '../rtl/multi_13.v' on line 13.
+Info    : Removed unused code identified during constant propagation. [CDFG-772]
+        : Remove Dead Branch of conditional statement with Port '2' in Module 'booth_radix4_multiplier_32' in file '../rtl/multi_13.v' on line 17.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'booth_radix4_multiplier_32'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+        Applying wireload models.
+        Computing net loads.
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:            18             36                                      elaborate
+@file(test00.tcl) 60: puts "Runtime & Memory after 'read_hdl'"
+Runtime & Memory after 'read_hdl'
+@file(test00.tcl) 61: time_info Elaboration
+stamp 'Elaboration' being created for table 'default'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:08(00:00:00) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:30 (Feb20) |  123.3 MB | init
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:18(00:00:26) |  00:00:10(00:00:26) | 100.0(100.0) |    5:55:56 (Feb20) |  230.8 MB | Elaboration
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: default, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+@file(test00.tcl) 65: check_design -unresolved
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'booth_radix4_multiplier_32'
+
+No empty modules in design 'booth_radix4_multiplier_32'
+
+  Done Checking the design.
+@file(test00.tcl) 71: read_sdc counter.sdc
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'design' named 'd_ff' could not be found.
+        : Check to make sure that the object exists and is of the correct type.  The 'what_is' command can be used to determine the type of an object.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '2' of the SDC file 'counter.sdc': current_design d_ff.
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '5' of the SDC file 'counter.sdc'  cannot find any ports named 'clk'
+        : Use the 'vcd' and 'vls' commands to browse the virtual directories to find the object because the specified name and/or location does not exist.
+Error   : A required object parameter could not be found. [TUI-61] [parse_options]
+        : An object of type 'port|pin|hpin' named '' could not be found.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '5' of the SDC file 'counter.sdc': create_clock -name clk -period 1.333 -waveform {0 0.666} [get_ports clk ].
+Info    : An external clock is being defined. [TIM-167]
+        : The clock is named 'VCLK'.
+        : An external clock does not directly drive any points within the design, but is only used as a reference for external delays.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '8' of the SDC file 'counter.sdc'  cannot find any ports named 'clk'
+Error   : Option missing for SDC command. [SDC-203] [set_clock_uncertainty]
+        : The 'set_clock_uncertainty' command on line '8' of the SDC file 'counter.sdc' requires '-from', '-to', '-rise_from', '-fall_from', '-rise_to', '-fall_to', or list of objects option.
+        : This SDC command requires the indicated options.  Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '8' of the SDC file 'counter.sdc': set_clock_uncertainty -setup  0.0626 [get_ports clk ].
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_127_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_128_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_129_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_130_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_131_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_132_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_133_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_134_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_135_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_136_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_137_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_138_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_139_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_140_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_141_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_142_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_143_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_144_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_145_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_146_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_147_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_148_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_149_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_150_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_151_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_152_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_153_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_154_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_155_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_156_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_157_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_158_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_159_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_160_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_161_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_162_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_163_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_164_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_165_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_166_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_167_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_168_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_169_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_170_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_171_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_172_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_173_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_174_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_175_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_176_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_177_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_178_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_179_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_180_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_181_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_182_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_183_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_184_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_185_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_186_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_187_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_188_1'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:booth_radix4_multiplier_32/counter.sdc_line_13_189_1'.
+            Reading file '/home/vv2trainee19/Desktop/Ananya/multi_1/work/counter.sdc'
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      2 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      2 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      1 , failed      1 (runtime  0.00)
+ "current_design"           - successful      1 , failed      1 (runtime  0.00)
+ "get_ports"                - successful      0 , failed      2 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      0 , failed      1 (runtime  0.00)
+ "set_input_delay"          - successful      2 , failed      0 (runtime  0.00)
+ "set_max_fanout"           - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      2 , failed      0 (runtime  0.00)
+ "set_units"                - successful      2 , failed      0 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 5
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+Total runtime 0
+@file(test00.tcl) 72: puts "The number of exceptions is [llength [vfind "design:$DESIGN" -exception *]]"
+The number of exceptions is 1
+@file(test00.tcl) 77: if {![file exists ${_LOG_PATH}]} {
+  file mkdir ${_LOG_PATH}
+  puts "Creating directory ${_LOG_PATH}"
+}
+Creating directory logs_Feb20-05:55:49
+@file(test00.tcl) 82: if {![file exists ${_OUTPUTS_PATH}]} {
+  file mkdir ${_OUTPUTS_PATH}
+  puts "Creating directory ${_OUTPUTS_PATH}"
+}
+Creating directory outputs_Feb20-05:55:49
+@file(test00.tcl) 87: if {![file exists ${_REPORTS_PATH}]} {
+  file mkdir ${_REPORTS_PATH}
+  puts "Creating directory ${_REPORTS_PATH}"
+}
+Creating directory reports_Feb20-05:55:49
+@file(test00.tcl) 91: check_timing_intent
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 17.22-s017_1
+  Generated on:           Feb 20 2019  05:55:56 am
+  Module:                 booth_radix4_multiplier_32
+  Technology libraries:   fast_vdd1v0 1.0
+                          slow_vdd1v0 1.0
+  Operating conditions:   PVT_1P1V_0C (balanced_tree)
+  Wireload mode:          enclosed
+  Area mode:              timing library
+============================================================
+
+-------------------------------------------------------------------------------
+Inputs without external driver/transition
+
+The following primary inputs have no external driver or input transition set.   
+As a result the transition on the ports will be assumed as zero. The            
+'external_driver' attribute is used to add and external driver or the           
+'fixed_slew' attribute to add an external transition.                           
+
+port:booth_radix4_multiplier_32/A[0]
+port:booth_radix4_multiplier_32/A[10]
+port:booth_radix4_multiplier_32/A[11]
+  ... 61 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Outputs without external load
+
+The following primary outputs have no external load set. As a result the load   
+on the ports will be assumed as zero. The 'external_pin_cap' attribute is used  
+to add and external pin cap.                                                    
+
+port:booth_radix4_multiplier_32/P[0]
+port:booth_radix4_multiplier_32/P[10]
+port:booth_radix4_multiplier_32/P[11]
+  ... 61 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+
+Lint summary
+ Generated clocks without clock waveform                          0
+ Generated clocks with incompatible options                       0
+ Generated clocks with multi-master clock                         0
+ Paths constrained with different clocks                          0
+ Loop-breaking cells for combinational feedback                   0
+ Nets with multiple drivers                                       0
+ Timing exceptions with no effect                                 0
+ Suspicious multi_cycle exceptions                                0
+ Pins/ports with conflicting case constants                       0
+ Inputs without clocked external delays                           0
+ Outputs without clocked external delays                          0
+ Inputs without external driver/transition                       64
+ Outputs without external load                                   64
+ Exceptions with invalid timing start-/endpoints                  0
+
+                                                  Total:        128
+
+@file(test00.tcl) 101: if {[llength [all_registers]] > 0} { 
+  define_cost_group -name I2C -design $DESIGN
+  define_cost_group -name C2O -design $DESIGN
+  define_cost_group -name C2C -design $DESIGN
+  path_group -from [all_registers] -to [all_registers] -group C2C -name C2C
+  path_group -from [all_registers] -to [all_outputs] -group C2O -name C2O
+  path_group -from [all_inputs]  -to [all_registers] -group I2C -name I2C
+}
+@file(test00.tcl) 110: define_cost_group -name I2O -design $DESIGN
+@file(test00.tcl) 111: path_group -from [all_inputs]  -to [all_outputs] -group I2O -name I2O
+@file(test00.tcl) 112: foreach cg [vfind / -cost_group *] {
+  report_timing -group [list $cg] >> $_REPORTS_PATH/${DESIGN}_pretim.rpt
+}
+        Computing arrivals and requireds.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+        : Use 'report timing -lint' for more information.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+@file(test00.tcl) 129: set_db / .syn_generic_effort $GEN_EFF
+  Setting attribute of root '/': 'syn_generic_effort' = medium
+@file(test00.tcl) 130: syn_generic
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'booth_radix4_multiplier_32' to generic gates using 'medium' effort.
+  Setting attribute of design 'booth_radix4_multiplier_32': 'is_excp_dupcln' = false
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+        Applying wireload models.
+        Computing net loads.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : Pre-processing optimizations applied to datapath logic in 'booth_radix4_multiplier_32':
+          mux_reduce(16) 
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'booth_radix4_multiplier_32'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region'
+      Timing csa_tree...
+      Timing add_unsigned...
+      Timing csa_tree_5...
+      Timing csa_tree_12...
+      Timing csa_tree_19...
+      Timing csa_tree_26...
+      Timing csa_tree_33...
+      Timing csa_tree_40...
+      Timing csa_tree_47...
+      Timing csa_tree_54...
+      Timing csa_tree_61...
+      Timing csa_tree_68...
+      Timing csa_tree_75...
+      Timing csa_tree_82...
+      Timing csa_tree_89...
+      Timing csa_tree_96...
+      Timing add_signed...
+      Timing csa_tree_101...
+      Timing csa_tree_108...
+      Timing csa_tree_115...
+      Timing csa_tree_122...
+      Timing csa_tree_129...
+      Timing csa_tree_136...
+      Timing csa_tree_143...
+      Timing csa_tree_150...
+      Timing csa_tree_157...
+      Timing csa_tree_164...
+      Timing csa_tree_171...
+      Timing csa_tree_178...
+      Timing csa_tree_185...
+      Timing csa_tree_192...
+      Timing csa_tree_199...
+      Timing csa_tree_206...
+      Timing csa_tree_213...
+      Timing csa_tree_1244...
+      Timing add_signed_carry...
+      Timing csa_tree_3965...
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I1, csa_tree_minus_21_56_I1)
+
+      Timing csa_tree_4035...
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I2, csa_tree_minus_21_56_I2)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I3, csa_tree_minus_21_56_I3)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I4, csa_tree_minus_21_56_I4)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I5, csa_tree_minus_21_56_I5)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I6, csa_tree_minus_21_56_I6)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I7, csa_tree_minus_21_56_I7)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I8, csa_tree_minus_21_56_I8)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I9, csa_tree_minus_21_56_I9)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I10, csa_tree_minus_21_56_I10)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I11, csa_tree_minus_21_56_I11)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I12, csa_tree_minus_21_56_I12)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I13, csa_tree_minus_21_56_I13)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I14, csa_tree_minus_21_56_I14)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I15, csa_tree_minus_21_56_I15)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in booth_radix4_multiplier_32':
+	  (csa_tree_minus_22_55_I16, csa_tree_minus_21_56_I16)
+
+      Timing csa_tree_4179...
+      Timing sub_unsigned_5068...
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I2, minus_21_56_I2)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I3, minus_21_56_I3)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I4, minus_21_56_I4)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I5, minus_21_56_I5)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I6, minus_21_56_I6)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I7, minus_21_56_I7)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I8, minus_21_56_I8)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I9, minus_21_56_I9)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I10, minus_21_56_I10)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I11, minus_21_56_I11)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I12, minus_21_56_I12)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I13, minus_21_56_I13)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I14, minus_21_56_I14)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I15, minus_21_56_I15)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in booth_radix4_multiplier_32':
+	  (minus_22_55_I16, minus_21_56_I16)
+
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 3 for module 'CDN_DP_region'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Done optimizing datapath logic. [DPOPT-2]
+        : Done optimizing datapath logic in 'booth_radix4_multiplier_32'.
+      Removing temporary intermediate hierarchies under booth_radix4_multiplier_32
+              Optimizing muxes in design 'booth_radix4_multiplier_32'.
+Mapper: Libraries have:
+	domain _default_: 324 combo usable cells and 128 sequential usable cells
+      Mapping 'booth_radix4_multiplier_32'...
+        Preparing the circuit
+          Pruning unused logic
+Multi-threaded constant propagation [1|0] ...
+Inserting clock-gating logic .....
+Clock Gating Status
+===================
+Category                                Number    Percentage
+------------------------------------------------------------------
+Gated flip-flops                        0		  0%
+Ungated flip-flops
+  Cannot map to requested logic         0		  0%
+  Enable signal is constant             0		  0%
+  Excluded from clock-gating            0		  0%
+  User preserved                        0		  0%
+  Libcell unusable                      0		  0%
+  Timing exception in enable logic      0		  0%
+  Register bank width too small         0		  0%
+Total flip-flops                        0		100%
+Total CG Modules                        0
+    Automatically cost grouped 0 clock gate paths.
+        Rebuilding component 'csa_tree_add_25_29_I16_group_234' based on context...
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) booth_radix4_multiplier_32...
+          Done structuring (delay-based) booth_radix4_multiplier_32
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 64 CPUs usable)
+          Structuring (delay-based) mux_ctl_0x...
+            Starting partial collapsing  mux_ctl_0x
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) mux_ctl_0x
+        Mapping component mux_ctl_0x...
+          Structuring (delay-based) csa_tree_3776...
+            Starting partial collapsing (xors only) csa_tree_3776
+            Finished partial collapsing.
+            Starting xor partial collapsing csa_tree_3776
+            Finished xor partial collapsing.
+            Starting partial collapsing  csa_tree_3776
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) csa_tree_3776
+        Mapping component csa_tree_3776...
+        Rebalancing component 'final_adder_add_25_29_I16'...
+          Structuring (delay-based) add_signed_carry_4258...
+          Done structuring (delay-based) add_signed_carry_4258
+        Mapping component add_signed_carry_4258...
+ 
+Global mapping target info
+==========================
+Cost Group 'I2O' target slack:    20 ps
+Target path end-point (Port: booth_radix4_multiplier_32/P[49])
+
+           Pin                        Type          Fanout Load Arrival   
+                                                           (fF)   (ps)    
+--------------------------------------------------------------------------
+(clock VCLK)                <<<  launch                               0 R 
+(counter.sdc_line_11_52_1)       ext delay                                
+B[11]                       (u)  in port                10 10.0           
+mux_ctl_0xi/B[11] 
+  g16817/in_1                                                             
+  g16817/z                  (u)  unmapped_or2            2  2.0           
+  g24410/in_0                                                             
+  g24410/z                  (u)  unmapped_complex2      32 32.0           
+  g23372/in_0                                                             
+  g23372/z                  (u)  unmapped_or2            1  1.0           
+  g22093/in_1                                                             
+  g22093/z                  (u)  unmapped_nand2          1  1.1           
+  g21792/in_1                                                             
+  g21792/z                  (u)  unmapped_complex2       1  1.1           
+  g21298/in_1                                                             
+  g21298/z                  (u)  unmapped_complex2       4  4.4           
+mux_ctl_0xi/csa_tree_add_25_29_I16_groupi_in_18[19] 
+csa_tree_add_25_29_I16_groupi/in_18[31] 
+  csa_tree_add_25_29_I16/in_18[31] 
+    g5246/in_1                                                            
+    g5246/z                 (u)  unmapped_or2            1  1.1           
+    g10368/in_0                                                           
+    g10368/z                (u)  unmapped_nand2          1  1.0           
+    g10102/in_0                                                           
+    g10102/z                (u)  unmapped_nand2          4  4.4           
+    g9759/in_1                                                            
+    g9759/z                 (u)  unmapped_complex2       1  1.0           
+    g9760/in_1                                                            
+    g9760/z                 (u)  unmapped_nand2          2  2.2           
+    g9136/in_0                                                            
+    g9136/z                 (u)  unmapped_complex2       1  1.1           
+    g9137/in_1                                                            
+    g9137/z                 (u)  unmapped_nand2          4  4.0           
+    g8904/in_1                                                            
+    g8904/z                 (u)  unmapped_complex2       1  1.1           
+    g8905/in_1                                                            
+    g8905/z                 (u)  unmapped_nand2          2  2.0           
+    g8526/in_0                                                            
+    g8526/z                 (u)  unmapped_complex2       1  1.0           
+    g8527/in_1                                                            
+    g8527/z                 (u)  unmapped_nand2          4  4.4           
+    g5260/in_1                                                            
+    g5260/z                 (u)  unmapped_or2            1  1.1           
+    g8013/in_0                                                            
+    g8013/z                 (u)  unmapped_nand2          1  1.0           
+    g7911/in_0                                                            
+    g7911/z                 (u)  unmapped_nand2          4  4.4           
+    g7637/in_1                                                            
+    g7637/z                 (u)  unmapped_complex2       1  1.0           
+    g7638/in_1                                                            
+    g7638/z                 (u)  unmapped_nand2          4  4.4           
+    g7611/in_1                                                            
+    g7611/z                 (u)  unmapped_complex2       1  1.0           
+    g7612/in_1                                                            
+    g7612/z                 (u)  unmapped_nand2          2  2.2           
+    g7583/in_0                                                            
+    g7583/z                 (u)  unmapped_complex2       1  1.1           
+    g7584/in_1                                                            
+    g7584/z                 (u)  unmapped_nand2          2  2.0           
+  csa_tree_add_25_29_I16/out_1[33] 
+  final_adder_add_25_29_I16/B[33] 
+    g2154/in_1                                                            
+    g2154/z                 (u)  unmapped_or2            3  3.0           
+    g2123/in_1                                                            
+    g2123/z                 (u)  unmapped_complex2       1  1.1           
+    g2026/in_1                                                            
+    g2026/z                 (u)  unmapped_nand2          3  3.0           
+    g1955/in_1                                                            
+    g1955/z                 (u)  unmapped_complex2       1  1.1           
+    g1895/in_1                                                            
+    g1895/z                 (u)  unmapped_complex2       5  5.0           
+    g1825/in_1                                                            
+    g1825/z                 (u)  unmapped_complex2       1  1.1           
+    g1797/in_0                                                            
+    g1797/z                 (u)  unmapped_complex2       9  9.0           
+    g1768/in_1                                                            
+    g1768/z                 (u)  unmapped_complex2       1  1.1           
+    g1736/in_1                                                            
+    g1736/z                 (u)  unmapped_complex2      16 16.0           
+    g1706/in_1                                                            
+    g1706/z                 (u)  unmapped_nand2          1  1.1           
+    g1680/in_1                                                            
+    g1680/z                 (u)  unmapped_nand2          1  1.0           
+    g1548/in_0                                                            
+    g1548/z                 (u)  unmapped_complex2       2  2.0           
+    g1495/in_0                                                            
+    g1495/z                 (u)  unmapped_or2            1  1.0           
+    g1496/in_1                                                            
+    g1496/z                 (u)  unmapped_nand2          1  0.0           
+  final_adder_add_25_29_I16/Z[49] 
+csa_tree_add_25_29_I16_groupi/out_0[49] 
+P[49]                       <<<  interconnect                             
+                                 out port                                 
+(counter.sdc_line_14_203_1)      ext delay                                
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock VCLK)                     capture                           1333 R 
+--------------------------------------------------------------------------
+Cost Group   : 'I2O' (path_group 'I2O')
+Start-point  : B[11]
+End-point    : P[49]
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 140ps.
+ 
+          Performing post-condense optimization ...
+
+PBS_Generic_Opt-Post - Elapsed_Time 140, CPU_Time 129.299225
+stamp 'PBS_Generic_Opt-Post' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) | 100.0(100.0) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+        Applying wireload models.
+        Computing net loads.
+PBS_Generic-Postgen HBO Optimizations - Elapsed_Time 1, CPU_Time 0.0
+stamp 'PBS_Generic-Postgen HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) | 100.0( 99.3) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.7) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Generic-Logical) ===================
+##>Main Thread Summary:
+##>----------------------------------------------------------------------------------------
+##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
+##>----------------------------------------------------------------------------------------
+##>G:Initial                            1         -         -     28506     83714       263
+##>G:Setup                              0         -         -         -         -         -
+##>G:Launch ST                          0         -         -         -         -         -
+##>G:Design Partition                   0         -         -         -         -         -
+##>G:Create Partition Netlists          0         -         -         -         -         -
+##>G:Init Power                         0         -         -         -         -         -
+##>G:Budgeting                          0         -         -         -         -         -
+##>G:Derenv-DB                          0         -         -         -         -         -
+##>G:Debug Outputs                      0         -         -         -         -         -
+##>G:ST loading                         0         -         -         -         -         -
+##>G:Distributed                        0         -         -         -         -         -
+##>G:Timer                              0         -         -         -         -         -
+##>G:Assembly                           0         -         -         -         -         -
+##>G:DFT                                0         -         -         -         -         -
+##>G:Const Prop                         1         -         -      9144     24364       299
+##>G:Misc                             140
+##>----------------------------------------------------------------------------------------
+##>Total Elapsed                      142
+##>========================================================================================
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'booth_radix4_multiplier_32' to generic gates.
+        Applying wireload models.
+        Computing net loads.
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           139            144                                      syn_generic
+@file(test00.tcl) 131: puts "Runtime & Memory after 'syn_generic'"
+Runtime & Memory after 'syn_generic'
+@file(test00.tcl) 132: time_info GENERIC
+stamp 'GENERIC' being created for table 'default'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:08(00:00:00) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:30 (Feb20) |  123.3 MB | init
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:18(00:00:26) |  00:00:10(00:00:26) |   7.0( 15.3) |    5:55:56 (Feb20) |  230.8 MB | Elaboration
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:30(00:02:50) |  00:02:12(00:02:24) |  93.0( 84.7) |    5:58:20 (Feb20) |  299.8 MB | GENERIC
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: default, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+@file(test00.tcl) 133: report_dp > $_REPORTS_PATH/generic/${DESIGN}_datapath.rpt
+Beginning report datapath command
+Warning : The filename, column and line number information will not be available in the report. [RPT_DP-100]
+        : The attribute for getting HDL filename and line number is not set.
+        : You must set the 'hdl_track_filename_row_col' attribute to 'true' (before elaborate) to enable filename, column, and line number tracking in the datapath report.
+@file(test00.tcl) 134: write_snapshot -outdir $_REPORTS_PATH -tag generic
+        Computing arrivals and requireds.
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+================================================================================
+Metric                          generic        
+================================================================================
+Slack (ps):                      -106
+  R2R (ps):                  no_value
+  I2R (ps):                  no_value
+  R2O (ps):                  no_value
+  I2O (ps):                      -106
+  CG  (ps):                  no_value
+TNS (ps):                       2,396
+  R2R (ps):                  no_value
+  I2R (ps):                  no_value
+  R2O (ps):                  no_value
+  I2O (ps):                     2,396
+  CG  (ps):                  no_value
+Failing Paths:                     32
+Cell Area:                     24,364
+Total Cell Area:               24,364
+Leaf Instances:                 9,144
+Total Instances:                9,144
+Utilization (%):                 0.00
+Tot. Net Length (um):        no_value
+Avg. Net Length (um):        no_value
+Route Overflow H (%):        no_value
+Route Overflow V (%):        no_value
+MBCI(%) (bits/gate) :            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value
+  Tot Cong:                  no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:02:30
+Real Runtime (h:m:s):        00:02:50
+CPU  Elapsed (h:m:s):        00:02:38
+Real Elapsed (h:m:s):        00:02:53
+Memory (MB):                   883.45
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:02:50
+Total Memory (MB):     883.45
+Executable Version:    17.22-s017_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Warning : Did not find power models for RTL power analysis. [PA-17]
+        : Design design:booth_radix4_multiplier_32 has no power models available.
+        : The RTL power analysis results are more accurate when detailed power models are used. Use command 'build_rtl_power_models' to build detailed power models.
+Finished exporting design database to file 'reports_Feb20-05:55:49/generic_booth_radix4_multiplier_32.db' for 'booth_radix4_multiplier_32' (command execution time mm:ss cpu = 00:00, real = 00:01).
+Finished generating snapshot at stage generic (command execution time mm:ss cpu = 00:00, real = 00:04).
+@file(test00.tcl) 135: report_summary -directory $_REPORTS_PATH
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+================================================================================
+Metric                          generic        
+================================================================================
+Slack (ps):                      -106
+  R2R (ps):                  no_value
+  I2R (ps):                  no_value
+  R2O (ps):                  no_value
+  I2O (ps):                      -106
+  CG  (ps):                  no_value
+TNS (ps):                       2,396
+  R2R (ps):                  no_value
+  I2R (ps):                  no_value
+  R2O (ps):                  no_value
+  I2O (ps):                     2,396
+  CG  (ps):                  no_value
+Failing Paths:                     32
+Cell Area:                     24,364
+Total Cell Area:               24,364
+Leaf Instances:                 9,144
+Total Instances:                9,144
+Utilization (%):                 0.00
+Tot. Net Length (um):        no_value
+Avg. Net Length (um):        no_value
+Route Overflow H (%):        no_value
+Route Overflow V (%):        no_value
+MBCI(%) (bits/gate) :            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value
+  Tot Cong:                  no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:02:30
+Real Runtime (h:m:s):        00:02:50
+CPU  Elapsed (h:m:s):        00:02:38
+Real Elapsed (h:m:s):        00:02:53
+Memory (MB):                   883.45
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:02:54
+Total Memory (MB):     883.45
+Executable Version:    17.22-s017_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+@file(test00.tcl) 146: set_db / .syn_map_effort $MAP_OPT_EFF
+  Setting attribute of root '/': 'syn_map_effort' = high
+@file(test00.tcl) 147: syn_map
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'booth_radix4_multiplier_32' using 'high' effort.
+Mapper: Libraries have:
+	domain _default_: 324 combo usable cells and 128 sequential usable cells
+PBS_TechMap-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  98.5( 95.9) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.7) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.5(  3.4) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+        Applying wireload models.
+        Computing net loads.
+PBS_TechMap-Premap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Premap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  98.5( 95.3) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.7) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.5(  3.4) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:55) |  00:00:00(00:00:01) |   0.0(  0.7) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed mapping optimization to kick in.
+Mapper: Libraries have:
+	domain _default_: 324 combo usable cells and 128 sequential usable cells
+      Mapping 'booth_radix4_multiplier_32'...
+        Preparing the circuit
+          Pruning unused logic
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) booth_radix4_multiplier_32...
+          Done structuring (delay-based) booth_radix4_multiplier_32
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 64 CPUs usable)
+          Structuring (delay-based) mux_ctl_0x...
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) mux_ctl_0x
+        Mapping component mux_ctl_0x...
+          Structuring (delay-based) csa_tree_add_25_29_I16_group_234...
+          Done structuring (delay-based) csa_tree_add_25_29_I16_group_234
+        Mapping component csa_tree_add_25_29_I16_group_234...
+ 
+Global mapping target info
+==========================
+Cost Group 'I2O' target slack:    20 ps
+Target path end-point (Port: booth_radix4_multiplier_32/P[52])
+
+           Pin                        Type          Fanout Load Arrival   
+                                                           (fF)   (ps)    
+--------------------------------------------------------------------------
+(clock VCLK)                <<<  launch                               0 R 
+(counter.sdc_line_11_44_1)       ext delay                                
+B[19]                       (u)  in port                12 13.2           
+mux_ctl_0xi/B[19] 
+  g36821/in_1                                                             
+  g36821/z                  (u)  unmapped_complex2       1  1.0           
+  g36822/in_1                                                             
+  g36822/z                  (u)  unmapped_nand2          2  2.2           
+  g24501/in_0                                                             
+  g24501/z                  (u)  unmapped_complex2      32 32.0           
+  g35546/in_0                                                             
+  g35546/z                  (u)  unmapped_complex2       1  1.0           
+  g34034/in_0                                                             
+  g34034/z                  (u)  unmapped_complex2       1  1.1           
+  g33538/in_1                                                             
+  g33538/z                  (u)  unmapped_complex2       4  4.4           
+mux_ctl_0xi/csa_tree_add_25_29_I16_groupi_in_10[13] 
+csa_tree_add_25_29_I16_groupi/in_10[33] 
+  g11213/in_1                                                             
+  g11213/z                  (u)  unmapped_complex2       1  1.1           
+  g11214/in_1                                                             
+  g11214/z                  (u)  unmapped_nand2          2  2.0           
+  g10446/in_0                                                             
+  g10446/z                  (u)  unmapped_complex2       1  1.1           
+  g10447/in_1                                                             
+  g10447/z                  (u)  unmapped_nand2          4  4.0           
+  g10040/in_1                                                             
+  g10040/z                  (u)  unmapped_complex2       1  1.1           
+  g10041/in_1                                                             
+  g10041/z                  (u)  unmapped_nand2          2  2.0           
+  g9427/in_0                                                              
+  g9427/z                   (u)  unmapped_complex2       1  1.0           
+  g9428/in_1                                                              
+  g9428/z                   (u)  unmapped_nand2          4  4.4           
+  g8988/in_1                                                              
+  g8988/z                   (u)  unmapped_complex2       1  1.0           
+  g8989/in_1                                                              
+  g8989/z                   (u)  unmapped_nand2          2  2.2           
+  g8120/in_1                                                              
+  g8120/z                   (u)  unmapped_complex2       1  1.1           
+  g8121/in_1                                                              
+  g8121/z                   (u)  unmapped_nand2          4  4.0           
+  g7708/in_1                                                              
+  g7708/z                   (u)  unmapped_complex2       1  1.1           
+  g7709/in_1                                                              
+  g7709/z                   (u)  unmapped_nand2          2  2.0           
+  g7637/in_0                                                              
+  g7637/z                   (u)  unmapped_complex2       1  1.0           
+  g7638/in_1                                                              
+  g7638/z                   (u)  unmapped_nand2          4  4.4           
+  g7611/in_0                                                              
+  g7611/z                   (u)  unmapped_complex2       1  1.0           
+  g7612/in_1                                                              
+  g7612/z                   (u)  unmapped_nand2          2  2.2           
+  g7583/in_0                                                              
+  g7583/z                   (u)  unmapped_complex2       1  1.1           
+  g7584/in_1                                                              
+  g7584/z                   (u)  unmapped_nand2          2  2.0           
+  g2154/in_1                                                              
+  g2154/z                   (u)  unmapped_or2            3  3.0           
+  g2123/in_1                                                              
+  g2123/z                   (u)  unmapped_complex2       1  1.1           
+  g2026/in_1                                                              
+  g2026/z                   (u)  unmapped_nand2          3  3.0           
+  g1955/in_0                                                              
+  g1955/z                   (u)  unmapped_complex2       1  1.1           
+  g1895/in_0                                                              
+  g1895/z                   (u)  unmapped_complex2       5  5.0           
+  g1825/in_0                                                              
+  g1825/z                   (u)  unmapped_complex2       1  1.1           
+  g1797/in_0                                                              
+  g1797/z                   (u)  unmapped_complex2       9  9.0           
+  g1768/in_0                                                              
+  g1768/z                   (u)  unmapped_complex2       1  1.1           
+  g1736/in_0                                                              
+  g1736/z                   (u)  unmapped_complex2      16 16.0           
+  g1721/in_0                                                              
+  g1721/z                   (u)  unmapped_complex2       1  1.1           
+  g11830/in_0                                                             
+  g11830/z                  (u)  unmapped_complex2       2  2.0           
+  g1513/in_0                                                              
+  g1513/z                   (u)  unmapped_or2            1  1.0           
+  g1514/in_1                                                              
+  g1514/z                   (u)  unmapped_nand2          1  0.0           
+csa_tree_add_25_29_I16_groupi/out_0[52] 
+P[52]                       <<<  interconnect                             
+                                 out port                                 
+(counter.sdc_line_14_200_1)      ext delay                                
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock VCLK)                     capture                           1333 R 
+--------------------------------------------------------------------------
+Cost Group   : 'I2O' (path_group 'I2O')
+Start-point  : B[19]
+End-point    : P[52]
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 149ps.
+ 
+Multi-threaded Technology Mapping (8 threads per ST process, 8 of 64 CPUs usable)
+          Restructuring (delay-based) csa_tree_add_25_29_I16_group_234...
+          Done restructuring (delay-based) csa_tree_add_25_29_I16_group_234
+        Optimizing component csa_tree_add_25_29_I16_group_234...
+        Early Area Reclamation for csa_tree_add_25_29_I16_group_234 'very_fast' (slack=-47, area=3520)...
+          Restructuring (delay-based) csa_tree_add_25_29_I16_group...
+          Done restructuring (delay-based) csa_tree_add_25_29_I16_group
+        Optimizing component csa_tree_add_25_29_I16_group...
+          Restructuring (delay-based) csa_tree_add_25_29_I16_group...
+          Done restructuring (delay-based) csa_tree_add_25_29_I16_group
+        Optimizing component csa_tree_add_25_29_I16_group...
+        Pre-mapped Exploration for csa_tree_add_25_29_I16_group_234 'medium' (slack=-41, area=3552)...
+          Restructuring (delay-based) csa_tree_add_25_29_I16_group...
+          Done restructuring (delay-based) csa_tree_add_25_29_I16_group
+        Optimizing component csa_tree_add_25_29_I16_group...
+          Restructuring (delay-based) mux_ctl_0x...
+          Done restructuring (delay-based) mux_ctl_0x
+        Optimizing component mux_ctl_0x...
+ 
+Global mapping timing result
+============================
+        Applying wireload models.
+        Computing net loads.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+           Pin                      Type       Fanout Load Slew Delay Arrival   
+                                                      (fF) (ps)  (ps)   (ps)    
+--------------------------------------------------------------------------------
+(clock VCLK)                     launch                                     0 R 
+(counter.sdc_line_11_62_1)       ext delay                       +533     533 R 
+B[1]                             in port            8 14.2    0    +0     533 R 
+mux_ctl_0xi/B[1] 
+  g52387/A                                                         +0     533   
+  g52387/Y                       NOR2X2             2  1.2    8    +9     542 F 
+  g52362/A                                                         +0     542   
+  g52362/Y                       CLKINVX2           2  1.2    6    +8     550 R 
+  g52270/B                                                         +0     550   
+  g52270/Y                       NAND2X2            2  2.1   20   +17     567 F 
+  g52209/A                                                         +0     567   
+  g52209/Y                       CLKINVX3           1  3.7   13   +13     580 R 
+  g52140/B                                                         +0     580   
+  g52140/Y                       NAND2X8           33 13.2   32   +24     604 F 
+  g51174/A1                                                        +0     604   
+  g51174/Y                       OAI221X1           1  1.1   43   +35     640 R 
+mux_ctl_0xi/csa_tree_add_25_29_I16_groupi_in_30[8] 
+csa_tree_add_25_29_I16_groupi/in_30[10] 
+  cdnfadd_010_0/B                                                  +0     640   
+  cdnfadd_010_0/CO               ADDFX1             1  0.7   11   +48     688 R 
+  cdnfadd_011_2/CI                                                 +0     688   
+  cdnfadd_011_2/CO               ADDFX1             1  0.7   10   +38     726 R 
+  cdnfadd_012_3/CI                                                 +0     726   
+  cdnfadd_012_3/S                ADDFX1             1  0.7   12   +61     788 F 
+  cdnfadd_012_4/CI                                                 +0     788   
+  cdnfadd_012_4/S                ADDFX1             2  1.0   12   +64     852 R 
+  g3983/B                                                          +0     852   
+  g3983/Y                        NAND2X1            3  0.9   18   +17     868 F 
+  g3954/A0N                                                        +0     868   
+  g3954/Y                        AOI2BB1X1          2  0.7   11   +32     901 F 
+  g3937/A1N                                                        +0     901   
+  g3937/Y                        AOI2BB1XL          1  0.3    8   +23     924 F 
+  g3918/A0N                                                        +0     924   
+  g3918/Y                        AOI2BB1X1          1  0.8   12   +31     955 F 
+  g3911/B                                                          +0     955   
+  g3911/Y                        NAND2X2            4  1.7   13   +11     966 R 
+  g3832/A                                                          +0     966   
+  g3832/Y                        NAND2X1            2  0.5   14   +16     982 F 
+  g3794/A                                                          +0     982   
+  g3794/Y                        NOR4XL             1  0.3   36   +39    1021 R 
+  g3768/B                                                          +0    1021   
+  g3768/Y                        OR3XL              3  1.1   16   +27    1048 R 
+  g3647/A                                                          +0    1048   
+  g3647/Y                        NAND2XL            1  0.4   15   +17    1066 F 
+  g3641/C                                                          +0    1066   
+  g3641/Y                        NAND3BX1           4  1.4   18   +15    1080 R 
+  g3636/B                                                          +0    1080   
+  g3636/Y                        NAND2XL            1  0.4   16   +17    1097 F 
+  g3624/A                                                          +0    1097   
+  g3624/Y                        NAND2X1            3  1.1   14   +14    1112 R 
+  g3605/A1                                                         +0    1112   
+  g3605/Y                        AOI21XL            2  0.5   22   +21    1132 F 
+  g3584/A1N                                                        +0    1132   
+  g3584/Y                        AOI2BB1X1          2  0.6   12   +30    1163 F 
+  g3566/A1                                                         +0    1163   
+  g3566/Y                        OAI21X1            1  0.6   20   +18    1181 R 
+  g3560/S0                                                         +0    1181   
+  g3560/Y                        MXI2XL             1  0.0   14   +17    1198 R 
+csa_tree_add_25_29_I16_groupi/out_0[55] 
+P[55]                       <<<  interconnect                14    +0    1198 R 
+                                 out port                          +0    1198 R 
+(counter.sdc_line_14_197_1)      ext delay                       +133    1332 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock VCLK)                     capture                                 1333 R 
+--------------------------------------------------------------------------------
+Cost Group   : 'I2O' (path_group 'I2O')
+Timing slack :       1ps 
+Start-point  : B[1]
+End-point    : P[55]
+
+ 
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                 7063        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           I2O                20        1              1333 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'I2O' target slack:     1 ps
+Target path end-point (Port: booth_radix4_multiplier_32/P[62])
+
+           Pin                      Type       Fanout Load Arrival   
+                                                      (fF)   (ps)    
+---------------------------------------------------------------------
+(clock VCLK)                <<<  launch                          0 R 
+(counter.sdc_line_11_38_1)       ext delay                           
+B[25]                            in port            7  8.8           
+mux_ctl_0xi/B[25] 
+  g52426/A                                                           
+  g52426/Y                       NAND2X2            1  1.4           
+  g52407/A                                                           
+  g52407/Y                       CLKINVX3           3  2.9           
+  g52265/B                                                           
+  g52265/Y                       NOR2X4             2  5.1           
+  g52206/A                                                           
+  g52206/Y                       CLKINVX3           1  1.7           
+  g52131/B                                                           
+  g52131/Y                       NOR2X4             4  3.7           
+  g52081/A                                                           
+  g52081/Y                       CLKINVX6          29 11.6           
+  g51294/B1                                                          
+  g51294/Y                       OAI221X1           1  1.1           
+mux_ctl_0xi/csa_tree_add_25_29_I16_groupi_in_4[8] 
+csa_tree_add_25_29_I16_groupi/in_4[34] 
+  cdnfadd_034_3/B                                                    
+  cdnfadd_034_3/S                ADDFX1             1  0.7           
+  cdnfadd_034_7/CI                                                   
+  cdnfadd_034_7/CO               ADDFX1             1  0.7           
+  cdnfadd_035_8/CI                                                   
+  cdnfadd_035_8/S                ADDFXL             1  0.7           
+  cdnfadd_035_10/CI                                                  
+  cdnfadd_035_10/S               ADDFXL             1  0.7           
+  cdnfadd_035_11/CI                                                  
+  cdnfadd_035_11/S               ADDFXL             1  1.1           
+  cdnfadd_035_12/B                                                   
+  cdnfadd_035_12/S               ADDFX1             2  2.5           
+  g3709/B                                                            
+  g3709/Y                        NOR2X4             3  2.0           
+  g3665/A1                                                           
+  g3665/Y                        OAI21X1            1  0.4           
+  g3651/B0                                                           
+  g3651/Y                        AOI21X1            2  0.8           
+  g3639/A1                                                           
+  g3639/Y                        OAI21X1            2  0.5           
+  g3633/A1                                                           
+  g3633/Y                        AOI21XL            1  0.5           
+  g3624/B                                                            
+  g3624/Y                        NAND2X1            3  1.0           
+  g3623/A                                                            
+  g3623/Y                        CLKINVX1           2  1.0           
+  g3615/B                                                            
+  g3615/Y                        NOR2X1             1  0.8           
+  g3601/C                                                            
+  g3601/Y                        NOR3X2             3  1.4           
+  g3572/A1                                                           
+  g3572/Y                        OAI21X1            2  0.8           
+  g3564/S0                                                           
+  g3564/Y                        MXI2XL             1  0.0           
+csa_tree_add_25_29_I16_groupi/out_0[62] 
+P[62]                       <<<  interconnect                        
+                                 out port                            
+(counter.sdc_line_14_190_1)      ext delay                           
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock VCLK)                     capture                      1333 R 
+---------------------------------------------------------------------
+Cost Group   : 'I2O' (path_group 'I2O')
+Start-point  : B[25]
+End-point    : P[62]
+
+The global mapper estimates a slack for this path of 1ps.
+ 
+ 
+Global incremental timing result
+================================
+        Applying wireload models.
+        Computing net loads.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+           Pin                      Type       Fanout Load Slew Delay Arrival   
+                                                      (fF) (ps)  (ps)   (ps)    
+--------------------------------------------------------------------------------
+(clock VCLK)                     launch                                     0 R 
+(counter.sdc_line_11_46_1)       ext delay                       +533     533 F 
+B[17]                            in port            8  8.3    0    +0     533 F 
+mux_ctl_0xi/B[17] 
+  g52430/A                                                         +0     533   
+  g52430/Y                       NAND2X4            2  4.3   11   +10     544 R 
+  g52409/A                                                         +0     544   
+  g52409/Y                       INVX3              3  2.9   10   +11     554 F 
+  g2/C                                                             +0     554   
+  g2/Y                           OR3X6             20  7.9   23   +50     605 F 
+  g52091/A                                                         +0     605   
+  g52091/Y                       BUFX2             13  5.2   22   +33     638 F 
+  g51485/A1                                                        +0     638   
+  g51485/Y                       OAI22X1            1  1.1   38   +28     666 R 
+mux_ctl_0xi/csa_tree_add_25_29_I16_groupi_in_12[0] 
+csa_tree_add_25_29_I16_groupi/in_12[18] 
+  cdnfadd_018_1/A                                                  +0     666   
+  cdnfadd_018_1/CO               ADDFX1             1  1.1   13   +48     714 R 
+  cdnfadd_019_4/B                                                  +0     714   
+  cdnfadd_019_4/CO               ADDFX1             1  1.1   13   +43     757 R 
+  cdnfadd_020_6/B                                                  +0     757   
+  cdnfadd_020_6/S                ADDFXL             1  0.7   12   +58     816 F 
+  cdnfadd_020_7/CI                                                 +0     816   
+  cdnfadd_020_7/S                ADDFX1             1  1.1   13   +64     880 R 
+  cdnfadd_020_8/B                                                  +0     880   
+  cdnfadd_020_8/S                ADDFX1             2  1.2   15   +67     947 F 
+  g3889/B                                                          +0     947   
+  g3889/Y                        NAND2X1            3  1.1   14   +13     960 R 
+  g3843/A1                                                         +0     960   
+  g3843/Y                        OAI21X1            2  0.4   16   +17     977 F 
+  g3796/B                                                          +0     977   
+  g3796/Y                        NAND2XL            1  0.3    9   +12     988 R 
+  g3787/B                                                          +0     988   
+  g3787/Y                        NAND2XL            1  0.2   11   +11    1000 F 
+  g3768/C                                                          +0    1000   
+  g3768/Y                        OR3XL              3  1.0   14   +36    1036 F 
+  g3647/A                                                          +0    1036   
+  g3647/Y                        NAND2XL            1  0.5   12   +13    1049 R 
+  g3641/C                                                          +0    1049   
+  g3641/Y                        NAND3BX1           4  1.1   34   +26    1075 F 
+  g3635/B                                                          +0    1075   
+  g3635/Y                        NAND2XL            1  0.5   14   +18    1094 R 
+  g4144/B                                                          +0    1094   
+  g4144/Y                        NAND2BX1           3  1.5   26   +21    1115 F 
+  g3614/A1                                                         +0    1115   
+  g3614/Y                        AOI21X2            3  1.3   20   +21    1136 R 
+  g3595/A1                                                         +0    1136   
+  g3595/Y                        OAI21X1            2  0.8   22   +21    1157 F 
+  g3574/A1N                                                        +0    1157   
+  g3574/Y                        OAI2BB1XL          1  0.5   17   +24    1181 F 
+  g3562/S0                                                         +0    1181   
+  g3562/Y                        MXI2XL             1  0.0   13   +18    1199 F 
+csa_tree_add_25_29_I16_groupi/out_0[47] 
+P[47]                       <<<  interconnect                13    +0    1199 F 
+                                 out port                          +0    1199 F 
+(counter.sdc_line_14_205_1)      ext delay                       +133    1332 F 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock VCLK)                     capture                                 1333 R 
+--------------------------------------------------------------------------------
+Cost Group   : 'I2O' (path_group 'I2O')
+Timing slack :       1ps 
+Start-point  : B[17]
+End-point    : P[47]
+
+ 
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr                6183        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           I2O                 1        1              1333 
+
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+          Performing post-mapping optimization ...
+
+PBS_Techmap-Global Mapping - Elapsed_Time 53, CPU_Time 49.992659
+stamp 'PBS_Techmap-Global Mapping' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  71.3( 70.1) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.1(  2.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:55) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:21(00:03:48) |  00:00:49(00:00:53) |  27.6( 26.4) |    5:59:18 (Feb20) |  289.4 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Info    : Wrote formal verification information. [CFM-5]
+        : Wrote 'fv/booth_radix4_multiplier_32/fv_map.fv.json' for netlist 'fv/booth_radix4_multiplier_32/fv_map.v.gz'.
+Info    : Wrote dofile. [CFM-1]
+        : Dofile is 'fv/booth_radix4_multiplier_32/rtl_to_fv_map.do'.
+        Applying wireload models.
+        Computing net loads.
+PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 1, CPU_Time 1.0
+stamp 'PBS_TechMap-Datapath Postmap Operations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  70.9( 69.8) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.1(  2.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:55) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:21(00:03:48) |  00:00:49(00:00:53) |  27.4( 26.2) |    5:59:18 (Feb20) |  289.4 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:49) |  00:00:01(00:00:01) |   0.5(  0.5) |    5:59:19 (Feb20) |  289.4 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Postmap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  70.9( 69.5) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.1(  2.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:55) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:21(00:03:48) |  00:00:49(00:00:53) |  27.4( 26.1) |    5:59:18 (Feb20) |  289.4 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:49) |  00:00:01(00:00:01) |   0.5(  0.5) |    5:59:19 (Feb20) |  289.4 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:50) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+ Doing ConstProp on design:booth_radix4_multiplier_32 ... 
+
+    Automatically cost grouped 0 clock gate paths.
+  Decloning clock-gating logic from design:booth_radix4_multiplier_32
+Info    : Could not declone clock-gating instances. [POPT-51]
+        : There are no clock-gating instances in the design 'design:booth_radix4_multiplier_32'.
+        : The design should have 2 or more clock-gating instances for decloning.
+Clock-gating declone status
+===========================
+Total number of clock-gating instances before: 0
+Total number of clock-gating instances after : 0
+PBS_TechMap-Postmap Clock Gating - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Postmap Clock Gating' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  70.9( 69.5) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.1(  2.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:55) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:21(00:03:48) |  00:00:49(00:00:53) |  27.4( 26.1) |    5:59:18 (Feb20) |  289.4 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:49) |  00:00:01(00:00:01) |   0.5(  0.5) |    5:59:19 (Feb20) |  289.4 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:50) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:50) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+ hi_fo_buf                  6183        0         0         0        0        2
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       hi_fo_buf         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_delay                 6183        0         0         0        0        2
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+
+ 
+Local TNS optimization status
+=============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_tns                   6183        0         0         0        0        2
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+
+PBS_TechMap-Postmap Cleanup - Elapsed_Time 0, CPU_Time 1.0
+stamp 'PBS_TechMap-Postmap Cleanup' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  70.5( 69.5) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.1(  2.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:55) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:21(00:03:48) |  00:00:49(00:00:53) |  27.3( 26.1) |    5:59:18 (Feb20) |  289.4 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:49) |  00:00:01(00:00:01) |   0.5(  0.5) |    5:59:19 (Feb20) |  289.4 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:50) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:50) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:23(00:03:50) |  00:00:01(00:00:00) |   0.5(  0.0) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_Techmap-Post_MBCI - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Techmap-Post_MBCI' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:20(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:58 (Feb20) |  263.5 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:48) |  00:02:09(00:02:21) |  70.5( 69.5) |    5:58:18 (Feb20) |  299.8 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:29(00:02:49) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:19 (Feb20) |  299.8 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:54) |  00:00:02(00:00:05) |   1.1(  2.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:31(00:02:55) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:58:25 (Feb20) |  286.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:21(00:03:48) |  00:00:49(00:00:53) |  27.3( 26.1) |    5:59:18 (Feb20) |  289.4 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:49) |  00:00:01(00:00:01) |   0.5(  0.5) |    5:59:19 (Feb20) |  289.4 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:50) |  00:00:00(00:00:01) |   0.0(  0.5) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:22(00:03:50) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:23(00:03:50) |  00:00:01(00:00:00) |   0.5(  0.0) |    5:59:20 (Feb20) |  289.4 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:23(00:03:50) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:59:20 (Feb20) |  289.4 MB | PBS_Techmap-Post_MBCI
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Mapping-Logical) ===================
+##>Main Thread Summary:
+##>----------------------------------------------------------------------------------------
+##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
+##>----------------------------------------------------------------------------------------
+##>M:Initial                            1         -         -      9144     24364       286
+##>M:Pre Cleanup                        0         -         -      9144     24364       286
+##>M:Setup                              0         -         -         -         -         -
+##>M:Launch ST                          0         -         -         -         -         -
+##>M:Design Partition                   0         -         -         -         -         -
+##>M:Create Partition Netlists          0         -         -         -         -         -
+##>M:Init Power                         0         -         -         -         -         -
+##>M:Budgeting                          0         -         -         -         -         -
+##>M:Derenv-DB                          0         -         -         -         -         -
+##>M:Debug Outputs                      0         -         -         -         -         -
+##>M:ST loading                         0         -         -         -         -         -
+##>M:Distributed                        0         -         -         -         -         -
+##>M:Timer                              0         -         -         -         -         -
+##>M:Assembly                           0         -         -         -         -         -
+##>M:DFT                                0         -         -         -         -         -
+##>M:DP Operations                      1         -         -      2490      6182       289
+##>M:Const Prop                         0         1         0      2490      6182       289
+##>M:Cleanup                            0         1         0      2490      6182       289
+##>M:MBCI                               0         -         -      2490      6182       289
+##>M:Misc                              54
+##>----------------------------------------------------------------------------------------
+##>Total Elapsed                       56
+##>========================================================================================
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'booth_radix4_multiplier_32'.
+        Applying wireload models.
+        Computing net loads.
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:           105             61                                      syn_map
+@file(test00.tcl) 148: puts "Runtime & Memory after 'syn_map'"
+Runtime & Memory after 'syn_map'
+@file(test00.tcl) 149: time_info MAPPED
+stamp 'MAPPED' being created for table 'default'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:08(00:00:00) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:30 (Feb20) |  123.3 MB | init
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:18(00:00:26) |  00:00:10(00:00:26) |   5.1( 11.3) |    5:55:56 (Feb20) |  230.8 MB | Elaboration
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:30(00:02:50) |  00:02:12(00:02:24) |  67.7( 62.3) |    5:58:20 (Feb20) |  299.8 MB | GENERIC
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:23(00:03:51) |  00:00:52(00:01:01) |  27.1( 26.4) |    5:59:21 (Feb20) |  289.4 MB | MAPPED
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: default, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+@file(test00.tcl) 150: write_snapshot -outdir $_REPORTS_PATH -tag map
+        Computing arrivals and requireds.
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+================================================================================
+Metric                          generic         map            
+================================================================================
+Slack (ps):                      -106               1
+  R2R (ps):                  no_value        no_value
+  I2R (ps):                  no_value        no_value
+  R2O (ps):                  no_value        no_value
+  I2O (ps):                      -106               1
+  CG  (ps):                  no_value        no_value
+TNS (ps):                       2,396               0
+  R2R (ps):                  no_value        no_value
+  I2R (ps):                  no_value        no_value
+  R2O (ps):                  no_value        no_value
+  I2O (ps):                     2,396               0
+  CG  (ps):                  no_value        no_value
+Failing Paths:                     32               0
+Cell Area:                     24,364           6,183
+Total Cell Area:               24,364           6,183
+Leaf Instances:                 9,144           2,490
+Total Instances:                9,144           2,490
+Utilization (%):                 0.00            0.00
+Tot. Net Length (um):        no_value        no_value
+Avg. Net Length (um):        no_value        no_value
+Route Overflow H (%):        no_value        no_value
+Route Overflow V (%):        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value
+  Tot Cong:                  no_value        no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:02:30        00:01:44
+Real Runtime (h:m:s):        00:02:50        00:01:01
+CPU  Elapsed (h:m:s):        00:02:38        00:04:22
+Real Elapsed (h:m:s):        00:02:53        00:03:54
+Memory (MB):                   883.45          884.80
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:03:51
+Total Memory (MB):     884.80
+Executable Version:    17.22-s017_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Finished exporting design database to file 'reports_Feb20-05:55:49/map_booth_radix4_multiplier_32.db' for 'booth_radix4_multiplier_32' (command execution time mm:ss cpu = 00:00, real = 00:00).
+Finished generating snapshot at stage map (command execution time mm:ss cpu = 00:01, real = 00:03).
+@file(test00.tcl) 151: report_summary -directory $_REPORTS_PATH
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+================================================================================
+Metric                          generic         map            
+================================================================================
+Slack (ps):                      -106               1
+  R2R (ps):                  no_value        no_value
+  I2R (ps):                  no_value        no_value
+  R2O (ps):                  no_value        no_value
+  I2O (ps):                      -106               1
+  CG  (ps):                  no_value        no_value
+TNS (ps):                       2,396               0
+  R2R (ps):                  no_value        no_value
+  I2R (ps):                  no_value        no_value
+  R2O (ps):                  no_value        no_value
+  I2O (ps):                     2,396               0
+  CG  (ps):                  no_value        no_value
+Failing Paths:                     32               0
+Cell Area:                     24,364           6,183
+Total Cell Area:               24,364           6,183
+Leaf Instances:                 9,144           2,490
+Total Instances:                9,144           2,490
+Utilization (%):                 0.00            0.00
+Tot. Net Length (um):        no_value        no_value
+Avg. Net Length (um):        no_value        no_value
+Route Overflow H (%):        no_value        no_value
+Route Overflow V (%):        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value
+  Tot Cong:                  no_value        no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:02:30        00:01:44
+Real Runtime (h:m:s):        00:02:50        00:01:01
+CPU  Elapsed (h:m:s):        00:02:38        00:04:22
+Real Elapsed (h:m:s):        00:02:53        00:03:54
+Memory (MB):                   883.45          884.80
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:03:54
+Total Memory (MB):     881.80
+Executable Version:    17.22-s017_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+@file(test00.tcl) 152: report_dp > $_REPORTS_PATH/map/${DESIGN}_datapath.rpt
+Beginning report datapath command
+Warning : The filename, column and line number information will not be available in the report. [RPT_DP-100]
+        : The attribute for getting HDL filename and line number is not set.
+@file(test00.tcl) 155: foreach cg [vfind / -cost_group *] {
+  report_timing -group [list $cg] > $_REPORTS_PATH/${DESIGN}_[vbasename $cg]_post_map.rpt
+}
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+@file(test00.tcl) 160: write_do_lec -revised_design fv_map -logfile ${_LOG_PATH}/rtl2intermediate.lec.log > ${_OUTPUTS_PATH}/rtl2intermediate.lec.do
+Info    : Forcing flat compare. [CFM-212]
+        : No hierarchies found in design.
+Info    : Wrote dofile. [CFM-1]
+        : Dofile is 'outputs_Feb20-05:55:49/rtl2intermediate.lec.do'.
+@file(test00.tcl) 172: set_db / .syn_opt_effort $MAP_OPT_EFF
+  Setting attribute of root '/': 'syn_opt_effort' = high
+@file(test00.tcl) 173: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'booth_radix4_multiplier_32' using 'high' effort.
+    Automatically cost grouped 0 clock gate paths.
+  Decloning clock-gating logic from design:booth_radix4_multiplier_32
+Info    : Could not declone clock-gating instances. [POPT-51]
+        : There are no clock-gating instances in the design 'design:booth_radix4_multiplier_32'.
+Clock-gating declone status
+===========================
+Total number of clock-gating instances before: 0
+Total number of clock-gating instances after : 0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_iopt                  6183        0         0         0        0        2
+ const_prop                 6183        0         0         0        0        2
+ simp_cc_inputs             6183        0         0         0        0        2
+ hi_fo_buf                  6183        0         0         0        0        2
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       hi_fo_buf         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_delay                 6183        0         0         0        0        2
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+         crr_220         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_200         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_300         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_400         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_111         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_210         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_110         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_101         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_201         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_211         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+ init_drc                   6183        0         0         0        0        2
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ incr_max_fo                6204        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         2  (        0 /        0 )  0.00
+        plc_star         2  (        0 /        0 )  0.00
+      drc_buf_sp         4  (        0 /        2 )  0.04
+        drc_bufs         4  (        0 /        2 )  0.00
+        drc_fopt         2  (        2 /        2 )  0.04
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                   6204        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+            fopt         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+       crr_local         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+
+ init_area                  6204        0         0         0        0        0
+ rem_buf                    6176        0         0         0        0        0
+ rem_inv                    6119        0         0         0        0        0
+ merge_bi                   6090        0         0         0        0        0
+ merge_bi                   6089        0         0         0        0        0
+ io_phase                   6088        0         0         0        0        0
+ gate_comp                  6084        0         0         0        0        0
+ glob_area                  6062        0         0         0        0        0
+ area_down                  6052        0         0         0        0        0
+ rem_buf                    6050        0         0         0        0        0
+ rem_inv                    6048        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         3  (        0 /        0 )  0.03
+         rem_buf        23  (       16 /       16 )  0.07
+         rem_inv       133  (       46 /       46 )  0.39
+        merge_bi        88  (       44 /       44 )  0.27
+      rem_inv_qb         0  (        0 /        0 )  0.00
+    seq_res_area         0  (        0 /        0 )  0.00
+        io_phase        39  (        1 /        1 )  0.11
+       gate_comp        60  (       11 /       11 )  0.46
+       gcomp_mog         0  (        0 /        0 )  0.10
+       glob_area        33  (       12 /       33 )  0.43
+       area_down        89  (       19 /       19 )  1.60
+      size_n_buf         0  (        0 /        0 )  0.00
+  gate_deco_area         0  (        0 /        0 )  0.01
+         rem_buf         6  (        1 /        1 )  0.02
+         rem_inv        64  (        3 /        3 )  0.13
+        merge_bi        46  (        0 /        0 )  0.15
+      rem_inv_qb         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_delay                 6048        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+         crr_220         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_200         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_300         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_400         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_111         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_210         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_110         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_101         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_201         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+         crr_211         0  (        0 /        0 )  0.00
+        crr_glob         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+ init_drc                   6048        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                   6048        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+            fopt         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+       crr_local         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+
+ init_area                  6048        0         0         0        0        0
+ area_down                  6047        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         3  (        0 /        0 )  0.04
+         rem_buf         5  (        0 /        0 )  0.02
+         rem_inv        61  (        0 /        0 )  0.15
+        merge_bi        46  (        0 /        0 )  0.14
+      rem_inv_qb         0  (        0 /        0 )  0.00
+        io_phase        38  (        0 /        0 )  0.11
+       gate_comp        41  (        0 /        0 )  0.36
+       gcomp_mog         0  (        0 /        0 )  0.10
+       glob_area        33  (        0 /       33 )  0.46
+       area_down        88  (        3 /        3 )  1.62
+      size_n_buf         0  (        0 /        0 )  0.00
+  gate_deco_area         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - - - DRC Totals - - - -
+                           Total  Weighted      Neg      Max       Max     Max  
+Operation                   Area   Slacks      Slack    Trans      Cap   Fanout 
+-------------------------------------------------------------------------------
+ init_delay                 6047        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+        crit_msz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_swap         0  (        0 /        0 )  0.00
+       mux2_swap         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       load_swap         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+       load_isol         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+        move_for         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+          rem_bi         0  (        0 /        0 )  0.00
+         offload         0  (        0 /        0 )  0.00
+           phase         0  (        0 /        0 )  0.00
+        in_phase         0  (        0 /        0 )  0.00
+       merge_bit         0  (        0 /        0 )  0.00
+     merge_idrvr         0  (        0 /        0 )  0.00
+     merge_iload         0  (        0 /        0 )  0.00
+    merge_idload         0  (        0 /        0 )  0.00
+      merge_drvr         0  (        0 /        0 )  0.00
+      merge_load         0  (        0 /        0 )  0.00
+          decomp         0  (        0 /        0 )  0.00
+        p_decomp         0  (        0 /        0 )  0.00
+        levelize         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+      mux_retime         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+ init_drc                   6047        0         0         0        0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+       crit_slew         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+Info    : Done incrementally optimizing. [SYNTH-8]
+        : Done incrementally optimizing 'booth_radix4_multiplier_32'.
+        Applying wireload models.
+        Computing net loads.
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             9             12                                      syn_opt
+@file(test00.tcl) 174: write_snapshot -outdir $_REPORTS_PATH -tag syn_opt
+        Computing arrivals and requireds.
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+================================================================================
+Metric                          generic         map             syn_opt        
+================================================================================
+Slack (ps):                      -106               1               0
+  R2R (ps):                  no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                      -106               1               0
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                       2,396               0               0
+  R2R (ps):                  no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                     2,396               0               0
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                     32               0               0
+Cell Area:                     24,364           6,183           6,047
+Total Cell Area:               24,364           6,183           6,047
+Leaf Instances:                 9,144           2,490           2,384
+Total Instances:                9,144           2,490           2,384
+Utilization (%):                 0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:02:30        00:01:44        00:00:09
+Real Runtime (h:m:s):        00:02:50        00:01:01        00:00:12
+CPU  Elapsed (h:m:s):        00:02:38        00:04:22        00:04:31
+Real Elapsed (h:m:s):        00:02:53        00:03:54        00:04:06
+Memory (MB):                   883.45          884.80          881.80
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:04:04
+Total Memory (MB):     881.80
+Executable Version:    17.22-s017_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Finished exporting design database to file 'reports_Feb20-05:55:49/syn_opt_booth_radix4_multiplier_32.db' for 'booth_radix4_multiplier_32' (command execution time mm:ss cpu = 00:00, real = 00:00).
+Finished generating snapshot at stage syn_opt (command execution time mm:ss cpu = 00:00, real = 00:03).
+@file(test00.tcl) 175: report_summary -directory $_REPORTS_PATH
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+================================================================================
+Metric                          generic         map             syn_opt        
+================================================================================
+Slack (ps):                      -106               1               0
+  R2R (ps):                  no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                      -106               1               0
+  CG  (ps):                  no_value        no_value        no_value
+TNS (ps):                       2,396               0               0
+  R2R (ps):                  no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value
+  I2O (ps):                     2,396               0               0
+  CG  (ps):                  no_value        no_value        no_value
+Failing Paths:                     32               0               0
+Cell Area:                     24,364           6,183           6,047
+Total Cell Area:               24,364           6,183           6,047
+Leaf Instances:                 9,144           2,490           2,384
+Total Instances:                9,144           2,490           2,384
+Utilization (%):                 0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value
+================================================================================
+CPU  Runtime (h:m:s):        00:02:30        00:01:44        00:00:09
+Real Runtime (h:m:s):        00:02:50        00:01:01        00:00:12
+CPU  Elapsed (h:m:s):        00:02:38        00:04:22        00:04:31
+Real Elapsed (h:m:s):        00:02:53        00:03:54        00:04:06
+Memory (MB):                   883.45          884.80          881.80
+================================================================================
+================================================================================
+Flow Settings:
+================================================================================
+Total Runtime (h:m:s): 00:04:06
+Total Memory (MB):     881.80
+Executable Version:    17.22-s017_1
+================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+@file(test00.tcl) 177: puts "Runtime & Memory after 'syn_opt'"
+Runtime & Memory after 'syn_opt'
+@file(test00.tcl) 178: time_info OPT
+stamp 'OPT' being created for table 'default'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:08(00:00:00) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:30 (Feb20) |  123.3 MB | init
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:18(00:00:26) |  00:00:10(00:00:26) |   4.9( 10.6) |    5:55:56 (Feb20) |  230.8 MB | Elaboration
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:30(00:02:50) |  00:02:12(00:02:24) |  64.8( 58.5) |    5:58:20 (Feb20) |  299.8 MB | GENERIC
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:23(00:03:51) |  00:00:52(00:01:01) |  25.9( 24.8) |    5:59:21 (Feb20) |  289.4 MB | MAPPED
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:32(00:04:06) |  00:00:09(00:00:15) |   4.4(  6.1) |    5:59:36 (Feb20) |  280.3 MB | OPT
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: default, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+@file(test00.tcl) 180: foreach cg [vfind / -cost_group *] {
+  report_timing -group [list $cg] > $_REPORTS_PATH/${DESIGN}_[vbasename $cg]_post_opt.rpt
+}
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+@file(test00.tcl) 192: report_dp > $_REPORTS_PATH/${DESIGN}_datapath_incr.rpt
+Beginning report datapath command
+Warning : The filename, column and line number information will not be available in the report. [RPT_DP-100]
+        : The attribute for getting HDL filename and line number is not set.
+@file(test00.tcl) 193: report_messages > $_REPORTS_PATH/${DESIGN}_messages.rpt
+@file(test00.tcl) 194: write_snapshot -outdir $_REPORTS_PATH -tag final
+        Computing arrivals and requireds.
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+==========================================================================================
+Metric                          generic         map             syn_opt         final          
+==========================================================================================
+Slack (ps):                      -106               1               0               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                      -106               1               0               0
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                       2,396               0               0               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                     2,396               0               0               0
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                     32               0               0               0
+Cell Area:                     24,364           6,183           6,047           6,047
+Total Cell Area:               24,364           6,183           6,047           6,047
+Leaf Instances:                 9,144           2,490           2,384           2,384
+Total Instances:                9,144           2,490           2,384           2,384
+Utilization (%):                 0.00            0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value        no_value
+==========================================================================================
+CPU  Runtime (h:m:s):        00:02:30        00:01:44        00:00:09        00:00:01
+Real Runtime (h:m:s):        00:02:50        00:01:01        00:00:12        00:00:04
+CPU  Elapsed (h:m:s):        00:02:38        00:04:22        00:04:31        00:04:32
+Real Elapsed (h:m:s):        00:02:53        00:03:54        00:04:06        00:04:10
+Memory (MB):                   883.45          884.80          881.80          881.80
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:04:07
+Total Memory (MB):     881.80
+Executable Version:    17.22-s017_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+Warning : Possible timing problems have been detected in this design. [TIM-11]
+        : The design is 'booth_radix4_multiplier_32'.
+Finished exporting design database to file 'reports_Feb20-05:55:49/final_booth_radix4_multiplier_32.db' for 'booth_radix4_multiplier_32' (command execution time mm:ss cpu = 00:00, real = 00:00).
+Finished generating snapshot at stage final (command execution time mm:ss cpu = 00:00, real = 00:02).
+@file(test00.tcl) 195: report_summary -directory $_REPORTS_PATH
+
+
+Working Directory = /home/vv2trainee19/Desktop/Ananya/multi_1/work
+QoS Summary for booth_radix4_multiplier_32
+==========================================================================================
+Metric                          generic         map             syn_opt         final          
+==========================================================================================
+Slack (ps):                      -106               1               0               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                      -106               1               0               0
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                       2,396               0               0               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                     2,396               0               0               0
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                     32               0               0               0
+Cell Area:                     24,364           6,183           6,047           6,047
+Total Cell Area:               24,364           6,183           6,047           6,047
+Leaf Instances:                 9,144           2,490           2,384           2,384
+Total Instances:                9,144           2,490           2,384           2,384
+Utilization (%):                 0.00            0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value        no_value
+==========================================================================================
+CPU  Runtime (h:m:s):        00:02:30        00:01:44        00:00:09        00:00:01
+Real Runtime (h:m:s):        00:02:50        00:01:01        00:00:12        00:00:04
+CPU  Elapsed (h:m:s):        00:02:38        00:04:22        00:04:31        00:04:32
+Real Elapsed (h:m:s):        00:02:53        00:03:54        00:04:06        00:04:10
+Memory (MB):                   883.45          884.80          881.80          881.80
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:04:09
+Total Memory (MB):     881.80
+Executable Version:    17.22-s017_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+
+
+@file(test00.tcl) 198: write_sdc > ${_OUTPUTS_PATH}/${DESIGN}_m.sdc
+Finished SDC export (command execution time mm:ss (real) = 00:01).
+@file(test00.tcl) 206: write_do_lec -golden_design fv_map -revised_design ${_OUTPUTS_PATH}/${DESIGN}_m.v -logfile  ${_LOG_PATH}/intermediate2final.lec.log > ${_OUTPUTS_PATH}/intermediate2final.lec.do
+Info    : Forcing flat compare. [CFM-212]
+        : No hierarchies found in design.
+Info    : Wrote formal verification information. [CFM-5]
+        : Wrote 'fv/booth_radix4_multiplier_32/booth_radix4_multiplier_32_mv.fv.json' for netlist 'outputs_Feb20-05:55:49/booth_radix4_multiplier_32_m.v'.
+Info    : Wrote dofile. [CFM-1]
+        : Dofile is 'outputs_Feb20-05:55:49/intermediate2final.lec.do'.
+@file(test00.tcl) 210: puts "Final Runtime & Memory."
+Final Runtime & Memory.
+@file(test00.tcl) 211: time_info FINAL
+stamp 'FINAL' being created for table 'default'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:08(00:00:00) |  00:00:00(00:00:00) |   0.0(  0.0) |    5:55:30 (Feb20) |  123.3 MB | init
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:18(00:00:26) |  00:00:10(00:00:26) |   4.9( 10.4) |    5:55:56 (Feb20) |  230.8 MB | Elaboration
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:30(00:02:50) |  00:02:12(00:02:24) |  64.4( 57.6) |    5:58:20 (Feb20) |  299.8 MB | GENERIC
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:23(00:03:51) |  00:00:52(00:01:01) |  25.8( 24.4) |    5:59:21 (Feb20) |  289.4 MB | MAPPED
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:32(00:04:06) |  00:00:09(00:00:15) |   4.4(  6.0) |    5:59:36 (Feb20) |  280.3 MB | OPT
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:03:33(00:04:10) |  00:00:01(00:00:04) |   0.5(  1.6) |    5:59:40 (Feb20) |  280.3 MB | FINAL
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: default, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+@file(test00.tcl) 212: puts "============================"
+============================
+@file(test00.tcl) 213: puts "Synthesis Finished ........."
+Synthesis Finished .........
+@file(test00.tcl) 214: puts "============================"
+============================
+@file(test00.tcl) 216: file copy [get_db / .stdout_log] ${_LOG_PATH}/.

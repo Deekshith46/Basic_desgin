@@ -1,0 +1,182 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.22-s017_1, built Sun Apr 01 2018
+Options: 
+Date:    Wed Feb 20 05:53:28 2019
+Host:    compute-srv2.eda.atme.in (x86_64 w/Linux 3.10.0-1160.49.1.el7.x86_64) (8cores*64cpus*4physical cpus*Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz 20480KB) (528140808KB)
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (13 seconds elapsed).
+
+WARNING: This version of the tool is 325 days old.
+@genus:root: 1> source ../tcl/test00.tcl
+Sourcing '../tcl/test00.tcl' (Wed Feb 20 05:53:55 IST 2019)...
+#@ Begin verbose source tcl/test00.tcl
+@file(test00.tcl) 3: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+cpu MHz		: 1537.371
+cpu MHz		: 3243.658
+cpu MHz		: 1821.148
+cpu MHz		: 2923.626
+cpu MHz		: 1537.042
+cpu MHz		: 2918.353
+cpu MHz		: 1631.799
+cpu MHz		: 2899.896
+cpu MHz		: 1572.308
+cpu MHz		: 3299.853
+cpu MHz		: 1675.305
+cpu MHz		: 2936.975
+cpu MHz		: 1354.943
+cpu MHz		: 3000.256
+cpu MHz		: 2286.035
+cpu MHz		: 2986.578
+cpu MHz		: 1641.027
+cpu MHz		: 2967.791
+cpu MHz		: 1380.816
+cpu MHz		: 2941.754
+cpu MHz		: 1649.432
+cpu MHz		: 3277.111
+cpu MHz		: 1723.590
+cpu MHz		: 2975.866
+cpu MHz		: 1394.000
+cpu MHz		: 2962.353
+cpu MHz		: 2859.686
+cpu MHz		: 2909.289
+cpu MHz		: 1558.135
+cpu MHz		: 2966.967
+cpu MHz		: 1735.455
+cpu MHz		: 2954.608
+cpu MHz		: 1299.737
+cpu MHz		: 2931.536
+cpu MHz		: 1943.756
+cpu MHz		: 2907.312
+cpu MHz		: 1322.644
+cpu MHz		: 2902.532
+cpu MHz		: 1592.413
+cpu MHz		: 2920.001
+cpu MHz		: 1286.883
+cpu MHz		: 2920.495
+cpu MHz		: 2001.928
+cpu MHz		: 2902.368
+cpu MHz		: 1293.969
+cpu MHz		: 2993.499
+cpu MHz		: 2860.345
+cpu MHz		: 2903.521
+cpu MHz		: 1555.169
+cpu MHz		: 2931.207
+cpu MHz		: 1933.868
+cpu MHz		: 2924.945
+cpu MHz		: 1496.832
+cpu MHz		: 2924.285
+cpu MHz		: 1711.724
+cpu MHz		: 2900.061
+cpu MHz		: 1549.731
+cpu MHz		: 2922.967
+cpu MHz		: 1999.951
+cpu MHz		: 2900.720
+cpu MHz		: 1520.068
+cpu MHz		: 2932.196
+cpu MHz		: 1743.200
+cpu MHz		: 2917.034
+@file(test00.tcl) 8: puts "Hostname : [info hostname]"
+Hostname : compute-srv2.eda.atme.in
+@file(test00.tcl) 15: set DESIGN booth_radix4_multiplier_32
+@file(test00.tcl) 16: set GEN_EFF medium
+@file(test00.tcl) 17: set MAP_OPT_EFF high
+@file(test00.tcl) 18: set DATE [clock format [clock seconds] -format "%b%d-%T"] 
+@file(test00.tcl) 19: set _OUTPUTS_PATH outputs_${DATE}
+@file(test00.tcl) 20: set _REPORTS_PATH reports_${DATE}
+@file(test00.tcl) 21: set _LOG_PATH logs_${DATE}
+@file(test00.tcl) 23: set_db / .init_lib_search_path {../lib} 
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib
+@file(test00.tcl) 25: set_db / .init_hdl_search_path {../rtl} 
+  Setting attribute of root '/': 'init_hdl_search_path' = ../rtl
+@file(test00.tcl) 34: set_db / .information_level 7 
+  Setting attribute of root '/': 'information_level' = 7
+@file(test00.tcl) 41: read_libs {fast.lib, slow.lib}
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'fast.lib,'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'fast.lib,' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { fast.lib, }  { slow.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source tcl/test00.tcl
+1
+@genus:root: 2> exit
+Normal exit.

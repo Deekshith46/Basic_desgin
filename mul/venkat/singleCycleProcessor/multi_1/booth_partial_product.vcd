@@ -1,0 +1,113 @@
+$date
+    Feb 16, 2019  02:38:31
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s051
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_booth_partial_product $end
+$var reg       1 !    Y2jm1  $end
+$var reg       1 "    Y2j  $end
+$var reg       1 #    Y2jp1  $end
+$var reg      32 $    X [31:0] $end
+$var wire     32 %    partial_product [31:0] $end
+$var reg      32 &    expected [31:0] $end
+
+$scope module uut $end
+$var wire      1 '    Y2jm1  $end
+$var wire      1 (    Y2j  $end
+$var wire      1 )    Y2jp1  $end
+$var wire     32 *    X [31:0] $end
+$var wire     32 %    partial_product [31:0] $end
+$var wire      1 +    selX  $end
+$var wire      1 ,    sel2X  $end
+$var wire      1 -    neg  $end
+$var wire     32 .    booth_val [31:0] $end
+$upscope $end
+
+
+$scope task check_result $end
+$var reg       3 /    booth_bits [2:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+b111 $
+b0 %
+bx &
+0'
+0(
+0)
+b111 *
+0+
+0,
+0-
+b0 .
+bx /
+$end
+#10000
+b0 /
+b0 &
+1!
+1'
+1+
+b111 .
+b111 %
+#20000
+b1 /
+b111 &
+0!
+1"
+1(
+0'
+#30000
+b10 /
+1!
+1'
+1,
+b1110 .
+b1110 %
+#40000
+b11 /
+b1110 &
+0!
+0"
+1#
+1)
+0(
+0'
+1-
+0,
+b111 .
+b11111111111111111111111111110010 %
+b11111111111111111111111111111001 %
+#50000
+b100 /
+b11111111111111111111111111110010 &
+1!
+1'
+#60000
+b101 /
+b11111111111111111111111111111001 &
+0!
+1"
+1(
+0'
+#70000
+b110 /
+1!
+1'
+0+
+b0 .
+b0 %
+#80000
+b111 /
+b0 &

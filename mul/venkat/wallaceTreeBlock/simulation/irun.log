@@ -1,0 +1,267 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 26, 2023 at 02:01:00 IST
+irun
+	-access +rwc
+	../rtl/test03.v
+	../verification/test03_tb.v
+file: ../rtl/test03.v
+	module worklib.pp_tree16x64:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_pp_tree16x64
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.compressor32_vec:v <0x3b8dd41b>
+			streams:   2, words:  1361
+		worklib.compressor42_vec:v <0x60e0993a>
+			streams:  10, words:  4618
+		worklib.compressor42_vec:v <0x74cbefde>
+			streams:  10, words:  5364
+		worklib.pp_tree16x64:v <0x548bc6a8>
+			streams:   8, words:  2430
+		worklib.tb_pp_tree16x64:v <0x1bfbce7c>
+			streams:  19, words: 34881
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 10       4
+		Registers:               19      19
+		Scalar wires:          2375       -
+		Vectored wires:          39       -
+		Initial blocks:           1       1
+		Cont. assignments:     2376      16
+		Pseudo assignments:      18      18
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.tb_pp_tree16x64:v
+Loading snapshot worklib.tb_pp_tree16x64:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+===== Partial Product Tree Test =====
+ Expected: fffffffff452fce0
+Test 0 PASSED ? 
+ Got:      fffffffff452fce0
+ sum: 000000000ee4f31e
+ carry: fffffffff2b704e1
+ p0:      0000000012153524
+ p1:      ffffffffc0895e81
+ p2:      ffffffff8484d609
+ p3:      ffffffffb1f05663
+ p4:      0000000006b97b0d
+ p5:      0000000046df998d
+ p6:      ffffffffb2c28465
+ p7:      ffffffff89375212
+ p8:      0000000000f3e301
+ p9:      0000000006d7cd0d
+ p10:      000000003b23f176
+ p11:      000000001e8dcd3d
+ p12:      0000000076d457ed
+ p13:      00000000462df78c
+ p14:      000000007cfde9f9
+ p15:      ffffffffe33724c6
+ p16:      ffffffffe2f784c5
+ Expected: fffffffeea62d6cc
+Test 1 PASSED ? 
+ Got:      fffffffeea62d6cc
+ sum: fffffffcc598008c
+ carry: 0000000112656b20
+ p0:      ffffffffd513d2aa
+ p1:      0000000072aff7e5
+ p2:      ffffffffbbd27277
+ p3:      ffffffff8932d612
+ p4:      0000000047ecdb8f
+ p5:      00000000793069f2
+ p6:      ffffffffe77696ce
+ p7:      fffffffff4007ae8
+ p8:      ffffffffe2ca4ec5
+ p9:      000000002e58495c
+ p10:      ffffffffde8e28bd
+ p11:      ffffffff96ab582d
+ p12:      ffffffffb2a72665
+ p13:      ffffffffb1ef6263
+ p14:      000000000573870a
+ p15:      ffffffffc03b2280
+ p16:      0000000010642120
+ Expected: fffffffe2c60c751
+Test 2 PASSED ? 
+ Got:      fffffffe2c60c751
+ sum: fffffffd519f59ad
+ carry: 000000006d60b6d2
+ p0:      00000000557845aa
+ p1:      ffffffffcecccc9d
+ p2:      ffffffffcb203e96
+ p3:      ffffffff8983b813
+ p4:      ffffffff86bc380d
+ p5:      ffffffffa9a7d653
+ p6:      00000000359fdd6b
+ p7:      ffffffffeaa62ad5
+ p8:      ffffffff81174a02
+ p9:      ffffffffd7563eae
+ p10:      000000000effe91d
+ p11:      ffffffffe7c572cf
+ p12:      0000000011844923
+ p13:      000000000509650a
+ p14:      ffffffffe5730aca
+ p15:      ffffffff9e314c3c
+ p16:      000000007968bdf2
+ Expected: 0000000135bd3364
+Test 3 PASSED ? 
+ Got:      0000000135bd3364
+ sum: fffffffcdb22ccb0
+ carry: 000000022d4d335a
+ p0:      00000000452e618a
+ p1:      0000000020c4b341
+ p2:      ffffffffec4b34d8
+ p3:      000000003c20f378
+ p4:      ffffffffc48a1289
+ p5:      0000000075c50deb
+ p6:      000000005b0265b6
+ p7:      00000000634bf9c6
+ p8:      00000000571513ae
+ p9:      ffffffffde7502bc
+ p10:      00000000150fdd2a
+ p11:      ffffffff85d79a0b
+ p12:      ffffffffb897be71
+ p13:      0000000042f24185
+ p14:      0000000027f2554f
+ p15:      ffffffff9dcc603b
+ p16:      000000001d06333a
+ Expected: 00000000dfee7eb7
+Test 4 PASSED ? 
+ Got:      00000000dfee7eb7
+ sum: 000000010031f90f
+ carry: ffffffffefde42d4
+ p0:      ffffffffbf23327e
+ p1:      000000000aaa4b15
+ p2:      0000000078d99bf1
+ p3:      000000006c9c4bd9
+ p4:      0000000031230762
+ p5:      000000002635fb4c
+ p6:      000000004fa1559f
+ p7:      0000000047b9a18f
+ p8:      000000007c6da9f8
+ p9:      ffffffffdbcd60b7
+ p10:      ffffffffcfc4569f
+ p11:      ffffffffae7d945c
+ p12:      ffffffffadcbc05b
+ p13:      0000000044de3789
+ p14:      ffffffffa4ae3249
+ p15:      ffffffffe8233ed0
+ p16:      ffffffffebfec0d7
+ Expected: 0000000080e3d5fa
+Test 5 PASSED ? 
+ Got:      0000000080e3d5fa
+ sum: ffffffff3f9c2b68
+ carry: 00000000a0a3d549
+ p0:      ffffffffa8c7fc51
+ p1:      000000004b212f96
+ p2:      00000000061d7f0c
+ p3:      ffffffffe12ccec2
+ p4:      000000006457edc8
+ p5:      ffffffffbb825a77
+ p6:      000000001ef2ed3d
+ p7:      00000000090cdb12
+ p8:      ffffffffbf05007e
+ p9:      0000000036e5816d
+ p10:      000000001cd9e739
+ p11:      000000000fd28f1f
+ p12:      ffffffffe9ebf6d3
+ p13:      0000000042d92f85
+ p14:      ffffffffbc148878
+ p15:      000000002dda595b
+ p16:      00000000248b4b49
+ Expected: fffffffeed7e08d4
+Test 6 PASSED ? 
+ Got:      fffffffeed7e08d4
+ sum: 00000003026bd308
+ carry: fffffffdf5891ae6
+ p0:      ffffffff9ff2ae3f
+ p1:      00000000150caf2a
+ p2:      000000002c156358
+ p3:      ffffffffc33f3886
+ p4:      ffffffffc71a0c8e
+ p5:      ffffffffce2ff29c
+ p6:      000000007d3599fa
+ p7:      ffffffff937dbc26
+ p8:      0000000039961773
+ p9:      ffffffffd18bb4a3
+ p10:      ffffffff9799a82f
+ p11:      ffffffffd9d292b3
+ p12:      ffffffffafd8565f
+ p13:      0000000022290d44
+ p14:      000000007bf8fdf7
+ p15:      ffffffffe59b36cb
+ p16:      fffffffff3091ae6
+ Expected: 00000000794ba7e9
+Test 7 PASSED ? 
+ Got:      00000000794ba7e9
+ sum: 00000000b7651065
+ carry: ffffffffe0f34bc2
+ p0:      000000002d28db5a
+ p1:      0000000014cfc129
+ p2:      fffffffff682e2ed
+ p3:      ffffffffed536cda
+ p4:      ffffffffb29fb665
+ p5:      ffffffffda8ae2b5
+ p6:      ffffffffefbe94df
+ p7:      000000003cf11979
+ p8:      000000002231ff44
+ p9:      ffffffffe8740cd0
+ p10:      0000000015090b2a
+ p11:      0000000055f6adab
+ p12:      00000000076fcf0e
+ p13:      000000006e5daddc
+ p14:      ffffffffcd5ebc9a
+ p15:      fffffffffedf72fd
+ p16:      ffffffffe1f102c3
+ Expected: ffffffff52a42d9c
+Test 8 PASSED ? 
+ Got:      ffffffff52a42d9c
+ sum: 00000001fd5842f0
+ carry: fffffffeaaa5f556
+ p0:      000000002b0eed56
+ p1:      000000002779e94e
+ p2:      ffffffffb3d97667
+ p3:      ffffffff8531340a
+ p4:      000000005b6fb9b6
+ p5:      ffffffff9c0e8a38
+ p6:      000000003cd18779
+ p7:      ffffffffdc2bc4b8
+ p8:      000000004a74bf94
+ p9:      0000000049c65d93
+ p10:      ffffffff823f2c04
+ p11:      ffffffffacb7ca59
+ p12:      000000006dcb69db
+ p13:      ffffffffa6fcde4d
+ p14:      000000006cb0b7d9
+ p15:      ffffffffb6a4266d
+ p16:      ffffffffbb45e276
+ Expected: 000000004b69d18f
+Test 9 PASSED ? 
+ Got:      000000004b69d18f
+ sum: ffffffffb03da66f
+ carry: 000000004d961590
+ p0:      00000000653b49ca
+ p1:      000000005b172db6
+ p2:      000000004a937195
+ p3:      ffffffffa3071a46
+ p4:      0000000002749b04
+ p5:      000000007bd261f7
+ p6:      0000000034980769
+ p7:      ffffffffda6ebab4
+ p8:      0000000044018d88
+ p9:      00000000147cd928
+ p10:      ffffffff9690042d
+ p11:      ffffffffe3c530c7
+ p12:      ffffffff975c9c2e
+ p13:      ffffffff8477e408
+ p14:      000000000e41451c
+ p15:      fffffffffea7a6fd
+ p16:      00000000149e0729
+All tests passed!
+Simulation complete via $finish(1) at time 50 NS + 0
+../verification/test03_tb.v:122         $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 26, 2023 at 02:01:00 IST  (total: 00:00:00)

@@ -1,0 +1,617 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.22-s017_1, built Sun Apr 01 2018
+Options: 
+Date:    Wed Feb 20 04:03:32 2019
+Host:    compute-srv2.eda.atme.in (x86_64 w/Linux 3.10.0-1160.49.1.el7.x86_64) (8cores*64cpus*4physical cpus*Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz 20480KB) (528140808KB)
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (11 seconds elapsed).
+
+WARNING: This version of the tool is 325 days old.
+@genus:root: 1> source ../tcl/test00.tcl
+Sourcing '../tcl/test00.tcl' (Wed Feb 20 04:03:57 IST 2019)...
+#@ Begin verbose source tcl/test00.tcl
+@file(test00.tcl) 3: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+cpu MHz		: 1930.242
+cpu MHz		: 3040.301
+cpu MHz		: 2667.370
+cpu MHz		: 2999.926
+cpu MHz		: 1775.994
+cpu MHz		: 3069.635
+cpu MHz		: 2680.554
+cpu MHz		: 2998.114
+cpu MHz		: 2179.412
+cpu MHz		: 2933.679
+cpu MHz		: 2690.606
+cpu MHz		: 2899.896
+cpu MHz		: 1778.137
+cpu MHz		: 3289.636
+cpu MHz		: 2701.483
+cpu MHz		: 2999.926
+cpu MHz		: 1959.411
+cpu MHz		: 2985.589
+cpu MHz		: 2750.756
+cpu MHz		: 2999.926
+cpu MHz		: 1974.572
+cpu MHz		: 2928.735
+cpu MHz		: 2708.569
+cpu MHz		: 2999.926
+cpu MHz		: 1777.478
+cpu MHz		: 3017.889
+cpu MHz		: 2744.165
+cpu MHz		: 2999.761
+cpu MHz		: 2121.899
+cpu MHz		: 2996.960
+cpu MHz		: 2743.341
+cpu MHz		: 2929.229
+cpu MHz		: 1792.309
+cpu MHz		: 2915.551
+cpu MHz		: 2699.835
+cpu MHz		: 3033.874
+cpu MHz		: 1813.897
+cpu MHz		: 3061.560
+cpu MHz		: 1572.143
+cpu MHz		: 2997.454
+cpu MHz		: 2902.038
+cpu MHz		: 2906.158
+cpu MHz		: 2701.647
+cpu MHz		: 2961.694
+cpu MHz		: 2901.544
+cpu MHz		: 3299.853
+cpu MHz		: 1549.072
+cpu MHz		: 2901.049
+cpu MHz		: 2902.368
+cpu MHz		: 2927.581
+cpu MHz		: 1932.385
+cpu MHz		: 2908.300
+cpu MHz		: 1972.100
+cpu MHz		: 2945.544
+cpu MHz		: 1715.350
+cpu MHz		: 2900.225
+cpu MHz		: 2097.344
+cpu MHz		: 3060.736
+cpu MHz		: 1672.503
+cpu MHz		: 2999.926
+cpu MHz		: 2900.885
+cpu MHz		: 2926.263
+cpu MHz		: 1662.615
+cpu MHz		: 2900.720
+@file(test00.tcl) 8: puts "Hostname : [info hostname]"
+Hostname : compute-srv2.eda.atme.in
+@file(test00.tcl) 15: set DESIGN booth_radix4_multiplier_32
+@file(test00.tcl) 16: set GEN_EFF medium
+@file(test00.tcl) 17: set MAP_OPT_EFF high
+@file(test00.tcl) 18: set DATE [clock format [clock seconds] -format "%b%d-%T"] 
+@file(test00.tcl) 19: set _OUTPUTS_PATH outputs_${DATE}
+@file(test00.tcl) 20: set _REPORTS_PATH reports_${DATE}
+@file(test00.tcl) 21: set _LOG_PATH logs_${DATE}
+@file(test00.tcl) 23: set_db / .init_lib_search_path {../lib} 
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib
+@file(test00.tcl) 25: set_db / .init_hdl_search_path {../rtl} 
+  Setting attribute of root '/': 'init_hdl_search_path' = ../rtl
+@file(test00.tcl) 34: set_db / .information_level 7 
+  Setting attribute of root '/': 'information_level' = 7
+@file(test00.tcl) 41: read_libs {fast.lib, slow.lib}
+Error   : File error. [FILE-100] [::legacy::set_attribute]
+        : Cannot open file 'fast.lib,'
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [::legacy::set_attribute]
+        : File 'fast.lib,' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [::legacy::set_attribute]
+        : The value '  { fast.lib, }  { slow.lib } ' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source tcl/test00.tcl
+1
+@genus:root: 2> source ../tcl/test00.tcl
+Sourcing '../tcl/test00.tcl' (Wed Feb 20 04:05:04 IST 2019)...
+#@ Begin verbose source tcl/test00.tcl
+@file(test00.tcl) 3: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+cpu MHz		: 1575.439
+cpu MHz		: 3262.115
+cpu MHz		: 1752.429
+cpu MHz		: 2999.926
+cpu MHz		: 1613.671
+cpu MHz		: 2998.278
+cpu MHz		: 1698.870
+cpu MHz		: 2999.926
+cpu MHz		: 1288.366
+cpu MHz		: 3140.332
+cpu MHz		: 1667.230
+cpu MHz		: 2999.761
+cpu MHz		: 1408.666
+cpu MHz		: 3300.018
+cpu MHz		: 1790.826
+cpu MHz		: 2999.926
+cpu MHz		: 1512.817
+cpu MHz		: 3000.915
+cpu MHz		: 1750.946
+cpu MHz		: 2999.761
+cpu MHz		: 1683.709
+cpu MHz		: 3233.276
+cpu MHz		: 1793.957
+cpu MHz		: 2996.136
+cpu MHz		: 1457.611
+cpu MHz		: 3106.549
+cpu MHz		: 1602.301
+cpu MHz		: 3201.306
+cpu MHz		: 1648.278
+cpu MHz		: 2999.432
+cpu MHz		: 1706.451
+cpu MHz		: 2920.330
+cpu MHz		: 1237.774
+cpu MHz		: 3228.991
+cpu MHz		: 2089.434
+cpu MHz		: 2915.057
+cpu MHz		: 1303.527
+cpu MHz		: 2938.458
+cpu MHz		: 1742.871
+cpu MHz		: 2939.447
+cpu MHz		: 1338.134
+cpu MHz		: 3020.031
+cpu MHz		: 1651.904
+cpu MHz		: 2996.630
+cpu MHz		: 1251.287
+cpu MHz		: 2987.731
+cpu MHz		: 1511.828
+cpu MHz		: 2904.840
+cpu MHz		: 1262.493
+cpu MHz		: 2956.420
+cpu MHz		: 1666.900
+cpu MHz		: 2999.926
+cpu MHz		: 1389.221
+cpu MHz		: 2999.926
+cpu MHz		: 1736.444
+cpu MHz		: 2904.180
+cpu MHz		: 1699.694
+cpu MHz		: 2999.761
+cpu MHz		: 1766.107
+cpu MHz		: 2999.926
+cpu MHz		: 1240.081
+cpu MHz		: 2992.016
+cpu MHz		: 1732.653
+cpu MHz		: 2939.117
+@file(test00.tcl) 8: puts "Hostname : [info hostname]"
+Hostname : compute-srv2.eda.atme.in
+@file(test00.tcl) 15: set DESIGN booth_radix4_multiplier_32
+@file(test00.tcl) 16: set GEN_EFF medium
+@file(test00.tcl) 17: set MAP_OPT_EFF high
+@file(test00.tcl) 18: set DATE [clock format [clock seconds] -format "%b%d-%T"] 
+@file(test00.tcl) 19: set _OUTPUTS_PATH outputs_${DATE}
+@file(test00.tcl) 20: set _REPORTS_PATH reports_${DATE}
+@file(test00.tcl) 21: set _LOG_PATH logs_${DATE}
+@file(test00.tcl) 23: set_db / .init_lib_search_path {../lib} 
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib
+@file(test00.tcl) 25: set_db / .init_hdl_search_path {../rtl} 
+  Setting attribute of root '/': 'init_hdl_search_path' = ../rtl
+@file(test00.tcl) 34: set_db / .information_level 7 
+  Setting attribute of root '/': 'information_level' = 7
+@file(test00.tcl) 41: read_libs {fast.lib slow.lib}
+
+Threads Configured:6
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/vv2trainee19/Desktop/Ananya/multi_1/work/../lib/fast.lib, Line 67517)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/vv2trainee19/Desktop/Ananya/multi_1/work/../lib/slow.lib, Line 67517)
+
+  Message Summary for Library both libraries:
+  *******************************************
+  Could not find an attribute in the library. [LBR-436]: 1148
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  *******************************************
+ 
+Warning : Libraries have inconsistent nominal operating conditions. [LBR-38]
+        : The libraries are 'fast_vdd1v0' and 'slow_vdd1v0'.
+        : This is a common source of delay calculation confusion and is strongly discouraged.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ACHCONX2 and slow_vdd1v0/ACHCONX2).  Deleting (slow_vdd1v0/ACHCONX2).
+        : Library cell names must be unique.  Any duplicates will be deleted.  Only the first (as determined by the order of libraries) will be retained.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX1 and slow_vdd1v0/ADDFHX1).  Deleting (slow_vdd1v0/ADDFHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX2 and slow_vdd1v0/ADDFHX2).  Deleting (slow_vdd1v0/ADDFHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX4 and slow_vdd1v0/ADDFHX4).  Deleting (slow_vdd1v0/ADDFHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHXL and slow_vdd1v0/ADDFHXL).  Deleting (slow_vdd1v0/ADDFHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX1 and slow_vdd1v0/ADDFX1).  Deleting (slow_vdd1v0/ADDFX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX2 and slow_vdd1v0/ADDFX2).  Deleting (slow_vdd1v0/ADDFX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX4 and slow_vdd1v0/ADDFX4).  Deleting (slow_vdd1v0/ADDFX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFXL and slow_vdd1v0/ADDFXL).  Deleting (slow_vdd1v0/ADDFXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX1 and slow_vdd1v0/ADDHX1).  Deleting (slow_vdd1v0/ADDHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX2 and slow_vdd1v0/ADDHX2).  Deleting (slow_vdd1v0/ADDHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX4 and slow_vdd1v0/ADDHX4).  Deleting (slow_vdd1v0/ADDHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHXL and slow_vdd1v0/ADDHXL).  Deleting (slow_vdd1v0/ADDHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X1 and slow_vdd1v0/AND2X1).  Deleting (slow_vdd1v0/AND2X1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X2 and slow_vdd1v0/AND2X2).  Deleting (slow_vdd1v0/AND2X2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X4 and slow_vdd1v0/AND2X4).  Deleting (slow_vdd1v0/AND2X4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X6 and slow_vdd1v0/AND2X6).  Deleting (slow_vdd1v0/AND2X6).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X8 and slow_vdd1v0/AND2X8).  Deleting (slow_vdd1v0/AND2X8).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2XL and slow_vdd1v0/AND2XL).  Deleting (slow_vdd1v0/AND2XL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND3X1 and slow_vdd1v0/AND3X1).  Deleting (slow_vdd1v0/AND3X1).
+@file(test00.tcl) 42: read_physical -lef <lef file(s)>
+Error   : A command argument did not match any of the acceptable command options. [TUI-64] [read_physical]
+        : The argument in question is 'file(s)>'.
+        : Check the command usage and correct the input to the command.
+  read_physical: read physical design information 
+
+Usage: read_physical [ -lef <string> | -oa_ref_libs <string> ]
+
+    -lef <string>:
+        list of LEF files to read 
+    -oa_ref_libs <string>:
+        list of OA library files to read 
+#@ End verbose source tcl/test00.tcl
+1
+@genus:root: 3> ls
+counter.sdc
+genus.cmd
+genus.log
+@genus:root: 4> source ../tcl/test00.tcl
+Sourcing '../tcl/test00.tcl' (Wed Feb 20 04:09:03 IST 2019)...
+#@ Begin verbose source tcl/test00.tcl
+@file(test00.tcl) 3: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+model name	: Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz
+cpu MHz		: 1376.696
+cpu MHz		: 2993.829
+cpu MHz		: 1399.438
+cpu MHz		: 2970.593
+cpu MHz		: 1540.338
+cpu MHz		: 2999.926
+cpu MHz		: 1555.828
+cpu MHz		: 2999.926
+cpu MHz		: 1604.443
+cpu MHz		: 2899.566
+cpu MHz		: 1381.311
+cpu MHz		: 2909.783
+cpu MHz		: 1629.986
+cpu MHz		: 2923.461
+cpu MHz		: 1352.966
+cpu MHz		: 2994.488
+cpu MHz		: 1441.790
+cpu MHz		: 2922.802
+cpu MHz		: 1329.071
+cpu MHz		: 3016.571
+cpu MHz		: 1633.776
+cpu MHz		: 2971.911
+cpu MHz		: 1352.307
+cpu MHz		: 3300.018
+cpu MHz		: 1608.892
+cpu MHz		: 2999.926
+cpu MHz		: 1323.797
+cpu MHz		: 2917.694
+cpu MHz		: 1652.563
+cpu MHz		: 2999.761
+cpu MHz		: 1366.149
+cpu MHz		: 3199.658
+cpu MHz		: 1971.936
+cpu MHz		: 2917.364
+cpu MHz		: 1583.184
+cpu MHz		: 3019.372
+cpu MHz		: 1621.087
+cpu MHz		: 2955.432
+cpu MHz		: 1286.059
+cpu MHz		: 2999.926
+cpu MHz		: 1807.141
+cpu MHz		: 2904.016
+cpu MHz		: 1618.450
+cpu MHz		: 2999.926
+cpu MHz		: 1526.824
+cpu MHz		: 2999.926
+cpu MHz		: 1290.179
+cpu MHz		: 3156.811
+cpu MHz		: 1956.610
+cpu MHz		: 2999.926
+cpu MHz		: 1574.945
+cpu MHz		: 3167.852
+cpu MHz		: 1300.726
+cpu MHz		: 2920.660
+cpu MHz		: 1617.626
+cpu MHz		: 3000.091
+cpu MHz		: 1599.993
+cpu MHz		: 2938.458
+cpu MHz		: 1390.704
+cpu MHz		: 3299.853
+cpu MHz		: 1646.630
+cpu MHz		: 2999.926
+cpu MHz		: 1370.599
+cpu MHz		: 2969.274
+@file(test00.tcl) 8: puts "Hostname : [info hostname]"
+Hostname : compute-srv2.eda.atme.in
+@file(test00.tcl) 15: set DESIGN booth_radix4_multiplier_32
+@file(test00.tcl) 16: set GEN_EFF medium
+@file(test00.tcl) 17: set MAP_OPT_EFF high
+@file(test00.tcl) 18: set DATE [clock format [clock seconds] -format "%b%d-%T"] 
+@file(test00.tcl) 19: set _OUTPUTS_PATH outputs_${DATE}
+@file(test00.tcl) 20: set _REPORTS_PATH reports_${DATE}
+@file(test00.tcl) 21: set _LOG_PATH logs_${DATE}
+@file(test00.tcl) 23: set_db / .init_lib_search_path {../lib} 
+Warning : Cannot modify library search path after reading library(s). [TUI-83]
+        : Cannot modify 'init_lib_search_path' attribute to '../lib'
+        : You must set the 'init_lib_search_path' attribute before you set the 'library' attribute.
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib
+@file(test00.tcl) 25: set_db / .init_hdl_search_path {../rtl} 
+  Setting attribute of root '/': 'init_hdl_search_path' = ../rtl
+@file(test00.tcl) 34: set_db / .information_level 7 
+  Setting attribute of root '/': 'information_level' = 7
+@file(test00.tcl) 41: read_libs {fast.lib, slow.lib}
+#@ End verbose source tcl/test00.tcl
+Cannot use read_libs after read_mmmc
+@genus:root: 5> ls -l ../lib/fast.lib
+-rw-r--r-- 1 vv2trainee19 vv2trainee19 5398983 Feb 20 04:00 ../lib/fast.lib
+@genus:root: 6> exit
+Normal exit.

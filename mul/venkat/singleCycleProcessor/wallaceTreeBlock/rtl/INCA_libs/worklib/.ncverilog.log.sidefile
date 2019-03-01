@@ -1,0 +1,797 @@
+hal: Options:   -cdslib ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib -logfile ncverilog.log -f /home/sgeuser114/Desktop/venkat/singleCycleProcessor/wallaceTreeBlock/rtl/INCA_libs/irun.lnx8664.15.20.nc/hal.args .
+hal: Snapshot:  worklib.pp_tree16x64:v.
+hal: Workspace: /home/sgeuser114/Desktop/venkat/singleCycleProcessor/wallaceTreeBlock/rtl.
+hal: Date: Mon Feb 27 22:30:49 IST 2023.
+hal: Running on elaborated SNAPSHOT.....
+hal: *M,_SCOPE: __dummy_top
+halcheck: *M,_SCOPE: pp_tree16x64
+halcheck: *N,CDNOTE (./test03.v,1|0): The compiler directive '`timescale' is used in the RTL.
+halcheck: *W,CTLCHR (./test03.v,25|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./test03.v,26|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./test03.v,27|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./test03.v,28|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./test03.v,29|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./test03.v,30|0): HDL source line contains one or more control characters.
+halcheck: *W,MAXLEN (./test03.v,38|0): The HDL source line is 81 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./test03.v,43|0): The HDL source line is 81 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./test03.v,71|0): The HDL source line is 84 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,MAXLEN (./test03.v,96|0): The HDL source line is 119 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,DIFFMN (./test03.v,85|0): Module name 'pp_tree16x64' differs from file name 'test03.v'.
+halcheck: *N,PRTCNT (./test03.v,85|0): Module/Entity 'pp_tree16x64' contains '19' ports.
+halcheck: (./test03.v,85): Number of Input ports: 17.
+halcheck: (./test03.v,85): Number of Output ports: 2.
+halcheck: *W,IPRTEX (./test03.v,107|0): A constant is used in a port expression.
+halcheck: *W,IPRTEX (./test03.v,112|0): A constant is used in a port expression.
+halcheck: *W,IPRTEX (./test03.v,117|0): A constant is used in a port expression.
+halcheck: *W,IPRTEX (./test03.v,122|0): A constant is used in a port expression.
+halcheck: *W,IPRTEX (./test03.v,135|0): A constant is used in a port expression.
+halcheck: *W,IPRTEX (./test03.v,144|0): A constant is used in a port expression.
+halcheck: *W,IPRTEX (./test03.v,155|0): A constant is used in a port expression.
+halcheck: *W,NUMSUF (./test03.v,86|0): Identifier 'P0' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,86|0): Numeric value '63' used for identifier 'P0'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,86|0): Identifier 'P1' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,86|0): Numeric value '63' used for identifier 'P1'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,86|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,87|0): Identifier 'P2' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,87|0): Numeric value '63' used for identifier 'P2'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,87|0): Identifier 'P3' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,87|0): Numeric value '63' used for identifier 'P3'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,87|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,88|0): Identifier 'P4' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,88|0): Numeric value '63' used for identifier 'P4'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,88|0): Identifier 'P5' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,88|0): Numeric value '63' used for identifier 'P5'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,88|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,89|0): Identifier 'P6' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,89|0): Numeric value '63' used for identifier 'P6'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,89|0): Identifier 'P7' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,89|0): Numeric value '63' used for identifier 'P7'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,89|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,90|0): Identifier 'P8' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,90|0): Numeric value '63' used for identifier 'P8'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,90|0): Identifier 'P9' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,90|0): Numeric value '63' used for identifier 'P9'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,90|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,91|0): Identifier 'P10' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,91|0): Numeric value '63' used for identifier 'P10'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,91|0): Identifier 'P11' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,91|0): Numeric value '63' used for identifier 'P11'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,91|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,92|0): Identifier 'P12' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,92|0): Numeric value '63' used for identifier 'P12'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,92|0): Identifier 'P13' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,92|0): Numeric value '63' used for identifier 'P13'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,92|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,93|0): Identifier 'P14' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,93|0): Numeric value '63' used for identifier 'P14'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,93|0): Identifier 'P15' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,93|0): Numeric value '63' used for identifier 'P15'. Use constants to avoid portability issues.
+halcheck: *N,DECLIN (./test03.v,93|0): Use a separate line for each HDL declaration.
+halcheck: *W,NUMSUF (./test03.v,94|0): Identifier 'P16' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,94|0): Numeric value '63' used for identifier 'P16'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,95|0): Numeric value '63' used for identifier 'SUM'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,96|0): Numeric value '63' used for identifier 'CARRY'. Use constants to avoid portability issues.
+halcheck: *W,LCVARN (./test03.v,86|0): Net name 'P0' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,86|0): Net name 'P1' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,87|0): Net name 'P2' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,87|0): Net name 'P3' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,88|0): Net name 'P4' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,88|0): Net name 'P5' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,89|0): Net name 'P6' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,89|0): Net name 'P7' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,90|0): Net name 'P8' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,90|0): Net name 'P9' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,91|0): Net name 'P10' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,91|0): Net name 'P11' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,92|0): Net name 'P12' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,92|0): Net name 'P13' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,93|0): Net name 'P14' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,93|0): Net name 'P15' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,94|0): Net name 'P16' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,95|0): Net name 'SUM' uses uppercase characters.
+halcheck: *W,LCVARN (./test03.v,96|0): Net name 'CARRY' uses uppercase characters.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 'c0' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,98|0): Numeric value '63' used for identifier 'c0'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 'c1' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 'c2' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 'c3' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 'c4' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 'c5' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 'c6' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 's0' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 's1' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 's2' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 's3' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 's4' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 's5' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,98|0): Identifier 's6' has a numeric value suffix.
+halcheck: *W,NUMSUF (./test03.v,100|0): Identifier 'cl0' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,100|0): Numeric value '63' used for identifier 'cl0'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,101|0): Identifier 'cl1' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,101|0): Numeric value '63' used for identifier 'cl1'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,102|0): Identifier 'cl2' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,102|0): Numeric value '63' used for identifier 'cl2'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,103|0): Identifier 'cl3' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,103|0): Numeric value '63' used for identifier 'cl3'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,127|0): Identifier 'cl4' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,127|0): Numeric value '63' used for identifier 'cl4'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,128|0): Identifier 'cl5' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,128|0): Numeric value '63' used for identifier 'cl5'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,149|0): Identifier 'cl6' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,149|0): Numeric value '63' used for identifier 'cl6'. Use constants to avoid portability issues.
+halcheck: *W,SHFTOF (./test03.v,129|0): Shift overflow in module/design-unit pp_tree16x64, some bits will be lost.
+halcheck: *W,SHFTOF (./test03.v,130|0): Shift overflow in module/design-unit pp_tree16x64, some bits will be lost.
+halcheck: *W,SHFTOF (./test03.v,140|0): Shift overflow in module/design-unit pp_tree16x64, some bits will be lost.
+halcheck: *W,SHFTOF (./test03.v,141|0): Shift overflow in module/design-unit pp_tree16x64, some bits will be lost.
+halcheck: *W,SHFTOF (./test03.v,151|0): Shift overflow in module/design-unit pp_tree16x64, some bits will be lost.
+halcheck: *W,SHFTOF (./test03.v,152|0): Shift overflow in module/design-unit pp_tree16x64, some bits will be lost.
+halcheck: *W,SHFTOF (./test03.v,161|0): Shift overflow in module/design-unit pp_tree16x64, some bits will be lost.
+halcheck: *W,LCVARN (./test03.v,105|0): Module instance name 'S1_0' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S1_0
+halcheck: *W,DIFFMN (./test03.v,3|0): Module name 'compressor42_vec' differs from file name 'test03.v'.
+halcheck: *W,MULTMF (./test03.v,3|0): More than one design-unit definition in file 'test03.v'.
+halcheck: *N,PRTCNT (./test03.v,3|0): Module/Entity 'compressor42_vec' contains '7' ports.
+halcheck: (./test03.v,3): Number of Input ports: 5.
+halcheck: (./test03.v,3): Number of Output ports: 2.
+halcheck: *W,STYVAL (./test03.v,4|0): Numeric value '63' used for identifier 'a'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,5|0): Numeric value '63' used for identifier 'b'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,6|0): Numeric value '63' used for identifier 'c'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,7|0): Numeric value '63' used for identifier 'd'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,9|0): Numeric value '63' used for identifier 'sum'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,10|0): Numeric value '63' used for identifier 'carry'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,13|0): Identifier 'c1' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,13|0): Numeric value '63' used for identifier 'c1'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,14|0): Identifier 'c2' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,14|0): Numeric value '63' used for identifier 'c2'. Use constants to avoid portability issues.
+halcheck: *W,NUMSUF (./test03.v,15|0): Identifier 's1' has a numeric value suffix.
+halcheck: *W,STYVAL (./test03.v,15|0): Numeric value '63' used for identifier 's1'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,18|0): Numeric value '63' used for identifier 'cout'. Use constants to avoid portability issues.
+halcheck: *W,UNMGEN (./test03.v,22|0): Unnamed generate block found in module 'compressor42_vec'.
+halcheck: *W,UNMGEN (./test03.v,25|0): Unnamed generate block found in module 'compressor42_vec'.
+halcheck: *W,UNMGEN (./test03.v,28|0): Unnamed generate block found in module 'compressor42_vec'.
+halcheck: *W,URAWIR (./test03.v,13|0): Wire 'c1' defined in module 'compressor42_vec' is unused (neither read nor assigned).
+@:c1 
+halcheck: *W,URAWIR (./test03.v,14|0): Wire 'c2' defined in module 'compressor42_vec' is unused (neither read nor assigned).
+@:c2 
+halcheck: *W,URDWIR (./test03.v,18|0): Wire 'cout[63]' defined in module 'compressor42_vec' does not drive any object, but is assigned at least once.
+@:cout[63] 
+halcheck: *W,LCVARN (./test03.v,110|0): Module instance name 'S1_1' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S1_1
+halcheck: *W,LCVARN (./test03.v,115|0): Module instance name 'S1_2' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S1_2
+halcheck: *W,LCVARN (./test03.v,120|0): Module instance name 'S1_3' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S1_3
+halcheck: *W,LCVARN (./test03.v,133|0): Module instance name 'S2_L' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S2_L
+halcheck: *W,LCVARN (./test03.v,142|0): Module instance name 'S2_R' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S2_R
+halcheck: *W,LCVARN (./test03.v,153|0): Module instance name 'S3_FINAL' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S3_FINAL
+halcheck: *W,LCVARN (./test03.v,162|0): Module instance name 'S4_FINAL' uses uppercase characters.
+halcheck: *M,_SCOPE: pp_tree16x64.S4_FINAL
+halcheck: *W,DIFFMN (./test03.v,50|0): Module name 'compressor32_vec' differs from file name 'test03.v'.
+halcheck: *W,MULTMF (./test03.v,50|0): More than one design-unit definition in file 'test03.v'.
+halcheck: *N,PRTCNT (./test03.v,50|0): Module/Entity 'compressor32_vec' contains '5' ports.
+halcheck: (./test03.v,50): Number of Input ports: 3.
+halcheck: (./test03.v,50): Number of Output ports: 2.
+halcheck: *W,STYVAL (./test03.v,51|0): Numeric value '63' used for identifier 'a'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,52|0): Numeric value '63' used for identifier 'b'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,53|0): Numeric value '63' used for identifier 'c'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,56|0): Numeric value '63' used for identifier 'sum'. Use constants to avoid portability issues.
+halcheck: *W,STYVAL (./test03.v,57|0): Numeric value '63' used for identifier 'carry'. Use constants to avoid portability issues.
+halcheck: *W,UNMGEN (./test03.v,64|0): Unnamed generate block found in module 'compressor32_vec'.
+halcheck: *N,DECLIN (./test03.v,57|0): Use a separate line for each HDL declaration.
+halcheck: *M,_SCOPE: pp_tree16x64
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 146.
+hal: *M,_SCOPE: __dummy_top
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: *M,_SCOPE: pp_tree16x64
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+hal: *M,_SCOPE: __dummy_top
+halstruct: *M,_SCOPE: pp_tree16x64
+halstruct: *W,TPOUNR (./test03.v,162|0): Output 'SUM' of top-level module is not a register.
+@:SUM 
+@:S4_FINAL 
+halstruct: *E,CBPAHI (./test03.v,162|0): Combinatorial path crossing multiple units drives 'SUM'.
+@:SUM 
+@:sum[0] pp_tree16x64.S4_FINAL
+@:$$cpiHT_114440_8792 pp_tree16x64.S4_FINAL
+@:$$cpiHT_114440_32928 pp_tree16x64.S4_FINAL
+@:a[0] pp_tree16x64.S4_FINAL
+@:s6 
+@:sum[0] pp_tree16x64.S3_FINAL
+@:$$cpiHT_56_35336 pp_tree16x64.S3_FINAL
+halstruct: (./test03.v,162): in instance 'pp_tree16x64', output 'sum[0]' of instance 'S4_FINAL' drives 'SUM'.
+@:SUM 
+@:SUM 
+@:SUM 
+@:sum[0] pp_tree16x64.S4_FINAL
+halstruct: (./test03.v,66): in instance 'pp_tree16x64.S4_FINAL', combinatorial function of input 'a' drives 'sum[0]'.
+@:sum[0] pp_tree16x64.S4_FINAL
+@:a pp_tree16x64.S4_FINAL
+halstruct: (./test03.v,162): in instance 'pp_tree16x64', 's6' drives input 'a' of instance 'S4_FINAL'.
+@:s6 
+halstruct: (./test03.v,153): in instance 'pp_tree16x64', output 'sum[0]' of instance 'S3_FINAL' drives 's6'.
+@:s6 
+@:s6 
+@:s6 
+@:sum[0] pp_tree16x64.S3_FINAL
+halstruct: (./test03.v,37): in instance 'pp_tree16x64.S3_FINAL', combinatorial function drives 'sum[0]'.
+@:sum[0] pp_tree16x64.S3_FINAL
+halstruct: *W,TPOUNR (./test03.v,162|0): Output 'CARRY' of top-level module is not a register.
+@:CARRY 
+@:S4_FINAL 
+halstruct: *E,CBPAHI (./test03.v,162|0): Combinatorial path crossing multiple units drives 'CARRY'.
+@:CARRY 
+@:carry[0] pp_tree16x64.S4_FINAL
+@:$$cpiHT_114440_8880 pp_tree16x64.S4_FINAL
+@:$$cpiHT_114440_33000 pp_tree16x64.S4_FINAL
+@:$$cpiHT_114440_41864 pp_tree16x64.S4_FINAL
+@:a[0] pp_tree16x64.S4_FINAL
+@:s6 
+@:sum[0] pp_tree16x64.S3_FINAL
+@:$$cpiHT_56_35336 pp_tree16x64.S3_FINAL
+halstruct: (./test03.v,162): in instance 'pp_tree16x64', output 'carry[0]' of instance 'S4_FINAL' drives 'CARRY'.
+@:CARRY 
+@:CARRY 
+@:CARRY 
+@:carry[0] pp_tree16x64.S4_FINAL
+halstruct: (./test03.v,67): in instance 'pp_tree16x64.S4_FINAL', combinatorial function of input 'a' drives 'carry[0]'.
+@:carry[0] pp_tree16x64.S4_FINAL
+@:a pp_tree16x64.S4_FINAL
+halstruct: (./test03.v,162): in instance 'pp_tree16x64', 's6' drives input 'a' of instance 'S4_FINAL'.
+@:s6 
+halstruct: (./test03.v,153): in instance 'pp_tree16x64', output 'sum[0]' of instance 'S3_FINAL' drives 's6'.
+@:s6 
+@:s6 
+@:s6 
+@:sum[0] pp_tree16x64.S3_FINAL
+halstruct: (./test03.v,37): in instance 'pp_tree16x64.S3_FINAL', combinatorial function drives 'sum[0]'.
+@:sum[0] pp_tree16x64.S3_FINAL
+halstruct: *M,_SCOPE: pp_tree16x64.S1_0
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[0]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[1]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[2]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[3]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[4]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[5]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[6]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[7]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[8]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[9]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[10]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[11]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[12]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[13]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[14]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[15]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[16]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[17]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[18]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[19]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[20]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[21]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[22]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[23]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[24]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[25]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[26]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[27]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[28]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[29]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[30]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[31]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[32]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[33]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[34]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[35]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[36]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[37]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[38]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[39]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[40]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[41]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[42]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[43]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[44]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[45]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[46]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[47]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[48]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[49]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[50]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[51]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[52]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[53]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[54]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[55]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[56]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[57]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[58]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[59]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[60]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[61]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[62]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,37|0): Output port 'sum[63]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[0]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[1]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[2]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[3]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[4]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[5]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[6]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[7]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[8]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[9]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[10]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[11]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[12]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[13]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[14]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[15]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[16]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[17]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[18]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[19]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[20]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[21]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[22]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[23]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[24]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[25]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[26]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[27]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[28]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[29]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[30]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[31]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[32]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[33]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[34]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[35]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[36]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[37]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[38]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[39]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[40]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[41]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[42]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[43]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[44]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[45]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[46]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[47]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[48]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[49]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[50]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[51]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[52]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[53]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[54]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[55]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[56]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[57]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[58]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[59]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[60]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[61]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[62]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,38|0): Output port 'carry[63]' is assigned asynchronously.
+halstruct: *N,INFNOT (./test03.v,34|0): Ignoring wire 'cout[63]' with no fanout to module/design-unit outputs or child instances.
+@:cout[63] 
+halstruct: *M,_SCOPE: pp_tree16x64.S4_FINAL
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[0]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[1]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[2]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[3]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[4]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[5]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[6]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[7]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[8]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[9]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[10]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[11]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[12]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[13]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[14]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[15]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[16]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[17]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[18]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[19]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[20]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[21]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[22]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[23]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[24]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[25]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[26]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[27]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[28]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[29]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[30]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[31]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[32]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[33]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[34]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[35]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[36]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[37]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[38]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[39]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[40]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[41]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[42]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[43]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[44]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[45]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[46]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[47]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[48]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[49]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[50]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[51]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[52]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[53]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[54]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[55]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[56]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[57]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[58]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[59]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[60]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[61]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[62]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,66|0): Output port 'sum[63]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[0]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[1]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[2]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[3]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[4]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[5]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[6]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[7]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[8]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[9]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[10]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[11]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[12]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[13]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[14]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[15]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[16]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[17]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[18]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[19]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[20]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[21]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[22]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[23]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[24]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[25]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[26]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[27]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[28]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[29]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[30]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[31]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[32]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[33]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[34]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[35]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[36]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[37]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[38]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[39]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[40]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[41]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[42]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[43]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[44]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[45]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[46]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[47]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[48]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[49]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[50]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[51]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[52]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[53]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[54]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[55]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[56]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[57]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[58]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[59]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[60]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[61]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[62]' is assigned asynchronously.
+halstruct: *W,SYNPRT (./test03.v,67|0): Output port 'carry[63]' is assigned asynchronously.
+halstruct: *W,ATLGLC (./test03.v,85|0): Glue logic inferred in top-level module/design-unit 'pp_tree16x64'.
+@:pp_tree16x64 pp_tree16x64
+halstruct: (./test03.v,129): HDL-statement inferred as glue logic.
+@:cl0 pp_tree16x64
+halstruct: (./test03.v,130): HDL-statement inferred as glue logic.
+@:cl1 pp_tree16x64
+halstruct: (./test03.v,140): HDL-statement inferred as glue logic.
+@:cl2 pp_tree16x64
+halstruct: (./test03.v,141): HDL-statement inferred as glue logic.
+@:cl3 pp_tree16x64
+halstruct: (./test03.v,151): HDL-statement inferred as glue logic.
+@:cl4 pp_tree16x64
+halstruct: (./test03.v,152): HDL-statement inferred as glue logic.
+@:cl5 pp_tree16x64
+halstruct: (./test03.v,161): HDL-statement inferred as glue logic.
+@:cl6 pp_tree16x64
+halstruct: *N,NUMDFF (./test03.v,85|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 2.
+halstruct: Total warnings = 259.
+~:DSCNCK
+^:DSCNCK
+~:SLENEX
+^:SLENEX
+~:DSCNEN
+^:DSCNEN
+~:PCNOTC
+^:PCNOTC
+~:INPASN
+~:UNCONN
+~:UNDRIV
+~:USEPRT
+~:UASPRT
+~:URDPRT
+~:GATCLK
+~:RENAME
+~:RWRACE
+~:WWRACE
+~:LPISCS
+~:LPSRCS
+~:CMBPAU
+^:CMBPAU
+~:ASNCFL
+^:ASNCFL
+~:CONTLN
+^:CONTLN
+~:LATINF
+^:LATINF
+~:MULMCK
+^:MULMCK
+~:FFCKNP
+^:FFCKNP
+~:GTDCLK
+^:GTDCLK
+~:CLKLAT
+^:CLKLAT
+~:CLKNPI
+^:CLKNPI
+~:GTCLKN
+^:GTCLKN
+~:MRSTDT
+^:MRSTDT
+~:FDTHRU
+^:FDTHRU
+~:DFDRVS
+^:DFDRVS
+~:NEFLOP
+^:NEFLOP
+~:ACNCPI
+^:ACNCPI
+~:LENCPI
+^:LENCPI
+~:CLKDAT
+^:CLKDAT
+~:CLKLDT
+^:CLKLDT
+~:CLKINF
+^:CLKINF
+~:CDFDAT
+^:CDFDAT
+~:CDLDAT
+^:CDLDAT
+~:CAAFSR
+^:CAAFSR
+~:CACSRF
+^:CACSRF
+~:CAALSR
+^:CAALSR
+~:CACSRL
+^:CACSRL
+~:CLKDMN
+^:CLKDMN
+~:INSYNC
+^:INSYNC
+~:CBPAHI
+^:CBPAHI
+~:LFLTSE
+^:LFLTSE
+~:LFFTNE
+^:LFFTNE
+~:INFNOT
+^:INFNOT
+~:DALIAS
+^:DALIAS
+~:JKFFDT
+^:JKFFDT
+~:LATRAN
+^:LATRAN
+~:UNCONI
+^:UNCONI
+~:UNCONO
+^:UNCONO
+~:DIFCLK
+^:DIFCLK
+~:DIFRST
+^:DIFRST
+~:MLTDRV
+^:MLTDRV
+~:SUTHRU
+^:SUTHRU
+~:SEICLK
+^:SEICLK
+~:SMTCLK
+^:SMTCLK
+~:ASRTCK
+^:ASRTCK
+~:ASRTCL
+^:ASRTCL
+~:ASRTSC
+^:ASRTSC
+~:SCICLK
+^:SCICLK
+~:MULTCK
+^:MULTCK
+~:NOTCLK
+^:NOTCLK
+~:TCDFDT
+^:TCDFDT
+~:TCDLDT
+^:TCDLDT
+~:TCKDAT
+^:TCKDAT
+~:TCKLDT
+^:TCKLDT
+~:TXCNOP
+^:TXCNOP
+~:MEMNOP
+^:MEMNOP
+~:TENNOC
+^:TENNOC
+~:TENNOD
+^:TENNOD
+~:GLTASR
+^:GLTASR
+~:RSTEDG
+^:RSTEDG
+~:NOTSCN
+^:NOTSCN
+~:MCKNDB
+^:MCKNDB
+~:WENNDB
+^:WENNDB
+~:SCNLEN
+^:SCNLEN
+~:TMSCFF
+^:TMSCFF
+~:OUTMNR
+^:OUTMNR
+~:INPMNR
+^:INPMNR
+~:SRENSL
+^:SRENSL
+~:LDFFPI
+^:LDFFPI
+~:RSTDAT
+^:RSTDAT
+~:RSTGNH
+^:RSTGNH
+~:CLKGNH
+^:CLKGNH
+~:MXTSBC
+^:MXTSBC
+~:TSBNTH
+^:TSBNTH
+~:MXFNOT
+^:MXFNOT
+~:ATLGLC
+^:ATLGLC
+~:SLNOTP
+^:SLNOTP
+~:TPOUNR
+^:TPOUNR
+~:SELCLK
+^:SELCLK
+~:EDGMIX
+^:EDGMIX
+~:LGRSTL
+^:LGRSTL
+~:FRSTDL
+^:FRSTDL
+~:FRSTDF
+^:FRSTDF
+~:RSTDPT
+^:RSTDPT
+~:CLKDPT
+^:CLKDPT
+~:CLKUCL
+^:CLKUCL
+~:RSTUCL
+^:RSTUCL
+~:ENGTNR
+^:ENGTNR
+~:RSTDMN
+^:RSTDMN
+~:CLKNTP
+^:CLKNTP
+~:ADRSND
+^:ADRSND
+~:CGCENC
+^:CGCENC
+~:SEDFRS
+^:SEDFRS
+~:MULTCC
+^:MULTCC
+~:SMCKRS
+^:SMCKRS
+~:MEMNCB
+^:MEMNCB
+~:MTOMPH
+^:MTOMPH
+~:UVRFCN
+^:UVRFCN
+~:CONVRF
+^:CONVRF
+~:RSTENA
+^:RSTENA
+~:MOTINP
+^:MOTINP
+~:OPDNMT
+^:OPDNMT
+~:FENCNT
+^:FENCNT
+~:TPIUNR
+^:TPIUNR
+~:IPRTNR
+^:IPRTNR
+~:SYNPRT
+^:SYNPRT
+~:CONCLK
+^:CONCLK
+~:DATUNB
+^:DATUNB
+~:RSTINF
+^:RSTINF
+~:CKSMFC
+^:CKSMFC
+~:CDRNCF
+^:CDRNCF
+~:SAMESR
+^:SAMESR
+~:CGECCP
+^:CGECCP
+~:RSTNFR
+^:RSTNFR
+~:DTUNCP
+^:DTUNCP
+~:INSTCL
+^:INSTCL
+~:INSTCN
+^:INSTCN
+~:RSTCCK
+^:RSTCCK
+~:CGCPCK
+^:CGCPCK
+~:RSTCLK
+^:RSTCLK
+hal: *M,_SCOPE: __dummy_top

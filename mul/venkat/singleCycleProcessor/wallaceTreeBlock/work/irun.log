@@ -1,0 +1,60 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 21, 2023 at 00:41:17 IST
+irun
+	-access +rwc
+	../rtl/test00.v
+	../verification/test00_tb.v
+file: ../rtl/test00.v
+	module worklib.compressor42_vec:v
+		errors: 0, warnings: 0
+	module worklib.pp_tree16x64:v
+		errors: 0, warnings: 0
+file: ../verification/test00_tb.v
+	module worklib.tb_pp_tree16x64:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+    compressor42_vec  S1_0 (
+                         |
+ncelab: *W,CUVWSP (../rtl/test00.v,76|25): 1 output port was not connected:
+ncelab: (../rtl/test00.v,9): c_end
+
+    compressor42_vec S1_1 (
+                        |
+ncelab: *W,CUVWSP (../rtl/test00.v,81|24): 1 output port was not connected:
+ncelab: (../rtl/test00.v,9): c_end
+
+    compressor42_vec S1_2 (
+                        |
+ncelab: *W,CUVWSP (../rtl/test00.v,86|24): 1 output port was not connected:
+ncelab: (../rtl/test00.v,9): c_end
+
+    compressor42_vec S1_3 (
+                        |
+ncelab: *W,CUVWSP (../rtl/test00.v,91|24): 1 output port was not connected:
+ncelab: (../rtl/test00.v,9): c_end
+
+    compressor42_vec S2_L (
+                        |
+ncelab: *W,CUVWSP (../rtl/test00.v,102|24): 1 output port was not connected:
+ncelab: (../rtl/test00.v,9): c_end
+
+    compressor42_vec S2_R (
+                        |
+ncelab: *W,CUVWSP (../rtl/test00.v,109|24): 1 output port was not connected:
+ncelab: (../rtl/test00.v,9): c_end
+
+    compressor42_vec S3_FINAL (
+                            |
+ncelab: *W,CUVWSP (../rtl/test00.v,117|28): 1 output port was not connected:
+ncelab: (../rtl/test00.v,9): c_end
+
+	Top level design units:
+		tb_pp_tree16x64
+	Modules w/wo timescales:
+		timescale of worklib.tb_pp_tree16x64:v = 1ns/1ps
+		timescale of worklib.pp_tree16x64:v = NOTSET
+		timescale of worklib.compressor42_vec:v = NOTSET
+ncelab: *F,CUMSTS: Timescale directive missing on one or more modules.
+irun: *E,ELBERR: Error during elaboration (status 2), exiting.
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 21, 2023 at 00:41:17 IST  (total: 00:00:00)

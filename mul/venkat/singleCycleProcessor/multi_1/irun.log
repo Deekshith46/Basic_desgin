@@ -1,0 +1,78 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 26, 2023 at 08:35:29 IST
+irun
+	-access +rwc
+	multi_13.v
+	multi_13_tb.v
+file: multi_13.v
+genvar i;
+     |
+ncvlog: *E,NOTSTT (multi_13.v,14|5): expecting a statement [9(IEEE)].
+                3'b000, 3'b111: partial_products[i] = 64'd0; // 0
+                                                |
+ncvlog: *E,EXPLPA (multi_13.v,19|48): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b000, 3'b111: partial_products[i] = 64'd0; // 0
+                                                  |
+ncvlog: *E,EXPLPA (multi_13.v,19|50): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b001, 3'b010: partial_products[i] = {{32{A[31]}}, A} << (2*i); // +A
+                                                |
+ncvlog: *E,EXPLPA (multi_13.v,20|48): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b001, 3'b010: partial_products[i] = {{32{A[31]}}, A} << (2*i); // +A
+                                                  |
+ncvlog: *E,EXPLPA (multi_13.v,20|50): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b001, 3'b010: partial_products[i] = {{32{A[31]}}, A} << (2*i); // +A
+                                                               |
+ncvlog: *E,EXPCOL (multi_13.v,20|63): expecting a colon (':') [3.2.1][3.8(IEEE)].
+                3'b001, 3'b010: partial_products[i] = {{32{A[31]}}, A} << (2*i); // +A
+                                                                |
+ncvlog: *E,EXPLPA (multi_13.v,20|64): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b001, 3'b010: partial_products[i] = {{32{A[31]}}, A} << (2*i); // +A
+                                                                     |
+ncvlog: *E,EXPLPA (multi_13.v,20|69): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b011:          partial_products[i] = ({{31{A[31]}}, A, 1'b0}) << (2*i); // +2A
+                                                 |
+ncvlog: *E,EXPLPA (multi_13.v,21|49): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b011:          partial_products[i] = ({{31{A[31]}}, A, 1'b0}) << (2*i); // +2A
+                                                   |
+ncvlog: *E,EXPLPA (multi_13.v,21|51): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b011:          partial_products[i] = ({{31{A[31]}}, A, 1'b0}) << (2*i); // +2A
+                                                                                 |
+ncvlog: *E,EXPSMC (multi_13.v,21|81): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+                3'b100:          partial_products[i] = -( {{31{A[31]}}, A, 1'b0} << (2*i)); // -2A
+                                                 |
+ncvlog: *E,EXPLPA (multi_13.v,22|49): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b100:          partial_products[i] = -( {{31{A[31]}}, A, 1'b0} << (2*i)); // -2A
+                                                   |
+ncvlog: *E,EXPLPA (multi_13.v,22|51): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b101, 3'b110: partial_products[i] = -( {{32{A[31]}}, A} << (2*i)); // -A
+                                                |
+ncvlog: *E,EXPLPA (multi_13.v,23|48): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+                3'b101, 3'b110: partial_products[i] = -( {{32{A[31]}}, A} << (2*i)); // -A
+                                                  |
+ncvlog: *E,EXPLPA (multi_13.v,23|50): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+            result = result + partial_products[i]; // accumulate
+                   |
+ncvlog: *E,EXPLPA (multi_13.v,26|19): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+            result = result + partial_products[i]; // accumulate
+                            |
+ncvlog: *E,EXPLPA (multi_13.v,26|28): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+            result = result + partial_products[i]; // accumulate
+                                                |
+ncvlog: *E,EXPCOL (multi_13.v,26|48): expecting a colon (':') [3.2.1][3.8(IEEE)].
+            result = result + partial_products[i]; // accumulate
+                                                 |
+ncvlog: *E,EXPLPA (multi_13.v,26|49): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+    end
+      |
+ncvlog: *E,EXPENM (multi_13.v,29|6): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module worklib.booth_radix4_multiplier_32:v
+		errors: 20, warnings: 0
+file: multi_13_tb.v
+    booth_radix4_multiplier_32 uut (.A(A), .B(B), .partial_products(partial_products), .P(P));
+                                                                                   |
+ncvlog: *E,MEMNDI (multi_13_tb.v,6|83): Memory or an array reference requires an index [3.8][4.2.2(IEEE)].
+	module worklib.tb_booth_radix4_32:v
+		errors: 1, warnings: 0
+ncvlog: *F,NOTOPL: no top-level unit found, must have recursive instances.
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 26, 2023 at 08:35:29 IST  (total: 00:00:00)

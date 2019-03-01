@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+../rtl/test00.v
+../verification/test00_tb.v

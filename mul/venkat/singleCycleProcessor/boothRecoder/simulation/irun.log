@@ -1,0 +1,121 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 27, 2023 at 16:02:54 IST
+irun
+	-access +rwc
+	../rtl/test00.v
+	../verification/test00_tb.v
+Recompiling... reason: file '../rtl/test00.v' is newer than expected.
+	expected: Mon Feb 27 15:59:41 2023
+	actual:   Mon Feb 27 16:02:48 2023
+file: ../rtl/test00.v
+	module worklib.booth:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_ppGenTB
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.booth:v <0x17a66419>
+			streams:   7, words:  1988
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign one[i] =  wireCONDITION ^ y[i];
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,32|11): Bit-select or part-select index out of declared bounds.
+		assign wireNOT = ~one[i];
+		                    |
+ncelab: *W,BNDWRN (../rtl/test00.v,33|22): Bit-select or part-select index out of declared bounds.
+		assign two[i] = wireNOT & wireXOR ;
+		         |
+ncelab: *E,BNDERR (../rtl/test00.v,35|11): Bit-select or part-select index out of declared bounds.
+		assign sign[i] = y[i+1];
+		          |
+ncelab: *E,BNDERR (../rtl/test00.v,36|12): Bit-select or part-select index out of declared bounds.
+		assign wireCONDITION = (i == 0) ? 0 : y[i-1];
+		                                      |
+ncelab: *W,BNDWRN (../rtl/test00.v,31|40): Bit-select or part-select index out of declared bounds.
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 27, 2023 at 16:02:55 IST  (total: 00:00:01)

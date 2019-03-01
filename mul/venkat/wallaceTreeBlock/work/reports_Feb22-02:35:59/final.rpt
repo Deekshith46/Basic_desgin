@@ -1,0 +1,51 @@
+
+
+Working Directory = /home/sgeuser114/Desktop/venkat/singleCycleProcessor/wallaceTreeBlock/work
+QoS Summary for pp_tree16x64
+==========================================================================================
+Metric                          generic         map             syn_opt         final          
+==========================================================================================
+Slack (ps):                       135             173             173             173
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                       135             173             173             173
+  CG  (ps):                  no_value        no_value        no_value        no_value
+TNS (ps):                           0               0               0               0
+  R2R (ps):                  no_value        no_value        no_value        no_value
+  I2R (ps):                  no_value        no_value        no_value        no_value
+  R2O (ps):                  no_value        no_value        no_value        no_value
+  I2O (ps):                         0               0               0               0
+  CG  (ps):                  no_value        no_value        no_value        no_value
+Failing Paths:                      0               0               0               0
+Cell Area:                     23,538           4,569           4,569           4,569
+Total Cell Area:               23,538           4,569           4,569           4,569
+Leaf Instances:                 8,818             920             920             920
+Total Instances:                8,818             920             920             920
+Utilization (%):                 0.00            0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value        no_value
+==========================================================================================
+CPU  Runtime (h:m:s):        00:00:51        00:00:42        00:00:02        00:00:01
+Real Runtime (h:m:s):        00:04:01        00:00:24        00:00:04        00:00:02
+CPU  Elapsed (h:m:s):        00:00:59        00:01:41        00:01:43        00:01:44
+Real Elapsed (h:m:s):        00:04:03        00:04:27        00:04:31        00:04:33
+Memory (MB):                   956.08          929.47          926.47          926.47
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:04:32
+Total Memory (MB):     926.47
+Executable Version:    17.22-s017_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
