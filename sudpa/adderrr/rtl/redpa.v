@@ -1,75 +1,66 @@
-module DPA1(cout,final_sum,a,b,cin,signed_en,negative_flag,overflow_flag,zero_flag);
+`timescale 1ns / 1ps
 
-parameter N=64;
+module DPA1(
+    cout,
+    final_sum,
+    a,
+    b,
+    cin,
+    signed_en,
+    negative_flag,
+    overflow_flag,
+    zero_flag
+);
+    parameter N = 64;
+    input  [N-1:0] a, b;
+    input          cin, signed_en;
+    output [N-1:0] final_sum;
+    output         cout;
+    output         negative_flag;
+    output         overflow_flag;
+    output         zero_flag;
 
-input [N-1:0] a,b;           //inputs
-input cin,signed_en;
-output reg [N-1:0] final_sum;//output
-output cout;
+    // internal
+    wire [N-1:0] p, g;
+    wire [N:0]   c;
+    wire [N-1:0] sum0, sum1;
+    wire [N-1:0] raw_sum;
+    wire [N-1:0] mag_sum; // magnitude of raw_sum when negative
 
-wire [N-1:0] p , g; 
-wire [N:0] c;
-wire [N-1:0] sum0 , sum1;
-wire [N-1:0] sum;
-output reg negative_flag,overflow_flag;
-output zero_flag;
+    assign p = a ^ b;
+    assign g = a & b;
+    assign sum0 = p;
+    assign sum1 = ~p;
+    assign c[0] = cin;
 
-//step1 : propagate and generate signals
+    genvar i;
+    generate
+        for (i = 0; i < N; i = i + 1) begin : carry_logic
+            assign c[i+1] = g[i] | (p[i] & c[i]);
+        end
+    endgenerate
+    assign cout = c[N];
 
-assign p = a ^ b;
-assign g = a & b;
+    genvar j;
+    generate
+        for (j = 0; j < N; j = j + 1) begin : sum_logic
+            assign raw_sum[j] = c[j] ? sum1[j] : sum0[j];
+        end
+    endgenerate
 
-//step2 : sum precomputation
+    // magnitude conversion (if negative): magnitude = two's complement of raw_sum
+    assign mag_sum = (~raw_sum) + 1'b1;
 
-assign sum0 = p;
-assign sum1 = ~(p);
+    // signed overflow computed from carries (correct even if we display magnitude)
+    wire signed_overflow = c[N] ^ c[N-1];
 
-//step3 : carry generation
+    // final_sum: if signed_en and raw_sum MSB=1 -> show magnitude else show raw_sum
+    assign final_sum = (signed_en && raw_sum[N-1]) ? mag_sum : raw_sum;
 
-assign c[0] = cin;
+    // flags:
+    assign zero_flag    = (final_sum == {N{1'b0}});    // reflects displayed value
+    assign negative_flag= signed_en ? raw_sum[N-1] : 1'b0; // sign from raw sum
+    assign overflow_flag= signed_en ? signed_overflow : cout; // signed or unsigned
 
-genvar i;
-generate
-for(i = 0; i<N ; i = i+1)
-begin:carry_logic    
-assign c[i+1] = g[i] |( p[i] & c[i]);
-end
-endgenerate
-
-assign cout = c[N];
-
-//step4 : final sum logic
-
-genvar j;
-generate
-for(j = 0; j<N ; j = j+1)
-begin:sum_logic
-assign sum[j] = c[j] ? sum1[j] : sum0[j];
-end
-endgenerate
-
-
-//step5 : signed and unsigned interpretation and flags
-
-always@(*)
-begin
-    if(signed_en && sum[N-1])
-    begin
-        final_sum = ~(sum[N-1:0])+1;
-        negative_flag = signed_en ? sum[N-1] : 1'b0;
-        overflow_flag = (a[N-1] & b[N-1] & (~(final_sum[N-1])) |(~(a[N-1])) & (~(b[N-1])) & final_sum[N-1]);
-
-    end
-    else
-    begin
-        final_sum = sum[N-1:0];
-        negative_flag = 0;
-        overflow_flag = cout;
-    end
-
-   
-
-end
- assign zero_flag = final_sum == 0;
 endmodule
 

@@ -2,4 +2,5 @@
 // File created by:  irun
 // Do not modify this file
 //
-/home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/sub.v
+/home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/alu_top.v
+/home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/dpa_new_tb.v

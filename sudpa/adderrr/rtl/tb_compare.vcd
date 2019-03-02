@@ -1,0 +1,1658 @@
+$date
+    Mar  2, 2019  03:08:38
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s051
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_compare $end
+$var parameter 32 !    WIDTH  $end
+$var reg      64 "    a [63:0] $end
+$var reg      64 #    b [63:0] $end
+$var reg       1 $    cin  $end
+$var reg       1 %    signed_en  $end
+$var wire     64 &    final_sum [63:0] $end
+$var wire      1 '    cout  $end
+$var wire      1 (    negative_flag  $end
+$var wire      1 )    overflow_flag  $end
+$var wire      1 *    zero_flag  $end
+
+$scope module dut $end
+$var parameter 32 +    N  $end
+$var wire     64 ,    a [63:0] $end
+$var wire     64 -    b [63:0] $end
+$var wire      1 .    cin  $end
+$var wire      1 /    signed_en  $end
+$var wire     64 &    final_sum [63:0] $end
+$var wire      1 '    cout  $end
+$var wire      1 (    negative_flag  $end
+$var wire      1 )    overflow_flag  $end
+$var wire      1 *    zero_flag  $end
+$var wire     64 0    p [63:0] $end
+$var wire     64 1    g [63:0] $end
+$var wire      1 2    c [64] $end
+$var wire      1 3    c [63] $end
+$var wire      1 4    c [62] $end
+$var wire      1 5    c [61] $end
+$var wire      1 6    c [60] $end
+$var wire      1 7    c [59] $end
+$var wire      1 8    c [58] $end
+$var wire      1 9    c [57] $end
+$var wire      1 :    c [56] $end
+$var wire      1 ;    c [55] $end
+$var wire      1 <    c [54] $end
+$var wire      1 =    c [53] $end
+$var wire      1 >    c [52] $end
+$var wire      1 ?    c [51] $end
+$var wire      1 @    c [50] $end
+$var wire      1 A    c [49] $end
+$var wire      1 B    c [48] $end
+$var wire      1 C    c [47] $end
+$var wire      1 D    c [46] $end
+$var wire      1 E    c [45] $end
+$var wire      1 F    c [44] $end
+$var wire      1 G    c [43] $end
+$var wire      1 H    c [42] $end
+$var wire      1 I    c [41] $end
+$var wire      1 J    c [40] $end
+$var wire      1 K    c [39] $end
+$var wire      1 L    c [38] $end
+$var wire      1 M    c [37] $end
+$var wire      1 N    c [36] $end
+$var wire      1 O    c [35] $end
+$var wire      1 P    c [34] $end
+$var wire      1 Q    c [33] $end
+$var wire      1 R    c [32] $end
+$var wire      1 S    c [31] $end
+$var wire      1 T    c [30] $end
+$var wire      1 U    c [29] $end
+$var wire      1 V    c [28] $end
+$var wire      1 W    c [27] $end
+$var wire      1 X    c [26] $end
+$var wire      1 Y    c [25] $end
+$var wire      1 Z    c [24] $end
+$var wire      1 [    c [23] $end
+$var wire      1 \    c [22] $end
+$var wire      1 ]    c [21] $end
+$var wire      1 ^    c [20] $end
+$var wire      1 _    c [19] $end
+$var wire      1 `    c [18] $end
+$var wire      1 a    c [17] $end
+$var wire      1 b    c [16] $end
+$var wire      1 c    c [15] $end
+$var wire      1 d    c [14] $end
+$var wire      1 e    c [13] $end
+$var wire      1 f    c [12] $end
+$var wire      1 g    c [11] $end
+$var wire      1 h    c [10] $end
+$var wire      1 i    c [9] $end
+$var wire      1 j    c [8] $end
+$var wire      1 k    c [7] $end
+$var wire      1 l    c [6] $end
+$var wire      1 m    c [5] $end
+$var wire      1 n    c [4] $end
+$var wire      1 o    c [3] $end
+$var wire      1 p    c [2] $end
+$var wire      1 q    c [1] $end
+$var wire      1 r    c [0] $end
+$var wire     64 s    sum0 [63:0] $end
+$var wire     64 t    sum1 [63:0] $end
+$var wire      1 u    raw_sum [63] $end
+$var wire      1 v    raw_sum [62] $end
+$var wire      1 w    raw_sum [61] $end
+$var wire      1 x    raw_sum [60] $end
+$var wire      1 y    raw_sum [59] $end
+$var wire      1 z    raw_sum [58] $end
+$var wire      1 {    raw_sum [57] $end
+$var wire      1 |    raw_sum [56] $end
+$var wire      1 }    raw_sum [55] $end
+$var wire      1 ~    raw_sum [54] $end
+$var wire      1 !!   raw_sum [53] $end
+$var wire      1 "!   raw_sum [52] $end
+$var wire      1 #!   raw_sum [51] $end
+$var wire      1 $!   raw_sum [50] $end
+$var wire      1 %!   raw_sum [49] $end
+$var wire      1 &!   raw_sum [48] $end
+$var wire      1 '!   raw_sum [47] $end
+$var wire      1 (!   raw_sum [46] $end
+$var wire      1 )!   raw_sum [45] $end
+$var wire      1 *!   raw_sum [44] $end
+$var wire      1 +!   raw_sum [43] $end
+$var wire      1 ,!   raw_sum [42] $end
+$var wire      1 -!   raw_sum [41] $end
+$var wire      1 .!   raw_sum [40] $end
+$var wire      1 /!   raw_sum [39] $end
+$var wire      1 0!   raw_sum [38] $end
+$var wire      1 1!   raw_sum [37] $end
+$var wire      1 2!   raw_sum [36] $end
+$var wire      1 3!   raw_sum [35] $end
+$var wire      1 4!   raw_sum [34] $end
+$var wire      1 5!   raw_sum [33] $end
+$var wire      1 6!   raw_sum [32] $end
+$var wire      1 7!   raw_sum [31] $end
+$var wire      1 8!   raw_sum [30] $end
+$var wire      1 9!   raw_sum [29] $end
+$var wire      1 :!   raw_sum [28] $end
+$var wire      1 ;!   raw_sum [27] $end
+$var wire      1 <!   raw_sum [26] $end
+$var wire      1 =!   raw_sum [25] $end
+$var wire      1 >!   raw_sum [24] $end
+$var wire      1 ?!   raw_sum [23] $end
+$var wire      1 @!   raw_sum [22] $end
+$var wire      1 A!   raw_sum [21] $end
+$var wire      1 B!   raw_sum [20] $end
+$var wire      1 C!   raw_sum [19] $end
+$var wire      1 D!   raw_sum [18] $end
+$var wire      1 E!   raw_sum [17] $end
+$var wire      1 F!   raw_sum [16] $end
+$var wire      1 G!   raw_sum [15] $end
+$var wire      1 H!   raw_sum [14] $end
+$var wire      1 I!   raw_sum [13] $end
+$var wire      1 J!   raw_sum [12] $end
+$var wire      1 K!   raw_sum [11] $end
+$var wire      1 L!   raw_sum [10] $end
+$var wire      1 M!   raw_sum [9] $end
+$var wire      1 N!   raw_sum [8] $end
+$var wire      1 O!   raw_sum [7] $end
+$var wire      1 P!   raw_sum [6] $end
+$var wire      1 Q!   raw_sum [5] $end
+$var wire      1 R!   raw_sum [4] $end
+$var wire      1 S!   raw_sum [3] $end
+$var wire      1 T!   raw_sum [2] $end
+$var wire      1 U!   raw_sum [1] $end
+$var wire      1 V!   raw_sum [0] $end
+$var wire     64 W!   mag_sum [63:0] $end
+$var wire      1 X!   signed_overflow  $end
+
+$scope begin carry_logic[0] $end
+$var parameter 32 Y!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[1] $end
+$var parameter 32 Z!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[2] $end
+$var parameter 32 [!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[3] $end
+$var parameter 32 \!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[4] $end
+$var parameter 32 ]!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[5] $end
+$var parameter 32 ^!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[6] $end
+$var parameter 32 _!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[7] $end
+$var parameter 32 `!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[8] $end
+$var parameter 32 a!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[9] $end
+$var parameter 32 b!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[10] $end
+$var parameter 32 c!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[11] $end
+$var parameter 32 d!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[12] $end
+$var parameter 32 e!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[13] $end
+$var parameter 32 f!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[14] $end
+$var parameter 32 g!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[15] $end
+$var parameter 32 h!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[16] $end
+$var parameter 32 i!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[17] $end
+$var parameter 32 j!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[18] $end
+$var parameter 32 k!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[19] $end
+$var parameter 32 l!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[20] $end
+$var parameter 32 m!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[21] $end
+$var parameter 32 n!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[22] $end
+$var parameter 32 o!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[23] $end
+$var parameter 32 p!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[24] $end
+$var parameter 32 q!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[25] $end
+$var parameter 32 r!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[26] $end
+$var parameter 32 s!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[27] $end
+$var parameter 32 t!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[28] $end
+$var parameter 32 u!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[29] $end
+$var parameter 32 v!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[30] $end
+$var parameter 32 w!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[31] $end
+$var parameter 32 x!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[32] $end
+$var parameter 32 y!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[33] $end
+$var parameter 32 z!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[34] $end
+$var parameter 32 {!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[35] $end
+$var parameter 32 |!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[36] $end
+$var parameter 32 }!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[37] $end
+$var parameter 32 ~!   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[38] $end
+$var parameter 32 !"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[39] $end
+$var parameter 32 ""   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[40] $end
+$var parameter 32 #"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[41] $end
+$var parameter 32 $"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[42] $end
+$var parameter 32 %"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[43] $end
+$var parameter 32 &"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[44] $end
+$var parameter 32 '"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[45] $end
+$var parameter 32 ("   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[46] $end
+$var parameter 32 )"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[47] $end
+$var parameter 32 *"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[48] $end
+$var parameter 32 +"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[49] $end
+$var parameter 32 ,"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[50] $end
+$var parameter 32 -"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[51] $end
+$var parameter 32 ."   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[52] $end
+$var parameter 32 /"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[53] $end
+$var parameter 32 0"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[54] $end
+$var parameter 32 1"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[55] $end
+$var parameter 32 2"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[56] $end
+$var parameter 32 3"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[57] $end
+$var parameter 32 4"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[58] $end
+$var parameter 32 5"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[59] $end
+$var parameter 32 6"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[60] $end
+$var parameter 32 7"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[61] $end
+$var parameter 32 8"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[62] $end
+$var parameter 32 9"   i [31:0] $end
+$upscope $end
+
+
+$scope begin carry_logic[63] $end
+$var parameter 32 :"   i [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[0] $end
+$var parameter 32 ;"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[1] $end
+$var parameter 32 <"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[2] $end
+$var parameter 32 ="   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[3] $end
+$var parameter 32 >"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[4] $end
+$var parameter 32 ?"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[5] $end
+$var parameter 32 @"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[6] $end
+$var parameter 32 A"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[7] $end
+$var parameter 32 B"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[8] $end
+$var parameter 32 C"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[9] $end
+$var parameter 32 D"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[10] $end
+$var parameter 32 E"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[11] $end
+$var parameter 32 F"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[12] $end
+$var parameter 32 G"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[13] $end
+$var parameter 32 H"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[14] $end
+$var parameter 32 I"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[15] $end
+$var parameter 32 J"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[16] $end
+$var parameter 32 K"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[17] $end
+$var parameter 32 L"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[18] $end
+$var parameter 32 M"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[19] $end
+$var parameter 32 N"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[20] $end
+$var parameter 32 O"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[21] $end
+$var parameter 32 P"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[22] $end
+$var parameter 32 Q"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[23] $end
+$var parameter 32 R"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[24] $end
+$var parameter 32 S"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[25] $end
+$var parameter 32 T"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[26] $end
+$var parameter 32 U"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[27] $end
+$var parameter 32 V"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[28] $end
+$var parameter 32 W"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[29] $end
+$var parameter 32 X"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[30] $end
+$var parameter 32 Y"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[31] $end
+$var parameter 32 Z"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[32] $end
+$var parameter 32 ["   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[33] $end
+$var parameter 32 \"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[34] $end
+$var parameter 32 ]"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[35] $end
+$var parameter 32 ^"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[36] $end
+$var parameter 32 _"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[37] $end
+$var parameter 32 `"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[38] $end
+$var parameter 32 a"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[39] $end
+$var parameter 32 b"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[40] $end
+$var parameter 32 c"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[41] $end
+$var parameter 32 d"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[42] $end
+$var parameter 32 e"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[43] $end
+$var parameter 32 f"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[44] $end
+$var parameter 32 g"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[45] $end
+$var parameter 32 h"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[46] $end
+$var parameter 32 i"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[47] $end
+$var parameter 32 j"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[48] $end
+$var parameter 32 k"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[49] $end
+$var parameter 32 l"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[50] $end
+$var parameter 32 m"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[51] $end
+$var parameter 32 n"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[52] $end
+$var parameter 32 o"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[53] $end
+$var parameter 32 p"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[54] $end
+$var parameter 32 q"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[55] $end
+$var parameter 32 r"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[56] $end
+$var parameter 32 s"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[57] $end
+$var parameter 32 t"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[58] $end
+$var parameter 32 u"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[59] $end
+$var parameter 32 v"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[60] $end
+$var parameter 32 w"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[61] $end
+$var parameter 32 x"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[62] $end
+$var parameter 32 y"   j [31:0] $end
+$upscope $end
+
+
+$scope begin sum_logic[63] $end
+$var parameter 32 z"   j [31:0] $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b111111 z"
+b111110 y"
+b111101 x"
+b111100 w"
+b111011 v"
+b111010 u"
+b111001 t"
+b111000 s"
+b110111 r"
+b110110 q"
+b110101 p"
+b110100 o"
+b110011 n"
+b110010 m"
+b110001 l"
+b110000 k"
+b101111 j"
+b101110 i"
+b101101 h"
+b101100 g"
+b101011 f"
+b101010 e"
+b101001 d"
+b101000 c"
+b100111 b"
+b100110 a"
+b100101 `"
+b100100 _"
+b100011 ^"
+b100010 ]"
+b100001 \"
+b100000 ["
+b11111 Z"
+b11110 Y"
+b11101 X"
+b11100 W"
+b11011 V"
+b11010 U"
+b11001 T"
+b11000 S"
+b10111 R"
+b10110 Q"
+b10101 P"
+b10100 O"
+b10011 N"
+b10010 M"
+b10001 L"
+b10000 K"
+b1111 J"
+b1110 I"
+b1101 H"
+b1100 G"
+b1011 F"
+b1010 E"
+b1001 D"
+b1000 C"
+b111 B"
+b110 A"
+b101 @"
+b100 ?"
+b11 >"
+b10 ="
+b1 <"
+b0 ;"
+b111111 :"
+b111110 9"
+b111101 8"
+b111100 7"
+b111011 6"
+b111010 5"
+b111001 4"
+b111000 3"
+b110111 2"
+b110110 1"
+b110101 0"
+b110100 /"
+b110011 ."
+b110010 -"
+b110001 ,"
+b110000 +"
+b101111 *"
+b101110 )"
+b101101 ("
+b101100 '"
+b101011 &"
+b101010 %"
+b101001 $"
+b101000 #"
+b100111 ""
+b100110 !"
+b100101 ~!
+b100100 }!
+b100011 |!
+b100010 {!
+b100001 z!
+b100000 y!
+b11111 x!
+b11110 w!
+b11101 v!
+b11100 u!
+b11011 t!
+b11010 s!
+b11001 r!
+b11000 q!
+b10111 p!
+b10110 o!
+b10101 n!
+b10100 m!
+b10011 l!
+b10010 k!
+b10001 j!
+b10000 i!
+b1111 h!
+b1110 g!
+b1101 f!
+b1100 e!
+b1011 d!
+b1010 c!
+b1001 b!
+b1000 a!
+b111 `!
+b110 _!
+b101 ^!
+b100 ]!
+b11 \!
+b10 [!
+b1 Z!
+b0 Y!
+b1000000 +
+b1000000 !
+b101 "
+b11 #
+0$
+0%
+b1000 &
+0'
+0(
+0)
+0*
+b101 ,
+b11 -
+0.
+0/
+b110 0
+b1 1
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+1o
+1p
+1q
+0r
+b110 s
+b1111111111111111111111111111111111111111111111111111111111111001 t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+1S!
+0T!
+0U!
+0V!
+b1111111111111111111111111111111111111111111111111111111111111000 W!
+0X!
+$end
+#10000
+1%
+1/
+#20000
+b1111111111111111111111111111111111111111111111111111111111111001 #
+1$
+1.
+b1111111111111111111111111111111111111111111111111111111111111001 -
+1r
+1V!
+b1111111111111111111111111111111111111111111111111111111111111100 0
+b11 t
+b1111111111111111111111111111111111111111111111111111111111111100 s
+0p
+1n
+b1111111111111111111111111111111111111111111111111111111111110111 W!
+b1001 &
+1m
+0o
+1U!
+1T!
+0S!
+1Q!
+1P!
+1O!
+1N!
+1M!
+1L!
+1K!
+1J!
+1I!
+1H!
+1G!
+1F!
+1E!
+1D!
+1C!
+1B!
+1A!
+1@!
+1?!
+1>!
+1=!
+1<!
+1;!
+1:!
+19!
+18!
+17!
+16!
+15!
+14!
+13!
+12!
+11!
+10!
+1/!
+1.!
+1-!
+1,!
+1+!
+1*!
+1)!
+1(!
+1'!
+1&!
+1%!
+1$!
+1#!
+1"!
+1!!
+1~
+1}
+1|
+1{
+1z
+1y
+1x
+1w
+1v
+1u
+1(
+b11001 W!
+b1111111111111111111111111111111111111111111111111111111111110111 &
+0n
+1S!
+1l
+0Q!
+1k
+0P!
+b110001 W!
+0m
+1R!
+b11001 &
+0l
+1Q!
+b1100001 W!
+b110001 &
+1j
+0O!
+1i
+0N!
+b11000001 W!
+b1100001 &
+0k
+1P!
+0j
+1O!
+b110000001 W!
+b11000001 &
+1h
+0M!
+1g
+0L!
+b1100000001 W!
+b110000001 &
+0i
+1N!
+0h
+1M!
+b11000000001 W!
+b1100000001 &
+1f
+0K!
+1e
+0J!
+b110000000001 W!
+b11000000001 &
+0g
+1L!
+0f
+1K!
+b1100000000001 W!
+b110000000001 &
+1d
+0I!
+1c
+0H!
+b11000000000001 W!
+b1100000000001 &
+0e
+1J!
+0d
+1I!
+b110000000000001 W!
+b11000000000001 &
+1b
+0G!
+1a
+0F!
+b1100000000000001 W!
+b110000000000001 &
+0c
+1H!
+0b
+1G!
+b11000000000000001 W!
+b1100000000000001 &
+1`
+0E!
+1_
+0D!
+b110000000000000001 W!
+b11000000000000001 &
+0a
+1F!
+0`
+1E!
+b1100000000000000001 W!
+b110000000000000001 &
+1^
+0C!
+1]
+0B!
+b11000000000000000001 W!
+b1100000000000000001 &
+0_
+1D!
+0^
+1C!
+b110000000000000000001 W!
+b11000000000000000001 &
+1\
+0A!
+1[
+0@!
+b1100000000000000000001 W!
+b110000000000000000001 &
+0]
+1B!
+0\
+1A!
+b11000000000000000000001 W!
+b1100000000000000000001 &
+1Z
+0?!
+1Y
+0>!
+b110000000000000000000001 W!
+b11000000000000000000001 &
+0[
+1@!
+0Z
+1?!
+b1100000000000000000000001 W!
+b110000000000000000000001 &
+1X
+0=!
+1W
+0<!
+b11000000000000000000000001 W!
+b1100000000000000000000001 &
+0Y
+1>!
+0X
+1=!
+b110000000000000000000000001 W!
+b11000000000000000000000001 &
+1V
+0;!
+1U
+0:!
+b1100000000000000000000000001 W!
+b110000000000000000000000001 &
+0W
+1<!
+0V
+1;!
+b11000000000000000000000000001 W!
+b1100000000000000000000000001 &
+1T
+09!
+1S
+08!
+b110000000000000000000000000001 W!
+b11000000000000000000000000001 &
+0U
+1:!
+0T
+19!
+b1100000000000000000000000000001 W!
+b110000000000000000000000000001 &
+1R
+07!
+1Q
+06!
+b11000000000000000000000000000001 W!
+b1100000000000000000000000000001 &
+0S
+18!
+0R
+17!
+b110000000000000000000000000000001 W!
+b11000000000000000000000000000001 &
+1P
+05!
+1O
+04!
+b1100000000000000000000000000000001 W!
+b110000000000000000000000000000001 &
+0Q
+16!
+0P
+15!
+b11000000000000000000000000000000001 W!
+b1100000000000000000000000000000001 &
+1N
+03!
+1M
+02!
+b110000000000000000000000000000000001 W!
+b11000000000000000000000000000000001 &
+0O
+14!
+0N
+13!
+b1100000000000000000000000000000000001 W!
+b110000000000000000000000000000000001 &
+1L
+01!
+1K
+00!
+b11000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000001 &
+0M
+12!
+0L
+11!
+b110000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000001 &
+1J
+0/!
+1I
+0.!
+b1100000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000001 &
+0K
+10!
+0J
+1/!
+b11000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000001 &
+1H
+0-!
+1G
+0,!
+b110000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000001 &
+0I
+1.!
+0H
+1-!
+b1100000000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000000001 &
+1F
+0+!
+1E
+0*!
+b11000000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000000001 &
+0G
+1,!
+0F
+1+!
+b110000000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000000001 &
+1D
+0)!
+1C
+0(!
+b1100000000000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000000000001 &
+0E
+1*!
+0D
+1)!
+b11000000000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000000000001 &
+1B
+0'!
+1A
+0&!
+b110000000000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000000000001 &
+0C
+1(!
+0B
+1'!
+b1100000000000000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000000000000001 &
+1@
+0%!
+1?
+0$!
+b11000000000000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000000000000001 &
+0A
+1&!
+0@
+1%!
+b110000000000000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000000000000001 &
+1>
+0#!
+1=
+0"!
+b1100000000000000000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000000000000000001 &
+0?
+1$!
+0>
+1#!
+b11000000000000000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000000000000000001 &
+1<
+0!!
+1;
+0~
+b110000000000000000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000000000000000001 &
+0=
+1"!
+0<
+1!!
+b1100000000000000000000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000000000000000000001 &
+1:
+0}
+19
+0|
+b11000000000000000000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000000000000000000001 &
+0;
+1~
+0:
+1}
+b110000000000000000000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000000000000000000001 &
+18
+0{
+17
+0z
+b1100000000000000000000000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000000000000000000000001 &
+09
+1|
+08
+1{
+b11000000000000000000000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000000000000000000000001 &
+16
+0y
+15
+0x
+b110000000000000000000000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000000000000000000000001 &
+07
+1z
+06
+1y
+b1100000000000000000000000000000000000000000000000000000000001 W!
+b110000000000000000000000000000000000000000000000000000000001 &
+14
+0w
+13
+0v
+b11000000000000000000000000000000000000000000000000000000000001 W!
+b1100000000000000000000000000000000000000000000000000000000001 &
+05
+1x
+1X!
+1)
+04
+1w
+b110000000000000000000000000000000000000000000000000000000000001 W!
+b11000000000000000000000000000000000000000000000000000000000001 &
+12
+0u
+0(
+0X!
+1'
+0)
+b1100000000000000000000000000000000000000000000000000000000000001 W!
+b11111111111111111111111111111111111111111111111111111111111111 &
+03
+1v
+1X!
+1)
+b1000000000000000000000000000000000000000000000000000000000000001 W!
+02
+1u
+b111111111111111111111111111111111111111111111111111111111111111 &
+1(
+0X!
+0'
+0)
+b1 W!
+b1000000000000000000000000000000000000000000000000000000000000001 &
+b1 &
+#40000
+b1111111 "
+b1 #
+0$
+0%
+0/
+0.
+b1 -
+b1111111 ,
+0r
+0(
+0V!
+b1111110 0
+b1111111111111111111111111111111111111111111111111111111111111111 &
+b1111111111111111111111111111111111111111111111111111111110000001 t
+b1111110 s
+1p
+b10 W!
+b1111111111111111111111111111111111111111111111111111111111111110 &
+1o
+0U!
+0T!
+0O!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+0@!
+0?!
+0>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
+07!
+06!
+05!
+04!
+03!
+02!
+01!
+00!
+0/!
+0.!
+0-!
+0,!
+0+!
+0*!
+0)!
+0(!
+0'!
+0&!
+0%!
+0$!
+0#!
+0"!
+0!!
+0~
+0}
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+b1111111111111111111111111111111111111111111111111111111110001000 W!
+b1111000 &
+1n
+0S!
+b1111111111111111111111111111111111111111111111111111111110010000 W!
+1m
+0R!
+b1110000 &
+b1111111111111111111111111111111111111111111111111111111110100000 W!
+1l
+0Q!
+b1100000 &
+b1111111111111111111111111111111111111111111111111111111111000000 W!
+1k
+0P!
+b1000000 &
+b0 W!
+1O!
+b0 &
+1*
+b1111111111111111111111111111111111111111111111111111111110000000 W!
+b10000000 &
+0*
+#50000
+1%
+1/
+#60000

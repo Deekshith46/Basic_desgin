@@ -4,4 +4,5 @@
 //
 -access
 +rwc
-sub.v
+alu_top.v
+dpa_new_tb.v
