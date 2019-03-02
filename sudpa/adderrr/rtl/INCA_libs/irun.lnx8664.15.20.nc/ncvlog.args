@@ -6,7 +6,6 @@
 ./INCA_libs/irun.lnx8664.15.20.nc
 -RUNMODE
 alu_top.v
-dpa_new_tb.v
 -CDSLIB
 ./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
 -HDLVAR

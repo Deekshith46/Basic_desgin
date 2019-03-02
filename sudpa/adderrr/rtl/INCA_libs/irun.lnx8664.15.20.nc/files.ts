@@ -4,7 +4,10 @@
 1551479176 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/sub_tb.v
 1551484519 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/redpa.v
 1551479152 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/redpa_tb.v
-1551511177 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/dpa_new.v
-1551511658 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/dpa_new_tb.v
+1551511799 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/dpa_new.v
+1551515165 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/dpa_new_tb.v
 1551510528 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/dpa_new_1.v
-1551511613 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/alu_top.v
+1551511804 /home/vv2trainee2/Desktop/adder/sudpa/adderrr/rtl/alu_top.v
+1551518170 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/sudpa/adderrr/rtl/dpa_new_1.v
+1551519004 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/sudpa/adderrr/rtl/alu_top.v
+1551518490 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/sudpa/adderrr/rtl/dpa_new_tb.v
