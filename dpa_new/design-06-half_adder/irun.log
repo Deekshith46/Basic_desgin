@@ -1,0 +1,151 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 24, 2019 at 06:12:48 IST
+irun
+	-access +rwc
+	half_add.v
+	half_add_tb.sv
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Recompiling... reason: file './half_add_tb.sv' is newer than expected.
+	expected: Sun Feb 24 16:59:11 2019
+	actual:   Fri Mar 22 06:13:03 2019
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+file: half_add_tb.sv
+int count=6;
+         |
+ncvlog: *W,VARIST (half_add_tb.sv,184|9): Local static variable with initializer requires 'static' keyword.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x3bc892c7
+		tb_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    2       2
+		Interfaces:                 1       1
+		Programs:                   1       1
+		Registers:                 39      60
+		Scalar wires:               6       -
+		Initial blocks:             3       3
+		Parallel blocks:            1       1
+		Cont. assignments:          0       2
+		Pseudo assignments:         4       4
+		Assertions:                 1       1
+		Compilation units:          1       1
+		SV Class declarations:      6       6
+		SV Class specializations:   6       6
+	Writing initial simulation snapshot: worklib.tb_top:sv
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+RANDOMIZE SUCEESSFULLY
+[GEN] : A = 0 ,	 B = 0,	 SUM = 0, CARRY = 0
+[DRV] : A = 0 ,	 B = 0,	 SUM = 0, CARRY = 0
+[MON] : A = 0 ,	 B = 0,	 SUM = 0, CARRY = 0
+[SCO] : A = 0 ,	 B = 0,	 SUM = 0, CARRY = 0
+--------------HALF-ADDER VERIFED----------------
+---------------------------------------------
+RANDOMIZE SUCEESSFULLY
+[GEN] : A = 1 ,	 B = 0,	 SUM = 0, CARRY = 0
+[DRV] : A = 1 ,	 B = 0,	 SUM = 0, CARRY = 0
+[MON] : A = 1 ,	 B = 0,	 SUM = 1, CARRY = 0
+[SCO] : A = 1 ,	 B = 0,	 SUM = 1, CARRY = 0
+--------------HALF-ADDER VERIFED----------------
+---------------------------------------------
+RANDOMIZE SUCEESSFULLY
+[GEN] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 0
+[DRV] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 0
+[MON] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 1
+[SCO] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 1
+--------------HALF-ADDER VERIFED----------------
+---------------------------------------------
+RANDOMIZE SUCEESSFULLY
+[GEN] : A = 1 ,	 B = 0,	 SUM = 0, CARRY = 0
+[DRV] : A = 1 ,	 B = 0,	 SUM = 0, CARRY = 0
+[MON] : A = 1 ,	 B = 0,	 SUM = 1, CARRY = 0
+[SCO] : A = 1 ,	 B = 0,	 SUM = 1, CARRY = 0
+--------------HALF-ADDER VERIFED----------------
+---------------------------------------------
+RANDOMIZE SUCEESSFULLY
+[GEN] : A = 0 ,	 B = 1,	 SUM = 0, CARRY = 0
+[DRV] : A = 0 ,	 B = 1,	 SUM = 0, CARRY = 0
+[MON] : A = 0 ,	 B = 1,	 SUM = 1, CARRY = 0
+[SCO] : A = 0 ,	 B = 1,	 SUM = 1, CARRY = 0
+--------------HALF-ADDER VERIFED----------------
+---------------------------------------------
+RANDOMIZE SUCEESSFULLY
+[GEN] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 0
+[DRV] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 0
+[MON] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 1
+[SCO] : A = 1 ,	 B = 1,	 SUM = 0, CARRY = 1
+--------------HALF-ADDER VERIFED----------------
+---------------------------------------------
+Simulation complete via $finish(1) at time 24 NS + 1
+./half_add_tb.sv:191 $finish();
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 24, 2019 at 06:12:49 IST  (total: 00:00:01)

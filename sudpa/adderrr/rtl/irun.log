@@ -1,8 +1,9 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 02, 2019 at 15:00:06 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 02, 2019 at 15:14:03 IST
 irun
 	-access +rwc
 	alu_top.v
+	dpa_new_tb.v
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
@@ -27,6 +28,15 @@ irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+Recompiling... reason: file './alu_top.v' is newer than expected.
+	expected: Sat Mar  2 15:00:04 2019
+	actual:   Sat Mar  2 15:12:34 2019
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
@@ -39,8 +49,8 @@ ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-file: alu_top.v
-	module worklib.top:v
+file: dpa_new_tb.v
+	module worklib.tb_all_cases:v
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
@@ -66,7 +76,7 @@ ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/ho
 	Elaborating the design hierarchy:
 		Caching library 'worklib' ....... Done
 	Top level design units:
-		top
+		tb_all_cases
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
@@ -75,30 +85,47 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission den
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-		worklib.top:v <0x225d0fc3>
-			streams:   6, words:  1768
+		worklib.tb_all_cases:v <0x30dba5a4>
+			streams:   4, words: 48593
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:                 4       2
-		Registers:              14       8
-		Scalar wires:           15       -
-		Vectored wires:         21       -
+		Modules:                 5       3
+		Registers:              25      19
+		Scalar wires:           19       -
+		Vectored wires:         22       -
 		Always blocks:           4       2
+		Initial blocks:          1       1
 		Cont. assignments:      12       9
-		Pseudo assignments:      5       5
+		Pseudo assignments:      8       8
 		Simulation timescale:  1ps
-	Writing initial simulation snapshot: worklib.top:v
+	Writing initial simulation snapshot: worklib.tb_all_cases:v
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
 ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-Loading snapshot worklib.top:v .................... Done
+Loading snapshot worklib.tb_all_cases:v .................... Done
 ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-ncsim: *W,RNQUIE: Simulation is complete.
+=== Exhaustive sign-case TB (ADD_U, TC_SUM, SUB_U) ===
+format: OPC, a, b, dut(hex), expected(hex), cout, exp_cout, neg, zero, ovf
+ADD_U  a=7 b=2 -> dut=00000009 exp=00000009 cout=0 exp_cout=0 neg=0 zero=0 ovf=0
+TC_SUM a=7 b=2 -> dut=fffffff7 exp=fffffff7 (signed -9) cout=0 exp_cout=1 neg=1 zero=0 ovf=0
+SUB_U  a=7 b=2 -> dut=00000005 exp=00000005 cout=1 exp_cout=1 neg=0 zero=0 ovf=0
+ADD_U  a=-7 b=2 -> dut=fffffffb exp=fffffffb cout=0 exp_cout=0 neg=1 zero=0 ovf=0
+TC_SUM a=-7 b=2 -> dut=00000005 exp=00000005 (signed 5) cout=0 exp_cout=1 neg=0 zero=0 ovf=0
+SUB_U  a=-7 b=2 -> dut=fffffff7 exp=fffffff7 cout=1 exp_cout=1 neg=1 zero=0 ovf=0
+ADD_U  a=7 b=-2 -> dut=00000005 exp=00000005 cout=1 exp_cout=1 neg=0 zero=0 ovf=0
+TC_SUM a=7 b=-2 -> dut=fffffffb exp=fffffffb (signed -5) cout=0 exp_cout=1 neg=1 zero=0 ovf=0
+SUB_U  a=7 b=-2 -> dut=00000009 exp=00000009 cout=0 exp_cout=0 neg=0 zero=0 ovf=0
+ADD_U  a=-7 b=-2 -> dut=fffffff7 exp=fffffff7 cout=1 exp_cout=1 neg=1 zero=0 ovf=0
+TC_SUM a=-7 b=-2 -> dut=00000009 exp=00000009 (signed 9) cout=0 exp_cout=1 neg=0 zero=0 ovf=0
+SUB_U  a=-7 b=-2 -> dut=fffffffb exp=fffffffb cout=0 exp_cout=0 neg=1 zero=0 ovf=0
+=== TB finished ===
+Simulation complete via $finish(1) at time 29 NS + 0
+./dpa_new_tb.v:160     $finish;
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 02, 2019 at 15:00:06 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 02, 2019 at 15:14:03 IST  (total: 00:00:00)

@@ -95,3 +95,6 @@ s94(02Mar2019:14:44:35):  irun -access +rwc alu_top.v dpa_new_tb.v
 s95(02Mar2019:14:48:24):  irun -access +rwc alu_top.v dpa_new_tb.v 
 s96(02Mar2019:14:59:42):  irun -access +rwc alu_top.v 
 s97(02Mar2019:15:00:06):  irun -access +rwc alu_top.v 
+s98(02Mar2019:15:05:32):  irun -access +rwc alu_top.v dpa_new_tb.v 
+s99(02Mar2019:15:13:48):  irun -access +rwc alu_top.v dpa_new_tb.v 
+s100(02Mar2019:15:14:03):  irun -access +rwc alu_top.v dpa_new_tb.v 
