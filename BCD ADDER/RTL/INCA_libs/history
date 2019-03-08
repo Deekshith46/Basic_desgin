@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(08Mar2019:11:45:43):( irun -access +rwc bcd_adder.v )
+s2::(08Mar2019:11:46:33):( irun -access +rwc bcd_adder.v )
+s3::(08Mar2019:11:47:03):( irun -access +rwc bcd_adder.v )
+s4::(08Mar2019:11:47:22):( irun -access +rwc bcd_adder.v )
