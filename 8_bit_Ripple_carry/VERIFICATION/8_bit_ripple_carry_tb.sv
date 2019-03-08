@@ -16,13 +16,13 @@ initial begin
         $display("---------------------------");
 
     for(int i = 0 ; i<5 ; i++) begin
-        for(int j = 0 ; j<5 ; j++) begin
-            a = $urandom();
+       // for(int j = 0 ; j<5 ; j++) begin
+            a =$urandom();
             b =$urandom();
             cin =$urandom();
 #10;
     $display(" a=%0b , b=%0b, cin=%0b, sum=%0b, carry=%0d",a,b,cin,sum,cout);
-end
+//end
 end
 end 
 
