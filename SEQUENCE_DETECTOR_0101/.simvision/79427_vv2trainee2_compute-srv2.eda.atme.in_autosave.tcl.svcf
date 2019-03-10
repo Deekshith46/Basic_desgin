@@ -1,0 +1,178 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set toolbar-Standard-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set whats-new-dont-show-at-startup 1
+
+#
+# Databases
+#
+database require wave -search {
+	./wave.shm/wave.trn
+	/home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/SEQUENCE_DETECTOR_0101/wave.shm/wave.trn
+}
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1366x665+-1+27}] != ""} {
+    window geometry "Waveform 1" 1366x665+-1+27
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar select designbrowser
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ns \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	wave::tb.dut.clk
+	} ]
+set id [waveform add -signals  {
+	wave::tb.dut.rst
+	} ]
+set id [waveform add -signals  {
+	wave::tb.dut.x
+	} ]
+set id [waveform add -signals  {
+	{wave::tb.dut.next_state[1:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb.dut.present_state[1:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::tb.dut.out
+	} ]
+
+waveform xview limits 0 134ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Schematic Tracer windows
+#
+if {[catch {window new SchematicWindow -name "Schematic Tracer 1" -geometry 900x600+28+58}] != ""} {
+    window geometry "Schematic Tracer 1" 900x600+28+58
+}
+window target "Schematic Tracer 1" on
+schematic using "Schematic Tracer 1"
+schematic sidebar visibility partial
+schematic set \
+    -radix default \
+    -fullsignalname 0 \
+    -showvalue 0 \
+    -showstrength 0 \
+    -showgrey 0 \
+    -tracemode Single \
+    -showrtl 1 \
+    -showcells 1 \
+    -showcellpins 0
+schematic timecontrol set -lock 0
+schematic restore -state {# String saved with Nlview version 6.3.5  2013-09-24 bk=1.2895 VDI=33 GEI=35
+#  -string
+# non-default properties - (restore without -noprops)
+property attrcolor #40e0d0
+property attrfontsize 10
+property boxmaxwidth 400
+property boxmingap 40
+property boxminheight 40
+property boxminwidth 100
+property buscolor #00ff00
+property fillcolor1 #000000
+property fillcolor2 #000000
+property gatecellname 1
+property netcolor #00ff00
+property objecthighlight0 #ff00aa
+property objecthighlight1 #ff00aa
+property objecthighlight2 #00ff00
+property objecthighlight3 #ffff00
+property objecthighlight9 #ffffaf
+property pinattrmax 200
+property selectionappearance 2
+property selectioncolor #ffffaf
+property sheetheight 0
+property sheetwidth 0
+property showhierpinname 1
+property showinvisibles 1
+property showmarks 1
+#
+module new module {}
+load symbol DAI_SOURCE_IN {} DEF port 0 input -loc -14 0 0 0 pinattrdsp @name -cr -2 -5 8i attrdsp @cell -ll -10 16 10 path 0 -6 9 -6 12 -3 12 6 0 6 0 -6 path 12 -3 9 -3 9 -6 path 2 -3 6 -3 path 2 0 10 0 path 2 3 10 3
+load symbol DAI_SOURCE_OUT {} DEF port 0 output -loc 26 0 12 0 pinattrdsp @name -cl 30 -5 8i attrdsp @cell -ll -10 16 10 path 0 -6 9 -6 12 -3 12 6 0 6 0 -6 path 12 -3 9 -3 9 -6 path 2 -3 6 -3 path 2 0 10 0 path 2 3 10 3
+levelinfo -pg 1 0 10
+show
+#
+module new root {} -nosplit
+load symbol seq_det {} HIERBOX pin 0 input.left pin 1 input.left pin 2 input.left pin 3 output.right fillcolor 2
+load symbol rtl_Unknown_3 {} GEN pin 0 input.left pin 1 input.left pinBus 0 input.left 2 2 3 pinBus 1 output.right 2 4 5 fillcolor 1
+load symbol rtl_Unknown_4 {} GEN pin 2 input.left pin 5 output.right pinBus 0 input.left 2 0 1 pinBus 1 output.right 2 3 4 fillcolor 1
+load inst wave::tb,dut seq_det {} -attr @color #00ffff -attr @name dut -pinAttr 0 @name clk -pinAttr 1 @name rst -pinAttr 2 @name x -pinAttr 3 @name out -hierPinAttr 0 @name clk -hierPinAttr 1 @name rst -hierPinAttr 2 @name x -hierPinAttr 3 @name out -pg 1 -lvl 1 -y 30 -regy -10
+load inst wave::tb,dut,Unknown_0 rtl_Unknown_3 {} -hier wave::tb,dut -attr @cell {} -attr @color #00ff00 -attr @name Unknown_0 -pinAttr 0 @name clk -pinAttr 1 @name rst -pinBusAttr 0 @name {next_state[1:0]} -pinBusAttr 1 @name {present_state[1:0]} -pg 1 -lvl 1 -y 130
+load inst wave::tb,dut,Unknown_1 rtl_Unknown_4 {} -hier wave::tb,dut -attr @cell {} -attr @color #00ff00 -attr @name Unknown_1 -pinAttr 2 @name x -pinAttr 5 @name out -pinBusAttr 0 @name {present_state[1:0]} -pinBusAttr 1 @name {next_state[1:0]} -pg 1 -lvl 2 -y 70
+load net {wave::tb,dut,present_state[1]} -attr @color #666666.1 -attr @name {present_state[1]} -pin wave::tb,dut,Unknown_0 4 -pin wave::tb,dut,Unknown_1 0
+load net wave::tb,dut,out -attr @color #666666.1 -attr @name out -hierPin wave::tb,dut 3 -pin wave::tb,dut,Unknown_1 5
+netloc wave::tb,dut,out 1 2 1 N
+load net {wave::tb,dut,next_state[0]} -attr @color #666666.1 -attr @name {next_state[0]} -pin wave::tb,dut,Unknown_0 3 -pin wave::tb,dut,Unknown_1 4
+load net {wave::tb,dut,present_state[0]} -attr @color #666666.1 -attr @name {present_state[0]} -pin wave::tb,dut,Unknown_0 5 -pin wave::tb,dut,Unknown_1 1
+load net wave::tb,dut,x -attr @color #666666.1 -attr @name x -hierPin wave::tb,dut 2 -pin wave::tb,dut,Unknown_1 2
+netloc wave::tb,dut,x 1 0 2 NJ 60 NJ
+load net wave::tb,dut,clk -attr @color #666666.1 -attr @name clk -hierPin wave::tb,dut 0 -pin wave::tb,dut,Unknown_0 0
+netloc wave::tb,dut,clk 1 0 1 NJ
+load net {wave::tb,dut,next_state[1]} -attr @color #666666.1 -attr @name {next_state[1]} -pin wave::tb,dut,Unknown_0 2 -pin wave::tb,dut,Unknown_1 3
+load net wave::tb,dut,rst -attr @color #666666.1 -attr @name rst -hierPin wave::tb,dut 1 -pin wave::tb,dut,Unknown_0 1
+netloc wave::tb,dut,rst 1 0 1 NJ
+load netBundle {wave::tb,dut,present_state[1:0]} g2 -attr @color #666666.1 -attr @name {present_state[1:0]}
+netbloc {wave::tb,dut,present_state[1:0]} 1 1 1 340
+load netBundle {wave::tb,dut,next_state[1:0]} g2 -attr @color #666666.1 -attr @name {next_state[1:0]}
+netbloc {wave::tb,dut,next_state[1:0]} 1 0 3 70 180 NJ 180 610
+levelinfo -pg 1 0 30 690
+levelinfo -hier wave::tb,dut 40 100 370 640
+show
+zoom 1.31804
+scrollpos 18 -98
+#
+# initialize ictrl to current module root {}
+ictrl init {} ,
+}
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+0+0
+
+#
+# Layout selection
+#

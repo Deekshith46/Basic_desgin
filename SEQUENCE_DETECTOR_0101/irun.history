@@ -1,0 +1,7 @@
+s1(10Mar2019:20:51:13):  irun -access +rwc -f complie.f 
+s2(10Mar2019:20:51:39):  irun -access +rwc -f complie.f 
+s3(10Mar2019:20:53:31):  irun -access +rwc -f complie.f 
+s4(10Mar2019:20:58:51):  irun -access +rwc -f complie.f 
+s5(10Mar2019:20:59:10):  irun -access +rwc -f complie.f 
+s6(10Mar2019:20:56:36):  irun -access +rwc -f complie.f 
+s7(10Mar2019:21:00:47):  irun -access +rwc -f complie.f 

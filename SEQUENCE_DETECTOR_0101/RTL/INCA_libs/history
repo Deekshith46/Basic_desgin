@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(10Mar2019:20:36:17):( irun -access +rwc SEQ_DET_0101.v )
+s2::(10Mar2019:20:38:06):( irun -access +rwc SEQ_DET_0101.v )
+s3::(10Mar2019:20:38:38):( irun -access +rwc SEQ_DET_0101.v )
+s4::(10Mar2019:20:38:52):( irun -access +rwc SEQ_DET_0101.v )

@@ -1,0 +1,107 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 10, 2019 at 21:00:47 IST
+irun
+	-access +rwc
+	-f complie.f
+		*RTL/SEQ_DET_0101.v
+		*VERIFICATION/seq_det_tb.v
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Recompiling... reason: file './RTL/SEQ_DET_0101.v' is newer than expected.
+	expected: Sun Mar 10 20:56:31 2019
+	actual:   Sun Mar 10 21:00:45 2019
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+file: RTL/SEQ_DET_0101.v
+	module worklib.seq_det:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		worklib.seq_det:v <0x00edb0cf>
+			streams:   2, words:  2038
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           6       6
+		Scalar wires:        4       -
+		Always blocks:       3       3
+		Initial blocks:      2       2
+		Pseudo assignments:  3       3
+	Writing initial simulation snapshot: worklib.tb:v
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Loading snapshot worklib.tb:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 1060 NS + 0
+./VERIFICATION/seq_det_tb.v:36 $finish();
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 10, 2019 at 21:00:47 IST  (total: 00:00:00)

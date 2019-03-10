@@ -1,0 +1,2 @@
+*RTL/SEQ_DET_0101.v 
+*VERIFICATION/seq_det_tb.v 
