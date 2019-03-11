@@ -1,7 +1,3 @@
-//Design :- Elevator;
-//Designer :- Deekshih H P
-//Date :- 23-01-2025
-
 module elevator(clk,rst,floor_req , current_floor, direction , door_open)   ; // port delcaration
 input      clk,rst                                                          ; // input clock and reset
 input[2:0] floor_req                                                        ; // floor_request (001 = floor0, 010 = floor1 , 100 = floo2)

@@ -3,3 +3,6 @@
 05:15:43:0295 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 33530
 01:35:50:0900 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 36101
 04:38:09:0722 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 42067
+02:57:25:0606 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 39203
+03:56:23:0531 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 44057
+03:58:01:0555 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 43578

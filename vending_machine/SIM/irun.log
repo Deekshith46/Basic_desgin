@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 01, 2019 at 00:03:11 IST
+TOOL:	irun(64)	15.20-s051: Started on Feb 11, 2019 at 02:31:59 IST
 irun
 	-access +rwc
 	-f compile.f
@@ -35,18 +35,21 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Recompiling... reason: file '../RTL/vending.v' is older than expected.
+	expected: Wed Feb 27 04:10:49 2019
+	actual:   Mon Feb 11 02:31:42 2019
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-file: ../RTL/vending.v
-	module worklib.vending:v
-		errors: 0, warnings: 0
-file: ../VERIFICATION/vending_tb.v
-	module worklib.tb_vending:v
-		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
@@ -72,17 +75,6 @@ ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permi
 	Top level design units:
 		tb_vending
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-		worklib.tb_vending:v <0x55870383>
-			streams:   8, words:  4635
-		worklib.vending:v <0x4e30a1a4>
-			streams:   5, words:  3410
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -107,4 +99,4 @@ ncsim> run
 Simulation complete via $finish(1) at time 295 NS + 0
 ../VERIFICATION/vending_tb.v:48 $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 01, 2019 at 00:03:11 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 11, 2019 at 02:32:00 IST  (total: 00:00:01)
