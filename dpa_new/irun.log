@@ -1,0 +1,121 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 07, 2019 at 00:07:49 IST
+irun
+	-access +rwc
+	dpa_new_1.v
+	alu_top.v
+	system_ver_add.sv
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+file: system_ver_add.sv
+      logic [WIDTH:0] expected_full;       // for unsigned arithmetic carry
+          |
+ncvlog: *E,BADDCL (system_ver_add.sv,147|10): identify declaration while expecting a statement.
+      logic [WIDTH:0] expected_full;       // for unsigned arithmetic carry
+                 |
+ncvlog: *E,NOLABL (system_ver_add.sv,147|17): Labels are not supported on this statement type.
+      logic [WIDTH:0] expected_full;       // for unsigned arithmetic carry
+                   |
+ncvlog: *E,NOTSTT (system_ver_add.sv,147|19): expecting a statement [9(IEEE)].
+      logic [WIDTH-1:0] expected_sum;
+          |
+ncvlog: *E,BADDCL (system_ver_add.sv,148|10): identify declaration while expecting a statement.
+      logic [WIDTH-1:0] expected_sum;
+                  |
+ncvlog: *E,MISEXX (system_ver_add.sv,148|18): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+      logic [WIDTH-1:0] expected_sum;
+                     |
+ncvlog: *E,EXPIDN (system_ver_add.sv,148|21): expecting an identifier [SystemVerilog].
+        5'b00001: begin // unsigned add: a + b
+                      |
+ncvlog: *E,EXPIDN (system_ver_add.sv,155|22): expecting an identifier [SystemVerilog].
+          expected_sum  = expected_full[WIDTH-1:0];
+                                                |
+ncvlog: *E,EXPIDN (system_ver_add.sv,157|48): expecting an identifier [SystemVerilog].
+        5'b00010: begin // signed add: a + b (same hardware; overflow is signed)
+                      |
+ncvlog: *E,EXPIDN (system_ver_add.sv,164|22): expecting an identifier [SystemVerilog].
+          expected_sum  = expected_full[WIDTH-1:0];
+                                                |
+ncvlog: *E,EXPIDN (system_ver_add.sv,166|48): expecting an identifier [SystemVerilog].
+        5'b00011: begin // subtract: a - b  (implemented as a + (~b) + 1)
+                      |
+ncvlog: *E,EXPIDN (system_ver_add.sv,173|22): expecting an identifier [SystemVerilog].
+          expected_sum  = expected_full[WIDTH-1:0];
+                                                |
+ncvlog: *E,EXPIDN (system_ver_add.sv,175|48): expecting an identifier [SystemVerilog].
+        default: begin
+                     |
+ncvlog: *E,EXPIDN (system_ver_add.sv,182|21): expecting an identifier [SystemVerilog].
+  generator gen;
+          |
+ncvlog: *E,NOIPRT (system_ver_add.sv,213|10): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+  driver drv;
+       |
+ncvlog: *E,NOIPRT (system_ver_add.sv,214|7): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+  monitor mon;
+        |
+ncvlog: *E,NOIPRT (system_ver_add.sv,215|8): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+  scoreboard sco;
+           |
+ncvlog: *E,NOIPRT (system_ver_add.sv,216|11): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+  endfunction
+            |
+ncvlog: *E,NOTSTT (system_ver_add.sv,227|12): expecting a statement [9(IEEE)].
+  endtask
+        |
+ncvlog: *E,NOTSTT (system_ver_add.sv,236|8): expecting a statement [9(IEEE)].
+  environment env;
+                |
+ncvlog: *E,ILLPDL (system_ver_add.sv,241|16): Mixing of ansi & non-ansi style port declaration is not legal.
+    int count = 30; // total transactions (will cycle opcodes)
+              |
+ncvlog: *W,VARIST (system_ver_add.sv,243|14): Local static variable with initializer requires 'static' keyword.
+	program worklib.test:sv
+		errors: 1, warnings: 1
+  adder_if #(WIDTH) i_intf();
+                 |
+ncvlog: *E,UNDIDN (system_ver_add.sv,252|17): 'WIDTH': undeclared identifier [12.5(IEEE)].
+  top #(.WIDTH(WIDTH)) dut (
+                   |
+ncvlog: *E,UNDIDN (system_ver_add.sv,256|19): 'WIDTH': undeclared identifier [12.5(IEEE)].
+	module worklib.tb_top:sv
+		errors: 2, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 19, warnings: 2
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 07, 2019 at 00:07:49 IST  (total: 00:00:00)

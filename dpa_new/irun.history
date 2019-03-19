@@ -1,0 +1,4 @@
+s1(07Mar2019:00:03:13):  irun -access +rwc dpa_new_1.v 
+s2(07Mar2019:00:03:18):  irun -access +rwc dpa_new_1.v alu_top.v 
+s3(07Mar2019:00:03:57):  irun -access +rwc dpa_new_1.v alu_top.v system_ver_add.sv 
+s4(07Mar2019:00:07:49):  irun -access +rwc dpa_new_1.v alu_top.v system_ver_add.sv 
