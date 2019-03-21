@@ -1,0 +1,11 @@
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testbench
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+            .count(count_tb));
+                 |
+ncelab: *E,ICDPAV (./counter_tb.sv,14|17): Illegal combination of driver and procedural assignment to variable count_tb detected (procedural assignment found in always block at line 41 in file ./counter_tb.sv).
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+
