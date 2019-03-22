@@ -6,15 +6,7 @@
 ./INCA_libs/irun.lnx8664.15.20.nc
 -RUNMODE
 counter.v
-transaction.sv
-generator.sv
-interface1.sv
-driver.sv
-monitor.sv
-scoreboard.sv
-environment.sv
-random_test.sv
-testbench.sv
+count_tb.sv
 -CDSLIB
 ./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
 -HDLVAR

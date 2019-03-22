@@ -4,5 +4,5 @@
 //
 -access
 +rwc
--f
-compile.f
+counter.v
+count_tb.sv

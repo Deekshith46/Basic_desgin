@@ -18,7 +18,7 @@ transaction trans;
                 end
                 else
                 begin
-                    sco_count = sco-count -1;
+                    sco_count = sco_count -1;
                 end 
                 trans.display("[SCOREBOARD]");
            
