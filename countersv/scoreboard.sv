@@ -1,14 +1,15 @@
 class scoreboard;
+transaction trans;
     mailbox mon2sco;
     int no_transaction;
-    int [2:0] sco_count;
+    logic [2:0] sco_count;
 
         function new(mailbox mon2sco);
         this.mon2sco = mon2sco;
         endfunction
 
         task main();
-        transaction trans;
+        
             forever begin
             mon2sco.get(trans);
                 if(trans.mod)

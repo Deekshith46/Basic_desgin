@@ -1,5 +1,6 @@
 class monitor;
-    virtual int vif;
+transaction trans;
+    virtual intf vif;
     mailbox mon2sco;
 
     function new(virtual intf vif, mailbox mon2sco);
@@ -8,9 +9,9 @@ class monitor;
     endfunction
 
     task main();
+    trans = new();
     forever begin
-        transaction trans;
-        trans = new();
+                
         @(posedge vif.clk);
         trans.mod = vif.mod;
         @(posedge vif.clk);

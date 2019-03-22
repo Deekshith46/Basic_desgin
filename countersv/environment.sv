@@ -5,6 +5,7 @@
 `include "monitor.sv"
 `include "scoreboard.sv"
 
+
 class environment;
 
     generator gen;

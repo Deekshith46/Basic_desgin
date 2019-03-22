@@ -1,18 +1,17 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 02:47:12 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 03:14:38 IST
 irun
 	-access +rwc
 	-f compile.f
 		*counter.v
 		*transaction.sv
 		*generator.sv
-		*interface.sv
+		*interface1.sv
 		*driver.sv
 		*monitor.sv
 		*scoreboard.sv
 		*environment.sv
 		*random_test.sv
-		*directed_test.sv
 		*testbench.sv
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
@@ -50,247 +49,97 @@ ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permi
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-file: counter.v
-	module worklib.counter:v
-		errors: 0, warnings: 0
 file: transaction.sv
 file: generator.sv
-file: interface.sv
+file: interface1.sv
 	interface worklib.intf:sv
 		errors: 0, warnings: 0
 file: driver.sv
-file: monitor.sv
-    virtual int vif;
-              |
-ncvlog: *E,BADQAL (monitor.sv,2|14): Lifetime or qualifier(s) 'virtual' not allowed before int declaration.
-    virtual int vif;
-              |
-ncvlog: *E,VIFALO (monitor.sv,2|14): a virtual interface declaration requires at least one variable identifier.
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (monitor.sv,12|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
 file: scoreboard.sv
-    int [2:0] sco_count;
-        |
-ncvlog: *E,EXPIDN (scoreboard.sv,4|8): expecting an identifier [3.2][3.8][3.9(IEEE)].
-        transaction trans;
-                  |
-ncvlog: *E,NOIPRT (scoreboard.sv,11|18): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-        transaction trans;
-                  |
-ncvlog: *E,NOTINF (scoreboard.sv,11|18): Interfaces are not allowed within tasks [SystemVerilog].
 file: environment.sv
-rand transaction trans;
-               |
-ncvlog: *E,NOIPRT (generator.sv,3|15): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: generator.sv line 3, file: environment.sv line 3)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (driver.sv,22|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: driver.sv line 22, file: environment.sv line 4)
-    virtual int vif;
-              |
-ncvlog: *E,BADQAL (monitor.sv,2|14): Lifetime or qualifier(s) 'virtual' not allowed before int declaration.
-(`include file: monitor.sv line 2, file: environment.sv line 5)
-    virtual int vif;
-              |
-ncvlog: *E,VIFALO (monitor.sv,2|14): a virtual interface declaration requires at least one variable identifier.
-(`include file: monitor.sv line 2, file: environment.sv line 5)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (monitor.sv,12|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: monitor.sv line 12, file: environment.sv line 5)
-    int [2:0] sco_count;
-        |
-ncvlog: *E,EXPIDN (scoreboard.sv,4|8): expecting an identifier [3.2][3.8][3.9(IEEE)].
-(`include file: scoreboard.sv line 4, file: environment.sv line 6)
-        transaction trans;
-                  |
-ncvlog: *E,NOIPRT (scoreboard.sv,11|18): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: scoreboard.sv line 11, file: environment.sv line 6)
-        transaction trans;
-                  |
-ncvlog: *E,NOTINF (scoreboard.sv,11|18): Interfaces are not allowed within tasks [SystemVerilog].
-(`include file: scoreboard.sv line 11, file: environment.sv line 6)
-    generator gen;
-            |
-ncvlog: *E,NOIPRT (environment.sv,10|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    driver driv;
-         |
-ncvlog: *E,NOIPRT (environment.sv,11|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    monitor mon;
-          |
-ncvlog: *E,NOIPRT (environment.sv,12|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    scoreboard scb;
-             |
-ncvlog: *E,NOIPRT (environment.sv,13|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
 file: random_test.sv
-rand transaction trans;
-               |
-ncvlog: *E,NOIPRT (./generator.sv,3|15): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./generator.sv line 3, `include file: environment.sv line 3, file: random_test.sv line 1)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (./driver.sv,22|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: ./driver.sv line 22, `include file: environment.sv line 4, file: random_test.sv line 1)
-    virtual int vif;
+class transaction;
+                |
+ncvlog: *E,DUPIDN (transaction.sv,2|16): identifier 'transaction' previously declared [12.5(IEEE)].
+class generator;
               |
-ncvlog: *E,BADQAL (./monitor.sv,2|14): Lifetime or qualifier(s) 'virtual' not allowed before int declaration.
-(`include file: ./monitor.sv line 2, `include file: environment.sv line 5, file: random_test.sv line 1)
-    virtual int vif;
-              |
-ncvlog: *E,VIFALO (./monitor.sv,2|14): a virtual interface declaration requires at least one variable identifier.
-(`include file: ./monitor.sv line 2, `include file: environment.sv line 5, file: random_test.sv line 1)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (./monitor.sv,12|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: ./monitor.sv line 12, `include file: environment.sv line 5, file: random_test.sv line 1)
-    int [2:0] sco_count;
-        |
-ncvlog: *E,EXPIDN (./scoreboard.sv,4|8): expecting an identifier [3.2][3.8][3.9(IEEE)].
-(`include file: ./scoreboard.sv line 4, `include file: environment.sv line 6, file: random_test.sv line 1)
-        transaction trans;
-                  |
-ncvlog: *E,NOIPRT (./scoreboard.sv,11|18): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./scoreboard.sv line 11, `include file: environment.sv line 6, file: random_test.sv line 1)
-        transaction trans;
-                  |
-ncvlog: *E,NOTINF (./scoreboard.sv,11|18): Interfaces are not allowed within tasks [SystemVerilog].
-(`include file: ./scoreboard.sv line 11, `include file: environment.sv line 6, file: random_test.sv line 1)
-    generator gen;
+ncvlog: *E,DUPIDN (generator.sv,2|14): identifier 'generator' previously declared [12.5(IEEE)].
+class driver;
+           |
+ncvlog: *E,DUPIDN (driver.sv,1|11): identifier 'driver' previously declared [12.5(IEEE)].
+class monitor;
             |
-ncvlog: *E,NOIPRT (environment.sv,10|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: environment.sv line 10, file: random_test.sv line 1)
-    driver driv;
-         |
-ncvlog: *E,NOIPRT (environment.sv,11|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: environment.sv line 11, file: random_test.sv line 1)
-    monitor mon;
-          |
-ncvlog: *E,NOIPRT (environment.sv,12|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: environment.sv line 12, file: random_test.sv line 1)
-    scoreboard scb;
-             |
-ncvlog: *E,NOIPRT (environment.sv,13|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: environment.sv line 13, file: random_test.sv line 1)
+ncvlog: *E,DUPIDN (monitor.sv,1|12): identifier 'monitor' previously declared [12.5(IEEE)].
+class scoreboard;
+               |
+ncvlog: *E,DUPIDN (scoreboard.sv,1|15): identifier 'scoreboard' previously declared [12.5(IEEE)].
+class transaction;
+                |
+ncvlog: *E,DUPIDN (./transaction.sv,2|16): identifier 'transaction' previously declared [12.5(IEEE)].
+class generator;
+              |
+ncvlog: *E,DUPIDN (./generator.sv,2|14): identifier 'generator' previously declared [12.5(IEEE)].
+class driver;
+           |
+ncvlog: *E,DUPIDN (./driver.sv,1|11): identifier 'driver' previously declared [12.5(IEEE)].
+class monitor;
+            |
+ncvlog: *E,DUPIDN (./monitor.sv,1|12): identifier 'monitor' previously declared [12.5(IEEE)].
+class scoreboard;
+               |
+ncvlog: *E,DUPIDN (./scoreboard.sv,1|15): identifier 'scoreboard' previously declared [12.5(IEEE)].
+class environment;
+                |
+ncvlog: *E,DUPIDN (environment.sv,9|16): identifier 'environment' previously declared [12.5(IEEE)].
     environment env;
                   |
 ncvlog: *E,ILLPDL (random_test.sv,4|18): Mixing of ansi & non-ansi style port declaration is not legal.
 	program worklib.test:sv
 		errors: 1, warnings: 0
-file: directed_test.sv
-rand transaction trans;
-               |
-ncvlog: *E,NOIPRT (./generator.sv,3|15): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./generator.sv line 3, `include file: ./environment.sv line 3, file: directed_test.sv line 2)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (./driver.sv,22|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: ./driver.sv line 22, `include file: ./environment.sv line 4, file: directed_test.sv line 2)
-    virtual int vif;
-              |
-ncvlog: *E,BADQAL (./monitor.sv,2|14): Lifetime or qualifier(s) 'virtual' not allowed before int declaration.
-(`include file: ./monitor.sv line 2, `include file: ./environment.sv line 5, file: directed_test.sv line 2)
-    virtual int vif;
-              |
-ncvlog: *E,VIFALO (./monitor.sv,2|14): a virtual interface declaration requires at least one variable identifier.
-(`include file: ./monitor.sv line 2, `include file: ./environment.sv line 5, file: directed_test.sv line 2)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (./monitor.sv,12|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: ./monitor.sv line 12, `include file: ./environment.sv line 5, file: directed_test.sv line 2)
-    int [2:0] sco_count;
-        |
-ncvlog: *E,EXPIDN (./scoreboard.sv,4|8): expecting an identifier [3.2][3.8][3.9(IEEE)].
-(`include file: ./scoreboard.sv line 4, `include file: ./environment.sv line 6, file: directed_test.sv line 2)
-        transaction trans;
-                  |
-ncvlog: *E,NOIPRT (./scoreboard.sv,11|18): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./scoreboard.sv line 11, `include file: ./environment.sv line 6, file: directed_test.sv line 2)
-        transaction trans;
-                  |
-ncvlog: *E,NOTINF (./scoreboard.sv,11|18): Interfaces are not allowed within tasks [SystemVerilog].
-(`include file: ./scoreboard.sv line 11, `include file: ./environment.sv line 6, file: directed_test.sv line 2)
-    generator gen;
-            |
-ncvlog: *E,NOIPRT (./environment.sv,10|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 10, file: directed_test.sv line 2)
-    driver driv;
-         |
-ncvlog: *E,NOIPRT (./environment.sv,11|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 11, file: directed_test.sv line 2)
-    monitor mon;
-          |
-ncvlog: *E,NOIPRT (./environment.sv,12|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 12, file: directed_test.sv line 2)
-    scoreboard scb;
-             |
-ncvlog: *E,NOIPRT (./environment.sv,13|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 13, file: directed_test.sv line 2)
-    class my_trans extends transaction;
-                                     |
-ncvlog: *E,SVNOTY (directed_test.sv,5|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-        environment env;
-                      |
-ncvlog: *E,ILLPDL (directed_test.sv,15|22): Mixing of ansi & non-ansi style port declaration is not legal.
-	program worklib.test:sv
-		errors: 2, warnings: 0
 file: testbench.sv
-interface intf(input logic clk,rst);
+interface intf();
              |
-ncvlog: *W,RECOME (interface.sv,1|13): recompiling design unit worklib.intf:sv.
-	First compiled from line 1 of interface.sv.
-(`include file: interface.sv line 1, file: testbench.sv line 2)
-ncvlog: *E,DUPUNI: Unit "worklib.intf:sv" multiply defined in files "interface.sv" and "testbench.sv".
+ncvlog: *W,RECOME (interface1.sv,1|13): recompiling design unit worklib.intf:sv.
+	First compiled from line 1 of interface1.sv.
+(`include file: interface1.sv line 1, file: testbench.sv line 2)
+ncvlog: *E,DUPUNI: Unit "worklib.intf:sv" multiply defined in files "interface1.sv" and "testbench.sv".
 ncvlog: *E,MNPDEC: Module name (intf) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
-rand transaction trans;
-               |
-ncvlog: *E,NOIPRT (./generator.sv,3|15): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+   transaction trans;
+             |
+ncvlog: *E,NOIPRT (./generator.sv,3|13): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
 (`include file: ./generator.sv line 3, `include file: ./environment.sv line 3, `include file: random_test.sv line 1, file: testbench.sv line 3)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (./driver.sv,22|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: ./driver.sv line 22, `include file: ./environment.sv line 4, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    virtual int vif;
+    transaction trans;
               |
-ncvlog: *E,BADQAL (./monitor.sv,2|14): Lifetime or qualifier(s) 'virtual' not allowed before int declaration.
+ncvlog: *E,NOIPRT (./driver.sv,2|14): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./driver.sv line 2, `include file: ./environment.sv line 4, `include file: random_test.sv line 1, file: testbench.sv line 3)
+        transaction trans;
+                  |
+ncvlog: *E,SVNOTY (./driver.sv,23|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: ./driver.sv line 23, `include file: ./environment.sv line 4, `include file: random_test.sv line 1, file: testbench.sv line 3)
+transaction trans;
+          |
+ncvlog: *E,NOIPRT (./monitor.sv,2|10): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
 (`include file: ./monitor.sv line 2, `include file: ./environment.sv line 5, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    virtual int vif;
-              |
-ncvlog: *E,VIFALO (./monitor.sv,2|14): a virtual interface declaration requires at least one variable identifier.
-(`include file: ./monitor.sv line 2, `include file: ./environment.sv line 5, `include file: random_test.sv line 1, file: testbench.sv line 3)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (./monitor.sv,12|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: ./monitor.sv line 12, `include file: ./environment.sv line 5, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    int [2:0] sco_count;
-        |
-ncvlog: *E,EXPIDN (./scoreboard.sv,4|8): expecting an identifier [3.2][3.8][3.9(IEEE)].
-(`include file: ./scoreboard.sv line 4, `include file: ./environment.sv line 6, `include file: random_test.sv line 1, file: testbench.sv line 3)
-        transaction trans;
-                  |
-ncvlog: *E,NOIPRT (./scoreboard.sv,11|18): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./scoreboard.sv line 11, `include file: ./environment.sv line 6, `include file: random_test.sv line 1, file: testbench.sv line 3)
-        transaction trans;
-                  |
-ncvlog: *E,NOTINF (./scoreboard.sv,11|18): Interfaces are not allowed within tasks [SystemVerilog].
-(`include file: ./scoreboard.sv line 11, `include file: ./environment.sv line 6, `include file: random_test.sv line 1, file: testbench.sv line 3)
+transaction trans;
+          |
+ncvlog: *E,NOIPRT (./scoreboard.sv,2|10): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./scoreboard.sv line 2, `include file: ./environment.sv line 6, `include file: random_test.sv line 1, file: testbench.sv line 3)
     generator gen;
             |
-ncvlog: *E,NOIPRT (./environment.sv,10|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 10, `include file: random_test.sv line 1, file: testbench.sv line 3)
+ncvlog: *E,NOIPRT (./environment.sv,11|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./environment.sv line 11, `include file: random_test.sv line 1, file: testbench.sv line 3)
     driver driv;
          |
-ncvlog: *E,NOIPRT (./environment.sv,11|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 11, `include file: random_test.sv line 1, file: testbench.sv line 3)
+ncvlog: *E,NOIPRT (./environment.sv,12|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./environment.sv line 12, `include file: random_test.sv line 1, file: testbench.sv line 3)
     monitor mon;
           |
-ncvlog: *E,NOIPRT (./environment.sv,12|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 12, `include file: random_test.sv line 1, file: testbench.sv line 3)
+ncvlog: *E,NOIPRT (./environment.sv,13|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./environment.sv line 13, `include file: random_test.sv line 1, file: testbench.sv line 3)
     scoreboard scb;
              |
-ncvlog: *E,NOIPRT (./environment.sv,13|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 13, `include file: random_test.sv line 1, file: testbench.sv line 3)
+ncvlog: *E,NOIPRT (./environment.sv,14|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: ./environment.sv line 14, `include file: random_test.sv line 1, file: testbench.sv line 3)
     environment env;
                   |
 ncvlog: *E,ILLPDL (random_test.sv,4|18): Mixing of ansi & non-ansi style port declaration is not legal.
@@ -300,6 +149,6 @@ ncvlog: *E,ILLPDL (random_test.sv,4|18): Mixing of ansi & non-ansi style port de
 	module worklib.tb_top:sv
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
-		errors: 54, warnings: 2
+		errors: 20, warnings: 2
 irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 02:47:12 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 03:14:38 IST  (total: 00:00:00)

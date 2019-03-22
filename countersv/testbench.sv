@@ -1,5 +1,5 @@
 
-`include "interface.sv"
+`include "interface1.sv"
 `include "random_test.sv"
 
 module tb_top;

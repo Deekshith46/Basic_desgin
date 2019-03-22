@@ -1,4 +1,5 @@
 class driver;
+    transaction trans;
 int no_transaction;
 
 virtual intf vif;
@@ -9,7 +10,7 @@ mailbox gen2drv;
     this.gen2drv = gen2drv;
     endfunction
 
-    task rst;
+    task rst();
         wait(vif.rst);
         $display("[DRV]--------RESET STARTED-----");
         vif.mod <= 0;
@@ -17,7 +18,7 @@ mailbox gen2drv;
         $display("[DRV] --------RESET ENDED------");
         endtask
 
-     task main;
+     task main();
      forever begin
         transaction trans;
         gen2drv.get(trans);

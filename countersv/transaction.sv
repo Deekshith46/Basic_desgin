@@ -1,7 +1,7 @@
 
 class transaction;
-rand bit mod;
-bit [2:0]count;
+randc bit mod;
+ bit[2:0]count;
 
 function void display(input string name);
     $display("------------------------------");
