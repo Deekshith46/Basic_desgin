@@ -7,7 +7,7 @@ class monitor;
     this.mon2sco = mon2sco;
     endfunction
 
-    task main;
+    task main();
     forever begin
         transaction trans;
         trans = new();

@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 02:09:51 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 02:47:12 IST
 irun
 	-access +rwc
 	-f compile.f
@@ -56,14 +56,8 @@ file: counter.v
 file: transaction.sv
 file: generator.sv
 file: interface.sv
-logic clk;
-        |
-ncvlog: *E,DUPIDN (interface.sv,3|8): identifier 'clk' previously declared [12.5(IEEE)].
-logic rst;
-        |
-ncvlog: *E,DUPIDN (interface.sv,4|8): identifier 'rst' previously declared [12.5(IEEE)].
 	interface worklib.intf:sv
-		errors: 2, warnings: 0
+		errors: 0, warnings: 0
 file: driver.sv
 file: monitor.sv
     virtual int vif;
@@ -242,16 +236,13 @@ ncvlog: *E,ILLPDL (directed_test.sv,15|22): Mixing of ansi & non-ansi style port
 	program worklib.test:sv
 		errors: 2, warnings: 0
 file: testbench.sv
-logic clk;
-        |
-ncvlog: *E,DUPIDN (interface.sv,3|8): identifier 'clk' previously declared [12.5(IEEE)].
-(`include file: interface.sv line 6, file: testbench.sv line 2)
-logic rst;
-        |
-ncvlog: *E,DUPIDN (interface.sv,4|8): identifier 'rst' previously declared [12.5(IEEE)].
-(`include file: interface.sv line 6, file: testbench.sv line 2)
-	interface worklib.intf:sv
-		errors: 2, warnings: 0
+interface intf(input logic clk,rst);
+             |
+ncvlog: *W,RECOME (interface.sv,1|13): recompiling design unit worklib.intf:sv.
+	First compiled from line 1 of interface.sv.
+(`include file: interface.sv line 1, file: testbench.sv line 2)
+ncvlog: *E,DUPUNI: Unit "worklib.intf:sv" multiply defined in files "interface.sv" and "testbench.sv".
+ncvlog: *E,MNPDEC: Module name (intf) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
 rand transaction trans;
                |
 ncvlog: *E,NOIPRT (./generator.sv,3|15): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
@@ -306,18 +297,9 @@ ncvlog: *E,ILLPDL (random_test.sv,4|18): Mixing of ansi & non-ansi style port de
 (`include file: random_test.sv line 4, file: testbench.sv line 3)
 	program worklib.test:sv
 		errors: 1, warnings: 0
-initial begin
-|
-ncvlog: *E,BADBSE (testbench.sv,12|0): illegal base specification: (i) [2.5][2.5.1(IEEE)].
-initial begin
-      |
-ncvlog: *E,UXEXID (testbench.sv,12|6): Unexpected identifier 'nitial' after completed expression.
-initial begin
-            |
-ncvlog: *E,MISEXX (testbench.sv,12|12): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
 	module worklib.tb_top:sv
-		errors: 3, warnings: 0
+		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 54, warnings: 2
 irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 02:09:51 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 02:47:12 IST  (total: 00:00:00)

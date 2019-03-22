@@ -7,7 +7,7 @@ class scoreboard;
         this.mon2sco = mon2sco;
         endfunction
 
-        task main;
+        task main();
         transaction trans;
             forever begin
             mon2sco.get(trans);
@@ -20,9 +20,8 @@ class scoreboard;
                     sco_count = sco-count -1;
                 end 
                 trans.display("[SCOREBOARD]");
-            end
-            @(posedge clk)begin
-                if(sco_count == trans.count)begin
+           
+                 if(sco_count == trans.count)begin
                     $display("Match = %0t , rtl out = %0d , scoout = %0d", $time,trans.count,sco_count);
                     end
                     else

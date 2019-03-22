@@ -24,7 +24,7 @@ mailbox gen2drv;
         @(posedge vif.clk);
         vif.mod <= trans.mod;
        @(posedge vif.clk);
-       trans.counter = vif.counter;
+       trans.count = vif.count;
        @(posedge vif.clk);
        trans.display("[ DRIVER]");
        no_transaction++;

@@ -1,5 +1,5 @@
 `include "environment.sv"
-program test(intf i_intf);
+program test(input virtual intf i_intf);
 
     environment env;
 

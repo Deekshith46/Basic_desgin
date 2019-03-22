@@ -8,5 +8,6 @@ function void display(input string name);
     $display("- %s",name);
     $display("------------------------------");
     $display("-mod = %0d",mod);
+    $display("-count = %0d",count);
 endfunction
 endclass

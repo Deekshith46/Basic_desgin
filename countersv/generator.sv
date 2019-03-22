@@ -14,6 +14,7 @@ event ended;
     trans = new();
         if(!trans.randomize()) $fatal("GEN :: transa randomization failed");
         trans.display("[GEN]");
+        gen2drv.put(trans);
     end
     -> ended;
     endtask

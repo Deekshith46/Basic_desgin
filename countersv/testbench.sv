@@ -7,20 +7,22 @@ bit clk;
 
 bit rst;
 
-always #5 clk= ~clk'
+always #5 clk= ~clk;
 
 initial begin
-rst = 1;
-#5 rst =0;
+    clk =0;
+    rst =1;
+#10 rst =0;
 end
+
 
 intf i_intf(clk,rst);
 test t1(i_intf);
 
 counter dut(.clk(i_intf.clk),
             .mod(i_intf.mod),
-            .rst(i_intf.mod),
-            .count(i_intf.counter));
+            .rst(i_intf.rst),
+            .count(i_intf.count));
 
 initial begin
 $shm_open("wave.shm");
