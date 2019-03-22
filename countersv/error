@@ -1,10 +1,9 @@
-		Caching library 'worklib' ....... Done
-ncelab: *W,DLLSVW: Unable to list the views of rfLib.rfLib (System error).
-ncelab: *W,DLLSVW: Unable to list the views of rfLib.log (System error).
-    intf i_intf();
-              |
-ncelab: *E,CUVMUR (./test2.sv,201|14): instance 'tb_top.i_intf' of design unit 'intf' is unresolved in 'worklib.tb_top:sv'.
-program test(intf i_intf);
-                       |
-ncelab: *E,CUIMBC (./test2.sv,179|23): An interface port declaration must be connected (tb_top.t1).
+	Top level design units:
+		$unit_0x118ace63
+		tb_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        .count(i_intf.count)
+             |
+ncelab: *E,ICDDIV (./test2.sv,218|13): Illegal combination of driver and declaration initializer to variable count detected (declaration initializer found in initializer at line 45 in file ./test2.sv).
 irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+

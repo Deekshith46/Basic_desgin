@@ -2,3 +2,5 @@ s1(23Mar2019:04:53:52):  irun -access +rwc counter.v test2.sv
 s2(23Mar2019:04:54:49):  irun -access +rwc counter.v test2.sv 
 s3(23Mar2019:04:55:10):  irun -access +rwc counter.v test2.sv 
 s4(23Mar2019:04:56:04):  irun -access +rwc counter.v test2.sv 
+s5(23Mar2019:05:00:11):  irun -access +rwc counter.v test2.sv 
+s6(23Mar2019:05:00:36):  irun -access +rwc counter.v test2.sv 

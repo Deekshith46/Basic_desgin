@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 04:56:04 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 05:00:36 IST
 irun
 	-access +rwc
 	counter.v
@@ -35,8 +35,8 @@ DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
 Recompiling... reason: file './test2.sv' is newer than expected.
-	expected: Sat Mar 23 04:55:09 2019
-	actual:   Sat Mar 23 04:56:00 2019
+	expected: Sat Mar 23 05:00:09 2019
+	actual:   Sat Mar 23 05:00:30 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -50,6 +50,10 @@ DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
 file: test2.sv
+	interface worklib.intf:sv
+		errors: 0, warnings: 0
+	program worklib.test:sv
+		errors: 0, warnings: 0
 	module worklib.tb_top:sv
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
@@ -74,14 +78,12 @@ DEFINE sdadc_working /projects/tigershare/sdadc_working
 ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
-		Caching library 'worklib' ....... Done
-ncelab: *W,DLLSVW: Unable to list the views of rfLib.rfLib (System error).
-ncelab: *W,DLLSVW: Unable to list the views of rfLib.log (System error).
-    intf i_intf();
-              |
-ncelab: *E,CUVMUR (./test2.sv,201|14): instance 'tb_top.i_intf' of design unit 'intf' is unresolved in 'worklib.tb_top:sv'.
-program test(intf i_intf);
-                       |
-ncelab: *E,CUIMBC (./test2.sv,179|23): An interface port declaration must be connected (tb_top.t1).
+	Top level design units:
+		$unit_0x118ace63
+		tb_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        .count(i_intf.count)
+             |
+ncelab: *E,ICDDIV (./test2.sv,218|13): Illegal combination of driver and declaration initializer to variable count detected (declaration initializer found in initializer at line 45 in file ./test2.sv).
 irun: *E,ELBERR: Error during elaboration (status 1), exiting.
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 04:56:05 IST  (total: 00:00:01)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 05:00:37 IST  (total: 00:00:01)

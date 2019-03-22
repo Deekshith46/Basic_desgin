@@ -37,6 +37,15 @@ class generator;
     endtask
 endclass
 
+//////////////int/////
+/////////interface///////////
+interface intf();
+logic clk=0,rst=0;
+logic mod=0;
+logic [2:0] count=0;
+endinterface
+
+
 ////////// Driver Class //////////
 class driver;
     transaction trans;
@@ -209,8 +218,8 @@ module tb_top;
         .count(i_intf.count)
     );
 
-    /*initial begin
+    initial begin
         $dumpfile("wave.vcd");
         $dumpvars(0, tb_top);
-    end*/
+    end
 endmodule
