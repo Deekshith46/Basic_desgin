@@ -6,7 +6,7 @@
 ./INCA_libs/irun.lnx8664.15.20.nc
 -RUNMODE
 counter.v
-count_tb.sv
+cnt.sv
 -CDSLIB
 ./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
 -HDLVAR

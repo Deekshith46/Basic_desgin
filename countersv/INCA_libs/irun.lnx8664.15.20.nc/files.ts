@@ -11,4 +11,5 @@
 1553288548 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/directed_test.sv
 1553292675 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/testbench.sv
 1553289932 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/interface1.sv
-1553292965 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/count_tb.sv
+1553294102 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/count_tb.sv
+1553294618 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/cnt.sv

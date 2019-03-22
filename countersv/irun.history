@@ -20,3 +20,11 @@ s19(23Mar2019:03:42:01):  irun -access +rwc counter.v count_tb.sv
 s20(23Mar2019:03:43:44):  irun -access +rwc counter.v count_tb.sv 
 s21(23Mar2019:03:44:34):  irun -access +rwc counter.v count_tb.sv 
 s22(23Mar2019:03:46:12):  irun -access +rwc counter.v count_tb.sv 
+s23(23Mar2019:04:06:57):  irun -access +rwc counter.v cnt.sv 
+s24(23Mar2019:04:09:05):  irun -access +rwc counter.v cnt.sv 
+s25(23Mar2019:04:09:43):  irun -access +rwc counter.v cnt.sv 
+s26(23Mar2019:04:10:10):  irun -access +rwc counter.v cnt.sv 
+s27(23Mar2019:04:10:38):  irun -access +rwc counter.v cnt.sv 
+s28(23Mar2019:04:10:57):  irun -access +rwc counter.v cnt.sv 
+s29(23Mar2019:04:12:23):  irun -access +rwc counter.v cnt.sv 
+s30(23Mar2019:04:13:39):  irun -access +rwc counter.v cnt.sv 

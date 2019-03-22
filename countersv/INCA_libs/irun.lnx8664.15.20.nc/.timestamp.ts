@@ -4,6 +4,7 @@
 1553291992 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/monitor.sv
 1553291835 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/transaction.sv
 1553288548 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/directed_test.sv
+1553294618 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/cnt.sv
 1553289932 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/interface1.sv
 1553292683 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/counter.v
 1553292076 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/scoreboard.sv
