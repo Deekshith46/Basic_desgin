@@ -4,9 +4,7 @@ logic mod_tb;
 logic rst_tb;
 logic [2:0] count_tb;
 
-logic clk;
-logic mod;
-logic rst;
+logic [2:0] sco_count;
 
 counter dut(.clk(clk_tb),
             .mod(mod_tb),
@@ -25,16 +23,17 @@ always begin
 end
 
 initial begin
-#5
+#5;
 rst_tb = 1'b1;
 #10;
 rst_tb = 1'b0;
-    
-    #5
-    mod_tb = 1'b1;
-    #500
-    mod_tb = 1'b0;
-        end
+#20;
+mod_tb = 1'b1;
+#100;
+mod_tb = 1'b0;
+#200;
+$finish();
+end
 
 //////////// scoreboard///////////
  
@@ -43,35 +42,40 @@ rst_tb = 1'b0;
         begin
             if(rst_tb)
             begin
-                count_tb = 3'b000;
+                sco_count = 3'b000;
                 end
 
             else 
             begin
                 if(mod_tb)
                 begin
-                    count_tb = count_tb +1;
+
+#10;
+                    sco_count = sco_count +1;
                 end
                 else
                 begin
-                    count_tb = count_tb -1;
+          #10;
+                    sco_count = sco_count -1;
                 end                
             end    
         end
 
-
-       initial begin
-       logic count;
-                if(count == counter_tb)
-                    $display("COUNTER IS MATCHED");
-                   else
-                       $display("COUNTER IS NOT MATCHED");
-
+       always@(posedge clk_tb) begin
+                repeat(1)begin
+                if(count_tb == sco_count)begin
+                    $display("Match at time %0f : rtl output = %0d , sco output = %0d",$time,count_tb,sco_count);
+                    end
+                   else begin
+                    $display("NOTMatch at time %0f : rtl output = %0d , sco output = %0d",$time,count_tb,sco_count);                     
         end
+        end
+      end
+    
 
-        initial begin
+        /*initial begin
         #1000;
         $finish();
-        end
+        end*/
 endmodule
 

@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 22, 2019 at 03:02:57 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 22, 2019 at 05:50:12 IST
 irun
 	-access +rwc
 	counter.v
@@ -28,15 +28,9 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './counter_tb.sv' is newer than expected.
-	expected: Fri Mar 22 02:59:55 2019
-	actual:   Fri Mar 22 03:02:56 2019
+Recompiling... reason: file './counter.v' is newer than expected.
+	expected: Fri Mar 22 03:14:41 2019
+	actual:   Fri Mar 22 03:42:46 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -49,9 +43,6 @@ ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permi
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-file: counter_tb.sv
-	module worklib.testbench:sv
-		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
@@ -77,8 +68,63 @@ ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permi
 	Top level design units:
 		testbench
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-            .count(count_tb));
-                 |
-ncelab: *E,ICDPAV (./counter_tb.sv,14|17): Illegal combination of driver and procedural assignment to variable count_tb detected (procedural assignment found in always block at line 41 in file ./counter_tb.sv).
-irun: *E,ELBERR: Error during elaboration (status 1), exiting.
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 22, 2019 at 03:02:57 IST  (total: 00:00:00)
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           6       6
+		Scalar wires:        3       -
+		Vectored wires:      2       -
+		Always blocks:       4       4
+		Initial blocks:      2       2
+		Pseudo assignments:  4       4
+	Writing initial simulation snapshot: worklib.testbench:sv
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Loading snapshot worklib.testbench:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+NOTMatch at time 5.000000 : rtl output = x , sco output = 0
+Match at time 15.000000 : rtl output = 0 , sco output = 0
+Match at time 25.000000 : rtl output = 7 , sco output = 7
+Match at time 35.000000 : rtl output = 6 , sco output = 6
+Match at time 45.000000 : rtl output = 7 , sco output = 7
+Match at time 55.000000 : rtl output = 0 , sco output = 0
+Match at time 65.000000 : rtl output = 1 , sco output = 1
+Match at time 75.000000 : rtl output = 2 , sco output = 2
+Match at time 85.000000 : rtl output = 3 , sco output = 3
+Match at time 95.000000 : rtl output = 4 , sco output = 4
+Match at time 105.000000 : rtl output = 5 , sco output = 5
+Match at time 115.000000 : rtl output = 6 , sco output = 6
+Match at time 125.000000 : rtl output = 7 , sco output = 7
+Match at time 135.000000 : rtl output = 0 , sco output = 0
+Match at time 145.000000 : rtl output = 7 , sco output = 7
+Match at time 155.000000 : rtl output = 6 , sco output = 6
+Match at time 165.000000 : rtl output = 5 , sco output = 5
+Match at time 175.000000 : rtl output = 4 , sco output = 4
+Match at time 185.000000 : rtl output = 3 , sco output = 3
+Match at time 195.000000 : rtl output = 2 , sco output = 2
+Match at time 205.000000 : rtl output = 1 , sco output = 1
+Match at time 215.000000 : rtl output = 0 , sco output = 0
+Match at time 225.000000 : rtl output = 7 , sco output = 7
+Match at time 235.000000 : rtl output = 6 , sco output = 6
+Match at time 245.000000 : rtl output = 5 , sco output = 5
+Match at time 255.000000 : rtl output = 4 , sco output = 4
+Match at time 265.000000 : rtl output = 3 , sco output = 3
+Match at time 275.000000 : rtl output = 2 , sco output = 2
+Match at time 285.000000 : rtl output = 1 , sco output = 1
+Match at time 295.000000 : rtl output = 0 , sco output = 0
+Match at time 305.000000 : rtl output = 7 , sco output = 7
+Match at time 315.000000 : rtl output = 6 , sco output = 6
+Match at time 325.000000 : rtl output = 5 , sco output = 5
+Simulation complete via $finish(1) at time 335 NS + 0
+./counter_tb.sv:35 $finish();
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 22, 2019 at 05:50:12 IST  (total: 00:00:00)
