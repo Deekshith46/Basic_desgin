@@ -1,9 +1,9 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 04:13:39 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 04:43:56 IST
 irun
 	-access +rwc
 	counter.v
-	cnt.sv
+	test1.sv
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -28,9 +28,9 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './cnt.sv' is newer than expected.
-	expected: Sat Mar 23 04:12:21 2019
-	actual:   Sat Mar 23 04:13:38 2019
+Recompiling... reason: file './test1.sv' is newer than expected.
+	expected: Sat Mar 23 04:43:15 2019
+	actual:   Sat Mar 23 04:43:55 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -43,6 +43,9 @@ ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permi
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+file: test1.sv
+	module worklib.tb_top:sv
+		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
@@ -66,14 +69,10 @@ ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permi
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x699cd668
+		$unit_0x118af7fb
 		tb_top
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-	Building instance overlay tables: ........
-            if (!trans.randomize()) $fatal("Transaction randomization failed");
-                                                                            |
-ncelab: *W,STRINT (./cnt.sv,35|76): String literal argument supplied to integer parameter.
-............ Done
+	Building instance overlay tables: .................... Done
 	Generating native compiled code:
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
@@ -81,24 +80,8 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Pe
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-		worklib.\$unit_0x699cd668 :compilation_unit <0x09b8a3ce>
-			streams:   0, words:     0
-		worklib.\$unit_0x699cd668 :compilation_unit <0x30ddbdee>
-			streams:  12, words: 14028
-		worklib.\$unit_0x699cd668 :compilation_unit <0x37dd2121>
-			streams:   8, words:  3440
-		worklib.\$unit_0x699cd668 :compilation_unit <0x4962a493>
-			streams:   9, words:  7823
-		worklib.\$unit_0x699cd668 :compilation_unit <0x55ae25a3>
-			streams:   8, words:  6299
-		worklib.\$unit_0x699cd668 :compilation_unit <0x6146ce30>
-			streams:   8, words:  7473
-		worklib.\$unit_0x699cd668 :compilation_unit <0x7617f564>
-			streams:   8, words:  8162
-		worklib.tb_top:sv <0x0d1c2f0e>
-			streams:   9, words:  3037
-		worklib.test:sv <0x5f9f8465>
-			streams:   1, words:  1205
+		worklib.tb_top:sv <0x110054f1>
+			streams:   7, words:  2061
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -106,13 +89,13 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Pe
 		Modules:                    2       2
 		Interfaces:                 1       1
 		Programs:                   1       1
-		Registers:                 46      62
-		Scalar wires:               5       -
+		Registers:                 40      63
+		Scalar wires:               3       -
 		Vectored wires:             2       -
+		Named events:               0       1
 		Always blocks:              2       2
-		Initial blocks:             3       3
+		Initial blocks:             6       6
 		Parallel blocks:            1       1
-		Cont. assignments:          2       2
 		Pseudo assignments:         4       4
 		Compilation units:          1       1
 		SV Class declarations:      6       6
@@ -129,185 +112,3 @@ SVSEED default: 1
 ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-[GEN]: mod=0, count=0
-[GEN]: mod=1, count=0
-[GEN]: mod=1, count=7
-[GEN]: mod=0, count=6
-[GEN]: mod=0, count=2
-[GEN]: mod=0, count=6
-[GEN]: mod=1, count=3
-[GEN]: mod=0, count=5
-[GEN]: mod=1, count=6
-[GEN]: mod=1, count=4
-[MONITOR]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=15, Expected=7, Got=0
-[MONITOR]: mod=0, count=7
-[SCOREBOARD] FAIL: Time=25, Expected=6, Got=7
-[MONITOR]: mod=1, count=0
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=40, Expected=7, Got=0
-[MONITOR]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=55, Expected=0, Got=1
-[MONITOR]: mod=0, count=7
-[SCOREBOARD] FAIL: Time=65, Expected=7, Got=0
-[MONITOR]: mod=0, count=6
-[SCOREBOARD] FAIL: Time=75, Expected=6, Got=7
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=85, Expected=5, Got=6
-[MONITOR]: mod=0, count=6
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=100, Expected=6, Got=7
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=110, Expected=5, Got=6
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=125, Expected=6, Got=7
-[MONITOR]: mod=1, count=2
-[MONITOR]: mod=1, count=3
-[SCOREBOARD] FAIL: Time=140, Expected=7, Got=0
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=155, Expected=0, Got=1
-[MONITOR]: mod=1, count=5
-[MONITOR]: mod=1, count=6
-[SCOREBOARD] FAIL: Time=170, Expected=1, Got=2
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=185, Expected=2, Got=3
-[MONITOR]: mod=1, count=0
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=200, Expected=3, Got=4
-[MONITOR]: mod=1, count=2
-[SCOREBOARD] FAIL: Time=215, Expected=4, Got=5
-[MONITOR]: mod=1, count=3
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=230, Expected=5, Got=6
-[MONITOR]: mod=1, count=5
-[SCOREBOARD] FAIL: Time=245, Expected=6, Got=7
-[MONITOR]: mod=1, count=6
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=260, Expected=7, Got=0
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=275, Expected=0, Got=1
-[MONITOR]: mod=1, count=1
-[MONITOR]: mod=1, count=2
-[SCOREBOARD] FAIL: Time=290, Expected=1, Got=2
-[MONITOR]: mod=1, count=3
-[SCOREBOARD] FAIL: Time=305, Expected=2, Got=3
-[MONITOR]: mod=1, count=4
-[MONITOR]: mod=1, count=5
-[SCOREBOARD] FAIL: Time=320, Expected=3, Got=4
-[MONITOR]: mod=1, count=6
-[SCOREBOARD] FAIL: Time=335, Expected=4, Got=5
-[MONITOR]: mod=1, count=7
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=350, Expected=5, Got=6
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=365, Expected=6, Got=7
-[MONITOR]: mod=1, count=2
-[MONITOR]: mod=1, count=3
-[SCOREBOARD] FAIL: Time=380, Expected=7, Got=0
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=395, Expected=0, Got=1
-[MONITOR]: mod=1, count=5
-[MONITOR]: mod=1, count=6
-[SCOREBOARD] FAIL: Time=410, Expected=1, Got=2
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=425, Expected=2, Got=3
-[MONITOR]: mod=1, count=0
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=440, Expected=3, Got=4
-[MONITOR]: mod=1, count=2
-[SCOREBOARD] FAIL: Time=455, Expected=4, Got=5
-[MONITOR]: mod=1, count=3
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=470, Expected=5, Got=6
-[MONITOR]: mod=1, count=5
-[SCOREBOARD] FAIL: Time=485, Expected=6, Got=7
-[MONITOR]: mod=1, count=6
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=500, Expected=7, Got=0
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=515, Expected=0, Got=1
-[MONITOR]: mod=1, count=1
-[MONITOR]: mod=1, count=2
-[SCOREBOARD] FAIL: Time=530, Expected=1, Got=2
-[MONITOR]: mod=1, count=3
-[SCOREBOARD] FAIL: Time=545, Expected=2, Got=3
-[MONITOR]: mod=1, count=4
-[MONITOR]: mod=1, count=5
-[SCOREBOARD] FAIL: Time=560, Expected=3, Got=4
-[MONITOR]: mod=1, count=6
-[SCOREBOARD] FAIL: Time=575, Expected=4, Got=5
-[MONITOR]: mod=1, count=7
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=590, Expected=5, Got=6
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=605, Expected=6, Got=7
-[MONITOR]: mod=1, count=2
-[MONITOR]: mod=1, count=3
-[SCOREBOARD] FAIL: Time=620, Expected=7, Got=0
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=635, Expected=0, Got=1
-[MONITOR]: mod=1, count=5
-[MONITOR]: mod=1, count=6
-[SCOREBOARD] FAIL: Time=650, Expected=1, Got=2
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=665, Expected=2, Got=3
-[MONITOR]: mod=1, count=0
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=680, Expected=3, Got=4
-[MONITOR]: mod=1, count=2
-[SCOREBOARD] FAIL: Time=695, Expected=4, Got=5
-[MONITOR]: mod=1, count=3
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=710, Expected=5, Got=6
-[MONITOR]: mod=1, count=5
-[SCOREBOARD] FAIL: Time=725, Expected=6, Got=7
-[MONITOR]: mod=1, count=6
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=740, Expected=7, Got=0
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=755, Expected=0, Got=1
-[MONITOR]: mod=1, count=1
-[MONITOR]: mod=1, count=2
-[SCOREBOARD] FAIL: Time=770, Expected=1, Got=2
-[MONITOR]: mod=1, count=3
-[SCOREBOARD] FAIL: Time=785, Expected=2, Got=3
-[MONITOR]: mod=1, count=4
-[MONITOR]: mod=1, count=5
-[SCOREBOARD] FAIL: Time=800, Expected=3, Got=4
-[MONITOR]: mod=1, count=6
-[SCOREBOARD] FAIL: Time=815, Expected=4, Got=5
-[MONITOR]: mod=1, count=7
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=830, Expected=5, Got=6
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=845, Expected=6, Got=7
-[MONITOR]: mod=1, count=2
-[MONITOR]: mod=1, count=3
-[SCOREBOARD] FAIL: Time=860, Expected=7, Got=0
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=875, Expected=0, Got=1
-[MONITOR]: mod=1, count=5
-[MONITOR]: mod=1, count=6
-[SCOREBOARD] FAIL: Time=890, Expected=1, Got=2
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=905, Expected=2, Got=3
-[MONITOR]: mod=1, count=0
-[MONITOR]: mod=1, count=1
-[SCOREBOARD] FAIL: Time=920, Expected=3, Got=4
-[MONITOR]: mod=1, count=2
-[SCOREBOARD] FAIL: Time=935, Expected=4, Got=5
-[MONITOR]: mod=1, count=3
-[MONITOR]: mod=1, count=4
-[SCOREBOARD] FAIL: Time=950, Expected=5, Got=6
-[MONITOR]: mod=1, count=5
-[SCOREBOARD] FAIL: Time=965, Expected=6, Got=7
-[MONITOR]: mod=1, count=6
-[MONITOR]: mod=1, count=7
-[SCOREBOARD] FAIL: Time=980, Expected=7, Got=0
-[MONITOR]: mod=1, count=0
-[SCOREBOARD] FAIL: Time=995, Expected=0, Got=1
-[MONITOR]: mod=1, count=1
-Simulation complete via $finish(1) at time 1 US + 0
-./cnt.sv:187         $finish;
-ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 04:13:39 IST  (total: 00:00:00)
