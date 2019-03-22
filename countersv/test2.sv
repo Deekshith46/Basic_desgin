@@ -199,6 +199,7 @@ module tb_top;
     end
 
     intf i_intf();
+
     test t1(i_intf);
 
     counter dut(
@@ -208,8 +209,8 @@ module tb_top;
         .count(i_intf.count)
     );
 
-    initial begin
+    /*initial begin
         $dumpfile("wave.vcd");
         $dumpvars(0, tb_top);
-    end
+    end*/
 endmodule

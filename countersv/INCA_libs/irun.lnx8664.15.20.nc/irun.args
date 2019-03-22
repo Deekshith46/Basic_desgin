@@ -5,4 +5,4 @@
 -access
 +rwc
 counter.v
-test1.sv
+test2.sv

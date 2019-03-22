@@ -1,100 +1,10 @@
-ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-file: transaction.sv
-file: generator.sv
-file: driver.sv
-file: scoreboard.sv
-file: environment.sv
-file: random_test.sv
-class transaction;
-                |
-ncvlog: *E,DUPIDN (transaction.sv,2|16): identifier 'transaction' previously declared [12.5(IEEE)].
-class generator;
+		Caching library 'worklib' ....... Done
+ncelab: *W,DLLSVW: Unable to list the views of rfLib.rfLib (System error).
+ncelab: *W,DLLSVW: Unable to list the views of rfLib.log (System error).
+    intf i_intf();
               |
-ncvlog: *E,DUPIDN (generator.sv,2|14): identifier 'generator' previously declared [12.5(IEEE)].
-class driver;
-           |
-ncvlog: *E,DUPIDN (driver.sv,1|11): identifier 'driver' previously declared [12.5(IEEE)].
-class monitor;
-            |
-ncvlog: *E,DUPIDN (monitor.sv,1|12): identifier 'monitor' previously declared [12.5(IEEE)].
-class scoreboard;
-               |
-ncvlog: *E,DUPIDN (scoreboard.sv,1|15): identifier 'scoreboard' previously declared [12.5(IEEE)].
-class transaction;
-                |
-ncvlog: *E,DUPIDN (./transaction.sv,2|16): identifier 'transaction' previously declared [12.5(IEEE)].
-class generator;
-              |
-ncvlog: *E,DUPIDN (./generator.sv,2|14): identifier 'generator' previously declared [12.5(IEEE)].
-class driver;
-           |
-ncvlog: *E,DUPIDN (./driver.sv,1|11): identifier 'driver' previously declared [12.5(IEEE)].
-class monitor;
-            |
-ncvlog: *E,DUPIDN (./monitor.sv,1|12): identifier 'monitor' previously declared [12.5(IEEE)].
-class scoreboard;
-               |
-ncvlog: *E,DUPIDN (./scoreboard.sv,1|15): identifier 'scoreboard' previously declared [12.5(IEEE)].
-class environment;
-                |
-ncvlog: *E,DUPIDN (environment.sv,9|16): identifier 'environment' previously declared [12.5(IEEE)].
-    environment env;
-                  |
-ncvlog: *E,ILLPDL (random_test.sv,4|18): Mixing of ansi & non-ansi style port declaration is not legal.
-	program worklib.test:sv
-		errors: 1, warnings: 0
-file: testbench.sv
-interface intf();
-             |
-ncvlog: *W,RECOME (interface1.sv,1|13): recompiling design unit worklib.intf:sv.
-	First compiled from line 1 of interface1.sv.
-(`include file: interface1.sv line 1, file: testbench.sv line 2)
-ncvlog: *E,DUPUNI: Unit "worklib.intf:sv" multiply defined in files "interface1.sv" and "testbench.sv".
-ncvlog: *E,MNPDEC: Module name (intf) previously declared. Use -ALLOWREDEFINITION option for duplicate module names.
-   transaction trans;
-             |
-ncvlog: *E,NOIPRT (./generator.sv,3|13): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./generator.sv line 3, `include file: ./environment.sv line 3, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    transaction trans;
-              |
-ncvlog: *E,NOIPRT (./driver.sv,2|14): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./driver.sv line 2, `include file: ./environment.sv line 4, `include file: random_test.sv line 1, file: testbench.sv line 3)
-        transaction trans;
-                  |
-ncvlog: *E,SVNOTY (./driver.sv,23|18): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-(`include file: ./driver.sv line 23, `include file: ./environment.sv line 4, `include file: random_test.sv line 1, file: testbench.sv line 3)
-transaction trans;
-          |
-ncvlog: *E,NOIPRT (./monitor.sv,2|10): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./monitor.sv line 2, `include file: ./environment.sv line 5, `include file: random_test.sv line 1, file: testbench.sv line 3)
-transaction trans;
-          |
-ncvlog: *E,NOIPRT (./scoreboard.sv,2|10): Unrecognized declaration 'transaction' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./scoreboard.sv line 2, `include file: ./environment.sv line 6, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    generator gen;
-            |
-ncvlog: *E,NOIPRT (./environment.sv,11|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 11, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    driver driv;
-         |
-ncvlog: *E,NOIPRT (./environment.sv,12|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 12, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    monitor mon;
-          |
-ncvlog: *E,NOIPRT (./environment.sv,13|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 13, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    scoreboard scb;
-             |
-ncvlog: *E,NOIPRT (./environment.sv,14|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-(`include file: ./environment.sv line 14, `include file: random_test.sv line 1, file: testbench.sv line 3)
-    environment env;
-                  |
-ncvlog: *E,ILLPDL (random_test.sv,4|18): Mixing of ansi & non-ansi style port declaration is not legal.
-(`include file: random_test.sv line 4, file: testbench.sv line 3)
-	program worklib.test:sv
-		errors: 1, warnings: 0
-	Total errors/warnings found outside modules and primitives:
-		errors: 20, warnings: 2
-irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-[vv2trainee2@compute-srv2 countersv]$ 
-
+ncelab: *E,CUVMUR (./test2.sv,201|14): instance 'tb_top.i_intf' of design unit 'intf' is unresolved in 'worklib.tb_top:sv'.
+program test(intf i_intf);
+                       |
+ncelab: *E,CUIMBC (./test2.sv,179|23): An interface port declaration must be connected (tb_top.t1).
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.

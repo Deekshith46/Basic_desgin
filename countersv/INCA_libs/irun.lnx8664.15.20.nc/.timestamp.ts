@@ -1,15 +1,2 @@
-1553292236 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/random_test.sv
-1553291209 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/testbench.sv
-1553292310 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/environment.sv
-1553291992 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/monitor.sv
-1553296435 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/test1.sv
-1553291835 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/transaction.sv
-1553288548 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/directed_test.sv
-1553294618 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/cnt.sv
 1553296047 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/counter.v
-1553289932 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/interface1.sv
-1553292076 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/scoreboard.sv
-1553291214 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/driver.sv
-1553291214 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/generator.sv
-1553289932 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/interface.sv
-1553292965 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/count_tb.sv
+1553297160 /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/countersv/test2.sv

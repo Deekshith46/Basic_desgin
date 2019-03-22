@@ -1,9 +1,9 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 04:43:56 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 04:56:04 IST
 irun
 	-access +rwc
 	counter.v
-	test1.sv
+	test2.sv
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -28,9 +28,15 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './test1.sv' is newer than expected.
-	expected: Sat Mar 23 04:43:15 2019
-	actual:   Sat Mar 23 04:43:55 2019
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Recompiling... reason: file './test2.sv' is newer than expected.
+	expected: Sat Mar 23 04:55:09 2019
+	actual:   Sat Mar 23 04:56:00 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -43,7 +49,7 @@ ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permi
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-file: test1.sv
+file: test2.sv
 	module worklib.tb_top:sv
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
@@ -68,47 +74,14 @@ DEFINE sdadc_working /projects/tigershare/sdadc_working
 ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
-	Top level design units:
-		$unit_0x118af7fb
-		tb_top
-ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-		worklib.tb_top:sv <0x110054f1>
-			streams:   7, words:  2061
-	Building instance specific data structures.
-	Loading native compiled code:     .................... Done
-	Design hierarchy summary:
-		                    Instances  Unique
-		Modules:                    2       2
-		Interfaces:                 1       1
-		Programs:                   1       1
-		Registers:                 40      63
-		Scalar wires:               3       -
-		Vectored wires:             2       -
-		Named events:               0       1
-		Always blocks:              2       2
-		Initial blocks:             6       6
-		Parallel blocks:            1       1
-		Pseudo assignments:         4       4
-		Compilation units:          1       1
-		SV Class declarations:      6       6
-		SV Class specializations:   6       6
-	Writing initial simulation snapshot: worklib.tb_top:sv
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Loading snapshot worklib.tb_top:sv .................... Done
-SVSEED default: 1
-ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
-ncsim> run
+		Caching library 'worklib' ....... Done
+ncelab: *W,DLLSVW: Unable to list the views of rfLib.rfLib (System error).
+ncelab: *W,DLLSVW: Unable to list the views of rfLib.log (System error).
+    intf i_intf();
+              |
+ncelab: *E,CUVMUR (./test2.sv,201|14): instance 'tb_top.i_intf' of design unit 'intf' is unresolved in 'worklib.tb_top:sv'.
+program test(intf i_intf);
+                       |
+ncelab: *E,CUIMBC (./test2.sv,179|23): An interface port declaration must be connected (tb_top.t1).
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 04:56:05 IST  (total: 00:00:01)
