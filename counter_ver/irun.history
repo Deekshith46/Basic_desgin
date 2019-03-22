@@ -45,3 +45,4 @@ s44(22Mar2019:03:37:00):  irun -access +rwc counter.v counter_tb.sv
 s45(22Mar2019:03:37:47):  irun -access +rwc counter.v counter_tb.sv 
 s46(22Mar2019:03:38:17):  irun -access +rwc counter.v counter_tb.sv 
 s47(22Mar2019:05:50:12):  irun -access +rwc counter.v counter_tb.sv 
+s48(22Mar2019:05:54:49):  irun -access +rwc counter.v counter_tb.sv 

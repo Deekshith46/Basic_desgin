@@ -1,9 +1,12 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 22, 2019 at 05:50:12 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 22, 2019 at 05:54:49 IST
 irun
 	-access +rwc
 	counter.v
 	counter_tb.sv
+include ../../../../../../cds.lib
+|
+irun: *W,DLCPTH (./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib,2): cds.lib No such file '/home/vv2trainee2/Desktop/cds.lib' (cds.lib command ignored).
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -16,21 +19,6 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './counter.v' is newer than expected.
-	expected: Fri Mar 22 03:14:41 2019
-	actual:   Fri Mar 22 03:42:46 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -43,6 +31,12 @@ ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permi
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+file: counter.v
+	module worklib.counter:v
+		errors: 0, warnings: 0
+file: counter_tb.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
@@ -69,6 +63,17 @@ ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permi
 		testbench
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		worklib.counter:v <0x4e62cf42>
+			streams:   1, words:   605
+		worklib.testbench:sv <0x2f359490>
+			streams:   9, words:  7131
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -127,4 +132,4 @@ Match at time 325.000000 : rtl output = 5 , sco output = 5
 Simulation complete via $finish(1) at time 335 NS + 0
 ./counter_tb.sv:35 $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 22, 2019 at 05:50:12 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 22, 2019 at 05:54:50 IST  (total: 00:00:01)

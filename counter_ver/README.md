@@ -90,18 +90,10 @@ The testbench verifies the functionality of the counter design using a scoreboar
 2. Run the simulation:
    - For Cadence:
      ```bash
-     irun -sv counter.v counter_tb.sv
+     irun -access +rwc counter.v counter_tb.sv
      ```
-   - For Synopsys VCS:
-     ```bash
-     vcs -sverilog counter.v counter_tb.sv -o simv
-     ./simv
-     ```
-   - For ModelSim:
-     ```bash
-     vlog counter.v counter_tb.sv
-     vsim -c testbench -do "run -all; quit"
-     ```
+  
+    
 
 3. View the output:
    - Check the simulation logs for **MATCH** or **MISMATCH** messages.
