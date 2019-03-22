@@ -102,12 +102,17 @@ The testbench verifies the functionality of the counter design using a scoreboar
 ---
 
 ## Example Output
+Basic_desgin/counter_ver/`output.png`
 
 ### Log Snippet:
 ```
-MATCH at time 50: RTL output = 1, Scoreboard output = 1
-MATCH at time 60: RTL output = 2, Scoreboard output = 2
-MISMATCH at time 70: RTL output = 3, Scoreboard output = 4
+Match at time 15.000000 : rtl output = 0 , sco output = 0
+Match at time 25.000000 : rtl output = 7 , sco output = 7
+Match at time 35.000000 : rtl output = 6 , sco output = 6
+Match at time 45.000000 : rtl output = 7 , sco output = 7
+Match at time 55.000000 : rtl output = 0 , sco output = 0
+Match at time 65.000000 : rtl output = 1 , sco output = 1
+
 ```
 
 ### Waveform:
