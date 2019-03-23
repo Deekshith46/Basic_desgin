@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 11:27:11 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 12:36:49 IST
 irun
 	-access +rwc
 	counter.v
@@ -28,6 +28,9 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Recompiling... reason: file './tes3.sv' is newer than expected.
+	expected: Sat Mar 23 12:35:49 2019
+	actual:   Sat Mar 23 12:36:47 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -41,39 +44,182 @@ DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
 file: tes3.sv
-transcation tr;
-          |
-ncvlog: *E,NOIPRT (tes3.sv,112|10): Unrecognized declaration 'transcation' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    mailbox #(transaction) mon2sco;
-                        |
-ncvlog: *E,SVNOTY (tes3.sv,114|24): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-   function new(mailbox #(transaction) mon2sco);/// function new(virtual intf vif, mailbox gen2drv);
-                                    |
-ncvlog: *E,SVNOTY (tes3.sv,118|36): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    generator gen;
-            |
-ncvlog: *E,NOIPRT (tes3.sv,154|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    driver drv;
-         |
-ncvlog: *E,NOIPRT (tes3.sv,155|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    monitor mon;
-          |
-ncvlog: *E,NOIPRT (tes3.sv,156|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    scoreboard scb;
-             |
-ncvlog: *E,NOIPRT (tes3.sv,157|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
-    mailbox #(transaction) gen2drv;
-                        |
-ncvlog: *E,SVNOTY (tes3.sv,160|24): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    mailbox #(transaction) mon2sco;
-                        |
-ncvlog: *E,SVNOTY (tes3.sv,161|24): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    environment env;
-                  |
-ncvlog: *E,NOIPRT (tes3.sv,226|18): Unrecognized declaration 'env' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+	interface worklib.intf:sv
+		errors: 0, warnings: 0
 	module worklib.tb_top:sv
-		errors: 1, warnings: 0
+		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
-		errors: 9, warnings: 2
-irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 11:27:11 IST  (total: 00:00:00)
+		errors: 0, warnings: 2
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x62271bb2
+		tb_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x05cd2bf5>
+			streams:   8, words: 10313
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x06de579b>
+			streams:  13, words: 17199
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x1d9786ed>
+			streams:   8, words:  8525
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x38a41204>
+			streams:   8, words:  8646
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x3ee31c6b>
+			streams:   9, words:  5059
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x3f39d632>
+			streams:  15, words: 17930
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x743740c5>
+			streams:   0, words:     0
+		worklib.tb_top:sv <0x4f126f5a>
+			streams:   9, words:  4252
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    2       2
+		Interfaces:                 1       1
+		Registers:                 41      61
+		Scalar wires:               3       -
+		Vectored wires:             2       -
+		Named events:               0       4
+		Always blocks:              2       2
+		Initial blocks:             3       3
+		Parallel blocks:            1       1
+		Pseudo assignments:         4       4
+		Assertions:                 1       1
+		Compilation units:          1       1
+		SV Class declarations:      6       6
+		SV Class specializations:   6       6
+	Writing initial simulation snapshot: worklib.tb_top:sv
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+[DRV] : RESET DONE
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] FAIL: Time=150, Expected=7, dutout=0
+------------------------------
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] PASS: Time=190, Expected=6, dutout=6
+------------------------------
+[MONITOR]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] FAIL: Time=230, Expected=5, dutout=4
+------------------------------
+[MONITOR]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] FAIL: Time=270, Expected=4, dutout=2
+------------------------------
+[MONITOR]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] FAIL: Time=310, Expected=3, dutout=0
+------------------------------
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=350, Expected=2, dutout=6
+------------------------------
+[MONITOR]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] FAIL: Time=390, Expected=1, dutout=4
+------------------------------
+[MONITOR]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] FAIL: Time=430, Expected=0, dutout=2
+------------------------------
+[MONITOR]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] FAIL: Time=470, Expected=7, dutout=0
+------------------------------
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] PASS: Time=510, Expected=6, dutout=6
+------------------------------
+[MONITOR]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] FAIL: Time=550, Expected=5, dutout=4
+------------------------------
+[MONITOR]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] FAIL: Time=590, Expected=4, dutout=2
+------------------------------
+[MONITOR]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] FAIL: Time=630, Expected=3, dutout=0
+------------------------------
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=670, Expected=2, dutout=6
+------------------------------
+[MONITOR]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] FAIL: Time=710, Expected=1, dutout=4
+------------------------------
+[MONITOR]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] FAIL: Time=750, Expected=0, dutout=2
+------------------------------
+[MONITOR]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] FAIL: Time=790, Expected=7, dutout=0
+------------------------------
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] PASS: Time=830, Expected=6, dutout=6
+------------------------------
+[MONITOR]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] FAIL: Time=870, Expected=5, dutout=4
+------------------------------
+[MONITOR]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] FAIL: Time=910, Expected=4, dutout=2
+------------------------------
+[MONITOR]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] FAIL: Time=950, Expected=3, dutout=0
+------------------------------
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=990, Expected=2, dutout=6
+------------------------------
+Simulation complete via $finish(1) at time 1 US + 0
+./tes3.sv:259         $finish();
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 12:36:49 IST  (total: 00:00:00)

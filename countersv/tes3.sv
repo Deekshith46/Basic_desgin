@@ -1,7 +1,10 @@
 ////////// Transaction Class //////////
 class transaction;
-    rand bit mod;
-     bit [2:0] count;
+    randc bit mod;
+      bit [2:0] count;
+
+     /*constraint vaild_transcation{
+         count inside{0,1,2,3,4,5,6,7};}*/
 
      function transaction copy();
      copy =new();
@@ -9,8 +12,8 @@ class transaction;
      copy.count =this.count;
      endfunction
 
-    function void display(input string tag);
-        $display("%[0s]: mod=%0d, count=%0d", tag , mod, count);
+    function void display(input string name);
+        $display("[%0s]: mod=%0d, count=%0d", name , mod, count);
     endfunction
 
     endclass
@@ -20,7 +23,7 @@ class generator;
 transaction tr;
 
     mailbox #(transaction) gen2drv;
-    event sconext;
+   event sconext;
     event done;
     int count;
 
@@ -38,6 +41,7 @@ transaction tr;
         @(sconext);
         end
         ->done;
+        $display("[gen] : all transaction generated");
     endtask
 endclass
 //////////////int/////
@@ -51,13 +55,13 @@ endinterface
 
 ////////// Driver Class //////////
  class driver;
-    transaction trs;
+    transaction tr;
      mailbox #(transaction) gen2drv;
      virtual intf vif;
 
      
-    function new(mailbox #(transaction) gen2drv);/// function new(virtual intf vif, mailbox gen2drv);
-        //this.vif = vif;
+    function new( virtual intf vif ,mailbox #(transaction) gen2drv);/// function new(virtual intf vif, mailbox gen2drv);
+        this.vif = vif;
         this.gen2drv = gen2drv;
     endfunction
 
@@ -77,7 +81,7 @@ endinterface
            vif.mod <= tr.mod;
            @(posedge vif.clk);
            tr.display("DRV");
-           vif.mod <= 1'b0;
+          vif.mod <= 1'b0;
            @(posedge vif.clk);
          end
     endtask
@@ -90,8 +94,8 @@ transaction tr;
   virtual intf vif;
 
 
-   function new(mailbox #(transaction) mon2sco);/// function new(virtual intf vif, mailbox gen2drv);
-        //this.vif = vif;
+   function new( virtual intf vif,mailbox #(transaction) mon2sco);/// function new(virtual intf vif, mailbox gen2drv);
+        this.vif = vif;
         this.mon2sco = mon2sco;
     endfunction
 
@@ -99,9 +103,9 @@ transaction tr;
     tr =new();
             forever begin
             repeat(2)@(posedge vif.clk);
-            //trans.mod = vif.mod;
+            tr.mod = vif.mod;
             tr.count = vif.count;
-            mon2sco.put(tr);
+            mon2sco.put(tr);/////
             tr.display("MONITOR");
         end
     endtask
@@ -109,7 +113,7 @@ endclass
 
 ////////// Scoreboard Class //////////
 class scoreboard;
-transcation tr;
+transaction tr;
 
     mailbox #(transaction) mon2sco;
     event sconext;
@@ -125,10 +129,10 @@ transcation tr;
     int expected_count;
                
         forever begin
-            mon2scb.get(tr);
+            mon2sco.get(tr);
             tr.display("SCO");
            
-            if (trans.mod)
+            if (tr.mod)
                 expected_count++;
                 
             else
@@ -138,10 +142,16 @@ transcation tr;
             expected_count = (expected_count + 8) % 8;  // Wrap around 3-bit range
 
             if (expected_count == tr.count)
-                $display("[SCOREBOARD] PASS: Time=%0t, Expected=%0d, dutout=%0d", $time, expected_count,trans.count);
+               //$display("--------passed---------");
+                $display("[SCOREBOARD] PASS: Time=%0t, Expected=%0d, dutout=%0d", $time, expected_count,tr.count);
             else
-                $display("[SCOREBOARD] FAIL: Time=%0t, Expected=%0d, dutout=%0d", $time, expected_count, trans.count);
+                //$display("----------FAILED--------");
+               
+               $display("[SCOREBOARD] FAIL: Time=%0t, Expected=%0d, dutout=%0d", $time, expected_count, tr.count);
+         $display("------------------------------");
+
         end
+
         ->sconext;
         
     endtask
@@ -150,7 +160,6 @@ endclass
 
 ////////// Environment Class //////////
 class environment;
-
     generator gen;
     driver drv;
     monitor mon;
@@ -163,18 +172,15 @@ event next;
     virtual intf vif;
 
     function new(virtual intf vif);
-        //this.vif = vif;
+        this.vif = vif;
         gen2drv = new();
         mon2sco = new();
         gen = new(gen2drv);
-        drv = new( gen2drv);
-        mon = new( mon2sco);
+        drv = new(vif, gen2drv);
+        mon = new(vif, mon2sco);
         scb = new(mon2sco);
-        this.vif = vif;
-        drv.vif = this.vif;
-        mon.vif = this.vif;
         gen.sconext = next;
-        sco.sconext = next;
+        scb.sconext =next;
     endfunction
 
     task pre_test();
@@ -182,16 +188,19 @@ event next;
     endtask
 
     task test();
+
         fork
             gen.run();
             drv.run();
             mon.run();
             scb.run();
-        join_any
+        join
     endtask
 
     task post_test();
+           //if(!gen.done.triggered)begin
     wait(gen.done.triggered);
+     //$display("simulation complete");
     $finish();
     endtask
 
@@ -221,6 +230,14 @@ counter dut(
     vif.clk <= 0;
     end
     
+    /*initial begin
+    vif.rst =1;
+#50 vif.rst=0;
+#20 vif.mod =0;
+#100 vif.mod =1;
+#1000;
+    $finish();
+    end*/
     always #10 vif.clk = ~vif.clk;
 
     environment env;
@@ -229,12 +246,16 @@ counter dut(
     env=new(vif);
     env.gen.count =30;
     env.run();
+    env.run();
+env.run();
+
     end
 
     
-    /*initial begin
+    initial begin
         $shm_open("wave.shm");
         $shm_probe("ACTMF");
+#1000;
         $finish();
-    end*/
+    end
 endmodule
