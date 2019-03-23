@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+-f
+./compile.f
+-coverage
+all
+-covdut
+async_fifo
+-covworkdir
+/cov_work
+-covoverwrite
+-covfile
+./cov_files/cov_cmd.cf
+-uvmhome
+CDNS-1.1d
+-seed
+1
++scenario=1

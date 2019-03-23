@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<refinement-file-root>
+<information creation-time="Sat 23 Mar 2019 11:00:59 IST" creator="vv2trainee17" csCheck="false" rules-signature-c="f0a4637b8811a71deca29fdab55236" tool-version="Incisive vManager15.2">
+<ucm-files>
+<ucm-file domain="icc" modelCheckSum="1882690537" path="/home/vv2trainee17/Desktop/Suhas/counter/cov_work/scope/icc_703793e9_00000000.ucm"/>
+</ucm-files>
+<ccf-files>
+<ccf-file content="set_covergroup -new_instance_reporting;set_covergroup -per_instance_default_one;set_implicit_block_scoring -off;set_assign_scoring;set_expr_scoring -all;select_functional;" path="/home/vv2trainee17/Desktop/Suhas/counter/cov_files/cov_cmd.cf"/>
+</ccf-files>
+</information>
+<rules/>
+<cache-map/>
+</refinement-file-root>

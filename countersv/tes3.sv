@@ -2,6 +2,7 @@
 class transaction;
     randc bit mod;
       bit [2:0] count;
+     // bit rst;
 
      /*constraint vaild_transcation{
          count inside{0,1,2,3,4,5,6,7};}*/
@@ -36,8 +37,7 @@ transaction tr;
         repeat(count)begin
         assert (tr.randomize())
        else $error("[GEN] :Transaction randomization failed");
-        gen2drv.put(tr.copy);
-        tr.display("GEN");
+              gen2drv.put(tr.copy);        
         @(sconext);
         end
         ->done;
@@ -77,7 +77,9 @@ endinterface
 
     task run();
         forever begin
+        
            gen2drv.get(tr);
+            tr.display("GEN");
            vif.mod <= tr.mod;
            @(posedge vif.clk);
            tr.display("DRV");
@@ -114,6 +116,8 @@ endclass
 ////////// Scoreboard Class //////////
 class scoreboard;
 transaction tr;
+//int rst=0;
+int expected_count;
 
     mailbox #(transaction) mon2sco;
     event sconext;
@@ -126,13 +130,41 @@ transaction tr;
 
 
     task run();
-    int expected_count;
-               
+                   
         forever begin
             mon2sco.get(tr);
             tr.display("SCO");
-           
-            if (tr.mod)
+
+           /*@(posedge vif.clk);
+            if(rst)
+            begin
+                expected_count = 3'b000;
+                end
+            else 
+            begin
+                if(tr.mod)
+                begin
+                    expected_count++;
+                end
+                else
+                begin
+                    expected_count--;
+                    expected_count =(expected_count +8)%8;
+
+                end  
+                            end  
+
+            if(expected_count == tr.count)begin
+                $display("---------passed----------");
+                end
+                else begin
+                    $display("------------failed---");
+                    end
+end
+      */     
+            if
+
+                (tr.mod)
                 expected_count++;
                 
             else
@@ -151,7 +183,6 @@ transaction tr;
          $display("------------------------------");
 
         end
-
         ->sconext;
         
     endtask

@@ -1,0 +1,200 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 11:02:01 IST
+irun
+	-access +rwc
+	counter.v
+	count_tb.sv
+	-coverage all
+	-covdut counter
+	-covworkdir /cov_work
+	-covoverwrite
+	-covfile ./cov_files/cov_cmd.cf
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+ncsim: *E,CNDIR: Could not create/open directory /cov_work.
+Loading snapshot worklib.tb:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+MISSMATCH at time = 5,	mod = x	rtl_output = x,	sco_output = x
+MATCH at time = 15,	mod = x ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 25,	mod = x ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 35,	mod = 1 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 45,	mod = 1 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 55,	mod = 1 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 65,	mod = 1 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 75,	mod = 1 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 85,	mod = 1 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 95,	mod = 1 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 105,	mod = 1 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 115,	mod = 1 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 125,	mod = 1 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 135,	mod = 1 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 145,	mod = 1 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 155,	mod = 1 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 165,	mod = 1 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 175,	mod = 1 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 185,	mod = 1 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 195,	mod = 1 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 205,	mod = 1 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 215,	mod = 1 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 225,	mod = 1 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 235,	mod = 1 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 245,	mod = 1 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 255,	mod = 1 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 265,	mod = 1 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 275,	mod = 1 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 285,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 295,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 305,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 315,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 325,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 335,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 345,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 355,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 365,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 375,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 385,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 395,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 405,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 415,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 425,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 435,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 445,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 455,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 465,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 475,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 485,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 495,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 505,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 515,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 525,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 535,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 545,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 555,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 565,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 575,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 585,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 595,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 605,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 615,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 625,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 635,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 645,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 655,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 665,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 675,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 685,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 695,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 705,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 715,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 725,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 735,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 745,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 755,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 765,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 775,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 785,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 795,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 805,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 815,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 825,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 835,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 845,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 855,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 865,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 875,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 885,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 895,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 905,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 915,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 925,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 935,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 945,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 955,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 965,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 975,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 985,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 995,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 1005,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 1015,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 1025,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 1035,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 1045,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 1055,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 1065,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 1075,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 1085,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 1095,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 1105,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 1115,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 1125,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 1135,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 1145,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 1155,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 1165,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 1175,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 1185,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 1195,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+MATCH at time = 1205,	mod = 0 ,	rtl_output = 3,	sco_output = 3
+MATCH at time = 1215,	mod = 0 ,	rtl_output = 2,	sco_output = 2
+MATCH at time = 1225,	mod = 0 ,	rtl_output = 1,	sco_output = 1
+MATCH at time = 1235,	mod = 0 ,	rtl_output = 0,	sco_output = 0
+MATCH at time = 1245,	mod = 0 ,	rtl_output = 7,	sco_output = 7
+MATCH at time = 1255,	mod = 0 ,	rtl_output = 6,	sco_output = 6
+MATCH at time = 1265,	mod = 0 ,	rtl_output = 5,	sco_output = 5
+MATCH at time = 1275,	mod = 0 ,	rtl_output = 4,	sco_output = 4
+Simulation complete via $finish(1) at time 1280 NS + 0
+./count_tb.sv:29 $finish();
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb.dut(counter)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_703793e9_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_703793e9_00000000.ucd
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 11:02:01 IST  (total: 00:00:00)

@@ -1,0 +1,337 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 23:00:31 IST
+irun
+	-access +rwc
+	d_ff.v
+	d_ff.sv
+include ../../../../../../cds.lib
+|
+irun: *W,DLCPTH (./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib,2): cds.lib No such file '/home/vv2trainee2/Desktop/cds.lib' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+file: d_ff.v
+	module worklib.d_ff:v
+		errors: 0, warnings: 0
+file: d_ff.sv
+	interface worklib.dff_if:sv
+		errors: 0, warnings: 0
+	module worklib.tb:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		$unit_0x77a78ae5
+		tb
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		worklib.\$unit_0x77a78ae5 :compilation_unit <0x04115bcd>
+			streams:  16, words: 19921
+		worklib.\$unit_0x77a78ae5 :compilation_unit <0x0e8d0374>
+			streams:   8, words: 12094
+		worklib.\$unit_0x77a78ae5 :compilation_unit <0x10479fe9>
+			streams:   8, words: 10053
+		worklib.\$unit_0x77a78ae5 :compilation_unit <0x2a1f87a9>
+			streams:   0, words:     0
+		worklib.\$unit_0x77a78ae5 :compilation_unit <0x370a87b1>
+			streams:   9, words:  5059
+		worklib.\$unit_0x77a78ae5 :compilation_unit <0x3815e02c>
+			streams:  13, words: 16671
+		worklib.\$unit_0x77a78ae5 :compilation_unit <0x3892ce99>
+			streams:   8, words:  7613
+		worklib.d_ff:v <0x34981c02>
+			streams:   2, words:   423
+		worklib.tb:sv <0x48bdb089>
+			streams:   8, words:  3056
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                    2       2
+		Interfaces:                 1       1
+		Registers:                 40      64
+		Scalar wires:               5       -
+		Named events:               0       4
+		Always blocks:              2       2
+		Initial blocks:             2       2
+		Parallel blocks:            1       1
+		Pseudo assignments:         4       4
+		Assertions:                 1       1
+		Compilation units:          1       1
+		SV Class declarations:      6       6
+		SV Class specializations:   6       6
+	Writing initial simulation snapshot: worklib.tb:sv
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+Loading snapshot worklib.tb:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+[DRV] : RESET DONE
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 0 DOUT : 0
+[DRV] : DIN : 0 DOUT : 0
+[MON] : DIN : 0 DOUT : 0
+[SCO] : DIN : 0 DOUT : 0
+[REF] : DIN : 0 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+[GEN] : DIN : 1 DOUT : 0
+[DRV] : DIN : 1 DOUT : 0
+[MON] : DIN : 0 DOUT : 1
+[SCO] : DIN : 0 DOUT : 1
+[REF] : DIN : 1 DOUT : 0
+[SCO] : DATA MATCHED
+------------------------------------------------
+Simulation complete via $finish(1) at time 1310 NS + 0
+./d_ff.sv:205 $finish();
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 23:00:32 IST  (total: 00:00:01)

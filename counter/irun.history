@@ -1,0 +1,18 @@
+s1(23Mar2019:10:19:10):  irun -access +rwc counter.v 
+s2(23Mar2019:10:19:41):  irun -access +rwc counter.v 
+s3(23Mar2019:10:26:00):  irun -access +rwc counter.v count_tb.sv 
+s4(23Mar2019:10:26:19):  irun -access +rwc counter.v count_tb.sv 
+s5(23Mar2019:10:37:09):  irun -access +rwc counter.v count_tb.sv 
+s6(23Mar2019:10:37:32):  irun -access +rwc counter.v count_tb.sv 
+s7(23Mar2019:10:39:22):  irun -access +rwc counter.v count_tb.sv 
+s8(23Mar2019:10:40:10):  irun -access +rwc counter.v count_tb.sv 
+s9(23Mar2019:10:40:48):  irun -access +rwc counter.v count_tb.sv 
+s10(23Mar2019:10:42:19):  irun -access +rwc counter.v count_tb.sv -coverage all 
+s11(23Mar2019:10:55:03):  irun -access +rwc -f counter.v cout_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s12(23Mar2019:10:55:19):  irun -access +rwc counter.v cout_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s13(23Mar2019:10:55:47):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s14(23Mar2019:10:59:25):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s15(23Mar2019:11:00:58):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s16(23Mar2019:10:57:11):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s17(23Mar2019:11:01:51):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s18(23Mar2019:11:02:01):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 

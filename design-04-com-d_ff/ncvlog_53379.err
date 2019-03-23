@@ -1,0 +1,500 @@
+csi-ncvlog - CSI: Command line:
+ncvlog
+    -f /home/vv2trainee2/Desktop/Deekshith/systemverilog/design-04/INCA_libs/irun.lnx8664.15.20.nc/ncvlog.args
+        -XLMODE ./INCA_libs/irun.lnx8664.15.20.nc
+        -RUNMODE
+        d_ff.v
+        d_ff.sv
+        -CDSLIB ./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+        -HDLVAR ./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+        -MESSAGES
+        -UPDATE
+        -XLLIBSTORE ./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+        -ALLOWUNBOUND
+    -CHECK_VERSION TOOL:	irun(64)	15.20-s051
+    -LOG_FD 4
+
+csi-ncvlog - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncvlog(64)	15.20-s051
+  HOSTNAME: compute-srv2.eda.atme.in
+  OPERATING SYSTEM: Linux 3.10.0-1160.49.1.el7.x86_64 #1 SMP Tue Nov 30 15:51:32 UTC 2021 x86_64
+  MESSAGE: vst_identifier () - bad class, class 843
+-----------------------------------------------------------------
+
+csi-ncvlog - CSI: Cadence Support Investigation, recording details
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: compilation unit declaration (VST_D_COMP_UNIT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Scope: $unit_0x77a78ae5
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE)
+	File: d_ff.sv, line 3, position 8
+	Scope: tb
+	Decompile: tb
+	Source  : class transaction;
+	Position:         ^
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 26
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: virtual_interface_declaration_3
+	Source  : function new(virtual dff_if vif);
+	Position:                           ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE)
+	File: d_ff.sv, line 3, position 8
+	Scope: tb
+	Decompile: tb
+	Source  : class transaction;
+	Position:         ^
+Verilog Syntax Tree: sequential block statement (VST_S_SEQ_BLOCK)
+	File: d_ff.sv, line 19, position 12
+	Scope: tb
+	Source  : ////////////////////////Generator//////////////
+	Position:             ^
+Verilog Syntax Tree: blocking assignment statement (VST_S_BLOCKING_ASSIGNMENT)
+	File: d_ff.sv, line 15, position 19
+	Scope: tb
+	Decompile: ~vif
+	Source  : endfunction
+	Position:                    ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE)
+	File: d_ff.sv, line 3, position 8
+	Scope: tb
+	Decompile: tb
+	Source  : class transaction;
+	Position:         ^
+Verilog Syntax Tree: initial statement declaration (VST_D_INITIAL_STMT)
+	File: d_ff.sv, line 19, position 6
+	Scope: tb
+	Source  : ////////////////////////Generator//////////////
+	Position:       ^
+Verilog Syntax Tree: register declaration (VST_D_REG)
+	File: d_ff.sv, line 17, position 14
+	Scope: tb
+	Decompile: $unit_0x77a78ae5::environment env
+	Source  : endclass
+	Position:               ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE)
+	File: d_ff.sv, line 3, position 8
+	Scope: tb
+	Decompile: tb
+	Source  : class transaction;
+	Position:         ^
+Verilog Syntax Tree: class type (VST_T_CLASS)
+	File: d_ff.sv, line 17, position 10
+	Scope: tb
+	Decompile: $unit_0x77a78ae5::environment
+	Source  : endclass
+	Position:           ^
+Verilog Syntax Tree: always statement declaration (VST_D_ALWAYS_STMT)
+	File: d_ff.sv, line 15, position 5
+	Scope: tb
+	Source  : endfunction
+	Position:      ^
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: compilation unit declaration (VST_D_COMP_UNIT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Scope: $unit_0x77a78ae5
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE)
+	File: d_ff.sv, line 3, position 8
+	Scope: tb
+	Decompile: tb
+	Source  : class transaction;
+	Position:         ^
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 158, position 16
+	Scope: $unit_0x77a78ae5::environment
+	Decompile: $unit_0x77a78ae5::environment
+	Source  : class environment;
+	Position:                 ^
+Verilog Syntax Tree: compilation unit declaration (VST_D_COMP_UNIT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Scope: $unit_0x77a78ae5
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE)
+	File: d_ff.sv, line 3, position 8
+	Scope: tb
+	Decompile: tb
+	Source  : class transaction;
+	Position:         ^
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: virtual interface type (VST_T_VIRTUAL_IFC) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: virtual interface dff_if
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: blocking assignment statement (VST_S_BLOCKING_ASSIGNMENT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 177, position 6
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new ()
+	Source  : mbref = new();
+	Position:       ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: sequential block statement (VST_S_SEQ_BLOCK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 176, position 4
+	Scope: $unit_0x77a78ae5::environment::new
+	Source  : gdmbx = new();
+	Position:     ^
+Verilog Syntax Tree: explicit event statement (VST_S_EXPLICIT_EVENT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 151, position 9
+	Scope: $unit_0x77a78ae5::scoreboard::run
+	Decompile: unable to decompile type 648
+	Source  :         -> sconext;
+	Position:          ^
+Verilog Syntax Tree: method task enable statement (VST_S_METHOD_TASK_ENABLE) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 143, position 12
+	Scope: $unit_0x77a78ae5::scoreboard::run
+	Decompile: unable to decompile type 775
+	Source  : trref.display("REF");
+	Position:             ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: new expression (VST_E_NEW) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 177, position 10
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new ()
+	Source  : mbref = new();
+	Position:           ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: blocking assignment statement (VST_S_BLOCKING_ASSIGNMENT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 177, position 6
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new ()
+	Source  : mbref = new();
+	Position:       ^
+Verilog Syntax Tree: register declaration (VST_D_REG) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 166, position 27
+	Scope: $unit_0x77a78ae5::environment
+	Decompile: unable to decompile type 834 gdmbx
+	Source  : mailbox #(transaction) gdmbx;///////gen2drv
+	Position:                            ^
+Verilog Syntax Tree: event declaration (VST_D_EVENT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 128, position 12
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: unable to decompile type 530
+	Source  : event sconext;
+	Position:             ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Intermediate File: string (IF_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Decompile: mbref
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 158, position 16
+	Scope: $unit_0x77a78ae5::environment
+	Decompile: $unit_0x77a78ae5::environment
+	Source  : class environment;
+	Position:                 ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 13, position 20
+	Scope: $unit_0x77a78ae5::transaction::display
+	Decompile: display
+	Source  : function void display();
+	Position:                     ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 175, position 11
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new
+	Source  : function new(virtual dff_if vif);
+	Position:            ^
+Verilog Syntax Tree: compilation unit declaration (VST_D_COMP_UNIT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Scope: $unit_0x77a78ae5
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: class declaration (VST_D_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 158, position 16
+	Scope: $unit_0x77a78ae5::environment
+	Decompile: $unit_0x77a78ae5::environment
+	Source  : class environment;
+	Position:                 ^
+Verilog Syntax Tree: register declaration (VST_D_REG) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 123, position 16
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: $unit_0x77a78ae5::transaction trref
+	Source  : transaction trref;
+	Position:                 ^
+Verilog Syntax Tree: compilation unit declaration (VST_D_COMP_UNIT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Scope: $unit_0x77a78ae5
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: class type (VST_T_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 123, position 10
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: $unit_0x77a78ae5::transaction
+	Source  : transaction trref;
+	Position:           ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 137, position 7
+	Scope: $unit_0x77a78ae5::scoreboard::run
+	Decompile: run
+	Source  : task run();
+	Position:        ^
+Verilog Syntax Tree: class type (VST_T_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 123, position 10
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: $unit_0x77a78ae5::transaction
+	Source  : transaction trref;
+	Position:           ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 145, position 18
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: trref
+	Source  : if(tr.dout == trref.din)
+	Position:                   ^
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 137, position 7
+	Scope: $unit_0x77a78ae5::scoreboard::run
+	Decompile: run
+	Source  : task run();
+	Position:        ^
+Intermediate File: string (IF_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Decompile: din
+Verilog Syntax Tree: class select expression (VST_E_CLASS_SELECT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 145, position 22
+	Scope: $unit_0x77a78ae5::transaction
+	Decompile: trref.din
+	Source  : if(tr.dout == trref.din)
+	Position:                       ^
+Verilog Syntax Tree: unknown expression (VST_E_UNKNOWN) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 110, position 26
+	Scope: $unit_0x77a78ae5::monitor::run
+	Decompile: vif.clk
+	Source  : repeat(2) @(posedge vif.clk);
+	Position:                           ^
+Verilog Syntax Tree: class type (VST_T_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 123, position 10
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: $unit_0x77a78ae5::transaction
+	Source  : transaction trref;
+	Position:           ^
+Verilog Syntax Tree: referral into class (VST_R_INTO_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Scope: $unit_0x77a78ae5::transaction
+	Decompile: $unit_0x77a78ae5::transaction
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 145, position 18
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: trref
+	Source  : if(tr.dout == trref.din)
+	Position:                   ^
+Verilog Syntax Tree: class select expression (VST_E_CLASS_SELECT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 145, position 22
+	Scope: $unit_0x77a78ae5::transaction
+	Decompile: trref.din
+	Source  : if(tr.dout == trref.din)
+	Position:                       ^
+Verilog Syntax Tree: class type (VST_T_CLASS) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 123, position 10
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: $unit_0x77a78ae5::transaction
+	Source  : transaction trref;
+	Position:           ^
+Verilog Syntax Tree: register declaration (VST_D_REG) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 4, position 11
+	Scope: $unit_0x77a78ae5::transaction
+	Decompile: bit din
+	Source  : rand bit din;
+	Position:            ^
+Verilog Syntax Tree: register declaration (VST_D_REG) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 123, position 16
+	Scope: $unit_0x77a78ae5::scoreboard
+	Decompile: $unit_0x77a78ae5::transaction trref
+	Source  : transaction trref;
+	Position:                 ^
+Verilog Syntax Tree: virtual interface type (VST_T_VIRTUAL_IFC) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Scope: $unit_0x77a78ae5::monitor
+	Decompile: virtual interface dff_if
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 107, position 7
+	Scope: $unit_0x77a78ae5::monitor::run
+	Decompile: run
+	Source  : task run();
+	Position:        ^
+Intermediate File: string (IF_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Decompile: vif
+Verilog Syntax Tree: unknown expression (VST_E_UNKNOWN) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 110, position 26
+	Scope: $unit_0x77a78ae5::monitor::run
+	Decompile: vif.clk
+	Source  : repeat(2) @(posedge vif.clk);
+	Position:                           ^
+Verilog Syntax Tree: string (VST_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Decompile: unable to decompile type 878
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 101, position 13
+	Scope: $unit_0x77a78ae5::monitor
+	Decompile: virtual_interface_declaration_1
+	Source  : virtual dff_if vif;
+	Position:              ^
+Verilog Syntax Tree: register declaration (VST_D_REG) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 101, position 17
+	Scope: $unit_0x77a78ae5::monitor
+	Decompile: virtual interface dff_if vif
+	Source  : virtual dff_if vif;
+	Position:                  ^
+Verilog Syntax Tree: virtual interface type (VST_T_VIRTUAL_IFC) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Scope: $unit_0x77a78ae5::monitor
+	Decompile: virtual interface dff_if
+Verilog Syntax Tree: task declaration (VST_D_TASK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 107, position 7
+	Scope: $unit_0x77a78ae5::monitor::run
+	Decompile: run
+	Source  : task run();
+	Position:        ^
+Verilog Syntax Tree: string (VST_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Decompile: unable to decompile type 878
+Verilog Syntax Tree: register declaration (VST_D_REG) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 101, position 17
+	Scope: $unit_0x77a78ae5::monitor
+	Decompile: virtual interface dff_if vif
+	Source  : virtual dff_if vif;
+	Position:                  ^
+Verilog Syntax Tree: unknown expression (VST_E_UNKNOWN) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 110, position 26
+	Scope: $unit_0x77a78ae5::monitor::run
+	Decompile: vif.clk
+	Source  : repeat(2) @(posedge vif.clk);
+	Position:                           ^
+Intermediate File: string (IF_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Decompile: clk
+Verilog Syntax Tree: string expression (VST_E_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 148, position 41
+	Decompile: "[SCO] : DATA MISMATCHED"
+	Source  :         $display("[SCO] : DATA MISMATCHED");
+	Position:                                          ^
+Intermediate File: data block (IF_BLK) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+Verilog Syntax Tree: class select expression (VST_E_CLASS_SELECT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 145, position 22
+	Scope: $unit_0x77a78ae5::transaction
+	Decompile: trref.din
+	Source  : if(tr.dout == trref.din)
+	Position:                       ^
+Verilog Syntax Tree: virtual interface type (VST_T_VIRTUAL_IFC) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: virtual interface dff_if
+Verilog Syntax Tree: number expression (VST_E_NUMBER) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 41, position 4094
+	Decompile: 0
+	Source  :         assert(tr.randomize) else $error("[GEN] : RANDOMIZATION FAILED");
+Verilog Syntax Tree: number expression (VST_E_NUMBER) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 41, position 4094
+	Decompile: 3
+	Source  :         assert(tr.randomize) else $error("[GEN] : RANDOMIZATION FAILED");
+Verilog Syntax Tree: blocking assignment statement (VST_S_BLOCKING_ASSIGNMENT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 177, position 6
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new ()
+	Source  : mbref = new();
+	Position:       ^
+Intermediate File: root (IF_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+Verilog Syntax Tree: compilation unit declaration (VST_D_COMP_UNIT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Scope: $unit_0x77a78ae5
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: new expression (VST_E_NEW) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 177, position 10
+	Scope: $unit_0x77a78ae5::environment::new
+	Decompile: new ()
+	Source  : mbref = new();
+	Position:           ^
+Verilog Syntax Tree: string (VST_STRING) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	Decompile: unable to decompile type 878
+Verilog Syntax Tree: unknown expression (VST_E_UNKNOWN) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 110, position 26
+	Scope: $unit_0x77a78ae5::monitor::run
+	Decompile: vif.clk
+	Source  : repeat(2) @(posedge vif.clk);
+	Position:                           ^
+Verilog Syntax Tree: root (VST_ROOT) in compilation_unit worklib.\$unit_0x77a78ae5 :compilation_unit (VST)
+	File: d_ff.sv, line 3, position 4
+	Decompile: $unit_0x77a78ae5
+	Source  : class transaction;
+	Position:     ^
+Verilog Syntax Tree: named connection expression (VST_E_NAMED_CONNECTION)
+	File: d_ff.sv, line 8, position 13
+	Decompile: named connection
+	Source  : copy = new();
+	Position:              ^
+csi-ncvlog - CSI: investigation complete took 0.103 secs, send this file to Cadence Support

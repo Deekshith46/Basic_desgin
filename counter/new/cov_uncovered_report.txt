@@ -1,0 +1,101 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+<> User: vv2trainee17
+
+Host: compute-srv2.eda.atme.in
+
+Report date: Sat 23 Mar 2019 11:06:53 IST
+
+Report options: -detail -text -out cov_uncovered_report.txt
+
+Coverage database path: /home/vv2trainee17/Desktop/Suhas/counter/new/cov_work/scope/cov_merged_output
+
+Coverage model files: /home/vv2trainee17/Desktop/Suhas/counter/new/cov_work/scope/cov_merged_output/icc_756898ef_695c2850.ucm
+
+Coverage data files: /home/vv2trainee17/Desktop/Suhas/counter/new/cov_work/scope/cov_merged_output/icc_756898ef_695c2850.ucd
+
+CCF files:  /home/vv2trainee17/Desktop/Suhas/counter/new/cov_files/cov_cmd.cf
+    set_covergroup -new_instance_reporting
+    set_covergroup -per_instance_default_one
+    set_implicit_block_scoring -off
+    set_assign_scoring
+    set_expr_scoring -all
+    select_functional
+
+
+Coverage database date: Sat 23 Mar 2019 11:04:53 IST
+
+*** There were no refinement files applied ***
+
+  <>
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+Coverage Table Legend
+---------------------
+  EXCL   excluded using refinement rule
+  P-EXCL excluded from parent
+  U-EXCL excluded and unreachable by IEV
+  T-EXCL excluded from type
+  S-EXCL smart excluded using refinement rule
+  EXCL(S) smart indirect excluded
+  EMPTY  all children are excluded
+  CONST  marked constant during simulation
+  IGN    marked ignored during simulation
+  UNG    marked ungradeable during simulation
+  DES    marked deselected during simulation
+  UNR    marked unreachable by IEV
+
+
+Uncovered Block Detail Report, Instance Based
+=============================================
+
+Uncovered Expression Detail Report, Instance Based
+==================================================
+
+Expression coverage Table Legend
+---------------------
+  -      don't care
+  e      event for event-or expressions
+  O (odd), E (even), B (both), X (not scored),
+         I (marked ignore) for parity trees
+  Y (covered), N (not covered), C (constant), 
+  P (one or more inputs for this bit have been padded) for vector scoring, 
+  d=== , b=== shows which bit differs in vector scoring 
+  rval   Resulting value of the expression for coverage purposes given
+         the input values
+  <-n->  Shows the n-th term composition
+
+
+Uncovered Toggle Detail Report, Instance Based
+==============================================
+
+Instance name: async_fifo
+Type name: async_fifo
+File name: /home/vv2trainee17/Desktop/Suhas/counter/new/AFIFO1.sv
+Number of uncovered signal bits: 11 of 41
+Number of unreachable signal bits: 0
+Number of signal bits partially toggled(rise): 2 of 41
+Number of signal bits partially toggled(fall): 1 of 41
+
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          0          1          rst                       
+0          0          0          din[7]                    
+0          0          0          din[6]                    
+0          0          0          din[5]                    
+0          1          0          din[4]                    
+0          0          0          dout[7]                   
+0          0          0          dout[6]                   
+0          0          0          dout[5]                   
+0          1          0          dout[4]                   
+0          0          0          wr_ptr[4]                 
+0          0          0          rd_ptr[4]                 
+
+Uncovered Fsm Detail Report, Instance Based
+===========================================
+
+Uncovered Assertion Detail Report, Instance Based
+=================================================
+
+Uncovered CoverGroup Detail Report, Instance Based
+==================================================
+

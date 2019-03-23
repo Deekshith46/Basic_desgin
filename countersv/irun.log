@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 12:36:49 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 22:58:30 IST
 irun
 	-access +rwc
 	counter.v
@@ -28,9 +28,9 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './tes3.sv' is newer than expected.
-	expected: Sat Mar 23 12:35:49 2019
-	actual:   Sat Mar 23 12:36:47 2019
+Recompiling... reason: file './tes3.sv' is older than expected.
+	expected: Sat Mar 23 22:59:39 2019
+	actual:   Sat Mar 23 22:58:28 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -44,8 +44,6 @@ DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
 file: tes3.sv
-	interface worklib.intf:sv
-		errors: 0, warnings: 0
 	module worklib.tb_top:sv
 		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
@@ -82,21 +80,21 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Pe
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x0551cb1c>
+			streams:  13, words: 17694
 		worklib.\$unit_0x62271bb2 :compilation_unit <0x05cd2bf5>
-			streams:   8, words: 10313
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x06de579b>
-			streams:  13, words: 17199
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x1d9786ed>
-			streams:   8, words:  8525
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x38a41204>
+			streams:   8, words:  9818
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x07a5a2fe>
 			streams:   8, words:  8646
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x093cd8fd>
+			streams:  15, words: 17930
 		worklib.\$unit_0x62271bb2 :compilation_unit <0x3ee31c6b>
 			streams:   9, words:  5059
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x3f39d632>
-			streams:  15, words: 17930
+		worklib.\$unit_0x62271bb2 :compilation_unit <0x54f936bf>
+			streams:   8, words:  9650
 		worklib.\$unit_0x62271bb2 :compilation_unit <0x743740c5>
 			streams:   0, words:     0
-		worklib.tb_top:sv <0x4f126f5a>
+		worklib.tb_top:sv <0x49d0dc7f>
 			streams:   9, words:  4252
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -104,7 +102,7 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Pe
 		                    Instances  Unique
 		Modules:                    2       2
 		Interfaces:                 1       1
-		Registers:                 41      61
+		Registers:                 40      61
 		Scalar wires:               3       -
 		Vectored wires:             2       -
 		Named events:               0       4
@@ -220,6 +218,6 @@ ncsim> run
 [SCOREBOARD] FAIL: Time=990, Expected=2, dutout=6
 ------------------------------
 Simulation complete via $finish(1) at time 1 US + 0
-./tes3.sv:259         $finish();
+./tes3.sv:290         $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 12:36:49 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 22:58:30 IST  (total: 00:00:00)
