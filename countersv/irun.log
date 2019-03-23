@@ -1,9 +1,9 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 05:00:36 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 11:27:11 IST
 irun
 	-access +rwc
 	counter.v
-	test2.sv
+	tes3.sv
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -28,15 +28,6 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './test2.sv' is newer than expected.
-	expected: Sat Mar 23 05:00:09 2019
-	actual:   Sat Mar 23 05:00:30 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -49,41 +40,40 @@ ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permi
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-file: test2.sv
-	interface worklib.intf:sv
-		errors: 0, warnings: 0
-	program worklib.test:sv
-		errors: 0, warnings: 0
-	module worklib.tb_top:sv
-		errors: 0, warnings: 0
-	Total errors/warnings found outside modules and primitives:
-		errors: 0, warnings: 2
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-		Caching library 'worklib' ....... Done
-	Elaborating the design hierarchy:
-	Top level design units:
-		$unit_0x118ace63
-		tb_top
-ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-        .count(i_intf.count)
+file: tes3.sv
+transcation tr;
+          |
+ncvlog: *E,NOIPRT (tes3.sv,112|10): Unrecognized declaration 'transcation' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+    mailbox #(transaction) mon2sco;
+                        |
+ncvlog: *E,SVNOTY (tes3.sv,114|24): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+   function new(mailbox #(transaction) mon2sco);/// function new(virtual intf vif, mailbox gen2drv);
+                                    |
+ncvlog: *E,SVNOTY (tes3.sv,118|36): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+    generator gen;
+            |
+ncvlog: *E,NOIPRT (tes3.sv,154|12): Unrecognized declaration 'generator' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+    driver drv;
+         |
+ncvlog: *E,NOIPRT (tes3.sv,155|9): Unrecognized declaration 'driver' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+    monitor mon;
+          |
+ncvlog: *E,NOIPRT (tes3.sv,156|10): Unrecognized declaration 'monitor' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+    scoreboard scb;
              |
-ncelab: *E,ICDDIV (./test2.sv,218|13): Illegal combination of driver and declaration initializer to variable count detected (declaration initializer found in initializer at line 45 in file ./test2.sv).
-irun: *E,ELBERR: Error during elaboration (status 1), exiting.
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 05:00:37 IST  (total: 00:00:01)
+ncvlog: *E,NOIPRT (tes3.sv,157|13): Unrecognized declaration 'scoreboard' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+    mailbox #(transaction) gen2drv;
+                        |
+ncvlog: *E,SVNOTY (tes3.sv,160|24): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+    mailbox #(transaction) mon2sco;
+                        |
+ncvlog: *E,SVNOTY (tes3.sv,161|24): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+    environment env;
+                  |
+ncvlog: *E,NOIPRT (tes3.sv,226|18): Unrecognized declaration 'env' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+	module worklib.tb_top:sv
+		errors: 1, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 9, warnings: 2
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 11:27:11 IST  (total: 00:00:00)

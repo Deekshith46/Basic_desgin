@@ -26,13 +26,16 @@ event ended;
     task main();
     repeat(repeat_count)begin
     //trans = new();
-        if(!trans.randomize()) $fatal("GEN :: transa randomization failed");
+        if(!trans.randomize()) 
+            $display("[GEN] RANDOM FAILED");
+            $fatal("[GEN] :: transa randomization failed");
         trans.display("[GEN]");
         gen2drv.put(trans);
     end
     -> ended;
     endtask
 endclass
+
 /////////interface///////////
 interface intf();
 logic clk=0,rst=0;

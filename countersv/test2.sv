@@ -1,55 +1,45 @@
 ////////// Transaction Class //////////
 class transaction;
     randc bit mod;
-    randc bit [2:0] count;
-
-    function void display(input string name);
-        $display("------------------------------");
-        $display("- %s", name);
-        $display("------------------------------");
-        $display("- mod   = %0d", mod);
-        $display("- count = %0d", count);
+     bit [2:0] count;
+    function void display(string  name);
+        $display("%0s: mod=%0d, count=%0d", name , mod, count);
     endfunction
-endclass
+
+    endclass
 
 ////////// Generator Class //////////
 class generator;
-    transaction trans;
-    int repeat_count;
     mailbox gen2drv;
-    event ended;
+    int num_transactions;
 
     function new(mailbox gen2drv);
         this.gen2drv = gen2drv;
-        trans = new();
     endfunction
 
     task main();
-        repeat (repeat_count) begin
-            if (!trans.randomize()) begin
-                $display("[GEN] Randomization failed!");
-                $fatal("GEN :: transaction randomization failed");
-            end
+        transaction trans;
+        repeat (num_transactions) begin
+            trans = new();
+            if (!trans.randomize())
+                $fatal("Transaction randomization failed");
             trans.display("[GEN]");
             gen2drv.put(trans);
         end
-        -> ended;
     endtask
 endclass
-
 //////////////int/////
 /////////interface///////////
 interface intf();
-logic clk=0,rst=0;
-logic mod=0;
-logic [2:0] count=0;
+logic clk,rst;
+logic mod;
+logic [2:0] count;
 endinterface
 
 
 ////////// Driver Class //////////
 class driver;
     transaction trans;
-    int no_transaction;
     virtual intf vif;
     mailbox gen2drv;
 
@@ -58,32 +48,48 @@ class driver;
         this.gen2drv = gen2drv;
     endfunction
 
-    task reset();
+    /*task reset();
         $display("[DRV] -------- RESET STARTED --------");
         vif.mod <= 0;
+        vif.count <= 0;
         @(posedge vif.clk);
         @(negedge vif.rst);
         $display("[DRV] -------- RESET ENDED --------");
+    endtask*/
+    task reset();
+        $display("[DRV] -------- RESET STARTED --------");
+        vif.mod <= 0;
+        while(!vif.rst)
+            @(posedge vif.clk);
+            $display("[drv] reset asserted");
+            while(vif.rst)
+            @(posedge vif.clk);
+            $display("[drv] reset de-asserted");
+              $display("[DRV] -------- RESET ENDED --------");
     endtask
+    
+    /*task reset();
+        wait(vif.rst);
+        $display("[DRV]--------RESET STARTED-----");
+        vif.mod <= 0;
+        wait(!vif.rst);
+        $display("[DRV] --------RESET ENDED------");
+        endtask*/
+
 
     task main();
         forever begin
-            gen2drv.get(trans);
+        gen2drv.get(trans);
             @(posedge vif.clk);
             vif.mod <= trans.mod;
-            @(posedge vif.clk);
-            trans.count = vif.count;
-            @(posedge vif.clk);
             trans.display("[DRV]");
-            no_transaction++;
-        end
+                   end
     endtask
 endclass
 
 ////////// Monitor Class //////////
 class monitor;
-    transaction trans;
-    virtual intf vif;
+        virtual intf vif;
     mailbox mon2sco;
 
     function new(virtual intf vif, mailbox mon2sco);
@@ -92,13 +98,12 @@ class monitor;
     endfunction
 
     task main();
+    transaction trans;
         forever begin
+             @(posedge vif.clk);
             trans = new();
-            @(posedge vif.clk);
             trans.mod = vif.mod;
-            @(posedge vif.clk);
             trans.count = vif.count;
-            @(posedge vif.clk);
             mon2sco.put(trans);
             trans.display("[MONITOR]");
         end
@@ -107,31 +112,37 @@ endclass
 
 ////////// Scoreboard Class //////////
 class scoreboard;
-    transaction trans;
-    mailbox mon2sco;
-    int no_transaction;
-    logic [2:0] sco_count = 0;
+    mailbox mon2scb;
 
-    function new(mailbox mon2sco);
-        this.mon2sco = mon2sco;
+    function new(mailbox mon2scb);
+        this.mon2scb = mon2scb;
     endfunction
 
     task main();
+        transaction trans;
+        int expected_count = 0;
+       
         forever begin
-            mon2sco.get(trans);
+            mon2scb.get(trans);
+           
             if (trans.mod)
-                sco_count = (sco_count + 1) % 8;
+                expected_count++;
+                
             else
-                sco_count = (sco_count - 1 + 8) % 8;
 
-            trans.display("[SCOREBOARD]");
-            if (sco_count == trans.count)
-                $display("[SCOREBOARD] Match: Time = %0t, RTL Count = %0d, SCO Count = %0d", $time, trans.count, sco_count);
+                expected_count--;
+
+            expected_count = (expected_count + 8) % 8;  // Wrap around 3-bit range
+
+            if (expected_count == trans.count)
+                $display("[SCOREBOARD] PASS: Time=%0t, Expected=%0d, dutout=%0d", $time, expected_count,trans.count);
             else
-                $display("[SCOREBOARD] Mismatch: Time = %0t, RTL Count = %0d, SCO Count = %0d", $time, trans.count, sco_count);
+                $display("[SCOREBOARD] FAIL: Time=%0t, Expected=%0d, dutout=%0d", $time, expected_count, trans.count);
         end
+        
     endtask
 endclass
+
 
 ////////// Environment Class //////////
 class environment;
@@ -158,30 +169,33 @@ class environment;
         drv.reset();
     endtask
 
-    task test();
+    task run(int num_transactions);
+    gen.num_transactions = num_transactions;
         fork
             gen.main();
             drv.main();
             mon.main();
             scb.main();
-        join_any
+        join
     endtask
 
-    task post_test();
+   /* task post_test();
         wait(gen.ended.triggered);
-        $display("[ENV] Transactions generated: %0d, Transactions processed: %0d", gen.repeat_count, drv.no_transaction);
-        if (gen.repeat_count == drv.no_transaction)
-            $display("[ENV] Test PASSED");
-        else
-            $display("[ENV] Test FAILED");
-    endtask
+        wait(gen.repeat_count == driv.no_transaction);
 
-    task run();
+       // $display("[ENV] Transactions generated: %0d, Transactions processed: %0d", gen.repeat_count, drv.no_transaction);
+       // if (gen.repeat_count == drv.no_transaction)
+           // $display("[ENV] Test PASSED");
+        //else
+           // $display("[ENV] Test FAILED");
+    endtask*/
+
+    /*task run();
         pre_test();
-        test();
+        //test();
         post_test();
         $finish();
-    endtask
+    endtask*/
 endclass
 
 ////////// Test Program //////////
@@ -190,24 +204,27 @@ program test(intf i_intf);
 
     initial begin
         env = new(i_intf);
-        env.gen.repeat_count = 4;
-        env.run();
+        //env.gen.repeat_count = 4;
+        env.run(10);
     end
 endprogram
 
 ////////// Testbench Top //////////
 module tb_top;
-    bit clk, rst;
+    logic clk, rst;
 
     always #5 clk = ~clk;
 
     initial begin
         clk = 0;
+#5
         rst = 1;
         #10 rst = 0;
     end
 
     intf i_intf();
+   assign i_intf.clk = clk;
+    assign i_intf.rst =rst;
 
     test t1(i_intf);
 
@@ -219,7 +236,9 @@ module tb_top;
     );
 
     initial begin
-        $dumpfile("wave.vcd");
-        $dumpvars(0, tb_top);
+        $shm_open("wave.shm");
+        $shm_probe("ACTMF");
+#1000;
+        $finish();
     end
 endmodule

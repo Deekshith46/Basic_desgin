@@ -8,11 +8,11 @@ endinterface
 //////trans/////
 class transaction;
     rand bit mod;          // Randomized mode signal
-    rand bit [2:0] count;  // Expected count value
+     bit [2:0] count;  // Expected count value
 
-    constraint valid_count {
+    /*constraint valid_count {
         count >= 0 && count <= 7;  // Constrain count within 3-bit range
-    }
+    }*/
 
     function void display(string  name);
         $display("%0s: mod=%0d, count=%0d", name , mod, count);
