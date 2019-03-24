@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 23, 2019 at 22:58:30 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 24, 2019 at 06:48:28 IST
 irun
 	-access +rwc
 	counter.v
@@ -28,9 +28,9 @@ irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permiss
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-Recompiling... reason: file './tes3.sv' is older than expected.
-	expected: Sat Mar 23 22:59:39 2019
-	actual:   Sat Mar 23 22:58:28 2019
+Recompiling... reason: file './tes3.sv' is newer than expected.
+	expected: Sun Mar 24 06:42:12 2019
+	actual:   Sun Mar 24 06:47:55 2019
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
 |
 irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
@@ -43,9 +43,6 @@ ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permi
 DEFINE sdadc_working /projects/tigershare/sdadc_working
 |
 ncvlog: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-file: tes3.sv
-	module worklib.tb_top:sv
-		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
 DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
@@ -73,29 +70,6 @@ ncelab: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permi
 		tb_top
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
-DEFINE sdadc_working /projects/tigershare/sdadc_working
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x0551cb1c>
-			streams:  13, words: 17694
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x05cd2bf5>
-			streams:   8, words:  9818
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x07a5a2fe>
-			streams:   8, words:  8646
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x093cd8fd>
-			streams:  15, words: 17930
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x3ee31c6b>
-			streams:   9, words:  5059
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x54f936bf>
-			streams:   8, words:  9650
-		worklib.\$unit_0x62271bb2 :compilation_unit <0x743740c5>
-			streams:   0, words:     0
-		worklib.tb_top:sv <0x49d0dc7f>
-			streams:   9, words:  4252
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -107,7 +81,7 @@ ncvlog_cg: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Pe
 		Vectored wires:             2       -
 		Named events:               0       4
 		Always blocks:              2       2
-		Initial blocks:             3       3
+		Initial blocks:             2       2
 		Parallel blocks:            1       1
 		Pseudo assignments:         4       4
 		Assertions:                 1       1
@@ -127,97 +101,188 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
 [DRV] : RESET DONE
-[GEN]: mod=1, count=0
+[[GEN]]: mod=1, count=0
 [DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=0
+[SCO]: mod=1, count=0
+[SCOREBOARD] FAIL: Time=150, Expected=1, dutout=0
+------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=0
 [SCO]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=150, Expected=7, dutout=0
+[SCOREBOARD] PASS: Time=190, Expected=0, dutout=0
 ------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=6
 [SCO]: mod=0, count=6
-[SCOREBOARD] PASS: Time=190, Expected=6, dutout=6
+[SCOREBOARD] FAIL: Time=230, Expected=7, dutout=6
 ------------------------------
-[MONITOR]: mod=0, count=4
-[SCO]: mod=0, count=4
-[SCOREBOARD] FAIL: Time=230, Expected=5, dutout=4
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=270, Expected=0, dutout=6
 ------------------------------
-[MONITOR]: mod=0, count=2
-[SCO]: mod=0, count=2
-[SCOREBOARD] FAIL: Time=270, Expected=4, dutout=2
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=310, Expected=7, dutout=6
 ------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=350, Expected=0, dutout=6
+------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=0
+[SCO]: mod=1, count=0
+[SCOREBOARD] FAIL: Time=390, Expected=1, dutout=0
+------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=0
 [SCO]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=310, Expected=3, dutout=0
+[SCOREBOARD] PASS: Time=430, Expected=0, dutout=0
 ------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=6
 [SCO]: mod=0, count=6
-[SCOREBOARD] FAIL: Time=350, Expected=2, dutout=6
+[SCOREBOARD] FAIL: Time=470, Expected=7, dutout=6
 ------------------------------
-[MONITOR]: mod=0, count=4
-[SCO]: mod=0, count=4
-[SCOREBOARD] FAIL: Time=390, Expected=1, dutout=4
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=510, Expected=0, dutout=6
 ------------------------------
-[MONITOR]: mod=0, count=2
-[SCO]: mod=0, count=2
-[SCOREBOARD] FAIL: Time=430, Expected=0, dutout=2
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=550, Expected=7, dutout=6
 ------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=590, Expected=0, dutout=6
+------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=630, Expected=7, dutout=6
+------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=670, Expected=0, dutout=6
+------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=710, Expected=7, dutout=6
+------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=750, Expected=0, dutout=6
+------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=790, Expected=7, dutout=6
+------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=830, Expected=0, dutout=6
+------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=0
+[SCO]: mod=1, count=0
+[SCOREBOARD] FAIL: Time=870, Expected=1, dutout=0
+------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=0
 [SCO]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=470, Expected=7, dutout=0
+[SCOREBOARD] PASS: Time=910, Expected=0, dutout=0
 ------------------------------
-[MONITOR]: mod=0, count=6
-[SCO]: mod=0, count=6
-[SCOREBOARD] PASS: Time=510, Expected=6, dutout=6
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=0
+[SCO]: mod=1, count=0
+[SCOREBOARD] FAIL: Time=950, Expected=1, dutout=0
 ------------------------------
-[MONITOR]: mod=0, count=4
-[SCO]: mod=0, count=4
-[SCOREBOARD] FAIL: Time=550, Expected=5, dutout=4
-------------------------------
-[MONITOR]: mod=0, count=2
-[SCO]: mod=0, count=2
-[SCOREBOARD] FAIL: Time=590, Expected=4, dutout=2
-------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=0
 [SCO]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=630, Expected=3, dutout=0
+[SCOREBOARD] PASS: Time=990, Expected=0, dutout=0
 ------------------------------
-[MONITOR]: mod=0, count=6
-[SCO]: mod=0, count=6
-[SCOREBOARD] FAIL: Time=670, Expected=2, dutout=6
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=0
+[SCO]: mod=1, count=0
+[SCOREBOARD] FAIL: Time=1030, Expected=1, dutout=0
 ------------------------------
-[MONITOR]: mod=0, count=4
-[SCO]: mod=0, count=4
-[SCOREBOARD] FAIL: Time=710, Expected=1, dutout=4
-------------------------------
-[MONITOR]: mod=0, count=2
-[SCO]: mod=0, count=2
-[SCOREBOARD] FAIL: Time=750, Expected=0, dutout=2
-------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=0
 [SCO]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=790, Expected=7, dutout=0
+[SCOREBOARD] PASS: Time=1070, Expected=0, dutout=0
 ------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=6
 [SCO]: mod=0, count=6
-[SCOREBOARD] PASS: Time=830, Expected=6, dutout=6
+[SCOREBOARD] FAIL: Time=1110, Expected=7, dutout=6
 ------------------------------
-[MONITOR]: mod=0, count=4
-[SCO]: mod=0, count=4
-[SCOREBOARD] FAIL: Time=870, Expected=5, dutout=4
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=1150, Expected=0, dutout=6
 ------------------------------
-[MONITOR]: mod=0, count=2
-[SCO]: mod=0, count=2
-[SCOREBOARD] FAIL: Time=910, Expected=4, dutout=2
-------------------------------
-[MONITOR]: mod=0, count=0
-[SCO]: mod=0, count=0
-[SCOREBOARD] FAIL: Time=950, Expected=3, dutout=0
-------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
 [MONITOR]: mod=0, count=6
 [SCO]: mod=0, count=6
-[SCOREBOARD] FAIL: Time=990, Expected=2, dutout=6
+[SCOREBOARD] FAIL: Time=1190, Expected=7, dutout=6
 ------------------------------
-Simulation complete via $finish(1) at time 1 US + 0
-./tes3.sv:290         $finish();
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=1230, Expected=0, dutout=6
+------------------------------
+[[GEN]]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MONITOR]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] FAIL: Time=1270, Expected=7, dutout=6
+------------------------------
+[[GEN]]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MONITOR]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] FAIL: Time=1310, Expected=0, dutout=6
+------------------------------
+[gen] : all transaction generated
+Simulation complete via $finish(1) at time 1310 NS + 0
+./tes3.sv:246     $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 23, 2019 at 22:58:30 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 24, 2019 at 06:48:29 IST  (total: 00:00:01)

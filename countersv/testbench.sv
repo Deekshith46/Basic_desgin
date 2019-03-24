@@ -16,7 +16,7 @@ initial begin
 end
 
 
-intf i_intf(clk,rst);
+intf i_intf();
 test t1(i_intf);
 
 counter dut(.clk(i_intf.clk),
@@ -27,5 +27,6 @@ counter dut(.clk(i_intf.clk),
 initial begin
 $shm_open("wave.shm");
 $shm_probe("ACTMF");
+#1000;
 end
 endmodule

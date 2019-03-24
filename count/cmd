@@ -1,0 +1,1 @@
+irun -access +rwc counter.v tes3.sv

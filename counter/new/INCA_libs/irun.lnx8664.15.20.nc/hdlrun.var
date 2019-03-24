@@ -84,5 +84,3 @@ define VIEW_MAP ( $VIEW_MAP \
 )
 define ELAB_SNAPSHOT
 define SNAPSHOT worklib.tb_async_fifo30:sv
-define ELAB_SNAPSHOT
-define SNAPSHOT worklib.tb_async_fifo30:sv

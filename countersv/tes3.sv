@@ -1,3 +1,4 @@
+////////////COUNTER////////////
 ////////// Transaction Class //////////
 class transaction;
     randc bit mod;
@@ -34,11 +35,21 @@ transaction tr;
     endfunction
 
     task run();
-        repeat(count)begin
-        assert (tr.randomize())
-       else $error("[GEN] :Transaction randomization failed");
-              gen2drv.put(tr.copy);        
+        repeat(30)begin
+      
+       // $display("[gen:after repeat transaction generated");
+      assert (tr.randomize())
+
+      else $error("[GEN] :Transaction randomization failed");
+
+        //$display("[gen:before put transaction generated");
+              gen2drv.put(tr); 
+              tr.display("[GEN]");
+
+        //$display("[gen:before put transaction generated");
         @(sconext);
+
+        //$display("[gen:before endtransaction generated");
         end
         ->done;
         $display("[gen] : all transaction generated");
@@ -46,7 +57,7 @@ transaction tr;
 endclass
 //////////////int/////
 /////////interface///////////
-interface intf();
+interface intf;
 logic clk,rst;
 logic mod;
 logic [2:0] count;
@@ -79,11 +90,11 @@ endinterface
         forever begin
         
            gen2drv.get(tr);
-            tr.display("GEN");
+            //tr.display("GEN");
            vif.mod <= tr.mod;
            @(posedge vif.clk);
            tr.display("DRV");
-          vif.mod <= 1'b0;
+         // vif.mod <= 1'b1;
            @(posedge vif.clk);
          end
     endtask
@@ -107,7 +118,7 @@ transaction tr;
             repeat(2)@(posedge vif.clk);
             tr.mod = vif.mod;
             tr.count = vif.count;
-            mon2sco.put(tr);/////
+            mon2sco.put(tr);
             tr.display("MONITOR");
         end
     endtask
@@ -181,10 +192,10 @@ end
                
                $display("[SCOREBOARD] FAIL: Time=%0t, Expected=%0d, dutout=%0d", $time, expected_count, tr.count);
          $display("------------------------------");
+->sconext;
 
         end
-        ->sconext;
-        
+                
     endtask
 endclass
 
@@ -225,7 +236,7 @@ event next;
             drv.run();
             mon.run();
             scb.run();
-        join
+        join_any
     endtask
 
     task post_test();
@@ -275,7 +286,8 @@ counter dut(
 
     initial begin
     env=new(vif);
-    env.gen.count =30;
+    //env.gen.count =30;
+
     env.run();
     env.run();
 env.run();
@@ -283,10 +295,10 @@ env.run();
     end
 
     
-    initial begin
+    /*initial begin
         $shm_open("wave.shm");
         $shm_probe("ACTMF");
 #1000;
         $finish();
-    end
+    end*/
 endmodule
