@@ -1,0 +1,6 @@
+set_covergroup -new_instance_reporting
+set_covergroup -per_instance_default_one
+set_implicit_block_scoring -off
+set_assign_scoring
+set_expr_scoring -all
+select_functional
