@@ -1,11 +1,11 @@
 ////////////COUNTER////////////
 ////////// Transaction Class //////////
 class transaction;
-    randc bit mod;
+    rand bit mod;
       bit [2:0] count;
-      static int mod_count=0;
+      static int mod_count;
       constraint vailid_trans{
-            if(mod_count <7){
+            if(mod_count <14){
                 mod ==1;
             } else {
                 mod ==0;
@@ -61,7 +61,7 @@ transaction tr;
 
         //$display("[gen:before put transaction generated");
               gen2drv.put(tr); 
-              tr.display("[GEN]");
+              tr.display("GEN");
 
         //$display("[gen:before put transaction generated");
         @(sconext);
@@ -96,7 +96,7 @@ endinterface
 
     task reset();
         vif.rst <= 1'b1;
-        repeat(5) @(posedge vif.clk);
+        repeat(1) @(posedge vif.clk);
         vif.rst <= 1'b0;
         @(posedge vif.clk);
         $display("[DRV] : RESET DONE");
@@ -132,12 +132,14 @@ transaction tr;
 
     task run();
     tr =new();
-            forever begin
-            repeat(2)@(posedge vif.clk);
+
+               forever begin
+                
+            repeat(1)@(posedge vif.clk);
             tr.mod = vif.mod;
             tr.count = vif.count;
             mon2sco.put(tr);
-            tr.display("MONITOR");
+            tr.display("MON");
             //$display( "rtl = %0d" , vif.count);
         end
     endtask
@@ -170,22 +172,28 @@ end*/
 
 
     task run();
-    expected_count =0;                   
+    expected_count =0;   
+    
         forever begin
-            mon2sco.get(tr);
-            tr.display("[SCO]");
+                   mon2sco.get(tr);
+            tr.display("SCO");
            if(tr.mod)begin
-            
-
-                expected_count = (expected_count +1)%8;
+                            expected_count = (expected_count +1)%8;
                 end else begin
                 expected_count = (expected_count +8 -1)%8;
                 end
 
                 if(expected_count == tr.count)begin
-                    $display("[SCOREBOARD] PASS : Time =%0t , Expected = %0d, DUT count = %0d", $time,expected_count,tr.count);
+                    
+
+                    $display("[SCOREBOARD] : Time =%0t , Expected = %0d, DUT count = %0d", $time,expected_count,tr.count);
+                    $display("-----------PASSED-----------");
+
                     end else begin
-                    $display("[SCOREBOARD] FAIL : Time =%0t , Expected = %0d, DUT count = %0d", $time,expected_count,tr.count);
+                    
+                    $display("[SCOREBOARD] : Time =%0t , Expected = %0d, DUT count = %0d", $time,expected_count,tr.count);
+                    $display("-----------FAILED-----------");
+
                 end
                 ->sconext;
 
@@ -345,7 +353,7 @@ counter dut(
 #1000;
     $finish();
     end*/
-    always #10 vif.clk = ~vif.clk;
+    always #5 vif.clk = ~vif.clk;
 
     environment env;
 

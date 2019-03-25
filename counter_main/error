@@ -1,0 +1,328 @@
+[DRV] : RESET DONE
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCO]: mod=1, count=7
+[SCOREBOARD] : Time =25 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCO]: mod=1, count=0
+[SCOREBOARD] : Time =35 , Expected = 2, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=1
+[SCO]: mod=1, count=1
+[SCOREBOARD] : Time =45 , Expected = 3, DUT count = 1
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[MON]: mod=1, count=2
+[SCO]: mod=1, count=2
+[SCOREBOARD] : Time =55 , Expected = 4, DUT count = 2
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=3
+[SCO]: mod=1, count=3
+[SCOREBOARD] : Time =65 , Expected = 5, DUT count = 3
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[MON]: mod=1, count=4
+[SCO]: mod=1, count=4
+[SCOREBOARD] : Time =75 , Expected = 6, DUT count = 4
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=5
+[SCO]: mod=1, count=5
+[SCOREBOARD] : Time =85 , Expected = 7, DUT count = 5
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[MON]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] : Time =95 , Expected = 0, DUT count = 6
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCO]: mod=1, count=7
+[SCOREBOARD] : Time =105 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCO]: mod=1, count=0
+[SCOREBOARD] : Time =115 , Expected = 2, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=1
+[SCO]: mod=1, count=1
+[SCOREBOARD] : Time =125 , Expected = 3, DUT count = 1
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[MON]: mod=1, count=2
+[SCO]: mod=1, count=2
+[SCOREBOARD] : Time =135 , Expected = 4, DUT count = 2
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=3
+[SCO]: mod=1, count=3
+[SCOREBOARD] : Time =145 , Expected = 5, DUT count = 3
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=1, count=0
+[MON]: mod=1, count=4
+[SCO]: mod=1, count=4
+[SCOREBOARD] : Time =155 , Expected = 6, DUT count = 4
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=1, count=5
+[SCO]: mod=1, count=5
+[SCOREBOARD] : Time =165 , Expected = 7, DUT count = 5
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=1, count=6
+[SCO]: mod=1, count=6
+[SCOREBOARD] : Time =175 , Expected = 0, DUT count = 6
+-----------FAILED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCO]: mod=0, count=7
+[SCOREBOARD] : Time =185 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] : Time =195 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=5
+[SCO]: mod=0, count=5
+[SCOREBOARD] : Time =205 , Expected = 5, DUT count = 5
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] : Time =215 , Expected = 4, DUT count = 4
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=3
+[SCO]: mod=0, count=3
+[SCOREBOARD] : Time =225 , Expected = 3, DUT count = 3
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] : Time =235 , Expected = 2, DUT count = 2
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCO]: mod=0, count=1
+[SCOREBOARD] : Time =245 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] : Time =255 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCO]: mod=0, count=7
+[SCOREBOARD] : Time =265 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] : Time =275 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=5
+[SCO]: mod=0, count=5
+[SCOREBOARD] : Time =285 , Expected = 5, DUT count = 5
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] : Time =295 , Expected = 4, DUT count = 4
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=3
+[SCO]: mod=0, count=3
+[SCOREBOARD] : Time =305 , Expected = 3, DUT count = 3
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] : Time =315 , Expected = 2, DUT count = 2
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCO]: mod=0, count=1
+[SCOREBOARD] : Time =325 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] : Time =335 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCO]: mod=0, count=7
+[SCOREBOARD] : Time =345 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] : Time =355 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=5
+[SCO]: mod=0, count=5
+[SCOREBOARD] : Time =365 , Expected = 5, DUT count = 5
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] : Time =375 , Expected = 4, DUT count = 4
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=3
+[SCO]: mod=0, count=3
+[SCOREBOARD] : Time =385 , Expected = 3, DUT count = 3
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] : Time =395 , Expected = 2, DUT count = 2
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCO]: mod=0, count=1
+[SCOREBOARD] : Time =405 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] : Time =415 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCO]: mod=0, count=7
+[SCOREBOARD] : Time =425 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] : Time =435 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=5
+[SCO]: mod=0, count=5
+[SCOREBOARD] : Time =445 , Expected = 5, DUT count = 5
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=4
+[SCO]: mod=0, count=4
+[SCOREBOARD] : Time =455 , Expected = 4, DUT count = 4
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=3
+[SCO]: mod=0, count=3
+[SCOREBOARD] : Time =465 , Expected = 3, DUT count = 3
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=2
+[SCO]: mod=0, count=2
+[SCOREBOARD] : Time =475 , Expected = 2, DUT count = 2
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCO]: mod=0, count=1
+[SCOREBOARD] : Time =485 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCO]: mod=0, count=0
+[SCOREBOARD] : Time =495 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCO]: mod=0, count=7
+[SCOREBOARD] : Time =505 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[GEN]: mod=0, count=0
+[MON]: mod=0, count=6
+[SCO]: mod=0, count=6
+[SCOREBOARD] : Time =515 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[gen] : all transaction generated
+
