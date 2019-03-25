@@ -180,10 +180,10 @@ end*/
              mon2sco.get(tr);
             tr.display("SCO");
         @(posedge vif.clk);
-            if(vif.rst)begin
-                expected_count = 3'b000;
-                end
-                else begin
+            //if(vif.rst)begin
+                expected_count = 0;
+                //end
+                //else begin
          if(tr.mod)begin
            // @(posedge vif.clk)
                expected_count = (expected_count +1)%8;
@@ -191,7 +191,7 @@ end*/
                
                 expected_count = (expected_count +8-1)%8;
                 end
-                end
+                //end
 
                 if(expected_count == tr.count)begin
                     $display("[SCOREBOARD] : Time =%0t , Expected = %0d, DUT count = %0d", $time,expected_count,tr.count);
