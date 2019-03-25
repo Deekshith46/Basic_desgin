@@ -16,3 +16,5 @@ s15(23Mar2019:11:00:58):  irun -access +rwc counter.v count_tb.sv -coverage all 
 s16(23Mar2019:10:57:11):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
 s17(23Mar2019:11:01:51):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
 s18(23Mar2019:11:02:01):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s19(25Mar2019:06:25:59):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+s20(25Mar2019:10:28:27):  irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 

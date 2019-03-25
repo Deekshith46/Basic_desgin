@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 25, 2019 at 05:58:53 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 25, 2019 at 06:25:43 IST
 irun
 	-access +rwc
 	counter.v
@@ -236,4 +236,4 @@ ncsim> run
 Simulation complete via $finish(1) at time 1310 NS + 0
 ./tes3.sv:246     $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 25, 2019 at 05:58:54 IST  (total: 00:00:01)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 25, 2019 at 06:25:43 IST  (total: 00:00:00)
