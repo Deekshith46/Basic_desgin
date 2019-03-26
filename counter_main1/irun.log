@@ -1,0 +1,490 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Mar 27, 2019 at 05:06:22 IST
+irun
+	-access +rwc
+	counter.v
+	tes3.sv
+	-coverage all
+	-covdut counter
+	-covworkdir /cov_work
+	-covoverwrite
+	-covfile ./cov_files/cov_cmd.cf
+	-seed 24
+	+scenario=3
+
+   User defined plus("+") options:
+	+scenario=3
+
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+irun: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+DEFINE sdadc_working_lay /projects/tigershare/sdadc_working_lay
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,7): cds.lib Permission denied '/projects/tigershare/sdadc_working_lay' (cds.lib command ignored).
+DEFINE sdadc_working /projects/tigershare/sdadc_working
+|
+ncsim: *W,DLCPTH (/tools/cadence/IC617/share/cdssetup/cds.lib,8): cds.lib Permission denied '/projects/tigershare/sdadc_working' (cds.lib command ignored).
+ncsim: *E,CNDIR: Could not create/open directory /cov_work.
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED set from command line: 24
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+[TB] Running scenario : 3
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCO]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =15 , Expected = 6, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCOREBOARD] : Time =25 , Expected = 7, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =35 , Expected = 6, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =45 , Expected = 5, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN] resest applied at time = 45
+[MON] :RESET DETECED
+[sco] : reset deteced
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[GEN] : RESET deassertes at time = 115
+[MON]: mod=0, count=0
+[GEN]: mod=1, count=0
+[SCO]: mod=0, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =135 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =145 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN] resest applied at time = 145
+[MON] :RESET DETECED
+[sco] : reset deteced
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[GEN] : RESET deassertes at time = 225
+[MON]: mod=0, count=0
+[GEN]: mod=1, count=0
+[SCO]: mod=0, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =245 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =255 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN] resest applied at time = 255
+[MON] :RESET DETECED
+[sco] : reset deteced
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[GEN] : RESET deassertes at time = 335
+[MON]: mod=0, count=0
+[GEN]: mod=0, count=0
+[SCO]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCOREBOARD] : Time =355 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=7
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=6
+[SCOREBOARD] : Time =365 , Expected = 0, DUT count = 6
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=6
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =375 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN] resest applied at time = 375
+[MON] :RESET DETECED
+[sco] : reset deteced
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[GEN] : RESET deassertes at time = 415
+[MON]: mod=1, count=0
+[GEN]: mod=0, count=0
+[SCO]: mod=1, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCOREBOARD] : Time =435 , Expected = 7, DUT count = 1
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=1
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =445 , Expected = 6, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =455 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =465 , Expected = 6, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =475 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCOREBOARD] : Time =485 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=1, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCOREBOARD] : Time =495 , Expected = 7, DUT count = 1
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=1
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =505 , Expected = 6, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN] resest applied at time = 505
+[MON] :RESET DETECED
+[sco] : reset deteced
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[MON] :RESET DETECED
+[GEN] : RESET deassertes at time = 545
+[MON]: mod=0, count=0
+[GEN]: mod=1, count=0
+[SCO]: mod=0, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =565 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCOREBOARD] : Time =575 , Expected = 2, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCOREBOARD] : Time =585 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=1
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =595 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =605 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =615 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCOREBOARD] : Time =625 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=6
+[SCOREBOARD] : Time =635 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=6
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=5
+[SCOREBOARD] : Time =645 , Expected = 7, DUT count = 5
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=5
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=6
+[SCOREBOARD] : Time =655 , Expected = 0, DUT count = 6
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=6
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =665 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =675 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=7
+[SCOREBOARD] : Time =685 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=6
+[SCOREBOARD] : Time =695 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=6
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=5
+[SCOREBOARD] : Time =705 , Expected = 5, DUT count = 5
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=5
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=4
+[SCOREBOARD] : Time =715 , Expected = 6, DUT count = 4
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=4
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=5
+[SCOREBOARD] : Time =725 , Expected = 7, DUT count = 5
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=5
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=6
+[SCOREBOARD] : Time =735 , Expected = 0, DUT count = 6
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=6
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =745 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =755 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =765 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =775 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =785 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCOREBOARD] : Time =795 , Expected = 2, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCOREBOARD] : Time =805 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=1
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCOREBOARD] : Time =815 , Expected = 2, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCOREBOARD] : Time =825 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=1
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=0
+[SCOREBOARD] : Time =835 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=0, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =845 , Expected = 1, DUT count = 7
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCOREBOARD] : Time =855 , Expected = 2, DUT count = 0
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=0
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=1
+[SCOREBOARD] : Time =865 , Expected = 3, DUT count = 1
+-----------FAILED-----------
+------------------------------
+[SCO]: mod=1, count=1
+[GEN]: ALL transaction generated
+Simulation complete via $finish(1) at time 865 NS + 0
+./tes3.sv:423     $finish();
+ncsim> exit
+ncsim: *W,CGDEFN: Default name "tb_top.abc_h" will be generated for covergroup instance "tb_top.abc_h@15_1" as the name of the covergroup instance is not specified explicitly: ./tes3.sv, 512.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_top.dut(counter)
+  scope    :  scope
+  testname :  test_sv24
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_2173232f_14f8db68.ucm (reused)
+  data               :  ./cov_work/scope/test_sv24/icc_2173232f_14f8db68.ucd
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 27, 2019 at 05:06:22 IST  (total: 00:00:00)

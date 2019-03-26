@@ -1,0 +1,5 @@
+[{"expanded":false,"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"clk","Range":"n/a","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Source":"module counter(input clk,mod,rst, output reg[2:0] count);","table_type":"reg","item_json":"table2/signal0.json"}
+,{"expanded":false,"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"mod","Range":"n/a","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Source":"module counter(input clk,mod,rst, output reg[2:0] count);","table_type":"reg","item_json":"table2/signal1.json"}
+,{"expanded":false,"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rst","Range":"n/a","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Source":"module counter(input clk,mod,rst, output reg[2:0] count);","table_type":"reg","item_json":"table2/signal2.json"}
+,{"expanded":false,"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"count","Range":"[2:0]","All Average Grd":"100%","All Cov":"3 / 3 (100%)","Source":"module counter(input clk,mod,rst, output reg[2:0] count);","table_type":"reg","item_json":"table2/signal3.json"}
+]

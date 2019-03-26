@@ -1,0 +1,14 @@
+List of CCF files applied
+=================================
+
+File Name:
+   /home/vv2trainee2/Desktop/Deekshith/Basic_design/Basic_desgin/counter_main1/cov_files/cov_cmd.cf
+File content:
+   set_covergroup -new_instance_reporting
+   set_covergroup -per_instance_default_one
+   set_implicit_block_scoring -off
+   set_assign_scoring
+   set_expr_scoring -all
+   select_functional
+
+

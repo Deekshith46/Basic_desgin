@@ -1,0 +1,28 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(27Mar2019:05:06:17):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 1 +scenario=1 )
+s2::(27Mar2019:05:06:17):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 2 +scenario=1 )
+s3::(27Mar2019:05:06:18):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 3 +scenario=1 )
+s4::(27Mar2019:05:06:18):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 4 +scenario=1 )
+s5::(27Mar2019:05:06:18):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 5 +scenario=1 )
+s6::(27Mar2019:05:06:18):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 6 +scenario=1 )
+s7::(27Mar2019:05:06:18):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 7 +scenario=1 )
+s8::(27Mar2019:05:06:18):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 8 +scenario=1 )
+s9::(27Mar2019:05:06:19):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 9 +scenario=2 )
+s10::(27Mar2019:05:06:19):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 10 +scenario=2 )
+s11::(27Mar2019:05:06:19):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 11 +scenario=2 )
+s12::(27Mar2019:05:06:19):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 12 +scenario=2 )
+s13::(27Mar2019:05:06:19):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 13 +scenario=2 )
+s14::(27Mar2019:05:06:20):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 14 +scenario=2 )
+s15::(27Mar2019:05:06:20):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 15 +scenario=2 )
+s16::(27Mar2019:05:06:20):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 16 +scenario=2 )
+s17::(27Mar2019:05:06:20):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 17 +scenario=3 )
+s18::(27Mar2019:05:06:20):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 18 +scenario=3 )
+s19::(27Mar2019:05:06:21):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 19 +scenario=3 )
+s20::(27Mar2019:05:06:21):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 20 +scenario=3 )
+s21::(27Mar2019:05:06:21):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 21 +scenario=3 )
+s22::(27Mar2019:05:06:21):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 22 +scenario=3 )
+s23::(27Mar2019:05:06:21):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 23 +scenario=3 )
+s24::(27Mar2019:05:06:22):( irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf -seed 24 +scenario=3 )

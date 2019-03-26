@@ -1,0 +1,20 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+counter.v
+tes3.sv
+-coverage
+all
+-covdut
+counter
+-covworkdir
+/cov_work
+-covoverwrite
+-covfile
+./cov_files/cov_cmd.cf
+-seed
+1
++scenario=1

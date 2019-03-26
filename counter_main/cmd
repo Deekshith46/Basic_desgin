@@ -1,1 +1,1 @@
-irun -access +rwc counter.v tes3.sv -coverage all -covdut counter  -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf 
+irun -access +rwc counter.v tes3.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf
