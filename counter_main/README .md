@@ -85,7 +85,36 @@ The testbench leverages advanced SystemVerilog features to ensure robust and reu
 - Modular counting logic works as expected.
 
 ---
-
+### OUTPUT
+---
+[SCO]: mod=1, count=5
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=6
+[SCOREBOARD] : Time =135 , Expected = 6, DUT count = 6
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=1, count=6
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=7
+[SCOREBOARD] : Time =145 , Expected = 7, DUT count = 7
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=1, count=7
+[GEN]: mod=1, count=0
+[DRV]: mod=1, count=0
+[MON]: mod=1, count=0
+[SCOREBOARD] : Time =155 , Expected = 0, DUT count = 0
+-----------PASSED-----------
+------------------------------
+[SCO]: mod=1, count=0
+[GEN]: mod=0, count=0
+[DRV]: mod=0, count=0
+[MON]: mod=0, count=1
+[SCOREBOARD] : Time =165 , Expected = 1, DUT count = 1
+-----------PASSED-----------
+---
 ## 📊 Coverage Analysis
 
 ### Achievements

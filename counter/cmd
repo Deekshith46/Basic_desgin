@@ -1,2 +1,0 @@
-irun -access +rwc counter.v count_tb.sv -coverage all -covdut counter -covworkdir /cov_work -covoverwrite -covfile ./cov_files/cov_cmd.cf
-

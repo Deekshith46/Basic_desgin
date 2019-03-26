@@ -67,6 +67,8 @@ virtual dff_if vif;
 function new(mailbox #(transaction) mbx);
 this.mbx = mbx;
 endfunction
+
+
 task reset();
 //tr = new();
 vif.rst <= 1'b1;

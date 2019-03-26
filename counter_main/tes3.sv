@@ -5,7 +5,7 @@ class transaction;
       bit [2:0] count;
       static int mod_count=0;
       constraint vailid_trans{
-            if(mod_count <7){
+            if(mod_count <9){
                 mod ==1;
             } else {
                 mod ==0;
@@ -22,7 +22,7 @@ class transaction;
      // bit rst;
 
 
-     /*constraint vaild_transcation{
+    /* constraint vaild_transcation{
          count inside{0,1,2,3,4,5,6,7};}*/
 
      function transaction copy();
@@ -96,7 +96,7 @@ endinterface
 
     task reset();
         vif.rst <= 1'b1;
-        repeat(1) @(posedge vif.clk);
+        repeat(5) @(posedge vif.clk);
         vif.rst <= 1'b0;
         @(posedge vif.clk);
         $display("[DRV] : RESET DONE");
@@ -110,10 +110,10 @@ endinterface
            gen2drv.get(tr);
             //tr.display("GEN");
            vif.mod <= tr.mod;
-           @(posedge vif.clk);
+          // @(posedge vif.clk);
            tr.display("DRV");
            //vif.mod <= 1'b1;
-           @(posedge vif.clk);
+           //@(posedge vif.clk);
          end
     endtask
 endclass
@@ -135,10 +135,11 @@ transaction tr;
 
                forever begin
                 
-            repeat(1)@(posedge vif.clk);
+            @(posedge vif.clk);
             tr.mod = vif.mod;
             tr.count = vif.count;
             mon2sco.put(tr);
+           // @(posedge vif.clk);
             tr.display("MON");
             //$display( "rtl = %0d" , vif.count);
         end
@@ -149,7 +150,10 @@ endclass
 class scoreboard;
 transaction tr;
 //int rst=0;
-int expected_count=0;
+ //(posedge vif.clk);
+ int expected_count=-1;
+ 
+
 
  virtual intf vif;
 //bit clk1;
@@ -179,16 +183,24 @@ end*/
         forever begin
              mon2sco.get(tr);
             tr.display("SCO");
-        @(posedge vif.clk);
+
+
+        
+        
+     //@(posedge vif.clk);
             if(vif.rst)begin
-                expected_count = 3'b000;
+                 //@(posedge vif.clk);
+
+                 expected_count = 0;
                 end
-                else begin
+               else begin
          if(tr.mod)begin
-           // @(posedge vif.clk)
+            @(posedge vif.clk)
+           // int [2:0]expected_count=0;
+
                expected_count = (expected_count +1)%8;
                 end else begin
-               
+                @(posedge vif.clk)
                 expected_count = (expected_count +8-1)%8;
                 end
                 end
@@ -198,7 +210,8 @@ end*/
                     $display("-----------PASSED-----------");
 
                     end else begin
-                    
+   //@(posedge vif.clk)
+                  
                     $display("[SCOREBOARD] : Time =%0t , Expected = %0d, DUT count = %0d", $time,expected_count,tr.count);
                     $display("-----------FAILED-----------");
 
